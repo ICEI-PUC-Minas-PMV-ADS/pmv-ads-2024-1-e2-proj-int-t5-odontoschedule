@@ -10,12 +10,10 @@ Atualmente, o consultório xxx, atua em todo o território regional do sudeste, 
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Nosso objetivo central é a criação de uma aplicação web que possa integrar e melhorar os processos da franquia, além de aprimorar e facilitar a relação entre consultório e paciente, utilizando uma API que será possível criar registros de dentistas, pacientes e prontuários, bem como registrar o atendimento da consulta.
+Além disso, a aplicação permitirá que os pacientes, por meio da aplicação, tenham acesso a um histórico completo de suas consultas e tratamentos, podendo marcar, remarcar ou cancelar consultas de forma autônoma. Os pacientes também poderão tirar dúvidas sobre os preparativos pré-consultas, ter acesso a documentação, exames e outras informações relevantes para o seu tratamento.
+A integração com a API permitirá que os consultórios tenham uma visão mais abrangente e atualizada de seus pacientes, facilitando o gerenciamento de consultas, horários e recursos. Além disso, a aplicação proporcionará uma comunicação mais eficiente entre os profissionais e a equipe de apoio, melhorando a qualidade do atendimento prestado aos pacientes. Em resumo, a aplicação web que será desenvolvida terá como objetivo integrar e aprimorar os processos do consultório alvo, proporcionando uma experiência mais eficiente e conveniente tanto para os consultórios odontológicos quanto para os pacientes.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
