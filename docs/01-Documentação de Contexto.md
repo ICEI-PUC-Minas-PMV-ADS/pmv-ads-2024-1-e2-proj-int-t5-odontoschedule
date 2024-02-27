@@ -3,16 +3,10 @@
 Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+Atualmente, o consultório xxx, atua em todo o território regional do sudeste, com mais de 20 consultórios, unidades de atendimento e hospitais disponíveis para o atendimento odontológico, no entanto, apesar da grande operação, a marca não possui nenhum tipo de sistema que unifique as informações dos pacientes, nem facilita a entrada de dados para melhor organização das agendas dos consultórios para com seus beneficiários seguindo ainda com documentação física. Por esse motivo ocorrem diversos problemas gerenciais: Muitos atrasos e cancelamentos nas marcações de consultas sem uma comunicação direta com uma secretária, ausência de um hub que armazene documentos importantes para a viabilização dos procedimentos dentários e também sobre o histórico do paciente, provocando assim perda de informações, e por fim, a falta de um canal digital interativo que conecte o cliente com o seu consultório/dentista.
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
