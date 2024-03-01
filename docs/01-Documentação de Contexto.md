@@ -27,9 +27,3 @@ Sendo assim podemos dividir nosso público alvo em duas categorias:
 Consultório: Pessoas que trabalham na parte administrativa dessas empresas e gerentes que supervisionam o funcionamento das mesmas. O setor administrativo é o nosso principal alvo, já que é o ambiente em que se encontra o problema que buscamos resolver.
 
 Pacientes: Indivíduos que vão necessitar de tratamento odontológico, como: crianças, adolescentes, adultos e idosos. Nesse grupo temos uma subdivisão de pessoas que estão em busca de tratamentos estéticos e pessoas que procuram tratamentos por questões de saúde e prevenção.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
