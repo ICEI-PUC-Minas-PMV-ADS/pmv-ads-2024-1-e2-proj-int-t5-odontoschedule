@@ -17,12 +17,7 @@ A integração com a API permitirá que os consultórios tenham uma visão mais 
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Muito se discute a respeito da digitalização das micro/médias empresas e o quanto a tecnologia é um fator determinante para a otimização dos processos internos. Já no ano de 2019, através de uma pesquisa realizada em 2019 pela CETIC (Centro Regional de Estudos para o Desenvolvimento da Sociedade da Informação) (CETIC, 2019) descobriu-se que cerca de 70% da população brasileira já está conectada. Desta forma, entende-se que, ao investir em aplicações capazes de sanar problemas oriundos da falta de eficiência operacional (ou seja, quando a empresa ainda adota métodos antiquados para a segurança e armazenamento de dados), esta é capaz de criar um cenário de oportunidades que tange o aumento de receita anual e também a especulação da marca, pois colabora com uma maior velocidade na entrega de resultados operacionais que impactam diretamente na gestão do negócio. Segundo a IDC (International Data Corporation) (IDC, XXXX), 47% das empresas estão em busca de um modelo de negócio mais digitalizado, com o intuito de se ter mais proatividade nos processos internos, trazendo assim uma maior eficiência operacional, além de melhora da segurança e conformidade. Logo, se faz fundamental, o uso da aplicação para que o negócio possa seguir se adequando às necessidades dos pacientes hiper conectados que precisam de uma tecnologia presente capaz de encurtar passos burocráticos e offline. 
 
 ## Público-Alvo
 
