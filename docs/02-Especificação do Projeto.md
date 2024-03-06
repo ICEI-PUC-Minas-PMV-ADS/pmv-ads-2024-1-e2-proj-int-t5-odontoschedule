@@ -8,70 +8,69 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+(Secretária) - Juliana é a secretária do consultório xxx. É uma profissional dedicada, porém sente-se sobrecarregada com a gestão de tantos arquivos e documentos físicos, bem como o gerenciamento das agendas dos dentistas. Essa sobrecarga influencia na qualidade do atendimento ao cliente, uma vez que não possui um acesso rápido e simplificado ao agendamento das consultas. Juliana busca uma solução que facilite o agendamento e o armazenamento de documentos e históricos dos pacientes, permitindo-lhe focar mais na qualidade do serviço prestado.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+(Paciente) - Felipe é um paciente regular do consultório xxx. Jovem e sempre conectado, ele deseja ter acesso fácil e simplificado ao seu histórico de tratamento. Felipe gostaria de poder marcar suas consultas online e acompanhar tanto o agendamento quanto o seu histórico, a fim de gerenciar sua saúde bucal de forma mais eficaz. 
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+(Administrador) - Carolina é uma empreendedora que possui um consultório odontológico em sua região. Ela é responsável por supervisionar o funcionamento do consultório, garantindo que todos os processos operacionais estejam funcionando de maneira eficiente. Carolina busca uma solução que possa auxiliar na gestão do consultório, facilitando o agendamento das consultas, o acompanhamento dos atendimentos, etc. Ela deseja uma ferramenta que forneça insights sobre o desempenho do consultório como a taxa de ocupação das agendas, o número de consultas realizadas em determinado intervalo de tempo, satisfação dos clientes, etc. Carolina está interessada em investir em tecnologias que melhorem a qualidade do serviço oferecido pelo consultório, aumentando a satisfação dos pacientes e impulsionando o crescimento do negócio. 
+
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
-
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+| Quem                | O que                                                                                                            | Por que                                                                                                                                       |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Paciente            | Deseja ter um cadastro no consultório odontológico                                                               | Necessidade de começar um tratamento                                                                                                          |
+| Secretária          | Deseja filtrar todos os atendimento por dia                                                                      | Verificar agenda para algum paciente ou outro funcionário                                                                                     |
+| Dono do consultório | Deseja ter noção de como anda o desempenho do consultório                                                        | Obter uma visão geral do andamento do negócio e definir metas.                                                                                |
+| Paciente            | Deseja fazer agendamentos de forma autônoma, sem a necessidade de ligar para o consultório ou ir até ele.        | Devido a praticidade. Não é necessário esperar por filas ao ligar para o estabelecimento, nem mesmo ir ao local e enfrentar o mesmo problema. |
+| Paciente            | Precisa fazer cancelamento ou reagendamento de consultas sem necessidade de um contato direto com o consultório. | Caso ocorram imprevistos cotidianos, é importante a possibilidade de se reagendar ou cancelar uma consulta de forma rápida.                   |
+| Secretária          | Deseja cadastrar o quadro de horários de um dentista específico                                                  | Disponibilizar a lista de horários disponíveis para que os pacientes façam agendamentos                                                       |
+| Paciente            | Precisa fazer a alteração de alguma informação inserida durante o cadastro.                                      | Alguma informação de contato ou endereço do paciente pode vir a mudar. Além de que é comum a necessidade de troca de senha.                   |
+| Secretária          | Necessita de armazenar informações da consulta de cada paciente digitalmente.                                    | A fim de se ter um histórico do tratamento do paciente de forma digital.                                                                      |
+| Secretária          | Precisa visualizar todos os agendamentos do dia.                                                                 | A fim de informar aos dentistas as consultas a serem realizadas.                                                                              |
+| Secretária          | Precisa criar, agendar e reagendar consultas para usuários.                                                      | Pode acontecer de um usuário ligar direto no consultório ou então ir até lá.                                                                  |
+| Secretária          | Precisa cadastrar e disponibilizar os horários e datas de atendimento de cada dentista.                          | Para permitir que os pacientes possam escolher o melhor horário e dentista para ele.                                                          |
+| Secretária          | Precisa fazer o cadastro de pacientes na aplicação.                                                              | O paciente pode aparecer no consultório querendo fazer um agendamento sem ainda ter um cadastro.                                              |
+| Secretária          | Precisa ser notificada de quaisquer agendamentos e alterações nos mesmos.                                        | É necessário se manter informado dos agendamentos para repassar as informações para a equipe.                                                 |
+| Paciente            | Necessita saber de alterações em suas consultas.                                                                 | É importante que saiba de cancelamentos, reagendamentos e observações de consultas.                                                           |
+| Paciente            | Necessita de visualizar todos os seus atendimentos, juntamente com as informações do mesmo.                      | Isso é necessário para que seja recuperada alguma informação ou observação incluída em uma consulta antiga.                                   |
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | ALTA | 
-|RF-002| A aplicação deve emitir um relatório de tarefas realizadas no mês   | MÉDIA |
+| RF-01 | A aplicação deve permitir que um paciente gerencie seu cadastro. O paciente deve ser capaz de se cadastrar, fornecendo os seguintes dados: Nome completo, CPF (campo de login), endereço, e-mail, telefone e senha.     | Alta  |
+| ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| RF-02 | A aplicação deve permitir que um paciente faça login utilizando CPF e senha. E caso seja um administrador ou secretária, utilize nome de usuário e senha.                                                               | Alta  |
+| RF-03 | A aplicação deve permitir que o paciente e a secretária cancelem e remarquem um atendimento.                                                                                                                            | Alta  |
+| RF-04 | A aplicação deve permitir que o paciente seja notificado com 24h de antecedência.                                                                                                                                       | Baixa |
+| RF-05 | A aplicação deve permitir que o paciente seja capaz de agendar uma consulta passando as seguintes informações: Informações de contato, especialidade desejada, horário, dentista e modalidade (particular ou convênio)  | Alta  |
+| RF-06 | A aplicação deve permitir que o paciente receba uma notificação quando uma consulta for cancelada, remarcada ou concluída.                                                                                              | Alta  |
+| RF-07 | A aplicação deve permitir que o paciente visualize no seu perfil todos os atendimentos já realizados e pendentes.                                                                                                       | Alta  |
+| RF-08 | A aplicação deve permitir que um usuário do tipo secretária gerencie os dentistas. Além disso, no cadastro devem ser fornecidos dados como: nome, CRO, especialidade e seus respectivos dias e horários de atendimento. | Alta  |
+| RF-09 | A aplicação deve permitir que a secretária visualize os agendamentos e filtre-os por dia e dentista.                                                                                                                    | Alta  |
+| RF-10 | A aplicação deve permitir que a secretária faça agendamentos para pacientes cadastrados                                                                                                                                 | Média |
+| RF-11 | A aplicação deve permitir que a secretária faça cadastro de pacientes                                                                                                                                                   | Média |
+| RF-12 | A aplicação deve permitir que a secretária mude o status da consulta e inclua observações.                                                                                                                              | Alta  |
+| RF-13 | A aplicação deve permitir que a secretária seja capaz de visualizar todas as informações pessoais e agenda de um dentista.                                                                                              | Alta  |
+| RF-14 | A aplicação deve permitir que a secretária visualize todas as informações pessoais e agendamentos de um usuário específico.                                                                                             | Alta  |
+| RF-15 | A aplicação deve permitir que a secretária receba uma notificação quando uma consulta foi agendada, cancelada e remarcada.                                                                                              | Alta  |
+| RF-16 | A aplicação deve permitir que a secretária atualize informações de contato e endereço de um paciente.                                                                                                                   | Alta  |
+| RF-17 | A aplicação deve permitir que o administrador visualize relatórios contendo informações de desempenho do consultório, como número de atendimentos.                                                                      | Alta  |
+| RF-18 | A aplicação deverá gerar um login e senha que oferecerá acesso à área administrativa da aplicação para a secretária e o administrador.                                                                                  | Alta  |
+| RF-19 | A aplicação deve permitir que usuários do tipo secretária, administrador e paciente alterem suas senhas                                                                                                                 | Alta  |
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+| ID     | Descrição                                                                                                                                               | Prioridade |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| RNF-01 | A aplicação deve estar disponível 24 horas por dia, 7 dias por semana.                                                                                  | Alta       |
+| RNF-02 | A aplicação deve ser compatível com os principais navegadores (Chrome, Firefox e Edge)                                                                  | Alta       |
+| RNF-03 | A aplicação deve utilizar o Microsoft SQL Server para armazenamento de dados                                                                            | Alta |
+| RNF-04 | A aplicação deve ser responsiva                                                                                                                         | Alta       |
+| RNF-05 | A senha deve conter caracteres especiais, letras maiúsculas, minúsculas e números. Além disso, a senha deve ser armazenada no banco de dados como hash. | Alta       |
+| RNF-06 | A linguagem a ser utilizada para  o desenvolvimento da aplicação deve ser o C#, utilizando a Entity Framework.                                          | Alta       |
 
 ## Restrições
 
@@ -91,13 +90,4 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
+![Casos de Uso](/docs/img/casos_de_uso.jpg)
