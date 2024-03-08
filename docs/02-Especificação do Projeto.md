@@ -69,8 +69,8 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 | RNF-02 | A aplicação deve ser compatível com os principais navegadores (Chrome, Firefox e Edge)                                                                  | Alta       |
 | RNF-03 | A aplicação deve utilizar o Microsoft SQL Server para armazenamento de dados                                                                            | Alta |
 | RNF-04 | A aplicação deve ser responsiva                                                                                                                         | Alta       |
-| RNF-05 | A senha deve conter caracteres especiais, letras maiúsculas, minúsculas e números. Além disso, a senha deve ser armazenada no banco de dados como hash. | Alta       |
-| RNF-06 | A linguagem a ser utilizada para  o desenvolvimento da aplicação deve ser o C#, utilizando a Entity Framework.                                          | Alta       |
+| RNF-05 | Para que qualquer usuário utilize a aplicação é necessário que esteja logado em sua conta. | Alta       |
+| RNF-06 | A linguagem a ser utilizada para  o desenvolvimento da aplicação deve ser o C# juntamente com a Entity Framework.                                          | Alta       |
 
 ## Restrições
 
