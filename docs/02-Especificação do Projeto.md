@@ -2,20 +2,22 @@
 
 <span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+A definição exata do problema e os pontos mais relevantes a serem tratados neste projeto foram consolidados com a participação de funcionários, donos do negócio e pacientes por meio de entrevistas e reuniões. Os detalhes levantados nesse processo foram consolidados na forma de personas e histórias de usuários.
 
 ## Personas
 
-(Secretária) - Juliana é a secretária do consultório xxx. É uma profissional dedicada, porém sente-se sobrecarregada com a gestão de tantos arquivos e documentos físicos, bem como o gerenciamento das agendas dos dentistas. Essa sobrecarga influencia na qualidade do atendimento ao cliente, uma vez que não possui um acesso rápido e simplificado ao agendamento das consultas. Juliana busca uma solução que facilite o agendamento e o armazenamento de documentos e históricos dos pacientes, permitindo-lhe focar mais na qualidade do serviço prestado.
+As personas levantadas durante o processo de entendimento do problema são apresentadas a seguir:
 
-(Paciente) - Felipe é um paciente regular do consultório xxx. Jovem e sempre conectado, ele deseja ter acesso fácil e simplificado ao seu histórico de tratamento. Felipe gostaria de poder marcar suas consultas online e acompanhar tanto o agendamento quanto o seu histórico, a fim de gerenciar sua saúde bucal de forma mais eficaz. 
+(Secretária) - Juliana é a secretária do consultório DentalIn. É uma profissional dedicada, porém sente-se sobrecarregada com a gestão de tantos arquivos e documentos físicos, bem como o gerenciamento das agendas dos dentistas. Essa sobrecarga influencia na qualidade do atendimento ao cliente, uma vez que não possui um acesso rápido e simplificado ao agendamento das consultas. Juliana busca uma solução que facilite o agendamento e o armazenamento de documentos e históricos dos pacientes, permitindo-lhe focar mais na qualidade do serviço prestado.
+
+(Paciente) - Felipe é um paciente regular do consultório DentalIn. Jovem e sempre conectado, ele deseja ter acesso fácil e simplificado ao seu histórico de tratamento. Felipe gostaria de poder marcar suas consultas online e acompanhar tanto o agendamento quanto o seu histórico, a fim de gerenciar sua saúde bucal de forma mais eficaz. 
 
 (Administrador) - Carolina é uma empreendedora que possui um consultório odontológico em sua região. Ela é responsável por supervisionar o funcionamento do consultório, garantindo que todos os processos operacionais estejam funcionando de maneira eficiente. Carolina busca uma solução que possa auxiliar na gestão do consultório, facilitando o agendamento das consultas, o acompanhamento dos atendimentos, etc. Ela deseja uma ferramenta que forneça insights sobre o desempenho do consultório como a taxa de ocupação das agendas, o número de consultas realizadas em determinado intervalo de tempo, satisfação dos clientes, etc. Carolina está interessada em investir em tecnologias que melhorem a qualidade do serviço oferecido pelo consultório, aumentando a satisfação dos pacientes e impulsionando o crescimento do negócio. 
 
 
 ## Histórias de Usuários
+
+A partir da compreensão do dia a dia das personas identificadas para o projeto, foram registradas as seguintes histórias de usuários.
 
 | Quem                | O que                                                                                                            | Por que                                                                                                                                       |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -37,8 +39,11 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Requisitos
 
+O escopo funcional do projeto é definido por meio dos requisitos funcionais que descrevem as possibilidades interação dos usuários, bem como os requisitos não funcionais que descrevem os aspectos que o sistema deverá apresentar de maneira geral. Estes requisitos são apresentados a seguir.
 
 ### Requisitos Funcionais
+
+A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade em que os mesmos devem ser entregues.
 
 | RF-01 | A aplicação deve permitir que um paciente gerencie seu cadastro. O paciente deve ser capaz de se cadastrar, fornecendo os seguintes dados: Nome completo, CPF (campo de login), endereço, e-mail, telefone e senha.     | Alta  |
 | ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
@@ -62,6 +67,8 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 | RF-19 | A aplicação deve permitir que usuários do tipo secretária, administrador e paciente alterem suas senhas                                                                                                                 | Alta  |
 
 ### Requisitos não Funcionais
+
+A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá atender.
 
 | ID     | Descrição                                                                                                                                               | Prioridade |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
