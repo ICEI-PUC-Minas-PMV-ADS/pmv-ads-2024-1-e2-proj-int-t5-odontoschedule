@@ -6,7 +6,7 @@
 
 `Eixo 2`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+A DentalIn, o consultório odontológico alvo, atende diariamente um grande público, mas apesar da grande operação, a marca não possui nenhum tipo de sistema que unifique as informações dos pacientes, nem facilite a gestão de dados para melhor organização das agendas do consultório, utilizando, ainda, em seus processos internos documentação física. Por este motivo ocorrem diversos problemas operacionais, como atrasos e cancelamentos de consultas sem comunicação direta e prévia com uma das secretárias, ausência de um hub que armazene documentos importantes para a viabilização dos procedimentos dentários e histórico do paciente, causando assim perda de informações, e por fim, existe a falta de um canal digital interativo que facilite a comunicação entre paciente e consultório odontológico.
 
 ## Integrantes
 
