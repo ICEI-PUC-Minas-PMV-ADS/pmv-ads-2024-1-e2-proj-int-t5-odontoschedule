@@ -16,9 +16,10 @@ O objetivo geral deste projeto é a criação de uma aplicação web que possa i
 Como objetivos específicos, podemos ressaltar:
 
 <ul>
-    <li>Criar funcionalidades que permitam a interação entre paciente e consultório, com intuito de sanar dúvidas pré-consultas e tratamentos;</li>
-    <li>Automatizar o processo de agendamento de consultas para otimização e controle de agendamentos, viabilizando acesso ao histórico dos mesmos;</li>
-    <li>Integrar e aprimorar os processos do consultório alvo, proporcionando uma experiência mais eficiente e conveniente, tanto para o consultório odontológico quanto para os pacientes.</li>
+    <li>Aprimorar a experiência dos pacientes atendidos pelo consultório, a fim de fidelizar e atrair novos clientes;</li>
+    <li>Otimizar tempo de processos internos, para que a equipe administrativa possa focar em outras atividades mais relevantes;</li>
+    <li>Diminuir margens de erro e melhorar a eficiência operacional do consultório;</li>
+    <li>Proporcionar um atendimento ágil e preciso.</li>
 </ul>
 
 ## Justificativa
