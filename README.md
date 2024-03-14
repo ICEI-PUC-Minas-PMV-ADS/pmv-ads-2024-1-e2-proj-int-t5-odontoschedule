@@ -10,7 +10,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Integrantes
 
-* Kayo Lino Biluca
+* Kayo Felipe Lino Biluca
 * Joabe Wick Santos Soares Coimbra
 * Alvaro Alexandre Amaral
 * Vanessa da Silva Cassidy
