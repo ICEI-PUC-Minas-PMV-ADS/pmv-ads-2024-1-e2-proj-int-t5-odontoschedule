@@ -24,7 +24,7 @@ A partir da compreensão do dia a dia das personas identificadas para o projeto,
 
 | Quem                | O que                                                                                                            | Por que                                                                                                                                       |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| Paciente            | Deseja ser atendido no consultório odontológico DentalIn.| Necessidade de começar um tratamento |
+| Paciente            | Deseja ser atendido no consultório odontológico DentalIn.| Necessidade de começar um tratamento. |
 | Paciente            | Deseja realizar agendamentos de forma autônoma e rápida, sem a necessidade de ligar para o consultório ou ir até ele.|Realizado desta forma é mais cômodo e o paciente não precisa sair de casa e economiza tempo.|
 | Paciente | Precisa fazer cancelamento ou reagendamento de consultas sem necessidade de um contato direto com o consultório.| Caso ocorram imprevistos cotidianos, é importante a possibilidade de se reagendar ou cancelar uma consulta de forma rápida.|
 | Paciente            | Necessita visualizar todos os seus atendimentos, juntamente com as informações do mesmo.| Para verificar alguma informação ou observação incluída em uma consulta antiga.|
@@ -83,14 +83,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
 
