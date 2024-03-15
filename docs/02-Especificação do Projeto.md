@@ -8,13 +8,13 @@ A definição exata do problema e os pontos mais relevantes a serem tratados nes
 
 As personas levantadas durante o processo de entendimento do problema são apresentadas a seguir:
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/144942087/9c6b1403-005f-4136-8ab4-39b632bab804" width=300/>
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/144942087/9c6b1403-005f-4136-8ab4-39b632bab804" width=300/><br>
 (Secretária) - Juliana é a secretária do consultório DentalIn. É uma profissional dedicada, porém sente-se sobrecarregada com a gestão de tantos arquivos e documentos físicos, bem como o gerenciamento das agendas dos dentistas. Essa sobrecarga influencia na qualidade do atendimento ao cliente, uma vez que não possui um acesso rápido e simplificado ao agendamento das consultas. Juliana busca uma solução que facilite o agendamento e o armazenamento de documentos e históricos dos pacientes, permitindo-lhe focar mais na qualidade do serviço prestado.
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/144942087/93d49a2f-2932-48cf-8d31-b82e1c8f0633" width=300/>
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/144942087/93d49a2f-2932-48cf-8d31-b82e1c8f0633" width=300/><br>
 (Paciente) - Felipe é um paciente regular do consultório DentalIn. Jovem e sempre conectado, ele deseja ter acesso fácil e simplificado ao seu histórico de tratamento. Felipe gostaria de poder marcar suas consultas online e acompanhar tanto o agendamento quanto o seu histórico, a fim de gerenciar sua saúde bucal de forma mais eficaz. 
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/144942087/a3938e13-f84e-447b-86ea-23dad65531cd" width=300/>
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/144942087/a3938e13-f84e-447b-86ea-23dad65531cd" width=300/><br>
 (Empreendedora) - Carolina é uma empreendedora que possui um consultório odontológico em sua região. Ela é responsável por supervisionar o funcionamento do consultório, garantindo que todos os processos operacionais estejam funcionando de maneira eficiente. Carolina busca uma solução que possa auxiliar na gestão do consultório, facilitando o agendamento das consultas, o acompanhamento dos atendimentos, etc. Ela deseja uma ferramenta que forneça insights sobre o desempenho do consultório como a taxa de ocupação das agendas, o número de consultas realizadas em determinado intervalo de tempo, satisfação dos clientes, etc. Carolina está interessada em investir em tecnologias que melhorem a qualidade do serviço oferecido pelo consultório, aumentando a satisfação dos pacientes e impulsionando o crescimento do negócio. 
 
 
