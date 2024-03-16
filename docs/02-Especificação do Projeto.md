@@ -43,8 +43,9 @@ O escopo funcional do projeto é definido por meio dos requisitos funcionais que
 
 A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade em que os mesmos devem ser entregues.
 
+| ID     | Descrição                                                                                                                                               | Prioridade |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | RF-01 | A aplicação deve permitir que um paciente gerencie seu cadastro. O paciente deve ser capaz de se cadastrar, fornecendo os seguintes dados: Nome completo, CPF (campo de login), endereço, e-mail, telefone e senha.     | Alta  |
-| ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
 | RF-02 | A aplicação deve permitir que um paciente faça login utilizando CPF e senha. E caso seja um administrador ou secretária, utilize nome de usuário e senha.                                                               | Alta  |
 | RF-03 | A aplicação deve permitir que o paciente e a secretária cancelem e remarquem um atendimento.                                                                                                                            | Alta  |
 | RF-04 | A aplicação deve permitir que o paciente seja notificado com 24h de antecedência.                                                                                                                                       | Baixa |
