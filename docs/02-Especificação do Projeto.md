@@ -33,6 +33,7 @@ A partir da compreensão do dia a dia das personas identificadas para o projeto,
 | Secretária          | Deseja gerir os dados de dentistas e pacientes de forma eficiente e por meio de tecnologias.|Otimizar seu tempo para que ela possa focar em outras atividades.|
 | Secretária          | Deseja acessar de modo rápido e fácil informações de consulta de cada paciente. | Assim conseguirá atender os pacientes de forma mais ágil e proativa.|
 | Dono do consultório          | Deseja ter noção de como anda o desempenho do consultório. | Obter uma visão geral do andamento do negócio e definir metas. |
+| Dono do consultório          | Deseja diminuir a taxa de não comparecimento. | Para maximizar o lucro do consultório. |
 
 ## Requisitos
 
