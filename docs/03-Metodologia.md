@@ -1,7 +1,11 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, pois como citam Amaral, Fleury e Isoni (2019, p. 68), seus benefícios são a
+
+“visão clara dos resultados a entregar; ritmo e disciplina necessários à execução; definição de papéis e responsabilidades dos integrantes do projeto (Scrum Owner, Scrum Master e Team); empoderamento dos membros da equipe de projetos para atingir o desafio; conhecimento distribuído e compartilhado de forma colaborativa; ambiência favorável para crítica às ideias e não às pessoas.”
+
+Para organização das atividades a serem desenvolvidas, são utilizadas duas ferramentas, são elas: Whatsapp e Teams.
 
 Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
 
@@ -39,39 +43,31 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+Scrum Master: 
+Product Owner: 
+Equipe de Desenvolvimento:
+Equipe de Design: 
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+O gerenciamento do projeto è realizado através da ferramenta Project do Github e as Sprints são realizadas todas segundas e quartas às 20h30 através da sala de reunião no Teams.
+
+GitHub Project: <https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/860>
+Meeting Teams: <https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_YzUzYjU2ZWUtY2RkNS00Y2EyLWE0YWQtNjQwY2ZkOTAzOTg0%40thread.v2%2F0%3Fcontext%3D%257B%2522Tid%2522%3A%252214cbd5a7-ec94-46ba-b314-cc0fc972a161%2522%2C%2522Oid%2522%3A%2522439d6c35-7624-4fa8-8517-5e199e40e6c8%2522%257D%26anon%3Dtrue&type=meetup-join&deeplinkId=0ac4edd3-6c18-477b-986a-621a8f423ef9&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true>
 
 ### Ferramentas
 
 As ferramentas empregadas no projeto são:
 
 - Editor de código.
-- Ferramentas de comunicação
+- Teams e Whatsapp
+- Draw.io
 - Ferramentas de desenho de tela (_wireframing_)
 
 O editor de código foi escolhido porque ele possui uma integração com o
 sistema de versão. As ferramentas de comunicação utilizadas possuem
 integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
+diagramas utilizamos a ferramenta Draw.io por melhor captar as
 necessidades da nossa solução.
-
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
