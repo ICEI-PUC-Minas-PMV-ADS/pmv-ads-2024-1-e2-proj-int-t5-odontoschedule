@@ -18,8 +18,6 @@ foi utilizado para hospedagem do repositório.
 O projeto segue a seguinte convenção para o nome de branches:
 
 - `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
 - `dev`: versão de desenvolvimento do software
 
 Quanto à gerência de issues, o projeto adota a seguinte convenção para
@@ -30,44 +28,36 @@ etiquetas:
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
-
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
-
 ## Gerenciamento de Projeto
 
 ### Divisão de Papéis
 
 A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
 
-Scrum Master: 
-Product Owner: 
-Equipe de Desenvolvimento:
-Equipe de Design: 
+Scrum Master: Joabe 
+Product Owner: Amanda
+Equipe de Desenvolvimento: Kayo e Cassiano
+Equipe de Design: Vanessa e Alvaro
 
 ### Processo
 
 O gerenciamento do projeto è realizado através da ferramenta Project do Github e as Sprints são realizadas todas segundas e quartas às 20h30 através da sala de reunião no Teams.
 
 GitHub Project: <https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/860>
+
 Meeting Teams: <https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_YzUzYjU2ZWUtY2RkNS00Y2EyLWE0YWQtNjQwY2ZkOTAzOTg0%40thread.v2%2F0%3Fcontext%3D%257B%2522Tid%2522%3A%252214cbd5a7-ec94-46ba-b314-cc0fc972a161%2522%2C%2522Oid%2522%3A%2522439d6c35-7624-4fa8-8517-5e199e40e6c8%2522%257D%26anon%3Dtrue&type=meetup-join&deeplinkId=0ac4edd3-6c18-477b-986a-621a8f423ef9&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true>
 
 ### Ferramentas
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
+- Visul Studio
 - Teams e Whatsapp
 - Draw.io
-- Ferramentas de desenho de tela (_wireframing_)
+- Figma
 
-O editor de código foi escolhido porque ele possui uma integração com o
+O Visual Studio foi escolhido porque ele possui uma integração com o
 sistema de versão. As ferramentas de comunicação utilizadas possuem
 integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos a ferramenta Draw.io por melhor captar as
-necessidades da nossa solução.
+diagramas utilizamos a ferramenta Draw.io e para criação de telas usamos a ferramenta Figma por melhor captar as
+necessidades da nossa solução. 
