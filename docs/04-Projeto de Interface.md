@@ -57,9 +57,6 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 
 - Ver Agentamento (Concluído) Completo
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/b9918025-f9b8-4dc0-9405-a20c08ef8996)
-
-
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
  
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
