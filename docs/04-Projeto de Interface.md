@@ -23,7 +23,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 ## Wireframes
 
 - Pagina Inicial
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/b79793fc-ebae-4574-888e-6753ddf2b5c0)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/3d848759-cb9d-4aa6-ae43-e33e9161f13e)
 
 - Autenticação (Paciente)
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/eeff759f-ec7e-4cec-9a02-e649a991c4a4)
@@ -55,7 +55,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 - Ver Agendamento Completo
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/7b757b26-2f2e-40db-9d7a-987699df658f)
 
-= Ver Agentamento (Concluído) Completo
+- Ver Agentamento (Concluído) Completo
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/b9918025-f9b8-4dc0-9405-a20c08ef8996)
 
 
