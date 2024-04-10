@@ -1,15 +1,54 @@
 # Plano de Testes de Usabilidade
 
-Os testes de usabilidade permitem avaliar a qualidade da interface com o usuário da aplicação interativa.
+Este Plano de Testes será remoto e moderado com análise da execução das tarefas realizadas pelos participantes por meio da ferramenta Lookback.
 
-Um plano de teste de usabilidade deverá conter: o detalhamento dos objetivos (em função dos requisitos levantados/implementados), dos critérios que serão utilizados para a seleção dos participantes, dos procedimentos a serem adotados pelos condutores de teste (por exemplo: os testes serão presenciais ou remotos? o método será observação direta, medição ou avaliação?), das tarefas a serem executadas, dos dados a serem coletados (quantidade de cliques, número de erros, tempo etc.), a ordem de execução das tarefas e das etapas da sessão de teste, recursos demandados, métricas coletadas etc.
+# 1. Objetivos
 
-Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
+O Plano de Testes possui os seguintes objetivos:
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
+> - A aplicação deve possibilitar que o usuário navegue de maneira intuitiva;
+> - As telas devem ser simples e compreensíveis para que o usuário realize suas tarefas de modo prático;
+> - A aplicação deve conter campos essenciais para a execução das tarefas do usuário. 
 
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+# 2. Participantes
+
+Este Plano de Testes visa verificar 15 usuários utilizando a aplicação. Os participantes serão pessoas que possuem a intenção de agendar consultas odontológicas de forma prática. As características destes participantes são descritas a seguir:
+
+> - Pessoas entre 18 e 70 anos;
+> - Homens e mulheres;
+> - Possui conexão com internet estável;
+> - Possui algum eletrônico como computador, tablet ou celular;
+> - Possui e-mail válido;
+> - Possui número de telefone ou celular.
+
+# 3. Tarefas Testes
+
+As seguintes tarefas devem ser realizadas pelos participantes:
+
+> - Fazer cadastro
+> - Fazer login
+> - Acessar Menu Principal
+> - Atualizar cadastro
+> - Agendar consulta
+> - Verificar consultas agendadas
+> - Navegar na plataforma
+> - Fazer logoff
+
+# 4. Análise dos dados
+
+A tabela a seguir será utilizada para analisar cada tarefa executada pelos participantes:
+
+| Nome     | Resposta emocional   | Tarefa X   | Tempo (seg)  |  Ações  | Cometeu erro? | Se recuperou do erro?  |
+| -------- | -------------------- | ---------- | ------------ | ------- | ------------- | ---------------------- |
+
+As seguintes métricas serão utilizadas para preencher a tabela:
+
+> - Nome: primeiro nome de cada participante, em caso de nomes iguais, a primeira letra do sobrenome deve ser inserida;
+> - Resposta emocional: confuso, confiante ou estressado;
+> - Tarefa X: concluiu ou não concluiu;
+> - Tempo (seg): cronometrar e colocar o tempo em segundos utilizado para realização ou não da tarefa;
+> - Ações: contabilizar quantas ações foram feitas para realização ou não da tarefa;
+> - Cometeu erro?: sim ou não;
+> - Serecuperou do erro?: sim, não ou n/a.
+
+
