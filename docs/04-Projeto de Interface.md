@@ -69,6 +69,7 @@
 
   Pagina Home (Secretária)
 - RF 15 - A aplicação deve permitir que a secretária receba uma notificação quando uma consulta foi agendada, cancelada e remarcada.
+- RF 18 - A aplicação deverá gerar um login e senha que oferecerá acesso à área administrativa da aplicação para a secretária e o administrador.
   
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/777b5626-baa4-4f0e-9586-2829e90d9eac)
 
@@ -120,6 +121,13 @@ Cadastrar Dentistas (Secretária)
 - RF 08 - A aplicação deve permitir que um usuário do tipo secretária gerencie os dentistas. Além disso, no cadastro devem ser fornecidos dados como: nome, CRO, especialidade e seus respectivos dias e horários de atendimento.
   
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/cdbc2a13-034e-4af8-8706-e152f9d4859d)
+
+  Página Home (Administrador)
+- RF 17 - A aplicação deve permitir que o administrador visualize relatórios contendo informações de desempenho do consultório, como número de atendimentos.
+- RF 18 - A aplicação deverá gerar um login e senha que oferecerá acesso à área administrativa da aplicação para a secretária e o administrador.
+  
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/2bc7205f-bcbf-4286-b5f9-f67990a2e7b1)
+
 
 
 
