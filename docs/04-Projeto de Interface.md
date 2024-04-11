@@ -19,7 +19,7 @@
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/de3b5be4-d009-4e2b-a074-819a064348a0)
 
 - Cadastro
-- RF 01 = A aplicação deve permitir que um paciente gerencie seu cadastro. O paciente deve ser capaz de se cadastrar, fornecendo os seguintes dados: Nome completo, CPF (campo de login), endereço, e-mail, telefone e senha.
+- RF 01 - A aplicação deve permitir que um paciente gerencie seu cadastro. O paciente deve ser capaz de se cadastrar, fornecendo os seguintes dados: Nome completo, CPF (campo de login), endereço, e-mail, telefone e senha.
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/7dc5e794-0539-4a75-b144-90f5942af303)
 
 - Perfil de Usuário
@@ -50,6 +50,5 @@
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/7b757b26-2f2e-40db-9d7a-987699df658f)
 
 - Ver Agentamento (Concluído) Completo
-- RF 07 - A aplicação deve permitir que o paciente visualize no seu perfil todos os atendimentos já realizados e pendentes.
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/b9918025-f9b8-4dc0-9405-a20c08ef8996)
  
