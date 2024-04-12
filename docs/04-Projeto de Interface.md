@@ -108,19 +108,21 @@
  
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/a2324b19-3291-4a52-b572-b18781f016f9)
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/62781c01-88bd-40ee-a2c8-0ee64505d139)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/d51b9f6d-bc1d-427a-a303-35afa6742b3e)
+
 
   Visualizar Informações do Dentista e todos os seus agendamentos (Secretária)
 - RF 13 - A aplicação deve permitir que a secretária seja capaz de visualizar todas as informações pessoais e agenda de um dentista.
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/596fa921-3070-4e1e-a675-71e3ac61ec0b)
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/cf15951b-222b-4894-85fe-3768726d4b91)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/138db6bd-1ab6-475d-bf58-a060a4d2d2bc)
+
 
 Cadastrar Dentistas (Secretária)
 - RF 08 - A aplicação deve permitir que um usuário do tipo secretária gerencie os dentistas. Além disso, no cadastro devem ser fornecidos dados como: nome, CRO, especialidade e seus respectivos dias e horários de atendimento.
   
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/cdbc2a13-034e-4af8-8706-e152f9d4859d)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/4b02b24f-8e35-445f-9e9b-d11c44af1108)
 
   Página Home (Administrador)
 - RF 17 - A aplicação deve permitir que o administrador visualize relatórios contendo informações de desempenho do consultório, como número de atendimentos.
