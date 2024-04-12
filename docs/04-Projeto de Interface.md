@@ -1,7 +1,17 @@
 
 # Projeto de Interface
 
-## Diagrama de Fluxo
+## Diagrama de Fluxo<br>
+
+- Diagrama de Fluxo do Paciente<br>
+
+![Diagrama de Fluxo_Paciente](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/120148092/62398f97-9235-401b-9c00-08d5f6b0a5c4)
+
+- Diagrama de Fluxo da Secretária<br><br>
+![Diagrama de fluxo_Secretaria](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/120148092/eba46c72-eeaf-420f-9074-2ac873fef7c6)
+
+- Diagrama de Fluxo Administrador<br><br>
+![Diagrama de fluxo_Adm](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/120148092/0a8ff91a-5dd0-4598-a1ee-c67399983a79)
 
 
 
