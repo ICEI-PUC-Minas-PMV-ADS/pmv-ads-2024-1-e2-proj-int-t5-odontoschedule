@@ -1,7 +1,17 @@
 
 # Projeto de Interface
 
-## Diagrama de Fluxo
+## Diagrama de Fluxo<br>
+
+- Diagrama de Fluxo do Paciente<br>
+
+![Diagrama de Fluxo_Paciente](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/120148092/62398f97-9235-401b-9c00-08d5f6b0a5c4)
+
+- Diagrama de Fluxo da Secretária<br><br>
+![Diagrama de fluxo_Secretaria](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/120148092/eba46c72-eeaf-420f-9074-2ac873fef7c6)
+
+- Diagrama de Fluxo Administrador<br><br>
+![Diagrama de fluxo_Adm](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/120148092/0a8ff91a-5dd0-4598-a1ee-c67399983a79)
 
 
 
@@ -30,7 +40,7 @@
 - RF 04 - A aplicação deve permitir que o paciente seja notificado com 24h de antecedência.
 - RF 06 - A aplicação deve permitir que o paciente receba uma notificação quando uma consulta for cancelada, remarcada ou concluída.
   
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/2cadf092-2c7a-4654-8204-63a1910eb8a1)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/1690fbeb-61d2-4fe3-bdd3-38018a04888d)
 
   Fazer Agendamentos (Etapa 1)
 - RF 05 - A aplicação deve permitir que o paciente seja capaz de agendar uma consulta passando as seguintes informações: Informações de contato, especialidade desejada, horário, dentista e modalidade (particular ou convênio)
@@ -71,64 +81,64 @@
 - RF 15 - A aplicação deve permitir que a secretária receba uma notificação quando uma consulta foi agendada, cancelada e remarcada.
 - RF 18 - A aplicação deverá gerar um login e senha que oferecerá acesso à área administrativa da aplicação para a secretária e o administrador.
   
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/777b5626-baa4-4f0e-9586-2829e90d9eac)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/ff6a8713-25ad-4973-8e3a-8a8db7bc2f2f)
 
   Cadastrar paciente (Secretária)
 - RF 11 - A aplicação deve permitir que a secretária faça cadastro de pacientes
   
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/a21a8e14-cc51-4880-ae5e-2e638f97a6b8)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/e52935ef-a692-49df-9870-7e8bacb45bda)
 
   Fazer Agendamentos (Secretária/Etapa 1)
 - RF 10 - A aplicação deve permitir que a secretária faça agendamentos para pacientes cadastrados
-  
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/0dd8a6a7-a26c-4601-aa3c-91d65a895b7d)
+- 
+  ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/e04cc819-f4bc-4b1e-af6f-09935ef7a683)
 
   Fazer Agendamentos (Secretária/Etapa 2)
   
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/a59e21c4-cc3f-4c75-97f0-2227b17db554)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/6d16d784-97c2-4ac6-b57c-eb8b6a4cc757)
 
   Fazer Agendamentos (Secretária/Etapa 3)
   
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/ba61ae95-fa73-4a6a-a938-3ac5519a15f9)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/e46752c6-76b3-4f48-af8c-39286a7414f8)
 
   Visualizar Agendamentos (Secretária)
 - RF 09 - A aplicação deve permitir que a secretária visualize os agendamentos e filtre-os por dia e dentista.
   
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/247e64df-be44-48e9-a76a-2c3fc6264bac)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/b920ba96-fe18-464c-981d-4623044f2b60)
 
   Visualizar Agendamento Completo (Secretária)
-- REF 12 - A aplicação deve permitir que a secretária mude o status da consulta e inclua observações.
+- RF 12 - A aplicação deve permitir que a secretária mude o status da consulta e inclua observações.
 - RF 03 -A aplicação deve permitir que o paciente e a secretária cancelem e remarquem um atendimento.
   
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/5b7055c5-8284-4672-a71c-8d9e6956f441)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/b86c8dea-448d-4786-a86b-b25a54b9e8e8)
 
   Visualizar Informações do Paciente e todos os seus agendamentos (Secretária)
 - RF 14 - A aplicação deve permitir que a secretária visualize todas as informações pessoais e agendamentos de um usuário específico.
 - RF 16 - A aplicação deve permitir que a secretária atualize informações de contato e endereço de um paciente.
  
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/a2324b19-3291-4a52-b572-b18781f016f9)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/e475102a-ef0a-4b53-a0f1-db297bb0268c)
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/d51b9f6d-bc1d-427a-a303-35afa6742b3e)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/d33a9b8c-7db5-40bc-9585-29d38222d73e)
 
 
   Visualizar Informações do Dentista e todos os seus agendamentos (Secretária)
 - RF 13 - A aplicação deve permitir que a secretária seja capaz de visualizar todas as informações pessoais e agenda de um dentista.
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/596fa921-3070-4e1e-a675-71e3ac61ec0b)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/78a7efee-1f85-4cad-8fc8-f34302774cae)
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/138db6bd-1ab6-475d-bf58-a060a4d2d2bc)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/cf60c927-092f-4b66-a4fa-90862c8db3bf)
 
 
 Cadastrar Dentistas (Secretária)
 - RF 08 - A aplicação deve permitir que um usuário do tipo secretária gerencie os dentistas. Além disso, no cadastro devem ser fornecidos dados como: nome, CRO, especialidade e seus respectivos dias e horários de atendimento.
   
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/4b02b24f-8e35-445f-9e9b-d11c44af1108)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/932deab3-a0a4-4bd9-b388-dd95a8004f8f)
 
   Página Home (Administrador)
 - RF 17 - A aplicação deve permitir que o administrador visualize relatórios contendo informações de desempenho do consultório, como número de atendimentos.
 - RF 18 - A aplicação deverá gerar um login e senha que oferecerá acesso à área administrativa da aplicação para a secretária e o administrador.
-  
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/2bc7205f-bcbf-4286-b5f9-f67990a2e7b1)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/e1ae5299-c1b7-4a1f-9d0f-5ba509d5ff5c)
 
 
 
