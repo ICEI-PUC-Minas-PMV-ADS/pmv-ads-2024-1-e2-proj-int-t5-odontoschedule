@@ -5,8 +5,6 @@ A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, 
 
 Para organização das atividades a serem desenvolvidas, são utilizadas duas ferramentas, são elas: Whatsapp e Teams.
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
-
 ## Controle de Versão
 
 A ferramenta de controle de versão adotada no projeto foi o
@@ -38,7 +36,7 @@ Equipe de Design: Vanessa e Alvaro
 
 ### Processo
 
-O gerenciamento do projeto è realizado através da ferramenta Project do Github e as Sprints são realizadas todas segundas e quartas às 20h30 através da sala de reunião no Teams.
+O gerenciamento do projeto é realizado através da ferramenta Project do Github e as Sprints são realizadas todas segundas e quartas às 20h30 através da sala de reunião no Teams.
 
 GitHub Project: <https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/860>
 
@@ -53,8 +51,4 @@ As ferramentas empregadas no projeto são:
 - Draw.io
 - Figma
 
-O Visual Studio foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos a ferramenta Draw.io e para criação de telas usamos a ferramenta Figma por melhor captar as
-necessidades da nossa solução. 
+O Visual Studio foi escolhido porque ele possui uma integração com o sistema de versão. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos a ferramenta Draw.io e para criação de telas usamos a ferramenta Figma por melhor captar as necessidades da nossa solução. 
