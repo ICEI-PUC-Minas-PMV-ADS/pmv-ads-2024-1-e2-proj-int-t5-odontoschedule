@@ -27,13 +27,15 @@ Por meio dos testes será possível identificar problemas e o modo como os usuá
 # 4. Método e modelo utilizado
 
 Para este projeto em considereção, foi definido para aplicação dos testes o modelo remoto e moderado com método de experimentação e observação. 
-Buscando reproduzir um cenário coerente com a realizade, os usuários devem acessar a aplicação de qualquer eletrônico independente da sua localização. 
-Neste caso, o melhor modelo para observar o comportamento dos usuários durante a interação com o sistema é o modelo remoto, pois sendo a distância o participante pode realizar em seu ambiente natural.
+
+Buscando reproduzir um cenário coerente com a realizade, os usuários devem acessar a aplicação de qualquer eletrônico independente da sua localização. Neste caso, o melhor modelo para observar o comportamento dos usuários durante a interação com o sistema é o modelo remoto, pois sendo a distância o participante pode realizar em seu ambiente natural.
+
 Além disso, este modelo oferece um custo baixo para aplicação dos testes, já que não se faz necessário a locação de um estabelecimento e gastos com pessoal e materiais necessários, proporciona testar 100% da aplicação e projetos, não interfere na velocidade do desenvolvimento e para o usuário é cômodo e prático.
 
 # 3. Participantes
 
 Serão selecionados usuários de acordo com as personas já estabelecidas, sendo elas secretárias, pacientes e empreendedores. 
+
 Como esta aplicação está sendo desenvolvida com foco no consultório DentalIn, funcionários e o dono do consultório participarão dos testes, além de 15 participantes com perfil de paciente que possuem a intenção de agendar consultas odontológicas de forma prática. As características destes participantes são descritas a seguir:
 
 > - Pessoas entre 18 e 70 anos;
@@ -175,27 +177,27 @@ A satisfação pode ser analisada através das reações percebidas diante da ex
 
 A tabela a seguir será utilizada para analisar cada tarefa executada pelos participantes:
 
-| Usuário  | Resposta emocional   | Execução  | Tempo (seg)  |  Ações  | Cometeu erro? | Se recuperou do erro?  | Observações | 
-| Paciente01 | -------------------- | --------- | ------------ | ------- | ------------- | ---------------------- | ----------- |
-| Paciente02 | -------------------- | --------- | ------------ | ------- | ------------- | ---------------------- | ----------- |
-| Paciente03 | -------------------- | --------- | ------------ | ------- | ------------- | ---------------------- | ----------- |
-| Paciente04 | -------------------- | --------- | ------------ | ------- | ------------- | ---------------------- | ----------- |
-| Paciente05 | -------------------- | --------- | ------------ | ------- | ------------- | ---------------------- | ----------- |
-| Paciente06 | -------------------- | --------- | ------------ | ------- | ------------- | ---------------------- | ----------- |
-| Paciente07 | -------------------- | --------- | ------------ | ------- | ------------- | ---------------------- | ----------- |
-| Paciente08 | -------------------- | --------- | ------------ | ------- | ------------- | ---------------------- | ----------- |
-| Paciente09 | -------------------- | --------- | ------------ | ------- | ------------- | ---------------------- | ----------- |
-| Paciente10 | -------------------- | --------- | ------------ | ------- | ------------- | ---------------------- | ----------- |
-| Paciente11 | -------------------- | --------- | ------------ | ------- | ------------- | ---------------------- | ----------- |
-| Paciente12 | -------------------- | --------- | ------------ | ------- | ------------- | ---------------------- | ----------- |
-| Paciente13 | -------------------- | --------- | ------------ | ------- | ------------- | ---------------------- | ----------- |
-| Paciente14 | -------------------- | --------- | ------------ | ------- | ------------- | ---------------------- | ----------- |
-| Paciente15 | -------------------- | --------- | ------------ | ------- | ------------- | ---------------------- | ----------- |
-| Secretária01 | -------------------- | --------- | ------------ | ------- | ------------- | ---------------------- | ----------- |
-| Secretária02 | -------------------- | --------- | ------------ | ------- | ------------- | ---------------------- | ----------- |
-| Secretária03 | -------------------- | --------- | ------------ | ------- | ------------- | ---------------------- | ----------- |
-| Secretária04 | -------------------- | --------- | ------------ | ------- | ------------- | ---------------------- | ----------- |
-| Administrador | -------------------- | --------- | ------------ | ------- | ------------- | ---------------------- | ----------- |
+| **Usuário**   | **Resposta emocional**   | **Execução**  | **Tempo (seg)**  |  **Ações**  | **Cometeu erro?** | **Se recuperou do erro?**  | **Observações** | 
+| Paciente01 | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
+| Paciente02 | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
+| Paciente03 | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
+| Paciente04 | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
+| Paciente05 | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
+| Paciente06 | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
+| Paciente07 | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
+| Paciente08 | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
+| Paciente09 | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
+| Paciente10 | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
+| Paciente11 | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
+| Paciente12 | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
+| Paciente13 | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
+| Paciente14 | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
+| Paciente15 | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
+| Secretária01 | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
+| Secretária02 | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
+| Secretária03 | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
+| Secretária04 | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
+| Administrador | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
 
 As seguintes informações serão utilizadas para preencher a tabela:
 
