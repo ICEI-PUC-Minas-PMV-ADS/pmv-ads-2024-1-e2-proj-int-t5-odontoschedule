@@ -29,10 +29,10 @@ etiquetas:
 
 A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
 
-Scrum Master: Joabe 
-Product Owner: Amanda
-Equipe de Desenvolvimento: Kayo e Cassiano
-Equipe de Design: Vanessa e Alvaro
+- Scrum Master: Joabe
+- Product Owner: Amanda
+- Equipe de Desenvolvimento: Kayo e Cassiano
+- Equipe de Design: Vanessa e Alvaro
 
 ### Processo
 
