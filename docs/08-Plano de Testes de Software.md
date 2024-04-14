@@ -1,12 +1,8 @@
 # Plano de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
+O Plano de Testes de Software estabelece, os objetivos, as estratégias e passos necessários para testar um software visando garantir seu funcionamento correto e concordância com requisitos estabelecidos. Através deste plano de testes é possível identificar problemas com a aplicação, buscando a melhoria do produto, proporcionando qualidade e reduòàao nos custos de desenvolvimento.
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
-
-Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o(s) requisito(s) associado(s) a cada um deles está(ão) correto(s) - de acordo com o que foi definido na seção "2 - Especificação do Projeto". 
-
-Por exemplo:
+Para este projeto foram definidos os seguintes casos de testes a serem aplicados:
  
 | **Caso de Teste** 	| **CT-01 – Cadastro do Paciente** 	|
 |:---:	|:---:	|
