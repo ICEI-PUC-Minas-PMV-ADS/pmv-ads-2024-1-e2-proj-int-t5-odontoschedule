@@ -17,21 +17,21 @@ Por exemplo:
 |  	|  	|
 | Caso de Teste 	| CT-02 – Efetuar login como Paciente	|
 |Requisito Associado | RF-02 - A aplicação deve permitir que um paciente faça login utilizando CPF e senha. E caso seja um administrador ou secretária, utilize nome de usuário e senha. |
-| Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Preencher os campos solicitados <br> - Clicar em "Entrar" |
+| Objetivo do Teste 	| Verificar se o paciente consegue realizar login. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Preencher os campos CPF e senha <br> - Clicar em "Entrar" |
 |Critério de Êxito | - O login foi realizado com sucesso. |
 |  	|  	|
 | Caso de Teste 	| CT-03 – Efetuar login como Secretária	|
 |Requisito Associado | RF-02 - A aplicação deve permitir que um paciente faça login utilizando CPF e senha. E caso seja um administrador ou secretária, utilize nome de usuário e senha. |
 | Objetivo do Teste 	| Verificar se a secretária consegue realizar login. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Logar como funcionário" <br> - Preencher os campos solicitados <br> - Clicar em "Entrar" |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Logar como funcionário" <br> - Preencher os campos usuário e senha <br> - Clicar em "Entrar" |
 |Critério de Êxito | - O login foi realizado com sucesso. |
 |  	|  	|
-| Caso de Teste 	| CT-04 – Efetuar login como Secretária	|
-|Requisito Associado | RF-03 - A aplicação deve permitir que o paciente e a secretária cancelem e remarquem um atendimento.      |
-| Objetivo do Teste 	| Verificar se a secretária consegue reagendar um agendamento |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Logar como funcionário" <br> - Preencher os campos solicitados <br> - Clicar em "Entrar" - Clicar em "Ver agendamentos" <br> - Clicar em algum agendamento disponível <br> - Clicar em "Reagendar" <br> - Selecione uma nova data e hora |
-|Critério de Êxito | - A Data e hora do agendamento foram atualizados |
+| Caso de Teste 	| CT-04 – Efetuar login como Administrador	|
+|Requisito Associado | RF-02 - A aplicação deve permitir que um paciente faça login utilizando CPF e senha. E caso seja um administrador ou secretária, utilize nome de usuário e senha. |
+| Objetivo do Teste 	| Verificar se o administrador consegue realizar login. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Logar como funcionário" <br> - Preencher os campos usuário e senha <br> - Clicar em "Entrar" |
+|Critério de Êxito | - O login foi realizado com sucesso. |
 |  	|  	|
 | Caso de Teste 	| CT-05 – Reagendar agendamento como secretária	|
 |Requisito Associado | RF-03 - A aplicação deve permitir que o paciente e a secretária cancelem e remarquem um atendimento.      |
@@ -41,15 +41,15 @@ Por exemplo:
 |  	|  	|
 | Caso de Teste 	| CT-06 – Reagendar agendamento como paciente	|
 |Requisito Associado | RF-03 - A aplicação deve permitir que o paciente e a secretária cancelem e remarquem um atendimento.      |
-| Objetivo do Teste 	| Verificar se a secretária consegue reagendar um agendamento |
+| Objetivo do Teste 	| Verificar se a paciente consegue reagendar um agendamento |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Preencher os campos solicitados <br> - Clicar em "Entrar" - Clicar em "Ver agendamentos" <br> - Clicar em algum agendamento disponível <br> - Clicar em "Reagendar" <br> - Selecionar uma nova data e hora <br> - Clicar em "Agendar"|
 |Critério de Êxito | - A Data e hora do agendamento foram atualizados |
 |  	|  	|
 | Caso de Teste 	| CT-07 – Agendar consulta como Paciente	|
 |Requisito Associado | RF-05 - A aplicação deve permitir que o paciente seja capaz de agendar uma consulta passando as seguintes informações: Informações de contato, especialidade desejada, horário, dentista e modalidade (particular ou convênio)       |
-| Objetivo do Teste 	| Verificar se o paciente é notificado da sua consulta com 24 horas de antecedência |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Preencher os campos solicitados <br> - Clicar em "Entrar" - Clicar em "Fazer agendamentos" <br> - Preencha todas as informações do agendamento, mas coloque a data e hora para o dia seguinte no mesmo horário que está sendo criado o agendamento<br> - Ao finalizar o agendamento, recarregue a página |
-|Critério de Êxito | - Deve aparecer uma notificação informando que há um agendamento para o dia seguinte |
+| Objetivo do Teste 	| Verificar se o paciente consegue agendar uma consulta |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Preencher os campos solicitados <br> - Clicar em "Entrar" <br> - Clicar em "Fazer agendamentos" <br> - Preencher todas as informações do solicitadas |
+|Critério de Êxito | - Deve aparecer um popup de confirmação de finalização do agendamento |
 |  	|  	|
 | Caso de Teste 	| CT-08 – Notificação de agendamento com 24 horas de antecedência da consulta	|
 |Requisito Associado | RF-04 - A aplicação deve permitir que o paciente seja notificado com 24h de antecedência.       |
@@ -60,14 +60,13 @@ Por exemplo:
 | Caso de Teste 	| CT-09 – Notificar cancelamento do agendamento ao paciente	|
 |Requisito Associado | RF-06 - A aplicação deve permitir que o paciente receba uma notificação quando uma consulta for cancelada, remarcada ou concluída.       |
 | Objetivo do Teste 	| Verificar se o paciente é notificado de cancelamento do agendamento |
-| Passos 	| - Acessar o navegador<br> - Informar o endereço do site<br> - Preencha os campos com os credenciais de um paciente<br> - Clicar em "Fazer agendamentos"<br> - Preencher o formulário com informações convencionais - Finalizar o agendamento e clicar em "Sair" na barra lateral - Clicar em "Entrar como Funcionário"<br> - Preencha os campos com os credenciais da Secretária<br> - Clicar em "Ver agendamentos"<br> - Clicar no agendamento criado anteriormente e, em seguida, em "Cancelar Agendamento"<br> - Clicar em "Sair" |
-|Critério de Êxito | - Entre com os credenciais do paciente que criou o agendamento
-Deve haver uma notificação informando o cancelamento do agendamento |
+| Passos 	| - Acessar o navegador<br> - Informar o endereço do site<br> - Preencha os campos com os credenciais de um paciente<br> - Clicar em "Fazer agendamentos"<br> - Preencher o formulário com informações convencionais - Finalizar o agendamento e clicar em "Sair" na barra lateral - Clicar em "Entrar como Funcionário"<br> - Preencha os campos com os credenciais da Secretária<br> - Clicar em "Ver agendamentos"<br> - Clicar no agendamento criado anteriormente e, em seguida, em "Cancelar Agendamento"<br> - Clicar em "Sair" <br> - Entrar com os credenciais do paciente que criou o agendamento |
+|Critério de Êxito | - Deve haver uma notificação informando o cancelamento do agendamento |
 |  	|  	|
 | Caso de Teste 	| CT-10 – Notificar remarcação do agendamento ao paciente	|
 |Requisito Associado | RF-06 - A aplicação deve permitir que o paciente receba uma notificação quando uma consulta for cancelada, remarcada ou concluída.       |
 | Objetivo do Teste 	| Verificar se o paciente é notificado de alteração no horário do agendamento |
-| Passos 	| - Acessar o navegador<br> - Informar o endereço do site<br> - Preencha os campos com os credenciais de um paciente<br> - Clicar em "Fazer agendamentos"<br> - Preencher o formulário com informações convencionais - Finalizar o agendamento e clicar em "Sair" na barra lateral - Clicar em "Entrar como Funcionário"<br> - Preencha os campos com os credenciais da Secretária<br> - Clicar em "Ver agendamentos"<br> - Clicar no agendamento criado anteriormente e, em seguida, em "Reagendar"<br> - Selecionar uma data e hora disponível<br> - Saia do perfil da secretária clicando em "Sair"<br> - Entre com os credenciais do paciente que criou o agendamento |
+| Passos 	| - Acessar o navegador<br> - Informar o endereço do site<br> - Preencha os campos com os credenciais de um paciente<br> - Clicar em "Fazer agendamentos"<br> - Preencher o formulário com informações convencionais - Finalizar o agendamento e clicar em "Sair" na barra lateral - Clicar em "Entrar como Funcionário"<br> - Preencha os campos com os credenciais da Secretária<br> - Clicar em "Ver agendamentos"<br> - Clicar no agendamento criado anteriormente e, em seguida, em "Reagendar"<br> - Selecionar uma data e hora disponível<br> - Saia do perfil da secretária clicando em "Sair"<br> - Entrar com os credenciais do paciente que criou o agendamento |
 |Critério de Êxito | - Deve haver uma notificação informando a mudança de data e hora do agendamento |
 |  	|  	|
 | Caso de Teste 	| CT-11 – Notificar alteração de status do agendamento ao paciente	|
@@ -183,3 +182,27 @@ Deve haver uma notificação informando o cancelamento do agendamento |
 | Objetivo do Teste 	| Verificar se o administrador consegue alterar sua senha |
 | Passos 	| - Acessar o navegador<br> - Informar o endereço do site<br> - Clicar em "Entrar como Funcionário"<br> - Preencha os campos com os credenciais do administrador<br> - Clicar em "Alterar senha"<br> - Atualizar o valor do campo exibido<br> - Clicar em "Salvar"<br> - Clicar em "Sair" |
 |Critério de Êxito | - Após um novo login, a senha antiga não funcionará mais |
+|  	|  	|
+| Caso de Teste 	| CT-30 – Cancelar agendamento como secretária	|
+|Requisito Associado | RF-03 - A aplicação deve permitir que o paciente e a secretária cancelem e remarquem um atendimento.      |
+| Objetivo do Teste 	| Verificar se a secretária consegue cancelar um agendamento |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Logar como funcionário" <br> - Preencher os campos solicitados <br> - Clicar em "Entrar" <br> - Clicar em "Ver agendamentos" <br> - Clicar em algum agendamento disponível <br> - Clicar em "Cancelar Agendamento" <br> - Clicar em "Ver agendamentos" |
+|Critério de Êxito | - O agendamento não aparece mais na listagem |
+|  	|  	|
+| Caso de Teste 	| CT-31 – Cancelar agendamento como paciente	|
+|Requisito Associado | RF-03 - A aplicação deve permitir que o paciente e a secretária cancelem e remarquem um atendimento.      |
+| Objetivo do Teste 	| Verificar se o paciente consegue cancelar um agendamento |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Preencher os campos solicitados <br> - Clicar em "Entrar" <br> - Clicar em "Ver agendamentos" <br> - Clicar em algum agendamento disponível <br> - Clicar em "Cancelar Agendamento" <br> - Clicar em "Ver agendamentos" |
+|Critério de Êxito | - O agendamento não aparece mais na listagem |
+|  	|  	|
+| Caso de Teste 	| CT-32 – Secretária mudar agenda de dentista	|
+|Requisito Associado | RF-08 - A aplicação deve permitir que um usuário do tipo secretária gerencie os dentistas. Além disso, no cadastro devem ser fornecidos dados como: nome, CRO, especialidade e seus respectivos dias e horários de atendimento.       |
+| Objetivo do Teste 	| Verificar se a secretária é capaz de alterar a agenda de um dentista |
+| Passos 	| - Acessar o navegador<br> - Informar o endereço do site<br> - Clicar em "Entrar como Funcionário"<br> - Preencher os campos com os credenciais da Secretária<br> - Clicar em "Usuários"<br> - Clicar em "Dentistas"<br> - Selecionar um dentista<br> - Na agenda, adicionar um novo horário<br> - Clicar em "Atualizar Dentista" <br> - Recarregar a página  |
+|Critério de Êxito | - O horário adicionado deve aparecer como disponível |
+|  	|  	|
+| Caso de Teste 	| CT-33 – Atualizar perfil como paciente	|
+|	Requisito Associado 	| RF-01 - A aplicação deve permitir que um paciente gerencie seu cadastro. O paciente deve ser capaz de se cadastrar, fornecendo os seguintes dados: Nome completo, CPF (campo de login), endereço, e-mail, telefone e senha. |
+| Objetivo do Teste 	| Verificar se o paciente consegue alterar suas informações. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Preencher os campos CPF e senha <br> - Clicar em "Entrar" <br> - Clicar em "Editar Perfil" - Alterar o campo "Telefone" <br> - Clicar em "Salvar" - Recarregar a página |
+|Critério de Êxito | - O Telefone atualizado deve ser mantido |
