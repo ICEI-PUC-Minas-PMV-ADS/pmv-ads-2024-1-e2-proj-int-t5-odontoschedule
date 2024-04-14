@@ -34,7 +34,7 @@
 
   Pagina Home (Paciente)
   
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/cf0694ea-fbd8-4ab0-9dee-5009dcdd46f9)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/11465391-3f1f-4049-8312-39aecc103eb0)
 
   Perfil de Usuário
 - RF 01 - A aplicação deve permitir que um paciente gerencie seu cadastro. O paciente deve ser capaz de se cadastrar, fornecendo os seguintes dados: Nome completo, CPF (campo de login), endereço, e-mail, telefone e senha.
