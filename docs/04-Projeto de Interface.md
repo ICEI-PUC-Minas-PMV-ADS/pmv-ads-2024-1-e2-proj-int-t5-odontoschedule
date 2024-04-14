@@ -84,6 +84,7 @@
   Pagina Home (Secretária)
 - RF 15 - A aplicação deve permitir que a secretária receba uma notificação quando uma consulta foi agendada, cancelada e remarcada.
 - RF 18 - A aplicação deverá gerar um login e senha que oferecerá acesso à área administrativa da aplicação para a secretária e o administrador.
+- RF 19 - A aplicação deve permitir que usuários do tipo secretária, administrador e paciente alterem suas senhas.
   
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/ff6a8713-25ad-4973-8e3a-8a8db7bc2f2f)
 
@@ -92,17 +93,13 @@
   
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/e52935ef-a692-49df-9870-7e8bacb45bda)
 
-  Fazer Agendamentos (Secretária/Etapa 1)
+  Fazer Agendamentos
 - RF 10 - A aplicação deve permitir que a secretária faça agendamentos para pacientes cadastrados
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/3e5afc4c-f67a-49f1-b125-05ee2519e0ba)
-
-  Fazer Agendamentos (Secretária/Etapa 2)
-  
+ 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/6d16d784-97c2-4ac6-b57c-eb8b6a4cc757)
-
-  Fazer Agendamentos (Secretária/Etapa 3)
-  
+ 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/e46752c6-76b3-4f48-af8c-39286a7414f8)
 
   Visualizar Agendamentos (Secretária)
