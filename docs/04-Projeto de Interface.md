@@ -43,20 +43,13 @@
   
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/1690fbeb-61d2-4fe3-bdd3-38018a04888d)
 
-  Fazer Agendamentos (Etapa 1)
+  Fazer Agendamentos (Paciente)
 - RF 05 - A aplicação deve permitir que o paciente seja capaz de agendar uma consulta passando as seguintes informações: Informações de contato, especialidade desejada, horário, dentista e modalidade (particular ou convênio)
   
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/38e70ace-107d-435e-a77b-db23a3bb7421)
 
-  Fazer Agendamentos (Etapa 2)
-- RF 05 - A aplicação deve permitir que o paciente seja capaz de agendar uma consulta passando as seguintes informações: Informações de contato, especialidade desejada, horário, dentista e modalidade (particular ou convênio)
-
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/61019168-8063-4555-9510-0aa0562402ed)
 
-
-  Fazer Agendamentos (Etapa 3)
-- RF 05 - A aplicação deve permitir que o paciente seja capaz de agendar uma consulta passando as seguintes informações: Informações de contato, especialidade desejada, horário, dentista e modalidade (particular ou convênio)
- 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/dbaf1ba2-7225-4695-b960-16a3bafdaa42)
 
   Ver Agendamentos
