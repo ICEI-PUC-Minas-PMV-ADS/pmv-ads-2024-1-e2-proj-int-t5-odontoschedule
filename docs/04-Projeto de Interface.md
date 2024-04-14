@@ -76,7 +76,8 @@
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/ea4b721c-2521-4eea-bd3a-d29d9135cb53)
 
 
-  Ver Agentamento (Concluído) Completo
+  Ver Agendamento (Concluído) Completo
+- RF 07 - A aplicação deve permitir que o paciente visualize no seu perfil todos os atendimentos já realizados e pendentes.
   
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/1831c850-b9d7-4a9a-94d7-23a5dbd5c5a7)
 
