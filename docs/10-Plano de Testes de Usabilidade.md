@@ -177,7 +177,7 @@ A satisfação pode ser analisada através das reações percebidas diante da ex
 
 A tabela a seguir será utilizada para analisar cada tarefa executada pelos participantes:
 
-| **Usuário**   | **Resposta emocional**   | **Execução**  | **Tempo (seg)**  |  **Ações**  | **Cometeu erro?** | **Se recuperou do erro?**  | **Observações** | 
+| **Usuário**   | **Resposta emocional**   | **Execução**  | **Tempo (seg)**  |  **Ações/Cliques**  | **Cometeu erro?** | **Se recuperou do erro?**  | **Observações** | 
 | :--------: | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
 | Paciente01 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
 | Paciente02 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
