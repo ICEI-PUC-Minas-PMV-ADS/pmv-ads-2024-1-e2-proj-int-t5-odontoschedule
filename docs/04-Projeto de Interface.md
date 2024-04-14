@@ -37,7 +37,7 @@
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/107414711/cf0694ea-fbd8-4ab0-9dee-5009dcdd46f9)
 
   Perfil de Usuário
-- RF 02 - A aplicação deve permitir que um paciente faça login utilizando CPF e senha. E caso seja um administrador ou secretária, utilize nome de usuário e senha.
+- RF 01 - A aplicação deve permitir que um paciente gerencie seu cadastro. O paciente deve ser capaz de se cadastrar, fornecendo os seguintes dados: Nome completo, CPF (campo de login), endereço, e-mail, telefone e senha.
 - RF 04 - A aplicação deve permitir que o paciente seja notificado com 24h de antecedência.
 - RF 06 - A aplicação deve permitir que o paciente receba uma notificação quando uma consulta for cancelada, remarcada ou concluída.
   
