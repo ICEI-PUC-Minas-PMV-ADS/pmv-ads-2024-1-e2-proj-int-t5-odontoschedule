@@ -6,6 +6,15 @@ namespace OdontoSchedule.Models
     {
         public DBContext(DbContextOptions<DBContext> options) : base(options) { }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Atendimento>().HasOne(a => a.Paciente).WithMany().OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<Atendimento>().HasOne(a => a.Dentista).WithMany().OnDelete(DeleteBehavior.NoAction);
+            modelBuilder.Entity<Atendimento>().HasOne(a => a.Agenda).WithOne().OnDelete(DeleteBehavior.SetNull);
+            modelBuilder.Entity<Agenda>().HasOne(a => a.Dentista).WithMany().OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<Agenda>().HasOne(a => a.Horario).WithMany().OnDelete(DeleteBehavior.Cascade);
+        }
+
         public DbSet<Paciente> Pacientes { get; set; }
 
         public DbSet<Dentista> Dentistas { get; set; }

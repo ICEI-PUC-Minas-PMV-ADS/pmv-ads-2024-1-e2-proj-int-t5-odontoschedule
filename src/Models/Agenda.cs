@@ -10,6 +10,9 @@ namespace OdontoSchedule.Models
         [Key]
         public int ID { get; set; }
 
+        [Required(ErrorMessage = "Obrigatório informar a data.")]
+        public DateOnly Data { get; set; }
+
         [Required(ErrorMessage = "Obrigatório informar a disponibilidade do dentista.")]
         public bool Disponivel { get; set; } = true;
 

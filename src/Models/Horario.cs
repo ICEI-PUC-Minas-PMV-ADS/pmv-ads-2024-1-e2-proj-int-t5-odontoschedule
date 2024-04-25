@@ -11,6 +11,6 @@ namespace OdontoSchedule.Models
         public int ID { get; set; }
 
         [Required(ErrorMessage = "Obrigatório informar data e hora disponível.")]
-        public DateTime DataHora { get; set; }
+        public TimeOnly Hora { get; set; }
     }
 }

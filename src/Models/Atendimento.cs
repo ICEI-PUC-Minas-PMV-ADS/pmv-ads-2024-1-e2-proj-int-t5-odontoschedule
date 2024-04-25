@@ -23,12 +23,10 @@ namespace OdontoSchedule.Models
         public bool TemConvenio { get; set; } = false;
 
         [Display(Name = "Dentista")]
-        [Required(ErrorMessage = "Obrigatório informar o dentista responsável do atendimento!")]
-        public int DentistaId { get; set; }
+        public int? DentistaId { get; set; }
 
-        [Display(Name = "Horario")]
-        [Required(ErrorMessage = "Obrigatório informar o horario do atendimento!")]
-        public int HorarioId { get; set; }
+        [Display(Name = "Agendamento")]
+        public int? AgendaId { get; set; }
 
         [Display(Name = "Paciente")]
         [Required(ErrorMessage = "Obrigatório informar o paciente a ser atendido!")]
@@ -37,8 +35,8 @@ namespace OdontoSchedule.Models
         [ForeignKey("DentistaId")]
         public Dentista Dentista { get; set; }
 
-        [ForeignKey("HorarioId")]
-        public Horario Horario { get; set; }
+        [ForeignKey("AgendaId")]
+        public Agenda Agenda { get; set; }
 
         [ForeignKey("PacienteId")]
         public Paciente Paciente { get; set; }
