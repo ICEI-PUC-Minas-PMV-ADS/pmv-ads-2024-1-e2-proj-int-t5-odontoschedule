@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    flex-direction: column;
+
+    width: 100dvw;
+    height: 100dvh;
+}
+
+body header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5F5;
+    padding-left: 1rem;
+    padding-right: 3rem;
+}
+
+body header .logo {
+    height: 7rem;
+    aspect-ratio: 16/9;
+
+    background: url("/img/logo_blue.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body header ul {
+    display: flex;
+    list-style: none;
+    gap: 10rem;
+    padding: 0;
+}
+
+body header #notificacoes-gatilho-menu {
+    font-size: 2rem;
+}
+
+body #pagina-conteudo {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100dvw;
+    height: 100%;
+
+    /* overflow: hidden; */
+}
+
+body #pagina-conteudo > * {
+    height: 100%;
+}
+
+body #pagina-conteudo #barra-lateral {
+    width: 12dvw;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 54%, rgba(204,236,249,1) 95%);
+}
+
+body #pagina-conteudo #barra-lateral > div:first-child {
+    background-color: #54BCFF;
+    height: 40%;
+}
+
+#barra-lateral__informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lateral-icone-usuario {
+    transform: translateY(-50%);
+
+    display: block;
+    background: url("/img/user_icon.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 70%;
+    aspect-ratio: 1;
+    border: 6px solid white;
+
+    border-radius: 50%;
+}
+
+body #pagina-conteudo main {
+    width: 60dvw;
+}
+
+body #pagina-conteudo #barra-direita {
+    position: relative;
+    background: url("/img/home_repr.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 25dvw;
+}
+
+body #pagina-conteudo #barra-direita::after {
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    backdrop-filter: blur(4px);
+}
+
+.formulario-multiplo > form > .formulario-multiplo__parte {
+    display: none;
+    width: 100%;
+}
+
+.formulario-multiplo > form > .formulario-multiplo__parte.ativo {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-agendar {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}

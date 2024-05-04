@@ -1,0 +1,38 @@
+﻿@model IEnumerable<OdontoSchedule.Models.Atendimento>
+
+@{
+    ViewData["Title"] = "Atendimentos";
+}
+
+<h1>Atendimento</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Atendimento
+            </th>
+            <th>
+                Data e Hora
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr class="lista__atendimento" data-atendimento_id="@item.ID">
+            <td>
+                @Html.DisplayFor(modelItem => item.Paciente.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Agenda.Data) @Html.DisplayFor(modelItem => item.Agenda.Horario.Hora)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+@section Scripts {
+    @{
+        <script src="@Url.Content("~/js/secretaria_lista_atendimento.js")"></script>
+    }
+}
