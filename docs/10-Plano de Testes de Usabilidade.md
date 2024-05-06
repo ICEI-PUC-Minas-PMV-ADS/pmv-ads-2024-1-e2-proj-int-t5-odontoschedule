@@ -49,7 +49,7 @@ Sendo assim, o teste deverá possuir 20 usuários distribuídos com a seguinte c
 
 > - Usuário paciente: 15 participantes selecionados com os requisitos acima;
 > - Usuário secretária: 4 participantes que trabalham na DentalIn e deverão utilizar a aplicação para a execução de suas atividades;
-> - Usuário administrador: 1 participante dono da DentalIn  que visa realizar tarefas específicas.
+> - Usuário empreendedor: 1 participante dono da DentalIn  que visa realizar tarefas específicas.
 
 # 4. Procedimento
 
@@ -86,7 +86,7 @@ As seguintes tarefas devem ser realizadas pelos participantes:
 
 | **Caso de Teste** 	| **CTU-03 – Fazer login (Tela Funcionário)** 	|
 |:---:	|:---:	|
-|	Perfil 	| Usuário Secretária e Dono de Negócio |
+|	Perfil 	| Usuário Secretária e Empreendedor |
 | Objetivo do Teste 	| Averiguar tela de login para funcionários |
 | Ações necessárias 	| - Acessar o link do site pelo browser de preferência do usuário <br> - Identificar e clicar na opção "Logar como funcionário" <br> - Preencher os campos presentes <br> - Clicar em "Entrar" |
 
@@ -158,7 +158,7 @@ As seguintes tarefas devem ser realizadas pelos participantes:
 
 | **Caso de Teste** 	| **CTU-14 – Acessar relatórios (Home Page - Administrador)** 	|
 |:---:	|:---:	|
-|	Perfil 	| Usuário Administrador |
+|	Perfil 	| Usuário Empreendedor |
 | Objetivo do Teste 	| Analisar telas de relatórios |
 | Ações necessárias 	| - Acessar o link do site pelo browser de preferência do usuário <br> - Identificar e clicar na opção "Logar como funcionário" <br> - Fazer Login <br> - Navegar pelas telas |
 
@@ -198,7 +198,7 @@ A tabela a seguir será utilizada para analisar cada tarefa executada pelos part
 | Secretária02 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
 | Secretária03 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
 | Secretária04 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
-| Administrador | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
+| Empreendedor | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
 
 As seguintes informações serão utilizadas para preencher a tabela:
 
