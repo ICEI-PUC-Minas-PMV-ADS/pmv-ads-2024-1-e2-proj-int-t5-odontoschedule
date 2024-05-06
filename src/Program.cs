@@ -1,6 +1,8 @@
 using System;
+
 using System.Text;
 using Microsoft.AspNetCore.Authentication.Cookies;
+
 using Microsoft.EntityFrameworkCore;
 using OdontoSchedule.Models;
 
@@ -12,6 +14,7 @@ builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 builder.Services.AddDbContext<DBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
+
 
 builder.Services.Configure<CookiePolicyOptions>(options =>
 {
@@ -25,6 +28,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.AccessDeniedPath = "/Home/AccessDenied/";
         options.LoginPath = "/Paciente/Login/";
     });
+
 
 
 var app = builder.Build();
@@ -42,12 +46,15 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+
 app.UseAuthentication();
+
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
 
 if(!File.Exists("config.txt"))
 {
@@ -74,6 +81,5 @@ if(!File.Exists("config.txt"))
         Console.WriteLine("\nSecretaria: secretaria\nSenha: " + senhaSecretaria);
     }
 }
-
 
 app.Run();

@@ -50,7 +50,9 @@ namespace OdontoSchedule.Migrations
                     Nome = table.Column<string>(type: "nvarchar(60)", maxLength: 60, nullable: false),
                     DataNascimento = table.Column<DateTime>(type: "datetime2", nullable: false),
                     CPF = table.Column<string>(type: "nvarchar(14)", maxLength: 14, nullable: false),
+
                     Sexo = table.Column<bool>(type: "bit", nullable: true),
+
                     Email = table.Column<string>(type: "nvarchar(40)", maxLength: 40, nullable: false),
                     Telefone = table.Column<string>(type: "nvarchar(12)", maxLength: 12, nullable: false),
                     Bairro = table.Column<string>(type: "nvarchar(40)", maxLength: 40, nullable: false),

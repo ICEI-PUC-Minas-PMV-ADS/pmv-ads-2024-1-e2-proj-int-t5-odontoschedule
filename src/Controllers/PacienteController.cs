@@ -1,3 +1,4 @@
+
 ﻿using Azure.Core;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
@@ -5,6 +6,12 @@ using Microsoft.DotNet.Scaffolding.Shared.T4Templating;
 using Microsoft.EntityFrameworkCore;
 using OdontoSchedule.Models;
 using System.Security.Claims;
+
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.DotNet.Scaffolding.Shared.T4Templating;
+using Microsoft.EntityFrameworkCore;
+using OdontoSchedule.Models;
+
 
 
 namespace OdontoSchedule.Controllers
@@ -17,6 +24,7 @@ namespace OdontoSchedule.Controllers
         {
             this.context = context;
         }
+
 
         public IActionResult Create()
         {
@@ -66,12 +74,14 @@ namespace OdontoSchedule.Controllers
             }
         }
 
+
         public async Task<IActionResult> ByCPF(string cpf)
         {
             List<Paciente> pacientes = await this.context.Pacientes.Where(p => p.CPF == cpf).ToListAsync();
             
             return pacientes.ToArray().Length > 0 ?  Ok(pacientes.First()) : NotFound();
         }
+
 
 	    [HttpPost]
         // [ValidateAntiForgeryToken]
@@ -101,6 +111,7 @@ namespace OdontoSchedule.Controllers
 
             return View(paciente);
         }
+
     }
 }
 
