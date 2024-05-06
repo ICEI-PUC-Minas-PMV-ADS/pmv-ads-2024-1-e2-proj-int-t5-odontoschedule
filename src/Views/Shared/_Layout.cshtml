@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - OdontoSchedule</title>
+    <link rel="stylesheet" href="~/css/components.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/OdontoSchedule.styles.css" asp-append-version="true" />
+    <script src="https://kit.fontawesome.com/17c066a4d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   @Html.Partial("_Header")
+
+    <div id="pagina-conteudo">
+        @Html.Partial("_Sidebar")
+
+        <main role="main">
+            @RenderBody()
+        </main>
+
+        <div id="barra-direita">
+
+        </div>
+    </div>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

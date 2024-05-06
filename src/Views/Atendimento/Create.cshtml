@@ -1,0 +1,104 @@
+﻿@model OdontoSchedule.Models.Atendimento
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<div class="formulario-multiplo">
+    <form action="#" method="post" data-form_id="0" id="formulario-novo-atendimento-secretaria">
+        <input type="hidden" name="DentistaId" />
+        <input type="hidden" name="PacienteId" />
+        <input type="hidden" name="AgendaId" />
+
+        <div class="formulario-multiplo__parte ativo" data-form_parte="basico">
+            <h2>Funcionamento da DentalIn</h2>
+            <p>Segunda - Sexta: 8:00 - 17:00</p>
+            <p>Sábado - Domingo: 8:00 - 15:00</p>
+
+            <label for="cpf">CPF:</label><br>
+            <input type="text" id="atendimento_formulario_usuario_cpf"><br>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="atendimento_formulario_usuario_nome" disabled><br>
+            <label for="modalidade">Modalidade:</label><br>
+            <input type="checkbox" checked="checked" name="TemConvenio" value="true" onchange="this.value = this.checked" />
+        </div>
+
+        <div class="formulario-multiplo__parte" data-form_parte="dentistas">
+            <h2>Dentistas / Especialidade</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome Completo</th>
+                        <th>Especialidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template id="dentista-lista-template">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="formulario-multiplo__parte" data-form_parte="agendamento">
+            <div class="agenda-semanas" id="secretaria-agendamento-agenda">
+                <template id="agenda-template">
+                    <div class="agenda">
+                        <div class="coluna coluna-domingo">
+                            <div class="dia">Domingo</div>
+                        </div>
+                        <div class="coluna coluna-segunda">
+                            <div class="dia">Segunda</div>
+                        </div>
+                        <div class="coluna coluna-terca">
+                            <div class="dia">Terça</div>
+                        </div>
+                        <div class="coluna coluna-quarta">
+                            <div class="dia">Quarta</div>
+                        </div>
+                        <div class="coluna coluna-quinta">
+                            <div class="dia">Quinta</div>
+                        </div>
+                        <div class="coluna coluna-sexta">
+                            <div class="dia">Sexta</div>
+                        </div>
+                        <div class="coluna coluna-sabado">
+                            <div class="dia">Sabado</div>
+                        </div>
+                    </div>
+                </template>
+
+                <div class="agenda-semanas-lista">
+                </div>
+
+                <div>
+                    <a class="agenda-semanas__controlador-proximo">
+                        <
+                    </a>
+                    <a class="agenda-semanas__controlador-proximo">
+                        >
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="formulario-multiplo__botao">Próximo</button>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        <script src="@Url.Content("~/js/secretaria_cria_atendimento.js")"></script>
+        ;
+        <script src="@Url.Content("~/js/AgendaComponente.js")"></script>
+        ;
+        <script src="@Url.Content("~/js/elements.js")"></script>
+    }
+}

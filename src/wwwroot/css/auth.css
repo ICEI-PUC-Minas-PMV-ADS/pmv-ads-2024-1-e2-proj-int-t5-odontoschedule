@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #C5D7F2, #ffffff);
+  font-family: 'Open sans', sans-serif;
+  line-height: 1.5em;
+}
+
+.cadastro{
+  display: flex;
+
+  width: 90%;
+  min-height: 80%;
+  background-color: #F2F2F2;
+  margin: 50px 5% 50px 5%;
+}
+
+.cadastro__conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 70%;
+  margin: 0 10% 0 10%;
+  background: #fff;
+  padding: 0 30px 10px 30px;
+  border-radius: 20px;
+  border: 2px solid #5A98BB
+  
+}
+
+label{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.titulo{
+font-size: 25px;
+}
+
+.formulario input {
+  border: 2px solid #5A98BB;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+form .input-largo {
+  font-size: 24px;
+  height: 30px;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  border: 1px solid #8396b3;
+  width: 80%;
+}
+
+form .input-radio{
+  font-size: 24px;
+  height: 20px;
+  width: 20px;
+}
+
+form .sexo{
+  font-weight: 500;
+  padding-left: 20px;
+}
+
+form .contato {
+  display: flex;
+}
+
+form .form-data {
+  display: flex;
+  gap: 1rem;
+}
+
+form .input-pequeno{
+  font-size: 17px;
+  height: 30px;
+  padding: 0 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  border: 1px solid #8396b3;
+  width: 30%;
+}
+form .input-pequeno-contato{
+  font-size: 24px;
+  height: 30px;
+  padding: 0 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  border: 1px solid #8396b3;
+  width: 100%;
+}
+
+.contato-numero{
+  padding-right: 20px;
+}
+
+.contato-complemento{
+  padding-right: 20px;
+}
+
+.contato-telefone{
+  padding-right: 20px;
+}
+
+form .cadastrar {
+  border: none;
+  background: #61A5AE;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 30px;
+  padding: 10px 30px;
+
+  width: fit-content;
+
+  align-self: center;
+
+  margin-top: 2rem;
+}
+
+form .cadastrar:hover{
+  background-color: #000000;
+  transition: background-color 0.3s;
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  font-size: 1rem;
+  align-self: center;
+}
+
+a:hover{
+  color: #8396b3;
+  transition: background-color 0.3s;
+}
+
+.cadastro__repr {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10rem;
+
+  background-image: url("/img/cadastro_repr.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 100%;
+  width: 40%;
+
+  color: white;
+  font-size: 1.5rem;
+}
+
+.cadastro__repr > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+
+  width: 80%;
+}
+.cadastro__repr img {
+  width: 100%;
+}
+
+.error-text {
+  font-size: 15px;
+  color: red;
+}
+
+#campos-sexo {
+  display: flex;
+  margin: 2rem 0;
+  gap: 3rem;
+}

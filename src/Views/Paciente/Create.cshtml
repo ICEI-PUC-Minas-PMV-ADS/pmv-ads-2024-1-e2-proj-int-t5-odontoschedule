@@ -1,0 +1,111 @@
+﻿@model OdontoSchedule.Models.Paciente
+
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_AuthLayout.cshtml";
+}
+
+
+<section class="cadastro">
+    <div class="cadastro__conteudo">
+        <section class="container">
+
+            <div class="titulo">
+                <h1>Cadastro</h1>
+            </div>
+
+            <form asp-action="Create" class='formulario'>
+                <div class="form-data">
+                    <label asp-for="Nome">Nome:</label>
+                    <input type="text" class="nome validar input-largo" asp-for="Nome">
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+                </div>
+                <div class="form-data">
+                    <label asp-for="Senha">Senha:</label>
+                    <input type="password" class="senha validar input-largo" asp-for="Senha">
+                    <span asp-validation-for="Senha" class="text-danger"></span>
+                </div>
+                <div class="form-data">
+                    <label asp-for="CPF">CPF:</label>
+                    <input type="text" class="cpf validar input-largo" asp-for="CPF">
+                    <span asp-validation-for="CPF" class="text-danger"></span>
+                </div>
+                <div class="form-data">
+                    <label asp-for="Email">Email:</label>
+                    <input type="text" class="email validar input-largo" asp-for="Email">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+
+                <label asp-for="DataNascimento">Data de Nascimento:</label>
+                <input type="date" class="input-pequeno" asp-for="DataNascimento" />
+                <span asp-validation-for="DataNascimento" class="text-danger"></span>
+
+                <label asp-for="Sexo">Sexo:</label>
+                <div id="campos-sexo" asp-for="Sexo">
+                    <label class="sexo" for="feminino"><input type="radio" id="feminino" name="sexo" value="false" class="sexo validar input-radio">Feminino</label>
+                    <label class="sexo" for="masculino"><input type="radio" id="masculino" name="sexo" value="true" class="sexo validar input-radio">Masculino</label>
+                    <label class="sexo" for="outro"><input type="radio" id="outro" name="sexo" value="null" class="sexo validar input-radio">Outro</label>
+                </div>
+                <span asp-validation-for="Sexo" class="text-danger"></span>
+
+                <div class="form-data">
+                    <label asp-for="Cidade">Cidade:</label>
+                    <input type="text" class="cidade validar input-largo" asp-for="Cidade">
+                    <span asp-validation-for="Cidade" class="text-danger"></span>
+                </div>
+
+                <div class="form-data">
+                    <label asp-for="Bairro">Bairro:</label>
+                    <input type="text" class="bairro validar input-largo" asp-for="Bairro">
+                    <span asp-validation-for="Bairro" class="text-danger"></span>
+                </div>
+
+                <div class="form-data">
+                    <label asp-for="Rua">Rua:</label>
+                    <input type="text" class="rua validar input-largo" asp-for="Rua">
+                    <span asp-validation-for="Rua" class="text-danger"></span>
+                </div>
+
+                <div class="contato">
+                    <div class="contato-numero">
+                        <label asp-for="Numero">Número:</label>
+                        <input type="text" class="numero validar input-pequeno-contato" asp-for="Numero">
+                        <span asp-validation-for="Numero" class="text-danger"></span>
+                    </div>
+
+                    <div class="contato-complemento">
+                        <label asp-for="Complemento">Complemento:</label>
+                        <input type="text" class="complemento validar input-pequeno-contato" asp-for="Complemento">
+                        <span asp-validation-for="Complemento" class="text-danger"></span>
+                    </div>
+
+                    <div class="contato-telefone">
+                        <label asp-for="Telefone">Telefone:</label>
+                        <input type="text" class="telefone validar input-pequeno-contato" asp-for="Telefone">
+                        <span asp-validation-for="Telefone" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <button class="cadastrar" type="submit">Cadastrar</button>
+                <a href="#">Já possui uma conta?</a>
+            </form>
+
+            <div class="error-text">
+                TESTE
+            </div>
+        </section>
+    </div>
+
+    <div class="cadastro__repr">
+        <div>
+            <span>Seja bem vindo(a) ao ...</span>
+            <img src="/img/logo_auth.png" />
+        </div>
+    </div>
+</section>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
