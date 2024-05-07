@@ -23,6 +23,11 @@ namespace OdontoSchedule.Controllers
             return View(await _context.Dentistas.ToListAsync());
         }
 
+        public async Task<IActionResult> GetAll()
+        {
+            return Ok(await _context.Dentistas.ToListAsync());
+        }
+
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)

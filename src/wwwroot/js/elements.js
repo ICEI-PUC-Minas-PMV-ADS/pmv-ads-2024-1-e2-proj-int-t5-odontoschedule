@@ -35,7 +35,7 @@ function fecharPopup(popup) {
 
 function lidaFluxoFormularioAtendimentoSecretaria(parte) {
     const buscarDentistas = () => {
-        fetch("/Dentista").then(async (response) => {
+        fetch("/Dentista/GetAll").then(async (response) => {
             (await response.json()).forEach((dentista) => {
                 let template = parte.querySelector("#dentista-lista-template").content.querySelector("tr").cloneNode(true)
 

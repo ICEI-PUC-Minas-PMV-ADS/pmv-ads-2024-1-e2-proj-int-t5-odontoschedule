@@ -17,10 +17,16 @@
             <p>Segunda - Sexta: 8:00 - 17:00</p>
             <p>Sábado - Domingo: 8:00 - 15:00</p>
 
-            <label for="cpf">CPF:</label><br>
-            <input type="text" id="atendimento_formulario_usuario_cpf"><br>
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="atendimento_formulario_usuario_nome" disabled><br>
+
+            @if (1 == 1)
+            {
+                <!-- Verificar se a secretária está logada -->
+                <label for="cpf">CPF:</label><br>
+                <input type="text" id="atendimento_formulario_usuario_cpf"><br>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="atendimento_formulario_usuario_nome" disabled><br>
+            }
+
             <label for="modalidade">Modalidade:</label><br>
             <input type="checkbox" checked="checked" name="TemConvenio" value="true" onchange="this.value = this.checked" />
         </div>
