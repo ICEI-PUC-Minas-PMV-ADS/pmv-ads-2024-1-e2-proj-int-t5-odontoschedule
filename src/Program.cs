@@ -1,5 +1,3 @@
-using System;
-
 using System.Text;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
@@ -48,7 +46,6 @@ app.UseRouting();
 
 
 app.UseAuthentication();
-
 app.UseAuthorization();
 
 app.MapControllerRoute(

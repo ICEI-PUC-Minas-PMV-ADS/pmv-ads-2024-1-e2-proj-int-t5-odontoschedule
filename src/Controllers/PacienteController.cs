@@ -1,17 +1,9 @@
 
-﻿using Azure.Core;
-using Microsoft.AspNetCore.Authentication;
+﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.DotNet.Scaffolding.Shared.T4Templating;
 using Microsoft.EntityFrameworkCore;
 using OdontoSchedule.Models;
 using System.Security.Claims;
-
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.DotNet.Scaffolding.Shared.T4Templating;
-using Microsoft.EntityFrameworkCore;
-using OdontoSchedule.Models;
-
 
 
 namespace OdontoSchedule.Controllers
