@@ -14,9 +14,13 @@ namespace OdontoSchedule.Controllers
             this.context = context;
         }
 
+        public IActionResult LoginV()
+        {
+            return View("Login");
+        }
+
         [HttpPost]
-        public async Task<ActionResult> Login() {
-            // admin=senha secretaria=senha
+        public async Task<IActionResult> Login() {
             string conteudoArquivo;
             string[] usuarios;
 
@@ -52,7 +56,7 @@ namespace OdontoSchedule.Controllers
 
                         await HttpContext.SignInAsync(claimsPrincipal, authenticationProperties);
 
-                        return Ok();
+                        return Ok(new { success = true, content = "" });
                     }
                     else
                     {
@@ -62,6 +66,13 @@ namespace OdontoSchedule.Controllers
             }
 
             return Ok(new { success = false, content = "Usuário não encontrado" });
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync();
+
+            return RedirectToAction("Login", "Paciente");
         }
     }
 

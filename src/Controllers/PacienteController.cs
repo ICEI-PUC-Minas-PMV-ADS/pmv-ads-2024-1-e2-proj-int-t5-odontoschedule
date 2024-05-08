@@ -58,7 +58,7 @@ namespace OdontoSchedule.Controllers
 
                 await HttpContext.SignInAsync(claimsPrincipal, authenticationProperties);
 
-                return Ok();
+                return Ok(new { success = true, content = "" });
             }
             else
             {
@@ -104,6 +104,12 @@ namespace OdontoSchedule.Controllers
             return View(paciente);
         }
 
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync();
+
+            return RedirectToAction("Login", "Paciente");
+        }
     }
 }
 

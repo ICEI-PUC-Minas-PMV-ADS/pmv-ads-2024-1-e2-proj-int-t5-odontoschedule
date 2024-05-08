@@ -55,15 +55,6 @@ body {
   
 }
 
-label{
-  font-weight: bold;
-  font-size: 15px;
-}
-
-.titulo{
-font-size: 25px;
-}
-
 .formulario input {
   border: 2px solid #5A98BB;
 }
@@ -211,4 +202,150 @@ a:hover{
   display: flex;
   margin: 2rem 0;
   gap: 3rem;
+}
+
+.login {
+    display: flex;
+    width: 90%;
+    background-color: #F2F2F2;
+    margin: 50px 5% 50px 5%;
+}
+
+.login__conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.login__conteudo > .trocar-perfil {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 2rem 0;
+    border-radius: 20px;
+    border: 2px solid #346a8a;
+    min-width: 50%;
+    position: relative;
+}
+
+.login-container--funcionario::after {
+    content: "Funcionário";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-100%);
+}
+
+.login-container--paciente::after {
+    content: "Paciente";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-100%);
+}
+
+.login-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+}
+
+.login-formulario > .formulario__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.entrar {
+    border: none;
+    background: #61A5AE;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 30%;
+    padding: 0.75rem 0;
+    text-align: center;
+}
+
+.login-input {
+    width: 20rem;
+    font-size: 24px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid #8396b3;
+}
+
+.login__formulario-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__opcoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.titulo {
+    font-size: 25px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #8396b3;
+    transition: background-color 0.3s;
+}
+
+.auth__repr {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10rem;
+    background-image: url("/img/cadastro_repr.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100dvh;
+    width: 40dvw;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.auth__repr > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 80%;
+}
+
+.auth__repr img {
+    width: 100%;
 }

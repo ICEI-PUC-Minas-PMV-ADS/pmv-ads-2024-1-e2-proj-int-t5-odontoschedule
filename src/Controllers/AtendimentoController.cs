@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OdontoSchedule.Models;
+using System.Security.Claims;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace OdontoSchedule.Controllers
@@ -40,6 +41,13 @@ namespace OdontoSchedule.Controllers
         {
             Dictionary<string, object> response = new Dictionary<string, object>();
             Agenda agendaEncontrada = context.Agendas.Find(atendimento.AgendaId);
+
+            /*
+            if(User.FindFirstValue(ClaimTypes.Role) == "PACIENTE")
+            {
+                atendimento.PacienteId = Int32.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+            }
+            */
 
             if (ModelState.IsValid)
             {
@@ -106,6 +114,12 @@ namespace OdontoSchedule.Controllers
         {
             Atendimento atendimentoArmazenado = this.context.Atendimentos.Find(id);
             Dictionary<string, object> response = new Dictionary<string, object>();
+
+            if (User.FindFirstValue(ClaimTypes.Role) == "PACIENTE")
+            {
+                atendimento.Finalizado = atendimentoArmazenado.Finalizado;
+                atendimento.Observacoes = atendimentoArmazenado.Observacoes;
+            }
 
             if (atendimentoArmazenado == null)
             {

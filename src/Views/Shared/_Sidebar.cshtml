@@ -8,8 +8,26 @@
         <span id="lateral-icone-usuario"></span>
 
         <div>
-            <span>Nome Completo</span>
-            <span>Paiente</span>
+            <span>
+                @if (User.IsInRole("PACIENTE"))
+                {
+                    @User.Identity.Name
+                }
+                else
+                {
+                    @Html.Encode("SECRETARIA")
+                }
+            </span>
+            <span>
+                @if (User.IsInRole("PACIENTE"))
+                {
+                    @Html.Encode("Paciente")
+                }
+                else
+                {
+                    @Html.Encode("Funcionário")
+                }
+            </span>
         </div>
         <ul>
             <li>A</li>
