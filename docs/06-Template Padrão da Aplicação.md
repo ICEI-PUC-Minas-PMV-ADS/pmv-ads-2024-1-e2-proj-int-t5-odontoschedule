@@ -1,5 +1,36 @@
 # Template Padrão da Aplicação
 
+## Paleta de Cores
+
+### Cores primárias
+
+As cores principais análogas em tons azuis foram escolhidas para transmitir segurança e propagar lealdade e confiança, remetendo ao setor de saúde.
+
+![Cores Primárias](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/395192c5-e0c1-4fc6-8eb5-86a49eb32ac5)
+
+### Cores secundárias
+
+As cores secundárias foram pensadas com o intuito de trazer modernidade, elegância e sofisticação. Juntando tais qualidades com as sensações transmitidas pelas cores principais, temos interfaces agradáveis aos usuários de forma que absorvam um sentimento de serenidade.
+
+![Cores Secundárias](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/d671e340-49d6-4454-a20a-8ff4acb4f69c)
+
+As cores secundárias, como tons de branco e cinza, foram escolhidas principalmente com a intenção de trazer harmonia para as interfaces, a fim de proporcionar um melhor contraste com os tons de azul.
+
+## Tipografia
+
+A principal vantagem da fonte Inter é a sua legibilidade. Pois ela contém um conjunto de caracteres que proporcionam clareza, além de possuir letras com proporções adequadas e formatos agradáveis, os quais facilitam a leitura em diferentes tamanhos.
+
+## Logo
+
+
+![blue logo 2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/25da0739-57f8-4464-897a-6e52ec0da0cd)
+![logo blue and white slogan 1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/317127bb-494f-4310-a20b-882bfa9d6f6a)
+![white logo 2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/4fcc93f9-2afb-4121-81af-a5f3b2093d7f)
+
+O logotipo foi desenvolvido com a junção do nome da aplicação e um símbolo de sorriso com intuito de transmitir simplicidade e confianÇa, trazendo uma referência a odontologia. Além disso,  foi criado o slogan "Praticidade para o seu sorriso" relembrando o objetivo da aplicação de facilitar e agilizar o processo de agendamento de consultas nos consultórios odontológicos.
+Por fim, a logo foi criada com três combinações de cores diferentes afim de maximizar sua compatibilidade com cada uma das cores existentes na aplicação.
+
+## Protótipo de alta fidelidade
 
 ![Popup Reagendar](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/f1d2307a-070a-4f37-be44-f4fb75ed26ae)
 ![(Secretária) Ver Agendamentos](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/7d86bdba-18a7-4c2d-8579-ce180d319d17)
@@ -7,10 +38,10 @@
 ![(Secretária) Todos os Pacientes e seus Agendamentos-1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/5140895c-9f79-41c2-8f73-fbe7202b0d5b)
 ![(Secretária) Todos os Pacientes e seus Agendamentos](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/62479ab1-3c57-4ad9-9848-3ae94ce9c036)
 ![(Secretária) Perfis de Pacientes-1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/85d4db36-2845-4e80-8b5b-611b02e933a0)
-![(Secretária) Perfis de Pacientes](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/040c4d47-9592-4278-902b-3cd3a0b9abc3)
+![(Secretária) Perfis de Pacientes](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/812c4e74-8555-43a1-8ad1-28c084e6e75b)
 ![(Secretária) Pagina Home](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/3f6a80ba-ff03-4d79-894f-0dabbefb1449)
 ![(Secretária) Cadastrar Paciente-1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/a2374ef7-8f1d-49db-a3dd-316dd08b196c)
-![(Secretária) Cadastrar Paciente](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/2e8b730f-5c2c-4d72-a2ba-42b2a62c6a06)
+![(Secretária) Cadastrar Paciente](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/776c1d60-7f3e-49c7-91f3-033d82c9790e)
 ![(Secretária) Agendar Paciente (Etapa 3)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/be8fe64c-edfe-4327-9795-73e02ed09a89)
 ![(Secretária) Agendar Paciente (Etapa 2)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/c1915641-e6ce-49b4-8409-289094fb8bb1)
 ![(Secretária) Agendar Paciente (Etapa 1)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/10332ede-0870-4d4d-87c5-78341b63e9b8)
