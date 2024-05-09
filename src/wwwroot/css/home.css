@@ -163,3 +163,18 @@ body #pagina-conteudo #barra-direita::after {
     cursor: pointer;
     font-size: 16px;
 }
+
+.informacoes-horarios-funcionamento {
+    display: flex;
+    flex-direction: column;
+    color: #7C7C7C;
+    background-color: #D9D9D9;
+    width: fit-content;
+
+    border: 2px solid black;
+}
+
+.informacoes-horarios-funcionamento span {
+    padding: 0.5rem 0;
+    width: 100%;
+}

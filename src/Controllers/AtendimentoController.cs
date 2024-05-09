@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using OdontoSchedule.Models;
 using System.Security.Claims;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace OdontoSchedule.Controllers
 {

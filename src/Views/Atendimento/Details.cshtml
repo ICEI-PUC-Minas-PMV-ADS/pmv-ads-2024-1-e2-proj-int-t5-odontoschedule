@@ -16,54 +16,62 @@
             <input type="hidden" asp-for="DentistaId" id="atendimento-dentista-id" />
 
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="TemConvenio" disabled /> @Html.DisplayNameFor(model => model.TemConvenio)
+            <div>
+                <label>
+                    <input asp-for="TemConvenio" disabled /> @Html.DisplayNameFor(model => model.TemConvenio)
                 </label>
             </div>
             <div class="form-group">
-                <label class="control-label"></label>
+                <label></label>
                 <span>@Html.DisplayFor(model => model.Dentista.Nome)</span>
             </div>
             <div class="form-group">
-                <label asp-for="AgendaId" class="control-label"></label>
-                <input type="text" value="@Html.DisplayFor(model => model.Agenda.Data) @Html.DisplayFor(model => model.Agenda.Horario.Hora)" id="atendimento-data-hora" disabled />
+                <label asp-for="AgendaId"></label>
+
+                @if(Model.Finalizado)
+                {
+                    <label>@Html.DisplayFor(model => model.Agenda.Data) @Html.DisplayFor(model => model.Agenda.Horario.Hora)</label>
+                }
+                else
+                {
+                    <input type="text" value="@Html.DisplayFor(model => model.Agenda.Data) @Html.DisplayFor(model => model.Agenda.Horario.Hora)" id="atendimento-data-hora" class="odonto-input" disabled />
+                }
             </div>
             <div class="form-group">
-                <label asp-for="PacienteId" class="control-label"></label>
+                <label asp-for="PacienteId"></label>
                 <span>@Html.DisplayFor(model => model.Paciente.Nome)</span>
             </div>
             <div class="form-group form-check">
                 @if (User.IsInRole("SECRETARIA"))
                 {
                     <label class="form-check-label">
-                        <input class="form-check-input" asp-for="Finalizado" /> @Html.DisplayNameFor(model => model.Finalizado)
+                        <input asp-for="Finalizado" /> @Html.DisplayNameFor(model => model.Finalizado)
                     </label>
                 }
                 else
                 {
-                    <label asp-for="Finalizado"  class="control-label"></label>
+                    <label asp-for="Finalizado"></label>
                     <span>@Html.DisplayFor(model => model.Finalizado)</span>
                 }
             </div>
             <div class="form-group">
                 @if (User.IsInRole("SECRETARIA"))
                 {
-                    <label asp-for="Observacoes" class="control-label"></label>
-                    <input asp-for="Observacoes" class="form-control" />
+                    <label asp-for="Observacoes"></label>
+                    <input asp-for="Observacoes"  class="odonto-input" />
                 }
                 else
                 {
-                    <label asp-for="Observacoes" class="control-label"></label>
-                    <span class="form-control">@Html.DisplayFor((model) => model.Observacoes)</span>
+                    <label asp-for="Observacoes"></label>
+                    <span>@Html.DisplayFor((model) => model.Observacoes)</span>
                 }
             </div>
 
             <div>
                 @if(!Model.Finalizado)
                 {
-                    <button type="button" asp-action="Delete">Cancelar</button>
-                    <button type="button" id="botao-reagendar-atendimento">Reagendar</button>
+                    <button type="button" asp-action="Delete" class="odonto-botao-primario maior">Cancelar</button>
+                    <button type="button" id="botao-reagendar-atendimento" class="odonto-botao-primario maior">Reagendar</button>
                 }
 
                 <button type="submit" class="odonto-botao-primario maior">Salvar</button>
