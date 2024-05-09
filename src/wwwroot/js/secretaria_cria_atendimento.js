@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
             if (resposta.ok) {
                 resposta.json().then((dados) => {
                     document.getElementById("atendimento_formulario_usuario_nome").value = dados.nome;
-                    document.querySelector("#formulario-novo-atendimento-secretaria > input[name='PacienteId']").value = dados.id;
+                    document.querySelector("#formulario-novo-atendimento > input[name='PacienteId']").value = dados.id;
                 });
             }
             else {
                 document.getElementById("atendimento_formulario_usuario_nome").value = "USUÁRIO NÃO ENCONTRADO";
-                documen.querySelector("#formulario-novo-atendimento-secretaria > input[name='PacienteId']").value = null;
+                documen.querySelector("#formulario-novo-atendimento > input[name='PacienteId']").value = null;
             }
         })
     });

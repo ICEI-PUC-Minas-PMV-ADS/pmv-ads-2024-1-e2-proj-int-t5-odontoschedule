@@ -42,12 +42,10 @@ namespace OdontoSchedule.Controllers
             Dictionary<string, object> response = new Dictionary<string, object>();
             Agenda agendaEncontrada = context.Agendas.Find(atendimento.AgendaId);
 
-            /*
             if(User.FindFirstValue(ClaimTypes.Role) == "PACIENTE")
             {
                 atendimento.PacienteId = Int32.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
             }
-            */
 
             if (ModelState.IsValid)
             {

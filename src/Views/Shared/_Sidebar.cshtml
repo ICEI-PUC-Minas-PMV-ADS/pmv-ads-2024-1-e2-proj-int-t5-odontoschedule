@@ -2,12 +2,11 @@
 
 <div id="barra-lateral">
     <div>
-
     </div>
     <div id="barra-lateral__informacoes">
         <span id="lateral-icone-usuario"></span>
 
-        <div>
+        <div id="barra-lateral__identidade">
             <span>
                 @if (User.IsInRole("PACIENTE"))
                 {
@@ -15,24 +14,37 @@
                 }
                 else
                 {
-                    @Html.Encode("SECRETARIA")
+                    @Html.Raw("SECRETARIA")
                 }
             </span>
             <span>
                 @if (User.IsInRole("PACIENTE"))
                 {
-                    @Html.Encode("Paciente")
+                    @Html.Raw("Paciente")
                 }
                 else
                 {
-                    @Html.Encode("Funcionário")
+                    @Html.Raw("Funcionário")
                 }
             </span>
         </div>
         <ul>
-            <li>A</li>
-            <li>A</li>
-            <li>A</li>
+            @if (User.IsInRole("PACIENTE"))
+            {
+                <li class="odonto-botao-secundario">Editar Perfil</li>
+            }
+
+            @if (User.IsInRole("SECRETARIA"))
+            {
+                <li>Usuários</li>
+            }
+            
+            @if (!User.IsInRole("PACIENTE"))
+            {
+                <li>Alterar Senha</li>
+            }
+
+            <li><a asp-controller="@(User.IsInRole("PACIENTE") ? "Paciente" : "Funcionario")" asp-action="Logout">Sair</a></li>
         </ul>
     </div>
 </div>

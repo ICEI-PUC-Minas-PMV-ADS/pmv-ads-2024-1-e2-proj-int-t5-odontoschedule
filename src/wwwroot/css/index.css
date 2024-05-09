@@ -1,0 +1,32 @@
+﻿* {
+    font-family: "Inter", sans-serif !important;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.odonto-botao-primario {
+    border: none;
+
+    background: #61A5AE;
+    border-radius: 2rem;
+    color: white;
+
+    padding: 0.3rem 1rem;
+}
+
+.odonto-botao-secundario {
+    border: none
+
+    background: #00597E;
+    border-radius: 2rem;
+    color: white;
+
+    padding: 0.3rem 1rem;
+}
+
+.odonto-botao-primario.maior, .odonto-botao-secundario.maior {
+    padding: 0.75rem 2.5rem;
+}

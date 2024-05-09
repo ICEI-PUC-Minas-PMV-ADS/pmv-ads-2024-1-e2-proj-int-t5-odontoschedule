@@ -7,7 +7,7 @@
 <h1>Create</h1>
 
 <div class="formulario-multiplo">
-    <form action="#" method="post" data-form_id="0" id="formulario-novo-atendimento-secretaria">
+    <form action="#" method="post" data-form_id="0" id="formulario-novo-atendimento">
         <input type="hidden" name="DentistaId" />
         <input type="hidden" name="PacienteId" />
         <input type="hidden" name="AgendaId" />
@@ -18,9 +18,8 @@
             <p>Sábado - Domingo: 8:00 - 15:00</p>
 
 
-            @if (1 == 1)
+            @if (User.IsInRole("SECRETARIA"))
             {
-                <!-- Verificar se a secretária está logada -->
                 <label for="cpf">CPF:</label><br>
                 <input type="text" id="atendimento_formulario_usuario_cpf"><br>
                 <label for="nome">Nome:</label><br>
@@ -94,7 +93,7 @@
             </div>
         </div>
 
-        <button type="button" class="formulario-multiplo__botao">Próximo</button>
+        <button type="button" class="formulario-multiplo__botao odonto-botao-primario maior">Próximo</button>
     </form>
 </div>
 

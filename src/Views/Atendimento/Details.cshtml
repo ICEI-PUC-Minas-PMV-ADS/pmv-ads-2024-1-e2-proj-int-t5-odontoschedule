@@ -22,16 +22,8 @@
                 </label>
             </div>
             <div class="form-group">
-                @if (1 == 1)
-                { // Verificar se é uma secretaria
-                    <label asp-for="DentistaId" class="control-label"></label>
-                    <input type="text" value="@Html.DisplayFor(model => model.Dentista.Nome)" disabled/>
-                }
-                else
-                {
-                    <label asp-for="DentistaId" class="control-label"></label>
-                    <span>@Html.DisplayFor(model => model.Dentista.Nome)</span>
-                }
+                <label class="control-label"></label>
+                <span>@Html.DisplayFor(model => model.Dentista.Nome)</span>
             </div>
             <div class="form-group">
                 <label asp-for="AgendaId" class="control-label"></label>
@@ -42,7 +34,7 @@
                 <span>@Html.DisplayFor(model => model.Paciente.Nome)</span>
             </div>
             <div class="form-group form-check">
-                @if(1 == 1)
+                @if (User.IsInRole("SECRETARIA"))
                 {
                     <label class="form-check-label">
                         <input class="form-check-input" asp-for="Finalizado" /> @Html.DisplayNameFor(model => model.Finalizado)
@@ -55,7 +47,7 @@
                 }
             </div>
             <div class="form-group">
-                @if (1 == 1)
+                @if (User.IsInRole("SECRETARIA"))
                 {
                     <label asp-for="Observacoes" class="control-label"></label>
                     <input asp-for="Observacoes" class="form-control" />
@@ -74,7 +66,7 @@
                     <button type="button" id="botao-reagendar-atendimento">Reagendar</button>
                 }
 
-                <button type="submit">Salvar</button>
+                <button type="submit" class="odonto-botao-primario maior">Salvar</button>
             </div>
         </form>
     </div>

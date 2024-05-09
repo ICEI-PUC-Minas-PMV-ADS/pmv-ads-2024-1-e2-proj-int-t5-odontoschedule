@@ -16,7 +16,7 @@ body header {
 }
 
 body header .logo {
-    height: 7rem;
+    height: 6rem;
     aspect-ratio: 16/9;
 
     background: url("/img/logo_blue.png");
@@ -30,6 +30,12 @@ body header ul {
     list-style: none;
     gap: 10rem;
     padding: 0;
+}
+
+body header ul li a {
+    text-decoration: none;
+    color: black;
+    text-decoration-color: black;
 }
 
 body header #notificacoes-gatilho-menu {
@@ -64,11 +70,43 @@ body #pagina-conteudo #barra-lateral > div:first-child {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transform: translateY(-30%);
+}
+
+#barra-lateral__identidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#barra-lateral__identidade span:first-child {
+    font-weight: bold;
+}
+
+#barra-lateral__identidade span:last-child {
+    color: #7C7C7C;
+}
+
+#barra-lateral__informacoes > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+}
+
+#barra-lateral__informacoes > ul li a {
+    text-decoration: none;
+    color: black;
+    text-decoration-color: black;
 }
 
 #lateral-icone-usuario {
-    transform: translateY(-50%);
-
     display: block;
     background: url("/img/user_icon.png");
     background-size: cover;
@@ -77,7 +115,6 @@ body #pagina-conteudo #barra-lateral > div:first-child {
     width: 70%;
     aspect-ratio: 1;
     border: 6px solid white;
-
     border-radius: 50%;
 }
 
