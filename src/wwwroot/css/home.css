@@ -119,6 +119,11 @@ body #pagina-conteudo #barra-lateral > div:first-child {
 }
 
 body #pagina-conteudo main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     width: 60dvw;
 }
 
@@ -177,4 +182,90 @@ body #pagina-conteudo #barra-direita::after {
 .informacoes-horarios-funcionamento span {
     padding: 0.5rem 0;
     width: 100%;
+}
+
+.usuarios-lista-tabs {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+}
+
+.usuarios-lista-tabs > .tabs-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    background: #00597E;
+    color: white;
+    padding: 1rem 25%;
+}
+
+.usuarios-lista-tabs > .tabs-cabecalho a {
+    text-decoration: none;
+    color: white;
+}
+
+.usuarios-lista-tabs .conteudo-tab {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+
+    padding: 2rem 1rem;
+
+    background: #F3F3F3;
+    flex: 1 1;
+}
+
+usuarios-lista-tabs .conteudo-tab .conteudo-tab__lado {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#paciente-atendimentos-tabela {
+    color: #7C7C7C;
+}
+
+#paciente-atendimentos-tabela td {
+    border: 2px solid #7C7C7C;
+    width: 10rem;
+}
+
+#container-cadastrar-paciente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #E8E8E8;
+    padding: 0.5rem 2rem;
+    min-width: 50%;
+    height: fit-content;
+}
+
+#container-cadastrar-paciente form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+#container-cadastrar-paciente form button[type="submit"] {
+    margin-top: 2rem;
+}
+
+#tabela-pacientes {
+    border: 1px solid #000000;
+    background: #D9D9D9;
+    width: 40dvw;
+}
+
+#tabela-pacientes td {
+    width: 50%;
+    border: 2px solid #C8C8C8;
+    color: #7C7C7C;
+    padding: 0.5rem;
+}
+
+#pacientes-lista-tab .conteudo-tab > a {
+    align-self: flex-start;
 }

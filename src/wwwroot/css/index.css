@@ -1,4 +1,4 @@
-﻿* {
+﻿*:not(i) {
     font-family: "Inter", sans-serif !important;
 }
 
@@ -32,10 +32,40 @@ html, body {
 }
 
 .odonto-input {
-    width: 10rem;
-    height: 2rem;
+    width: 8rem;
+    height: 1.5rem;
 
     background: #FFFEFE;
     border: 1px solid #34ADFA;
     border-radius: 0.3rem;
+}
+
+.odonto-input.largo {
+    width: 15rem;
+}
+
+.flex-row {
+    display: flex;
+    gap: 2rem;
+}
+
+.campos-formulario-linha {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.campos-formulario-linha__campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.form-data {
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+}
+
+.texto-preto {
+    color: black;
 }

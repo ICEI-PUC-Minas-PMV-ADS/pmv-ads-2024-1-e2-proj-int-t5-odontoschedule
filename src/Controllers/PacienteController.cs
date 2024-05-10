@@ -17,8 +17,12 @@ namespace OdontoSchedule.Controllers
             this.context = context;
         }
 
-
         public IActionResult Create()
+        {
+            return View();
+        }
+
+        public IActionResult Cadastro()
         {
             return View();
         }
@@ -26,6 +30,29 @@ namespace OdontoSchedule.Controllers
         public IActionResult Login()
         {
             return View();
+        }
+        
+        public IActionResult Index()
+        {
+            return View(this.context.Pacientes.ToList());
+        }
+
+        public async Task<IActionResult> Details(int id)
+        {
+            Paciente paciente = await this.context.Pacientes.FindAsync(id);
+
+            if(paciente == null)
+            {
+                return NotFound();
+            }
+
+            ViewData["Atendimentos"] = await this.context.Atendimentos.Where((a) => a.PacienteId == id)
+                .Include((a) => a.Dentista)
+                .Include((a) => a.Agenda)
+                    .ThenInclude((ag) => ag.Horario)
+                .ToListAsync();
+
+            return View(paciente);
         }
 
         [HttpPost]
@@ -98,10 +125,60 @@ namespace OdontoSchedule.Controllers
                 this.context.Add(paciente);
                 await this.context.SaveChangesAsync();
 
+                if (Request.Form["no_redirect"] == "true")
+                {
+                    return Ok(new { success = true, content = "" });
+                }
+
                 return RedirectToAction(nameof(Login));
             }
 
             return View(paciente);
+        }
+
+        [HttpPost]
+        // [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit([Bind("ID,Nome,DataNascimento,CPF,Email,Telefone,Bairro,Cidade,Rua,Numero,Complemento")] Paciente paciente)
+        {
+            Paciente pacienteEncontrado = this.context.Pacientes.Find(paciente.ID);
+            this.context.Entry(pacienteEncontrado).State = EntityState.Detached;
+
+            if (pacienteEncontrado == null)
+            {
+                return NotFound();
+            }
+
+            paciente.Senha = pacienteEncontrado.Senha;
+            ModelState.Remove("Senha");
+
+            switch (Request.Form["sexo"])
+            {
+                case "true":
+                    paciente.Sexo = true;
+                    break;
+                case "false":
+                    paciente.Sexo = false;
+                    break;
+                default:
+                    paciente.Sexo = null;
+                    break;
+            }
+
+            if (ModelState.IsValid)
+            {
+                this.context.Update(paciente);
+                await this.context.SaveChangesAsync();
+
+                return RedirectToAction("Details", new { id = paciente.ID });
+            }
+
+            ViewData["Atendimentos"] = await this.context.Atendimentos.Where((a) => a.PacienteId == paciente.ID)
+                .Include((a) => a.Dentista)
+                .Include((a) => a.Agenda)
+                    .ThenInclude((ag) => ag.Horario)
+                .ToListAsync();
+
+            return View("Details", paciente);
         }
 
         public async Task<IActionResult> Logout()
