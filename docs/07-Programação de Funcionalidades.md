@@ -9,15 +9,15 @@ Por exemplo: a tabela a seguir deverá ser preenchida considerando os artefatos 
 |ID    | Descrição do Requisito  | Artefato(s) produzido(s) | Responsável(is) |
 |------|-----------------------------------------|----|----|  
 |RF-01| A aplicação deve permitir que um paciente gerencie seu cadastro. O paciente deve ser capaz de se cadastrar, fornecendo os seguintes dados: Nome completo, CPF (campo de login), endereço, e-mail, telefone e senha. | PacienteController.cs, Create.cshtml |  Kayo |
-|RF-02| A aplicação deve permitir que um paciente faça login utilizando CPF e senha. E caso seja um administrador ou secretária, utilize nome de usuário e senha.   | PacienteController.cs, Paciente - Login.cshtml, Funcionario - Login.cshtml| Kayo  |
-|RF-03| A aplicação deve permitir que o paciente e a secretária cancelem e remarquem um atendimento.     | Atendimento - Create.cshtml, Home - Index.cshtml, AtendimentoController.cs, Atendimento.cs | Amanda e Joabe |
+|RF-02| A aplicação deve permitir que um paciente faça login utilizando CPF e senha. E caso seja um administrador ou secretária, utilize nome de usuário e senha.   | PacienteController.cs, Paciente/Login.cshtml, Funcionario/Login.cshtml| Kayo  |
+|RF-03| A aplicação deve permitir que o paciente e a secretária cancelem e remarquem um atendimento.     | Atendimento/Create.cshtml, Home/Index.cshtml, AtendimentoController.cs, Atendimento.cs | Amanda e Joabe |
 |RF-04| A aplicação deve permitir que o paciente seja notificado com 24h de antecedência.     |  |   |
-|RF-05| A aplicação deve permitir que o paciente seja capaz de agendar uma consulta passando as seguintes informações: Informações de contato, especialidade desejada, horário, dentista e modalidade (particular ou convênio)    | Atendimento - Create.cshtml, AtendimentoController.cs | Amanda  |
+|RF-05| A aplicação deve permitir que o paciente seja capaz de agendar uma consulta passando as seguintes informações: Informações de contato, especialidade desejada, horário, dentista e modalidade (particular ou convênio)    | Atendimento/Create.cshtml, AtendimentoController.cs | Amanda  |
 |RF-06| A aplicação deve permitir que o paciente receba uma notificação quando uma consulta for cancelada, remarcada ou concluída.  |  |   |
-|RF-07| A aplicação deve permitir que o paciente visualize no seu perfil todos os atendimentos já realizados e pendentes.   | AtenidmentoController.cs, Home - Index.cshtml  | Amanda  |
-|RF-08| A aplicação deve permitir que um usuário do tipo secretária gerencie os dentistas. Além disso, no cadastro devem ser fornecidos dados como: nome, CRO, especialidade e seus respectivos dias e horários de atendimento.   | Dentista.cs, Dentista - Create.cshtml, Delete.cshtml, Details.cshtml, Edite.cshtml,  Index.cshtml |  Cassiano |
+|RF-07| A aplicação deve permitir que o paciente visualize no seu perfil todos os atendimentos já realizados e pendentes.   | AtenidmentoController.cs, Home/Index.cshtml  | Amanda  |
+|RF-08| A aplicação deve permitir que um usuário do tipo secretária gerencie os dentistas. Além disso, no cadastro devem ser fornecidos dados como: nome, CRO, especialidade e seus respectivos dias e horários de atendimento.   | Dentista.cs, Dentista/Create.cshtml, Delete.cshtml, Details.cshtml, Edite.cshtml,  Index.cshtml |  Cassiano |
 |RF-09| A aplicação deve permitir que a secretária visualize os agendamentos e filtre-os por dia e dentista.   |  |   |
-|RF-10| A aplicação deve permitir que a secretária faça agendamentos para pacientes cadastrados    | AtendimentoController.cs, Home - Index.cshtml |  Joabe |
+|RF-10| A aplicação deve permitir que a secretária faça agendamentos para pacientes cadastrados    | AtendimentoController.cs, Home/Index.cshtml |  Joabe |
 |RF-11| A aplicação deve permitir que a secretária faça cadastro de pacientes    |  |  Alvaro |
 |RF-12| A aplicação deve permitir que a secretária mude o status da consulta e inclua observações.     |  |  Joabe |
 |RF-13| A aplicação deve permitir que a secretária seja capaz de visualizar todas as informações pessoais e agenda de um dentista.   |  |  Cassiano |
