@@ -8,8 +8,8 @@ Por exemplo: a tabela a seguir deverá ser preenchida considerando os artefatos 
 
 |ID    | Descrição do Requisito  | Artefato(s) produzido(s) | Responsável(is) |
 |------|-----------------------------------------|----|----|  
-|RF-01| A aplicação deve permitir que um paciente gerencie seu cadastro. O paciente deve ser capaz de se cadastrar, fornecendo os seguintes dados: Nome completo, CPF (campo de login), endereço, e-mail, telefone e senha. |  |  Kayo |
-|RF-02| A aplicação deve permitir que um paciente faça login utilizando CPF e senha. E caso seja um administrador ou secretária, utilize nome de usuário e senha.   |  | Kayo  |
+|RF-01| A aplicação deve permitir que um paciente gerencie seu cadastro. O paciente deve ser capaz de se cadastrar, fornecendo os seguintes dados: Nome completo, CPF (campo de login), endereço, e-mail, telefone e senha. | PacienteController.cs, Create.cshtml |  Kayo |
+|RF-02| A aplicação deve permitir que um paciente faça login utilizando CPF e senha. E caso seja um administrador ou secretária, utilize nome de usuário e senha.   | PacienteController.cs, Paciente > Login.cshtml, Funcionario > Login.cshtml| Kayo  |
 |RF-03| A aplicação deve permitir que o paciente e a secretária cancelem e remarquem um atendimento.     |  | Amanda e Joabe |
 |RF-04| A aplicação deve permitir que o paciente seja notificado com 24h de antecedência.     |  |   |
 |RF-05| A aplicação deve permitir que o paciente seja capaz de agendar uma consulta passando as seguintes informações: Informações de contato, especialidade desejada, horário, dentista e modalidade (particular ou convênio)    |  | Amanda  |
