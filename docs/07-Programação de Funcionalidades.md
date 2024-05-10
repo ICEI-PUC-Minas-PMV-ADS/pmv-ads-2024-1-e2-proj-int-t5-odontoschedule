@@ -14,12 +14,12 @@ Por exemplo: a tabela a seguir deverá ser preenchida considerando os artefatos 
 |RF-04| A aplicação deve permitir que o paciente seja notificado com 24h de antecedência.     |  |   |
 |RF-05| A aplicação deve permitir que o paciente seja capaz de agendar uma consulta passando as seguintes informações: Informações de contato, especialidade desejada, horário, dentista e modalidade (particular ou convênio)    | Atendimento/Create.cshtml, AtendimentoController.cs | Amanda  |
 |RF-06| A aplicação deve permitir que o paciente receba uma notificação quando uma consulta for cancelada, remarcada ou concluída.  |  |   |
-|RF-07| A aplicação deve permitir que o paciente visualize no seu perfil todos os atendimentos já realizados e pendentes.   | AtenidmentoController.cs, Home/Index.cshtml  | Amanda  |
+|RF-07| A aplicação deve permitir que o paciente visualize no seu perfil todos os atendimentos já realizados e pendentes.   | AtendimentoController.cs, Home/Index.cshtml  | Amanda  |
 |RF-08| A aplicação deve permitir que um usuário do tipo secretária gerencie os dentistas. Além disso, no cadastro devem ser fornecidos dados como: nome, CRO, especialidade e seus respectivos dias e horários de atendimento.   | Dentista.cs, Dentista/Create.cshtml, Delete.cshtml, Details.cshtml, Edite.cshtml,  Index.cshtml |  Cassiano |
 |RF-09| A aplicação deve permitir que a secretária visualize os agendamentos e filtre-os por dia e dentista.   |  |   |
-|RF-10| A aplicação deve permitir que a secretária faça agendamentos para pacientes cadastrados    | AtendimentoController.cs, Home/Index.cshtml |  Joabe |
-|RF-11| A aplicação deve permitir que a secretária faça cadastro de pacientes    |  |  Alvaro |
-|RF-12| A aplicação deve permitir que a secretária mude o status da consulta e inclua observações.     |  |  Joabe |
+|RF-10| A aplicação deve permitir que a secretária faça agendamentos para pacientes cadastrados    | AtendimentoController.cs, Home/Index.cshtml, secretaria_cria_atendimento.js |  Joabe |
+|RF-11| A aplicação deve permitir que a secretária faça cadastro de pacientes    | Paciente/Create.cshtml, PacienteController.cs |  Alvaro |
+|RF-12| A aplicação deve permitir que a secretária mude o status da consulta e inclua observações.     | secretaria_atendimento.js, secretaria_lista_atendimento.js,  |  Joabe |
 |RF-13| A aplicação deve permitir que a secretária seja capaz de visualizar todas as informações pessoais e agenda de um dentista.   |  |  Cassiano |
 |RF-14| A aplicação deve permitir que a secretária visualize todas as informações pessoais e agendamentos de um paciente específico.    |  |  Alvaro |
 |RF-15| A aplicação deve permitir que a secretária receba uma notificação quando uma consulta foi agendada, cancelada e remarcada.   |  |   |
