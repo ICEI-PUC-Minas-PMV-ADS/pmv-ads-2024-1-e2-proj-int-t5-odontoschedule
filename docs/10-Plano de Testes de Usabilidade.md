@@ -45,11 +45,7 @@ Como esta aplicação está sendo desenvolvida com foco no consultório DentalIn
 > - Possui e-mail válido;
 > - Possui número de telefone ou celular.
 
-Sendo assim, o teste deverá possuir 20 usuários distribuídos com a seguinte características:
-
-> - Usuário paciente: 15 participantes selecionados com os requisitos acima;
-> - Usuário secretária: 4 participantes que trabalham na DentalIn e deverão utilizar a aplicação para a execução de suas atividades;
-> - Usuário empreendedor: 1 participante dono da DentalIn  que visa realizar tarefas específicas.
+Sendo assim, o teste deverá possuir 5 usuários distribuídos com as características descritas acima.
 
 # 4. Procedimento
 
@@ -184,20 +180,6 @@ A tabela a seguir será utilizada para analisar cada tarefa executada pelos part
 | Paciente03 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
 | Paciente04 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
 | Paciente05 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
-| Paciente06 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
-| Paciente07 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
-| Paciente08 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
-| Paciente09 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
-| Paciente10 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
-| Paciente11 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
-| Paciente12 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
-| Paciente13 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
-| Paciente14 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
-| Paciente15 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
-| Secretária01 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
-| Secretária02 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
-| Secretária03 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
-| Secretária04 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
 | Empreendedor | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
 
 As seguintes informações serão utilizadas para preencher a tabela:
