@@ -13,6 +13,8 @@ namespace OdontoSchedule.Models
             modelBuilder.Entity<Atendimento>().HasOne(a => a.Agenda).WithOne().OnDelete(DeleteBehavior.SetNull);
             modelBuilder.Entity<Agenda>().HasOne(a => a.Dentista).WithMany().OnDelete(DeleteBehavior.Cascade);
             modelBuilder.Entity<Agenda>().HasOne(a => a.Horario).WithMany().OnDelete(DeleteBehavior.Cascade);
+
+            new DBInitializer(modelBuilder).Seed();
         }
 
         public DbSet<Paciente> Pacientes { get; set; }

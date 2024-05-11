@@ -1,20 +1,18 @@
 ﻿@model OdontoSchedule.Models.Atendimento
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Criar agendamento";
 }
 
-<h1>Create</h1>
-
 <div class="formulario-multiplo">
-    <form action="#" method="post" data-form_id="0" id="formulario-novo-atendimento">
+    <form data-form_id="0" id="formulario-novo-atendimento" class="flex-column flex-align-center flex-justify-center gap-sm">
         <input type="hidden" name="DentistaId" />
         <input type="hidden" name="PacienteId" />
         <input type="hidden" name="AgendaId" />
 
-        <div class="formulario-multiplo__parte ativo" data-form_parte="basico">
+        <div class="formulario-multiplo__parte ativo flex-column gap-sm" data-form_parte="basico">
 
-            <h2>Funcionamento da DentalIn</h2>
+            <span>Funcionamento da DentalIn</span>
             <div class="informacoes-horarios-funcionamento">
                 <span>Segunda - Sexta: 8:00 - 17:00</span>
                 <span>Sábado - Domingo: 8:00 - 15:00</span>
@@ -23,26 +21,27 @@
 
             @if (User.IsInRole("SECRETARIA"))
             {
-                <label for="cpf">CPF:</label><br>
-                <input type="text" id="atendimento_formulario_usuario_cpf" class="odonto-input"><br>
-                <label for="nome">Nome:</label><br>
-                <input type="text" id="atendimento_formulario_usuario_nome" disabled><br>
+                <div class="form-data">
+                    <label for="cpf">CPF:</label><br>
+                    <input type="text" id="atendimento_formulario_usuario_cpf" class="odonto-input largo"><br>
+                </div>
+                <div class="form-data">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="atendimento_formulario_usuario_nome" class="odonto-input largo" disabled><br>
+                </div>
             }
 
-            <label for="modalidade">Modalidade:</label><br>
-            <input type="checkbox" checked="checked" name="TemConvenio" value="true" onchange="this.value = this.checked" />
+            <select asp-for="TemConvenio" class="odonto-input largo">
+                <option value="">Modalidade</option>
+                <option value="false">Particular</option>
+                <option value="true">Convênio</option>
+            </select>
         </div>
 
         <div class="formulario-multiplo__parte" data-form_parte="dentistas">
             <h2>Dentistas / Especialidade</h2>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nome Completo</th>
-                        <th>Especialidade</th>
-                    </tr>
-                </thead>
+            <table class="odonto-tabela">
                 <tbody>
                     <template id="dentista-lista-template">
                         <tr>
@@ -85,11 +84,11 @@
                 <div class="agenda-semanas-lista">
                 </div>
 
-                <div>
-                    <a class="agenda-semanas__controlador-proximo">
+                <div class="agenda-semanas__controladores">
+                    <a class="agenda-semanas__controlador-proximo odonto-botao-secundario">
                         <
                     </a>
-                    <a class="agenda-semanas__controlador-proximo">
+                    <a class="agenda-semanas__controlador-proximo odonto-botao-secundario">
                         >
                     </a>
                 </div>

@@ -80,6 +80,7 @@ class AgendaComponente {
 					let horarioDisponibilidade = document.createElement("span");
 	
 					horarioElemento.classList.add("hora");
+					horarioElemento.id = "agenda-" + horario.agendaId;
 					if (horario.disponivel) horarioElemento.classList.add("disponivel");
 
 					if (this.#hour_onclick) {

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OdontoSchedule.Models;
@@ -14,11 +15,13 @@ namespace OdontoSchedule.Controllers
             this.context = context;
         }
 
+        [AllowAnonymous]
         public IActionResult LoginV()
         {
             return View("Login");
         }
 
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Login() {
             string conteudoArquivo;
@@ -68,6 +71,7 @@ namespace OdontoSchedule.Controllers
             return Ok(new { success = false, content = "Usuário não encontrado" });
         }
 
+        [Authorize(Roles = "SECRETARIA,ADMIN")]
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync();

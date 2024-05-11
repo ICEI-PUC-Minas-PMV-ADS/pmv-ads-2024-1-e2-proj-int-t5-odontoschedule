@@ -17,7 +17,7 @@
             </label>
             <input class="odonto-input largo"/>
         </div>
-        <table id="tabela-pacientes">
+        <table class="odonto-tabela">
             <tbody>
         @foreach (var item in Model) {
                 <tr onclick="window.location = '/Paciente/Details/@item.ID';">

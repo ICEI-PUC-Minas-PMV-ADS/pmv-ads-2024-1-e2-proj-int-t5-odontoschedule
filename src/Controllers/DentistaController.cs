@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -18,16 +19,19 @@ namespace OdontoSchedule.Controllers
             _context = context;
         }
 
+        [Authorize(Roles = "SECRETARIA")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Dentistas.ToListAsync());
         }
 
+        [Authorize(Roles = "SECRETARIA,PACIENTE")]
         public async Task<IActionResult> GetAll()
         {
             return Ok(await _context.Dentistas.ToListAsync());
         }
 
+        [Authorize(Roles = "SECRETARIA")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -45,11 +49,13 @@ namespace OdontoSchedule.Controllers
             return View(dentista);
         }
 
+        [Authorize(Roles = "SECRETARIA")]
         public IActionResult Create()
         {
             return View();
         }
 
+        [Authorize(Roles = "SECRETARIA")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,Nome,CPF,DataNascimento,CRO,Especialidade")] Dentista dentista)
@@ -63,6 +69,7 @@ namespace OdontoSchedule.Controllers
             return View(dentista);
         }
 
+        [Authorize(Roles = "SECRETARIA")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -78,6 +85,7 @@ namespace OdontoSchedule.Controllers
             return View(dentista);
         }
 
+        [Authorize(Roles = "SECRETARIA")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ID,Nome,CPF,DataNascimento,CRO,Especialidade")] Dentista dentista)
@@ -110,6 +118,7 @@ namespace OdontoSchedule.Controllers
             return View(dentista);
         }
 
+        [Authorize(Roles = "SECRETARIA")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -127,6 +136,7 @@ namespace OdontoSchedule.Controllers
             return View(dentista);
         }
 
+        [Authorize(Roles = "SECRETARIA")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -141,6 +151,7 @@ namespace OdontoSchedule.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Authorize(Roles = "SECRETARIA")]
         private bool DentistaExists(int id)
         {
             return _context.Dentistas.Any(e => e.ID == id);

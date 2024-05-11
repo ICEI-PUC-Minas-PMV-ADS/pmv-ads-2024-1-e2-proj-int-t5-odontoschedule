@@ -4,32 +4,47 @@
     ViewData["Title"] = "Atendimentos";
 }
 
-<h1>Atendimento</h1>
+<h1>Agendamentos</h1>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                Atendimento
-            </th>
-            <th>
-                Data e Hora
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr class="lista__atendimento" data-atendimento_id="@item.ID">
-            <td>
-                @Html.DisplayFor(modelItem => item.Paciente.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Agenda.Data) @Html.DisplayFor(modelItem => item.Agenda.Horario.Hora)
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div class="flex-column gap-md flex-align-center">
+    @if(User.IsInRole("SECRETARIA"))
+    {
+        <div class="flex-row gap-sm flex-align-center">
+            <select id="filtro-tipo" class="odonto-input">
+                <option value="dentista">Dentista</option>
+                <option value="data">Data</option>
+                <option value="paciente">Paciente</option>
+            </select>
+            <input type="text" id="filtro-valor" class="odonto-input largo" />
+            <a id="atendimentos-filtro-botao" class="odonto-botao-primario maior">Filtrar</a>
+        </div>
+    }
+
+    <table class="odonto-tabela">
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr class="lista__atendimento" data-atendimento_id="@item.ID">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Paciente.Nome)
+                    </td>
+                    <td>
+                        @(item.Finalizado ? Html.Raw(item.Observacoes) : Html.Raw(item.Agenda.Data) + " " + Html.Raw(item.Agenda.Horario.Hora))
+                    </td>
+                </tr>
+            }
+
+            <template id="linha-tabela-atendimentos-template">
+                <tr class="lista__atendimento">
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </template>
+        </tbody>
+    </table>
+</div>
 
 @section Scripts {
     @{

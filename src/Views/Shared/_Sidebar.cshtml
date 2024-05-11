@@ -36,7 +36,7 @@
 
             @if (User.IsInRole("SECRETARIA"))
             {
-                <li>Usuários</li>
+                <li><a asp-controller="Paciente" asp-action="Index">Usuários</a></li>
             }
             
             @if (!User.IsInRole("PACIENTE"))

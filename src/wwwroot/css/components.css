@@ -1,18 +1,26 @@
-﻿.agenda-semanas .agenda {
+﻿.agenda-semanas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.agenda-semanas .agenda {
     display: none;
 }
 
 .agenda-semanas .agenda .coluna {
-    flex: 1;
-    border: 1px solid #ccc;
+    width: 7rem;
+    border: 1px solid black;
     min-height: 60dvh;
 }
 
 .agenda-semanas .agenda .coluna .dia {
-    background-color: #f0f0f0;
+    background-color: #00597E;
     padding: 10px;
     border-bottom: 1px solid #ccc;
     text-align: center;
+    color: white;
 }
 
 .agenda-semanas .agenda .coluna .hora {
@@ -22,6 +30,7 @@
     padding: 10px;
     border-bottom: 1px solid #ccc;
     text-align: center;
+    font-size: 0.75rem;
 }
 
 .agenda-semanas .agenda .coluna .hora span:last-child {
@@ -33,10 +42,16 @@
     background: green;
 }
 
+.agenda-semanas__controladores {
+    display: flex;
+    gap: 1rem;
+}
+
 .popup {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
     display: none;
     align-items: center;
     justify-content: center;
@@ -51,11 +66,25 @@
 }
 
 .popup__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
     padding: 1rem 3rem;
+    padding-top: 3rem;
+
     background: white;
-    border-radius: 20px;
     border: 0;
     box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
+}
+
+.popup__close {
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    font-size: 2rem;
 }
 
 @keyframes fadeIn {

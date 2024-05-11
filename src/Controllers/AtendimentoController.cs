@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OdontoSchedule.Models;
 using System.Security.Claims;
 
 namespace OdontoSchedule.Controllers
 {
+    [Authorize(Roles = "SECRETARIA,PACIENTE")]
     public class AtendimentoController : Controller
     {
         private readonly DBContext context;
@@ -14,16 +16,53 @@ namespace OdontoSchedule.Controllers
             this.context = context;   
         }
 
-        public async Task<IActionResult> Index(bool status = false)
+        public async Task<IActionResult> Index(bool status = false, string tipo_filtro = null, string filtro_valor = null)
         {
-            List<Atendimento> atendimentos = await this.context.Atendimentos
-                .Include(a => a.Dentista)
-                .Include(a => a.Paciente)
-                .Include(a => a.Agenda)
-                    .ThenInclude(h => h.Horario)
-                .Where(a => a.Finalizado == status)
-                .OrderBy(a => a.Agenda.Data)
-                .ToListAsync();
+            List<Atendimento> atendimentos;
+
+            if(User.FindFirstValue(ClaimTypes.Role) == "SECRETARIA")
+            {
+                atendimentos = await this.context.Atendimentos
+                    .Include(a => a.Dentista)
+                    .Include(a => a.Paciente)
+                    .Include(a => a.Agenda)
+                        .ThenInclude(h => h.Horario)
+                    .Where(a => a.Finalizado == status)
+                    .OrderBy(a => a.Agenda.Data)
+                    .ToListAsync();
+
+                if(tipo_filtro != null && filtro_valor != null)
+                {
+                    switch (tipo_filtro.ToLower())
+                    {
+                        case "dentista":
+                            atendimentos = atendimentos.Where(a => a.Dentista.Nome.Contains(filtro_valor) || a.Dentista.Nome.Equals(filtro_valor, StringComparison.CurrentCultureIgnoreCase)).ToList();
+                            break;
+                        case "data":
+                            if (DateOnly.TryParse(filtro_valor, out DateOnly data_filtro))
+                            {
+                                atendimentos = atendimentos.Where(a => a.Agenda.Data == data_filtro).ToList();
+                            }
+                            break;
+                        case "paciente":
+                            atendimentos = atendimentos.Where(a => a.Paciente.Nome.Contains(filtro_valor) || a.Paciente.Nome.Equals(filtro_valor, StringComparison.CurrentCultureIgnoreCase)).ToList();
+                            break;
+                        default:
+                            return BadRequest("Tipo de filtro inválido.");
+                    }
+                }
+            }
+            else
+            {
+                atendimentos = await this.context.Atendimentos
+                    .Include(a => a.Dentista)
+                    .Include(a => a.Paciente)
+                    .Include(a => a.Agenda)
+                        .ThenInclude(h => h.Horario)
+                    .Where(a => a.Finalizado == status && a.Paciente.ID == Int32.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)))
+                    .OrderBy(a => a.Agenda.Data)
+                    .ToListAsync();
+            }
 
             return View(atendimentos);
         }
@@ -32,7 +71,6 @@ namespace OdontoSchedule.Controllers
         {
             return View();
         }
-
 
         [HttpPost]
         // [ValidateAntiForgeryToken]
@@ -43,6 +81,7 @@ namespace OdontoSchedule.Controllers
 
             if(User.FindFirstValue(ClaimTypes.Role) == "PACIENTE")
             {
+                ModelState.Remove("PacienteId");
                 atendimento.PacienteId = Int32.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
             }
 
@@ -61,18 +100,18 @@ namespace OdontoSchedule.Controllers
 
                         await this.context.SaveChangesAsync();
 
-                        response.Add("sucess", true);
+                        response.Add("success", true);
                         response.Add("content", null);
                     }
                     catch (DbUpdateException)
                     {
-                        response.Add("sucess", false);
+                        response.Add("success", false);
                         response.Add("content", "Erro ao salvar as informações");
                     }
                 }
                 else
                 {
-                    response.Add("sucess", false);
+                    response.Add("success", false);
                     response.Add("content", "Data e hora indisponível");
                 }
             }
@@ -82,7 +121,7 @@ namespace OdontoSchedule.Controllers
                                         .SelectMany(x => x.Errors)
                                         .Select(x => x.ErrorMessage));
 
-                response.Add("sucess", false);
+                response.Add("success", false);
                 response.Add("content", errors);
             }
 

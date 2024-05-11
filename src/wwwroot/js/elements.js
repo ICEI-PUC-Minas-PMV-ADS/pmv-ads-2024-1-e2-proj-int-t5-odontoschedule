@@ -1,7 +1,8 @@
 const formularioMultiploPropriedades = {
     0: {
         ativoIndex: null,
-        lidar: lidaFluxoFormularioAtendimentoSecretaria
+        lidar: lidaFluxoFormularioAtendimentoSecretaria,
+        finalizar: (form) => criarAgendamento(form)
     }
 };
 
@@ -18,7 +19,7 @@ function lidaFluxoFormulario(event) {
     });
 
     if (formularioMultiploPropriedades[formulario.dataset.form_id].ativoIndex === formularioPartes.length - 1)
-        return formulario.submit();
+        return formularioMultiploPropriedades[formulario.dataset.form_id].finalizar(formulario)
 
     Array.from(formularioPartes)[formularioMultiploPropriedades[formulario.dataset.form_id].ativoIndex + 1].classList.add("ativo");
 
@@ -33,6 +34,21 @@ function fecharPopup(popup) {
     popup.classList.remove("aberto");
 }
 
+function criarAgendamento(form) {
+    fetch("/Atendimento/Create", { method: "post", body: new FormData(form) }).then(async (response) => {
+        let data = await response.json();
+
+        if (data.success) {
+            alert("Agendamento criado!");
+
+            window.location = "/Atendimento";
+        }
+        else {
+            alert(data.content);
+        }
+    });
+}
+
 function lidaFluxoFormularioAtendimentoSecretaria(parte) {
     const buscarDentistas = () => {
         fetch("/Dentista/GetAll").then(async (response) => {
@@ -43,6 +59,14 @@ function lidaFluxoFormularioAtendimentoSecretaria(parte) {
                 template.children.item(1).innerText = dentista.especialidade;
                 template.addEventListener("click", () => {
                     parte.parentNode.querySelector("input[name='DentistaId']").value = dentista.id;
+
+                    Array.from(parte.querySelector("table tbody")).forEach((i) => {
+                        if (i.classList.contains("item-selecionado")) {
+                            i.classList.remove("item-selecionado");
+                        }
+                    });
+
+                    template.classList.add("item-selecionado");
                 });
 
                 parte.querySelector("table tbody").appendChild(template);
@@ -54,7 +78,15 @@ function lidaFluxoFormularioAtendimentoSecretaria(parte) {
         let dentista = parte.parentNode.querySelector("input[name='DentistaId']").value;
 
         new AgendaComponente(dentista, document.getElementById("secretaria-agendamento-agenda"), (info) => {
-            parte.parentNode.querySelector("input[name='AgendaId']").value = info.horario.agendaId;
+            if (info.horario.disponivel) {
+                parte.parentNode.querySelector("input[name='AgendaId']").value = info.horario.agendaId;
+
+                Array.from(document.getElementById("secretaria-agendamento-agenda").querySelectorAll(".coluna .hora.item-selecionado")).forEach((i) => {
+                    i.classList.remove("item-selecionado");
+                });
+
+                document.querySelector("#secretaria-agendamento-agenda #agenda-" + info.horario.agendaId).classList.add("item-selecionado");
+            }
         }).load();
     }
 

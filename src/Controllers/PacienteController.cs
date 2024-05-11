@@ -1,5 +1,6 @@
 
 ﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OdontoSchedule.Models;
@@ -17,26 +18,31 @@ namespace OdontoSchedule.Controllers
             this.context = context;
         }
 
+        [Authorize(Roles = "SECRETARIA")]
         public IActionResult Create()
         {
             return View();
         }
 
+        [AllowAnonymous]
         public IActionResult Cadastro()
         {
             return View();
         }
 
+        [AllowAnonymous]
         public IActionResult Login()
         {
             return View();
         }
-        
+
+        [Authorize(Roles = "SECRETARIA")]
         public IActionResult Index()
         {
             return View(this.context.Pacientes.ToList());
         }
 
+        [Authorize(Roles = "SECRETARIA")]
         public async Task<IActionResult> Details(int id)
         {
             Paciente paciente = await this.context.Pacientes.FindAsync(id);
@@ -55,6 +61,8 @@ namespace OdontoSchedule.Controllers
             return View(paciente);
         }
 
+
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Login([Bind("Email", "Senha")] Paciente paciente)
         {
@@ -94,15 +102,16 @@ namespace OdontoSchedule.Controllers
         }
 
 
+        [Authorize(Roles = "SECRETARIA")]
         public async Task<IActionResult> ByCPF(string cpf)
         {
             List<Paciente> pacientes = await this.context.Pacientes.Where(p => p.CPF == cpf).ToListAsync();
-            
+
             return pacientes.ToArray().Length > 0 ?  Ok(pacientes.First()) : NotFound();
         }
 
-
-	    [HttpPost]
+        [AllowAnonymous]
+        [HttpPost]
         // [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nome,DataNascimento,CPF,Email,Telefone,Bairro,Cidade,Rua,Numero,Complemento,Senha")] Paciente paciente)
         {
@@ -136,6 +145,7 @@ namespace OdontoSchedule.Controllers
             return View(paciente);
         }
 
+        [Authorize(Roles = "SECRETARIA, PACIENTE")]
         [HttpPost]
         // [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit([Bind("ID,Nome,DataNascimento,CPF,Email,Telefone,Bairro,Cidade,Rua,Numero,Complemento")] Paciente paciente)
@@ -181,6 +191,7 @@ namespace OdontoSchedule.Controllers
             return View("Details", paciente);
         }
 
+        [Authorize(Roles = "PACIENTE")]
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync();
