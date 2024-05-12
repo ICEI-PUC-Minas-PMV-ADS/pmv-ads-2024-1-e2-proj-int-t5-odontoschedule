@@ -158,7 +158,7 @@ Para este projeto foram definidos os seguintes casos de testes a serem aplicados
 | Caso de Teste 	| CT-26 – Obter credenciais de funcionário	|
 |Requisito Associado | RF-18 - A aplicação deverá gerar um login e senha que oferecerá acesso à área administrativa da aplicação para a secretária e o administrador.      |
 | Objetivo do Teste 	| Verificar se o administrador e a secretária são capazes de obter seus credenciais |
-| Passos 	| - Acessar o raiz dos arquivos da aplicação<br> - Verificar se existe um arquivo chamado config.txt. Se existir, apagar o mesmo.<br> - Clicar em "Entrar como Funcionário"<br> - Reiniciar o servidor HTTP<br> - Monitorar o console do servidor |
+| Passos 	| - Acessar o raiz dos arquivos da aplicação<br> - Verificar se existe um arquivo chamado config.txt. Se existir, apagar o mesmo.<br> - Reiniciar o servidor HTTP<br> - Monitorar o console do servidor |
 |Critério de Êxito | - No console devem ser exibidos os pares de credenciais do administrador e da secretária |
 |  	|  	|
 | Caso de Teste 	| CT-27 – Paciente alterar senha	|
