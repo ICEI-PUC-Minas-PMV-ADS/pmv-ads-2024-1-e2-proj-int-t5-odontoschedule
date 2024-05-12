@@ -87,7 +87,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-17 – Secretária fazer cadastro de um paciente** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-11 - A aplicação deve permitir que a secretária faça cadastro de pacientes. |
-|Registro de evidência |  |
+|Registro de evidência |https://drive.google.com/file/d/1Xg1QX64ubLahtSnWo2P9yKVy_EjqRm6U/view?usp=sharing  |
 
 | **Caso de Teste** 	| **CT-18 – Secretária mudar status do agendamento** 	|
 |:---:	|:---:	|
@@ -102,7 +102,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-20 – Secretária visualizar informações e agendamentos de um paciente** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-14 - A aplicação deve permitir que a secretária visualize todas as informações pessoais e agendamentos de um paciente específico. |
-|Registro de evidência | |
+|Registro de evidência |https://drive.google.com/file/d/1rMDwe77IaTgKhsBvfQZcMbCU4K2-_AMC/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-21 – Notificar novo agendamento à secretária** 	|
 |:---:	|:---:	|
@@ -122,7 +122,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-24 – Secretária atualizar contato e endereço do paciente** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-16 - A aplicação deve permitir que a secretária atualize informações de contato e endereço de um paciente. |
-|Registro de evidência | |
+|Registro de evidência |https://drive.google.com/file/d/14FD54vaWR2agklDhqmCBwS9y0sn0qw2Q/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-25 – Administrador visualizar métricas do consultório** 	|
 |:---:	|:---:	|
