@@ -171,7 +171,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 
 ## Avaliação
 
-No "CT-07 – Agendar consulta como Paciente" foi verificado que durante o agendamento não atende 100% o RF-05, pois falta um campo para informações de contato.
+No "CT-07 – Agendar consulta como Paciente" foi verificado que durante o agendamento não atende 100% o RF-05, pois falta um campo para informações de contato.<br>
 No "CT-04 – Efetuar login como Administrador" foi possível verificar que na Home Page está escrito "Secretária" em vez de "Administrador" e está aparecendo o botão agendar.
 
 Os seguintes requisitos serão desenvolvidos na próxima etapa do projeto:
