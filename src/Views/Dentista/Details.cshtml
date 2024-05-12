@@ -1,48 +1,54 @@
-﻿@model OdontoSchedule.Models.Dentista
+﻿@model OdontoSchedule.Models.Dentista;
 
 @{
     ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Details</h1>
+<div class="usuarios-lista-tabs">
+    <div class="tabs-cabecalho">
+        <a asp-controller="Paciente" asp-action="Index">Pacientes</a>
+        <a asp-controller="Dentista" asp-action="Index">Dentistas</a>
+    </div>
 
-<div>
-    <h4>Dentista</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nome)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nome)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CPF)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CPF)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DataNascimento)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DataNascimento)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CRO)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CRO)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Especialidade)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Especialidade)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.ID">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <form asp-action="Edit" class="conteudo-tab flex-column gap-sm">
+        <div class="row">
+            <div class="flex-row">
+                <div class="conteudo-tab__lado">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="ID" />
+                    <div class="form-group">
+                        <label asp-for="Nome" class="control-label"></label>
+                        <input asp-for="Nome" class="odonto-input" />
+                        <span asp-validation-for="Nome" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="DataNascimento" class="control-label"></label>
+                        <input asp-for="DataNascimento" class="odonto-input" />
+                        <span asp-validation-for="DataNascimento" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CPF" class="control-label"></label>
+                        <input asp-for="CPF" class="odonto-input" />
+                        <span asp-validation-for="CPF" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CRO" class="control-label"></label>
+                        <input asp-for="CRO" class="odonto-input" />
+                        <span asp-validation-for="CRO" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Especialidade" class="control-label"></label>
+                        <input asp-for="Especialidade" class="odonto-input" />
+                        <span asp-validation-for="Especialidade" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Salvar" class="odonto-botao-primario maior" />
+        </div>
+
+    </form>
 </div>
