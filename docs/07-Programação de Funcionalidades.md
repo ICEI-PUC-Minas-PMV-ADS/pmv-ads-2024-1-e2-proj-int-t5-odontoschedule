@@ -10,7 +10,7 @@
 |RF-04| A aplicação deve permitir que o paciente seja notificado com 24h de antecedência.     |  |   |
 |RF-05| A aplicação deve permitir que o paciente seja capaz de agendar uma consulta passando as seguintes informações: Informações de contato, especialidade desejada, horário, dentista e modalidade (particular ou convênio)    | Atendimento/Create.cshtml, AtendimentoController.cs | Amanda  |
 |RF-06| A aplicação deve permitir que o paciente receba uma notificação quando uma consulta for cancelada, remarcada ou concluída.  |  |   |
-|RF-07| A aplicação deve permitir que o paciente visualize no seu perfil todos os atendimentos já realizados e pendentes.   |   |  |
+|RF-07| A aplicação deve permitir que o paciente visualize no seu perfil todos os atendimentos já realizados e pendentes.   |  Paciente/Index.cshtml, PacienteController.cs e AtendimentoController.cs | Alvaro |
 |RF-08| A aplicação deve permitir que um usuário do tipo secretária gerencie os dentistas. Além disso, no cadastro devem ser fornecidos dados como: nome, CRO, especialidade e seus respectivos dias e horários de atendimento.   | Dentista/Create.cshtml, Dentista/Details.cshtml,  Dentista/Index.cshtml e DentistaController.cs |  Cassiano |
 |RF-09| A aplicação deve permitir que a secretária visualize os agendamentos e filtre-os por dia e dentista.   | AtendimentoController.cs e Atendimento/Index.cshtml | Joabe |
 |RF-10| A aplicação deve permitir que a secretária faça agendamentos para pacientes cadastrados    | AtendimentoController.cs e Atendimento/Create.cshtml |  Joabe |
