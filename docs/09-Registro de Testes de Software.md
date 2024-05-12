@@ -72,12 +72,12 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-14 – Secretária visualizar e filtrar atendimentos por dentista** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-09 - A aplicação deve permitir que a secretária visualize os agendamentos e filtre-os por dia e dentista. |
-|Registro de evidência |  |
+|Registro de evidência |  https://drive.google.com/file/d/1Rjpaju7zCGahgvWtpG_cdLzT0Pd8pEqB/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-15 – Secretária visualizar e filtrar atendimentos por data** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-09 - A aplicação deve permitir que a secretária visualize os agendamentos e filtre-os por dia e dentista. |
-|Registro de evidência |  |
+|Registro de evidência | https://drive.google.com/file/d/1Rjpaju7zCGahgvWtpG_cdLzT0Pd8pEqB/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-16 – Secretária fazer um agendamento** 	|
 |:---:	|:---:	|
@@ -132,7 +132,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-26 – Obter credenciais de funcionário** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-18 - A aplicação deverá gerar um login e senha que oferecerá acesso à área administrativa da aplicação para a secretária e o administrador. |
-|Registro de evidência | |
+|Registro de evidência | https://drive.google.com/file/d/1yLJpvRqLSxKxHDMqAWNERsUYAEatuOen/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-27 – Paciente alterar senha** 	|
 |:---:	|:---:	|
