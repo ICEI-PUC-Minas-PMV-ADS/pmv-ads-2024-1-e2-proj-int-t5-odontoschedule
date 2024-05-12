@@ -175,9 +175,8 @@ No CT-07 foi verificado que durante o agendamento não atende 100% o RF;05, pois
 
 Os seguintes requisitos serão desenvolvidos na próxima etapa do projeto:
 
-> RF-04 - A aplicação deve permitir que o paciente seja notificado com 24h de antecedência.
-> RF-06 - A aplicação deve permitir que o paciente receba uma notificação quando uma consulta for cancelada, remarcada ou concluída.
-> RF-15 - A aplicação deve permitir que a secretária receba uma notificação quando uma consulta foi agendada, cancelada e remarcada.
-> RF-17 - A aplicação deve permitir que o administrador visualize relatórios contendo informações de desempenho do consultório, como número de atendimentos.
-> 
+- RF-04 - A aplicação deve permitir que o paciente seja notificado com 24h de antecedência.
+- RF-06 - A aplicação deve permitir que o paciente receba uma notificação quando uma consulta for cancelada, remarcada ou concluída.
+- RF-15 - A aplicação deve permitir que a secretária receba uma notificação quando uma consulta foi agendada, cancelada e remarcada.
+- RF-17 - A aplicação deve permitir que o administrador visualize relatórios contendo informações de desempenho do consultório, como número de atendimentos.
 
