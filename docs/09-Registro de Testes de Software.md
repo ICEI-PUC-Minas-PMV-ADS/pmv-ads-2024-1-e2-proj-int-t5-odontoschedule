@@ -67,7 +67,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-13 – Secretária cadastrar dentista** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-08 - A aplicação deve permitir que um usuário do tipo secretária gerencie os dentistas. Além disso, no cadastro devem ser fornecidos dados como: nome, CRO, especialidade e seus respectivos dias e horários de atendimento. |
-|Registro de evidência |  |
+|Registro de evidência | https://drive.google.com/file/d/111fsFW2fcjQZfKv84AMdibNcId0Ymufm/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-14 – Secretária visualizar e filtrar atendimentos por dentista** 	|
 |:---:	|:---:	|
@@ -97,7 +97,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-19 – Secretária visualizar informações e agendamentos de um paciente** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-13 - A aplicação deve permitir que a secretária seja capaz de visualizar todas as informações pessoais e agenda de um dentista. |
-|Registro de evidência | |
+|Registro de evidência | https://drive.google.com/file/d/1_tOQSN8JypT0u2FQdmZlULTejAfsd_ox/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-20 – Secretária visualizar informações e agendamentos de um paciente** 	|
 |:---:	|:---:	|
@@ -162,7 +162,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-32 – Secretária mudar agenda de dentista** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-08 - A aplicação deve permitir que um usuário do tipo secretária gerencie os dentistas. Além disso, no cadastro devem ser fornecidos dados como: nome, CRO, especialidade e seus respectivos dias e horários de atendimento. |
-|Registro de evidência |  |
+|Registro de evidência | https://drive.google.com/file/d/1r4gAOmJ-rV9rb_uGqrWk48PVfH2kSHKw/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-33 – Atualizar perfil como paciente** 	|
 |:---:	|:---:	|
