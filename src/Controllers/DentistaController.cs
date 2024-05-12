@@ -64,9 +64,11 @@ namespace OdontoSchedule.Controllers
             {
                 _context.Add(dentista);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+
+                return Ok(new { success = true, content = dentista.ID});
             }
-            return View(dentista);
+
+            return BadRequest(new { success = false, content = "Dados incorretos." });
         }
 
         [Authorize(Roles = "SECRETARIA")]

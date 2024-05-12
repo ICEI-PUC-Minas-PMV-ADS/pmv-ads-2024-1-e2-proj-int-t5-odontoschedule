@@ -5,7 +5,6 @@ using System.Diagnostics;
 
 namespace OdontoSchedule.Controllers
 {
-    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -16,6 +15,11 @@ namespace OdontoSchedule.Controllers
         }
 
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Teste()
         {
             return View();
         }

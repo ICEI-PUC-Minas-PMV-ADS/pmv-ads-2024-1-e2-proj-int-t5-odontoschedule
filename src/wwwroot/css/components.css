@@ -21,6 +21,7 @@
     border-bottom: 1px solid #ccc;
     text-align: center;
     color: white;
+    font-size: 0.75rem;
 }
 
 .agenda-semanas .agenda .coluna .hora {
@@ -40,6 +41,10 @@
 
 .agenda-semanas .agenda .coluna .hora.disponivel span:last-child {
     background: green;
+}
+
+.agenda-semanas .agenda .coluna .hora.unset span:last-child {
+    background: gray;
 }
 
 .agenda-semanas__controladores {
