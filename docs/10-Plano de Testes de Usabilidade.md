@@ -8,6 +8,8 @@ Mediante dados coletados e métricas é feito uma análise dos resultados com o 
 Para este projeto será realizado o modelo de testes remoto e moderado com observação da execução das tarefas realizadas pelos participantes por meio da ferramenta Lookback.
 O planejamento dos testes a serem executados com os participantes são descritos a seguir: objetivos, método e modelo utilizado, seleção dos paticipantes, roteiro das tarefas a serem desempenhadas pelos usuários e análise.
 
+Os testes serão realizados em duas etapas com números de participantes diversos, sendo a primeira etapa realizada com a aplicação ainda em desenvolvimento e executando as funcionalidades essenciais, a fim de identificar erros e sugestões de melhoria, e a segunda etapa com a aplicação finalizada e apresentando todas as suas funcionalidades.
+
 # 1. Objetivos
 
 Os seguintes objetivos foram definidos com a finalidade de possibilitar uma experiência positiva do usuário:
@@ -34,9 +36,9 @@ Além disso, este modelo oferece um custo baixo para aplicação dos testes, já
 
 # 3. Participantes
 
-Serão selecionados usuários de acordo com as personas já estabelecidas, sendo elas secretárias, pacientes e empreendedores. 
+Serão selecionados usuários de acordo com as personas já estabelecidas, realizando os testes como sendo os usuários secretária, paciente e empreendedor. 
 
-Como esta aplicação está sendo desenvolvida com foco no consultório DentalIn, funcionários e o dono do consultório participarão dos testes, além de 15 participantes com perfil de paciente que possuem a intenção de agendar consultas odontológicas de forma prática. As características destes participantes são descritas a seguir:
+Como esta aplicação está sendo desenvolvida com foco no consultório DentalIn, funcionários e o dono do consultório participarão dos testes, além de 10 participantes com perfil de paciente que possuem a intenção de agendar consultas odontológicas de forma prática. As características destes participantes são descritas a seguir:
 
 > - Pessoas entre 18 e 70 anos;
 > - Homens e mulheres;
@@ -45,7 +47,8 @@ Como esta aplicação está sendo desenvolvida com foco no consultório DentalIn
 > - Possui e-mail válido;
 > - Possui número de telefone ou celular.
 
-Sendo assim, o teste deverá possuir 5 usuários distribuídos com as características descritas acima.
+Para a primeira etapa, com a aplicação ainda em desenvolvimento, o teste será realizado com 5 usuários que possuem as características descritas acima.
+Para a segunda etapa, com a aplicação em desenvolvimento, o teste serár realizado com 10 usuários que possuem as características descritas acima. 
 
 # 4. Procedimento
 
@@ -175,20 +178,19 @@ A tabela a seguir será utilizada para analisar cada tarefa executada pelos part
 
 | **Usuário**   | **Resposta emocional**   | **Execução**  | **Tempo (seg)**  |  **Ações/Cliques**  | **Cometeu erro?** | **Se recuperou do erro?**  | **Observações** | 
 | :--------: | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
-| Paciente01 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
-| Paciente02 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
-| Paciente03 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
-| Paciente04 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
-| Paciente05 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
-| Empreendedor | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
+| Usuario01 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
+| Usuario02 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
+| Usuario03 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
+| Usuario04 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
+| Usuario05 | -------- |  -------- |  -------- | -------- | -------- | -------- | -------- |
 
 As seguintes informações serão utilizadas para preencher a tabela:
 
-> - Usuário: código de cada usuário e tipo;
-> - Resposta emocional: confuso, confiante ou estressado;
+> - Usuário: código de cada usuário;
+> - Resposta emocional: confuso, confiante, neutro, satisfeito, insatisfeito, ou estressado;
 > - Execução: concluiu ou não concluiu;
 > - Tempo (seg): cronometrar e colocar o tempo em segundos utilizado para realização ou não da tarefa;
-> - Ações: contabilizar quantas ações foram feitas para realização ou não da tarefa;
+> - Ações: contabilizar quantos movimentos e cliques foram feitos para realização ou não da tarefa;
 > - Cometeu erro?: sim ou não;
 > - Se recuperou do erro?: sim, não ou n/a.
 
