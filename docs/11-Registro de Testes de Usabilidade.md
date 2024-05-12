@@ -30,7 +30,7 @@
 | Usuário02 | Confuso | Concluiu | 60 | 4 | Sim | Sim | Acessou o link, encontrou dificuldades em identificar "Logar como funcionário" e teve pequenos atrasos durante o preenchimento dos campos, mas completou o processo. Recuperou-se após revisão |
 | Usuário03 | Satisfeito | Concluiu | 40 | 4 | Não | n/a | Acessou o link, identificou rapidamente "Logar como funcionário" e preencheu os campos de login sem problemas, clicando em "Entrar" sem hesitação |
 | Usuário04 | Satisfeito | Concluiu | 42 | 4 | Não | n/a | Acessou o link, identificou "Logar como funcionário" sem dificuldade e preencheu os campos de login sem problemas |
-| Usuário03 | Satisfeito | Concluiu | 45 | 4 | Não | n/a | Acessou o link, clicou rapidamente "Logar como funcionário" e realizou login |
+| Usuário05 | Satisfeito | Concluiu | 45 | 4 | Não | n/a | Acessou o link, clicou rapidamente "Logar como funcionário" e realizou login |
 
 ### CTU-04
 
