@@ -1,0 +1,38 @@
+﻿@model IEnumerable<OdontoSchedule.Models.Dentista>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="usuarios-lista-tabs" id="dentistas-lista-tab">
+    <div class="tabs-cabecalho">
+        <a asp-controller="Paciente" asp-action="Index">Pacientes</a>
+        <a asp-controller="Dentista" asp-action="Index">Dentistas</a>
+    </div>
+    <div class="conteudo-tab">
+        <div>
+            <label class="texto-preto">
+                Procurar
+            </label>
+            <input class="odonto-input largo"/>
+        </div>
+        <table class="odonto-tabela">
+            <tbody>
+        @foreach (var item in Model) {
+                <tr onclick="window.location = '/Dentista/Details/@item.ID';">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Especialidade)
+                    </td>
+                </tr>
+        }
+            </tbody>
+        </table>
+
+        <a class="odonto-botao-primario maior" asp-action="Create">Cadastrar Dentista</a>
+    </div>
+</div>
+

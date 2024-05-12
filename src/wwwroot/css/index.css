@@ -1,0 +1,139 @@
+﻿*:not(i) {
+    font-family: "Inter", sans-serif !important;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+.odonto-botao-primario {
+    border: none;
+
+    background: #61A5AE;
+    border-radius: 2rem;
+    color: white;
+
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+
+    width: fit-content;
+}
+
+.odonto-botao-secundario {
+    border: none;
+    background: #00597E;
+    border-radius: 2rem;
+    color: white;
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+}
+
+.odonto-botao-primario.maior, .odonto-botao-secundario.maior {
+    padding: 0.75rem 2.5rem;
+}
+
+.odonto-input {
+    width: 8rem;
+    height: 1.5rem;
+
+    background: #FFFEFE;
+    border: 1px solid #34ADFA;
+    border-radius: 0.3rem;
+}
+
+textarea.odonto-input {
+    width: 15rem;
+    height: 6rem;
+    resize: none;
+}
+
+.odonto-input.largo {
+    width: 15rem;
+}
+
+.flex-row {
+    display: flex;
+    gap: 2rem;
+}
+
+.campos-formulario-linha {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.campos-formulario-linha__campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.form-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 18rem;
+}
+
+.texto-preto {
+    color: black;
+}
+
+.odonto-tabela {
+    border: 1px solid #000000;
+    background: #D9D9D9;
+    width: 40dvw;
+    max-height: 50dvh;
+
+    overflow-y: auto;
+}
+
+.odonto-tabela td {
+    width: 50%;
+    height: fit-content;
+    border: 2px solid #C8C8C8;
+    color: #7C7C7C;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.item-selecionado {
+    background: #CCECF9;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.gap-sm {
+    gap: 1rem;
+}
+
+.gap-md {
+    gap: 2rem;
+}
+
+.gap-lg {
+    gap: 3rem;
+}
+
+.align-self-center {
+    align-self: center;
+}

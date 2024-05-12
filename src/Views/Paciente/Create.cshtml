@@ -1,0 +1,90 @@
+﻿@model OdontoSchedule.Models.Paciente
+
+@{
+    ViewData["Title"] = "Criar Paciente";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="container-cadastrar-paciente">
+    <h1>Cadastrar Paciente</h1>
+
+    <form asp-action="Create">
+        <input type="hidden" name="no_redirect" value="true" />
+        <div class="form-data">
+            <label asp-for="Nome">Nome:</label>
+            <input type="text" class="odonto-input largo" asp-for="Nome">
+            <span asp-validation-for="Nome" class="text-danger"></span>
+        </div>
+        <div class="form-data">
+            <label asp-for="Senha">Senha:</label>
+            <input type="password" class="odonto-input largo" asp-for="Senha">
+            <span asp-validation-for="Senha" class="text-danger"></span>
+        </div>
+        <div class="form-data">
+            <label asp-for="CPF">CPF:</label>
+            <input type="text" class="odonto-input largo" asp-for="CPF">
+            <span asp-validation-for="CPF" class="text-danger"></span>
+        </div>
+        <div class="form-data">
+            <label asp-for="Email">Email:</label>
+            <input type="text" class="odonto-input largo" asp-for="Email">
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+
+        <label asp-for="DataNascimento">Data de Nascimento:</label>
+        <input type="date" class="odonto-input largo" asp-for="DataNascimento" />
+        <span asp-validation-for="DataNascimento" class="text-danger"></span>
+
+        <label asp-for="Sexo">Sexo:</label>
+        <div id="campos-sexo" asp-for="Sexo">
+            <label class="sexo" for="feminino"><input type="radio" id="feminino" name="sexo" value="false" class="sexo validar input-radio">Feminino</label>
+            <label class="sexo" for="masculino"><input type="radio" id="masculino" name="sexo" value="true" class="sexo validar input-radio">Masculino</label>
+            <label class="sexo" for="outro"><input type="radio" id="outro" name="sexo" value="null" class="sexo validar input-radio">Outro</label>
+        </div>
+        <span asp-validation-for="Sexo" class="text-danger"></span>
+
+        <div class="form-data">
+            <label asp-for="Cidade">Cidade:</label>
+            <input type="text" class="odonto-input largo" asp-for="Cidade">
+            <span asp-validation-for="Cidade" class="text-danger"></span>
+        </div>
+        <div class="form-data">
+            <label asp-for="Bairro">Bairro:</label>
+            <input type="text" class="odonto-input largo" asp-for="Bairro">
+            <span asp-validation-for="Bairro" class="text-danger"></span>
+        </div>
+
+        <div class="form-data">
+            <label asp-for="Rua">Rua:</label>
+            <input type="text" class="odonto-input largo" asp-for="Rua">
+            <span asp-validation-for="Rua" class="text-danger"></span>
+        </div>
+
+        <div class="campos-formulario-linha">
+            <div class="campos-formulario-linha__campo">
+                <label asp-for="Numero">Número:</label>
+                <input type="text" class="odonto-input" asp-for="Numero">
+                <span asp-validation-for="Numero" class="text-danger"></span>
+            </div>
+
+            <div class="campos-formulario-linha__campo">
+                <label asp-for="Complemento">Complemento:</label>
+                <input type="text" class="odonto-input" asp-for="Complemento">
+                <span asp-validation-for="Complemento" class="text-danger"></span>
+            </div>
+
+            <div class="campos-formulario-linha__campo">
+                <label asp-for="Telefone">Telefone:</label>
+                <input type="text" class="odonto-input" asp-for="Telefone">
+                <span asp-validation-for="Telefone" class="text-danger"></span>
+            </div>
+        </div>
+
+        <button class="odonto-botao-primario maior" type="submit">Criar</button>
+    </form>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

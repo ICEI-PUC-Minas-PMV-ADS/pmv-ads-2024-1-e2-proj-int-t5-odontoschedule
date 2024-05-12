@@ -1,0 +1,102 @@
+﻿@model OdontoSchedule.Models.Atendimento
+
+@{
+    ViewData["Title"] = "Criar agendamento";
+}
+
+<div class="formulario-multiplo">
+    <form data-form_id="0" id="formulario-novo-atendimento" class="flex-column flex-align-center flex-justify-center gap-sm">
+        <input type="hidden" name="DentistaId" />
+        <input type="hidden" name="PacienteId" />
+        <input type="hidden" name="AgendaId" />
+
+        <div class="formulario-multiplo__parte ativo flex-column gap-sm" data-form_parte="basico">
+
+            <span>Funcionamento da DentalIn</span>
+            <div class="informacoes-horarios-funcionamento">
+                <span>Segunda - Sexta: 8:00 - 17:00</span>
+                <span>Sábado - Domingo: 8:00 - 15:00</span>
+            </div>
+
+
+            @if (User.IsInRole("SECRETARIA"))
+            {
+                <div class="form-data">
+                    <label for="cpf">CPF:</label><br>
+                    <input type="text" id="atendimento_formulario_usuario_cpf" class="odonto-input largo"><br>
+                </div>
+                <div class="form-data">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="atendimento_formulario_usuario_nome" class="odonto-input largo" disabled><br>
+                </div>
+            }
+
+            <select asp-for="TemConvenio" class="odonto-input largo">
+                <option value="">Modalidade</option>
+                <option value="false">Particular</option>
+                <option value="true">Convênio</option>
+            </select>
+        </div>
+
+        <div class="formulario-multiplo__parte" data-form_parte="dentistas">
+            <h2>Dentistas / Especialidade</h2>
+
+            <table class="odonto-tabela">
+                <tbody>
+                    <template id="dentista-lista-template">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="formulario-multiplo__parte" data-form_parte="agendamento">
+            <div class="agenda-semanas" id="secretaria-agendamento-agenda">
+                <template id="agenda-template">
+                    <div class="agenda">
+                        <div class="coluna coluna-domingo">
+                            <div class="dia">Domingo</div>
+                        </div>
+                        <div class="coluna coluna-segunda">
+                            <div class="dia">Segunda</div>
+                        </div>
+                        <div class="coluna coluna-terca">
+                            <div class="dia">Terça</div>
+                        </div>
+                        <div class="coluna coluna-quarta">
+                            <div class="dia">Quarta</div>
+                        </div>
+                        <div class="coluna coluna-quinta">
+                            <div class="dia">Quinta</div>
+                        </div>
+                        <div class="coluna coluna-sexta">
+                            <div class="dia">Sexta</div>
+                        </div>
+                        <div class="coluna coluna-sabado">
+                            <div class="dia">Sabado</div>
+                        </div>
+                    </div>
+                </template>
+
+                <div class="agenda-semanas-lista">
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="formulario-multiplo__botao odonto-botao-primario maior">Próximo</button>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        <script src="@Url.Content("~/js/secretaria_cria_atendimento.js")"></script>
+        ;
+        <script src="@Url.Content("~/js/AgendaComponente.js")"></script>
+        ;
+        <script src="@Url.Content("~/js/elements.js")"></script>
+    }
+}

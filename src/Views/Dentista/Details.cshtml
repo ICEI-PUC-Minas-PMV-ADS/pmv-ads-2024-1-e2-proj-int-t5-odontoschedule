@@ -1,0 +1,94 @@
+﻿@model OdontoSchedule.Models.Dentista;
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="usuarios-lista-tabs">
+    <div class="tabs-cabecalho">
+        <a asp-controller="Paciente" asp-action="Index">Pacientes</a>
+        <a asp-controller="Dentista" asp-action="Index">Dentistas</a>
+    </div>
+
+    <form class="conteudo-tab flex-column gap-sm">
+        <div class="row">
+            <div class="flex-row">
+                <div class="conteudo-tab__lado">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="ID" />
+                    <div class="form-group">
+                        <label asp-for="Nome" class="control-label"></label>
+                        <input asp-for="Nome" class="odonto-input" />
+                        <span asp-validation-for="Nome" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="DataNascimento" class="control-label"></label>
+                        <input asp-for="DataNascimento" class="odonto-input" />
+                        <span asp-validation-for="DataNascimento" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CPF" class="control-label"></label>
+                        <input asp-for="CPF" class="odonto-input" />
+                        <span asp-validation-for="CPF" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CRO" class="control-label"></label>
+                        <input asp-for="CRO" class="odonto-input" />
+                        <span asp-validation-for="CRO" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Especialidade" class="control-label"></label>
+                        <input asp-for="Especialidade" class="odonto-input" />
+                        <span asp-validation-for="Especialidade" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="agenda-semanas" id="dentista-agendamento-agenda">
+            <template id="agenda-template">
+                <div class="agenda">
+                    <div class="coluna coluna-domingo">
+                        <div class="dia">Domingo</div>
+                    </div>
+                    <div class="coluna coluna-segunda">
+                        <div class="dia">Segunda</div>
+                    </div>
+                    <div class="coluna coluna-terca">
+                        <div class="dia">Terça</div>
+                    </div>
+                    <div class="coluna coluna-quarta">
+                        <div class="dia">Quarta</div>
+                    </div>
+                    <div class="coluna coluna-quinta">
+                        <div class="dia">Quinta</div>
+                    </div>
+                    <div class="coluna coluna-sexta">
+                        <div class="dia">Sexta</div>
+                    </div>
+                    <div class="coluna coluna-sabado">
+                        <div class="dia">Sabado</div>
+                    </div>
+                </div>
+            </template>
+
+            <div class="agenda-semanas-lista">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="button" class="odonto-botao-primario maior">Salvar</button>
+        </div>
+
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        <script src="~/js/AgendaEditorComponente.js"></script>
+        ;
+        <script src="~/js/EditarDentista.js"></script>
+    }
+}

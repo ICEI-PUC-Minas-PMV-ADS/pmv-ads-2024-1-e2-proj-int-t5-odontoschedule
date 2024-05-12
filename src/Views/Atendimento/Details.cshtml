@@ -1,0 +1,140 @@
+﻿@model OdontoSchedule.Models.Atendimento
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" method="post" class="flex-column gap-lg flex-align-center">
+            <input type="hidden" asp-for="ID" />
+            <input type="hidden" asp-for="AgendaId" id="atendimento-agenda-id" />
+            <input type="hidden" asp-for="DentistaId" id="atendimento-dentista-id" />
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="flex-column gap-sm flex-align-center">
+                <div class="form-data">
+                    <label>Paciente</label>
+                    <span>@Html.DisplayFor(model => model.Paciente.Nome)</span>
+                </div>
+                <div class="form-data">
+                    <label>CPF</label>
+                    <span>@Html.DisplayFor(model => model.Paciente.CPF)</span>
+                </div>
+                <div class="form-data">
+                    <label>Dentista</label>
+                    <span>@Html.DisplayFor(model => model.Dentista.Nome)</span>
+                </div>
+                <div class="form-data">
+                    <label>Especialidade</label>
+                    <span>@Html.DisplayFor(model => model.Dentista.Especialidade)</span>
+                </div>
+            </div>
+            
+            <div class="flex-column gap-sm flex-align-center">
+                <div class="form-data">
+                    <label>
+                        Modalidade
+                    </label>
+                    <span>@(Model.TemConvenio ? "Convênio" : "Particular")</span>
+                </div>
+                <div class="form-data">
+                    <label>Horário</label>
+
+                    <span id="atendimento-data-hora">@Html.DisplayFor(model => model.Agenda.Data) @Html.DisplayFor(model => model.Agenda.Horario.Hora)</span>
+                </div>
+                <div class="form-data">
+                    <label>Telefone</label>
+                    <span>@Html.DisplayFor(model => model.Paciente.Telefone)</span>
+                </div>
+                <div class="form-data">
+                    @if (User.IsInRole("SECRETARIA"))
+                    {
+                        <label>Status</label>
+                        <select asp-for="Finalizado" class="odonto-input">
+                            <option value=""></option>
+                            <option value="true">Finalizado</option>
+                            <option value="false">Em andamento</option>
+                        </select>
+                    }
+                    else
+                    {
+                        <label>Status</label>
+                        <span>@(Model.Finalizado ? "Finalizado" : "Em andamento")</span>
+                    }
+                </div>
+                <div class="form-data gap-sm">
+                    @if (User.IsInRole("SECRETARIA"))
+                    {
+                        <label asp-for="Observacoes"></label>
+                        <textarea asp-for="Observacoes" class="odonto-input">@Html.DisplayFor(model => model.Observacoes)</textarea>
+                    }
+                    else
+                    {
+                        <label asp-for="Observacoes"></label>
+                        <span>@Html.DisplayFor((model) => model.Observacoes)</span>
+                    }
+                </div>
+            </div>
+
+            <div class="flex-row gap-md">
+                @if(!Model.Finalizado)
+                {
+                    <button type="button" class="odonto-botao-primario maior" id="botao-cancelar">Cancelar</button>
+             
+                    <button type="button" id="botao-reagendar-atendimento" class="odonto-botao-primario maior">Reagendar</button>
+                }
+
+                <button type="submit" class="odonto-botao-primario maior">Salvar</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="popup">
+        <div class="popup__content">
+            <a class="popup__close">x</a>
+            <div class="agenda-semanas">
+                <template id="agenda-template">
+                    <div class="agenda">
+                        <div class="coluna coluna-domingo">
+                            <div class="dia">Domingo</div>
+                        </div>
+                        <div class="coluna coluna-segunda">
+                            <div class="dia">Segunda</div>
+                        </div>
+                        <div class="coluna coluna-terca">
+                            <div class="dia">Terça</div>
+                        </div>
+                        <div class="coluna coluna-quarta">
+                            <div class="dia">Quarta</div>
+                        </div>
+                        <div class="coluna coluna-quinta">
+                            <div class="dia">Quinta</div>
+                        </div>
+                        <div class="coluna coluna-sexta">
+                            <div class="dia">Sexta</div>
+                        </div>
+                        <div class="coluna coluna-sabado">
+                            <div class="dia">Sabado</div>
+                        </div>
+                    </div>
+                </template>
+
+                <div class="agenda-semanas-lista">
+                </div>
+            </div>
+
+            <button type="button" class="odonto-botao-primario maior popup-botao">Agendar</button>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        <script src="~/js/AgendaComponente.js"></script>
+        ;
+        <script src="~/js/elements.js"></script>;
+        <script src="~/js/secretaria_atendimento.js"></script>
+    }
+}

@@ -1,0 +1,82 @@
+﻿@model OdontoSchedule.Models.Dentista
+
+@{
+    ViewData["Title"] = "Criar Dentista";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="container-cadastrar-dentista">
+    <h1>Cadastrar Dentista</h1>
+
+    <form class="flex-column gap-sm">
+        <input type="hidden" name="no_redirect" value="true" />
+        <div class="form-data">
+            <label asp-for="Nome">Nome:</label>
+            <input type="text" class="odonto-input largo" asp-for="Nome">
+            <span asp-validation-for="Nome" class="text-danger"></span>
+        </div>
+        <div class="form-data">
+            <label asp-for="CPF">CPF:</label>
+            <input type="text" class="odonto-input largo" asp-for="CPF">
+            <span asp-validation-for="CPF" class="text-danger"></span>
+        </div>
+         <div class="form-data">
+            <label asp-for="CRO">CRO:</label>
+            <input type="text" class="odonto-input largo" asp-for="CRO">
+            <span asp-validation-for="CRO" class="text-danger"></span>
+        </div>
+        <div class="form-data">
+            <label asp-for="Especialidade">Especialidade:</label>
+            <input type="text" class="odonto-input largo" asp-for="Especialidade">
+            <span asp-validation-for="Especialidade" class="text-danger"></span>
+        </div>
+
+        <div class="form-data">
+        <label asp-for="DataNascimento">Data de Nascimento:</label>
+        <input type="date" class="odonto-input largo" asp-for="DataNascimento" />
+        <span asp-validation-for="DataNascimento" class="text-danger"></span>
+        </div>
+
+        <div class="agenda-semanas" id="dentista-agendamento-agenda">
+            <template id="agenda-template">
+                <div class="agenda">
+                    <div class="coluna coluna-domingo">
+                        <div class="dia">Domingo</div>
+                    </div>
+                    <div class="coluna coluna-segunda">
+                        <div class="dia">Segunda</div>
+                    </div>
+                    <div class="coluna coluna-terca">
+                        <div class="dia">Terça</div>
+                    </div>
+                    <div class="coluna coluna-quarta">
+                        <div class="dia">Quarta</div>
+                    </div>
+                    <div class="coluna coluna-quinta">
+                        <div class="dia">Quinta</div>
+                    </div>
+                    <div class="coluna coluna-sexta">
+                        <div class="dia">Sexta</div>
+                    </div>
+                    <div class="coluna coluna-sabado">
+                        <div class="dia">Sabado</div>
+                    </div>
+                </div>
+            </template>
+
+            <div class="agenda-semanas-lista">
+            </div>
+        </div>
+
+        <button class="odonto-botao-primario maior align-self-center" type="button">Criar</button>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        <script src="~/js/AgendaEditorComponente.js"></script>
+        ;
+        <script src="~/js/CriarDentista.js"></script>
+    }
+}

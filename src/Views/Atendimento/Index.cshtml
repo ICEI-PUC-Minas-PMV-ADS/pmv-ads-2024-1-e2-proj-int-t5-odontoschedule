@@ -1,0 +1,53 @@
+﻿@model IEnumerable<OdontoSchedule.Models.Atendimento>
+
+@{
+    ViewData["Title"] = "Atendimentos";
+}
+
+<h1>Agendamentos</h1>
+
+<div class="flex-column gap-md flex-align-center">
+    @if(User.IsInRole("SECRETARIA"))
+    {
+        <div class="flex-row gap-sm flex-align-center">
+            <select id="filtro-tipo" class="odonto-input">
+                <option value="dentista">Dentista</option>
+                <option value="data">Data</option>
+                <option value="paciente">Paciente</option>
+            </select>
+            <input type="text" id="filtro-valor" class="odonto-input largo" />
+            <a id="atendimentos-filtro-botao" class="odonto-botao-primario maior">Filtrar</a>
+        </div>
+    }
+
+    <table class="odonto-tabela">
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr class="lista__atendimento" data-atendimento_id="@item.ID">
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Paciente.Nome)
+                    </td>
+                    <td>
+                        @(item.Finalizado ? Html.Raw(item.Observacoes) : Html.Raw(item.Agenda.Data) + " " + Html.Raw(item.Agenda.Horario.Hora))
+                    </td>
+                </tr>
+            }
+
+            <template id="linha-tabela-atendimentos-template">
+                <tr class="lista__atendimento">
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </template>
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    @{
+        <script src="@Url.Content("~/js/secretaria_lista_atendimento.js")"></script>
+    }
+}

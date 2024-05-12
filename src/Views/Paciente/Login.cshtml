@@ -1,0 +1,56 @@
+﻿@model OdontoSchedule.Models.Paciente
+
+@{
+    ViewData["Title"] = "Autenticacao";
+    Layout = "~/Views/Shared/_AuthLayout.cshtml";
+}
+
+<section class="login">
+    <div class="auth__repr">
+        <div>
+            <span>Seja bem vindo(a) ao ...</span>
+            <img src="/img/logo_auth.png" />
+        </div>
+    </div>
+    <div class="login__conteudo">
+        <section class="login-container login-container--paciente">
+
+            <div class="titulo">
+                <h1>Login</h1>
+            </div>
+
+            <form class="login-formulario" data-url="/Paciente/Login">
+                <div class="formulario__inputs">
+                    <div class="login__formulario-item">
+                        <label asp-for="Email"></label>
+                        <input type="text" name="Email" class="validar login-input">
+                    </div>
+                    <div class="login__formulario-item">
+                        <label asp-for="Senha"></label>
+                        <input type="password" name="Senha" class="validar login-input">
+                    </div>
+                </div>
+
+                <button class="entrar" type="submit">Entrar</button>
+
+                <div class="error-text">
+                </div>
+
+                <div class="login__opcoes">
+                    <a href="#">Esqueceu a senha?</a>
+                    <a asp-action="Cadastro">Cadastre-se</a>
+                </div>
+            </form>
+
+        </section>
+        <a class="entrar trocar-perfil" asp-controller="Funcionario" asp-action="LoginV">Logar como funcionário</a>
+    </div>
+
+</section>
+
+
+@section Scripts {
+    @{
+        <script src="~/js/auth.js"></script>
+    }
+}
