@@ -137,16 +137,16 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-27 – Paciente alterar senha** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-19 - A aplicação deve permitir que usuários do tipo secretária, administrador e paciente alterem suas senhas. |
-|Registro de evidência | https://drive.google.com/file/d/1Mai2Tckvdcuk1KwxAnK0_yvEu8VYr_5b/view?usp=sharing |
+|Registro de evidência |  |
 
 | **Caso de Teste** 	| **CT-28 – Secretária alterar senha** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-19 - A aplicação deve permitir que usuários do tipo secretária, administrador e paciente alterem suas senhas. |
-|Registro de evidência | https://drive.google.com/file/d/1O1r50aUhmLpDXh6OlrPEhwuftGfT7hH_/view?usp=sharing |
+|Registro de evidência |  |
 
 | **Caso de Teste** 	| **CT-29 – Administrador alterar senha** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-19 - A aplicação deve permitir que usuários do tipo secretária, administrador e paciente alterem suas senhas. |
+|	Requisito Associado 	|  |
 |Registro de evidência |  |
 
 | **Caso de Teste** 	| **CT-30 – Cancelar agendamento como secretária** 	|
