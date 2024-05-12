@@ -115,7 +115,7 @@
 | Usuário02 | Neutro | Concluiu | 85 | 11 | Sim | Sim | Acessou o link, teve dificuldades em localizar "Dentistas" na Home Page e cometeu erros durante o cadastro e atualização de um dentista |
 | Usuário03 | Satisfeito | Concluiu | 65 | 8 | Não | n/a |Acessou o link, teve dificuldades em localizar "Dentistas" na Home Page e cometeu erros durante o cadastro e atualização de um dentista |
 
-### CTU-15
+### CTU-14
 
 | **Usuário**   | **Resposta emocional**   | **Execução**  | **Tempo (seg)**  |  **Ações/Cliques**  | **Cometeu erro?** | **Se recuperou do erro?**  | **Observações** | 
 | :--------: | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
