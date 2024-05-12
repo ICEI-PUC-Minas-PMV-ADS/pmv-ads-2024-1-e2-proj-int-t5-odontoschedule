@@ -89,13 +89,7 @@ As seguintes tarefas devem ser realizadas pelos participantes:
 | Objetivo do Teste 	| Averiguar tela de login para funcionários |
 | Ações necessárias 	| - Acessar o link do site pelo browser de preferência do usuário <br> - Identificar e clicar na opção "Logar como funcionário" <br> - Preencher os campos presentes <br> - Clicar em "Entrar" |
 
-| **Caso de Teste** 	| **CTU-04 – Editar perfil** 	|
-|:---:	|:---:	|
-|	Perfil 	| Usuário (Todos) |
-| Objetivo do Teste 	| Analisar telas para alteração de informações cadastrais |
-| Ações necessárias 	| - Acessar o link do site pelo browser de preferência do usuário <br> - Fazer Login <br> - Identificar e clicar em "Editar perfil" na Home Page <br> - Realizar alguma alteração nas informações presentes <br> - Clicar em "Salvar"|
-
-| **Caso de Teste** 	| **CTU-05 – Fazer agendamentos (Home Page - Paciente)** 	|
+| **Caso de Teste** 	| **CTU-04 – Fazer agendamentos (Home Page - Paciente)** 	|
 |:---:	|:---:	|
 |	Perfil 	| Usuário Paciente |
 | Objetivo do Teste 	| Verificar o desempenho das telas para agendamento de consulta |
@@ -166,6 +160,12 @@ As seguintes tarefas devem ser realizadas pelos participantes:
 |	Perfil 	| Usuário (Todos) |
 | Objetivo do Teste 	| Analisar telas da plataforma |
 | Ações necessárias 	| - Acessar o link do site pelo browser de preferência do usuário <br> - Fazer Login na área correta para cada tipo usuário <br> - Navegar pelas telas <br> - Identificar e Clicar no campo "Sair" |
+
+| **Caso de Teste** 	| **CTU-16 – Editar perfil** 	|
+|:---:	|:---:	|
+|	Perfil 	| Usuário (Todos) |
+| Objetivo do Teste 	| Analisar telas para alteração de informações cadastrais |
+| Ações necessárias 	| - Acessar o link do site pelo browser de preferência do usuário <br> - Fazer Login <br> - Identificar e clicar em "Editar perfil" na Home Page <br> - Realizar alguma alteração nas informações presentes <br> - Clicar em "Salvar"|
 
 # 6. Análise dos dados
 
