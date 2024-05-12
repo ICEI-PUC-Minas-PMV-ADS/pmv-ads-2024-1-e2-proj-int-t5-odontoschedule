@@ -57,7 +57,6 @@ namespace OdontoSchedule.Controllers
 
         [Authorize(Roles = "SECRETARIA")]
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,Nome,CPF,DataNascimento,CRO,Especialidade")] Dentista dentista)
         {
             if (ModelState.IsValid)
@@ -89,7 +88,6 @@ namespace OdontoSchedule.Controllers
 
         [Authorize(Roles = "SECRETARIA")]
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ID,Nome,CPF,DataNascimento,CRO,Especialidade")] Dentista dentista)
         {
             if (id != dentista.ID)
@@ -115,9 +113,9 @@ namespace OdontoSchedule.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return Ok(new { success = true, content = "" });
             }
-            return View(dentista);
+            return Ok(new { success = false, content = "Opções inválidas" });
         }
 
         [Authorize(Roles = "SECRETARIA")]

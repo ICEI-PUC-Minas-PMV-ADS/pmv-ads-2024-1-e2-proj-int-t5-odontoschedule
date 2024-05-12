@@ -11,7 +11,7 @@
         <a asp-controller="Dentista" asp-action="Index">Dentistas</a>
     </div>
 
-    <form asp-action="Edit" class="conteudo-tab flex-column gap-sm">
+    <form class="conteudo-tab flex-column gap-sm">
         <div class="row">
             <div class="flex-row">
                 <div class="conteudo-tab__lado">
@@ -46,9 +46,49 @@
             </div>
         </div>
 
+        <div class="agenda-semanas" id="dentista-agendamento-agenda">
+            <template id="agenda-template">
+                <div class="agenda">
+                    <div class="coluna coluna-domingo">
+                        <div class="dia">Domingo</div>
+                    </div>
+                    <div class="coluna coluna-segunda">
+                        <div class="dia">Segunda</div>
+                    </div>
+                    <div class="coluna coluna-terca">
+                        <div class="dia">Terça</div>
+                    </div>
+                    <div class="coluna coluna-quarta">
+                        <div class="dia">Quarta</div>
+                    </div>
+                    <div class="coluna coluna-quinta">
+                        <div class="dia">Quinta</div>
+                    </div>
+                    <div class="coluna coluna-sexta">
+                        <div class="dia">Sexta</div>
+                    </div>
+                    <div class="coluna coluna-sabado">
+                        <div class="dia">Sabado</div>
+                    </div>
+                </div>
+            </template>
+
+            <div class="agenda-semanas-lista">
+            </div>
+        </div>
+
         <div class="form-group">
-            <input type="submit" value="Salvar" class="odonto-botao-primario maior" />
+            <button type="button" class="odonto-botao-primario maior">Salvar</button>
         </div>
 
     </form>
 </div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        <script src="~/js/AgendaEditorComponente.js"></script>
+        ;
+        <script src="~/js/EditarDentista.js"></script>
+    }
+}

@@ -20,6 +20,8 @@ button, a {
 
     padding: 0.3rem 1rem;
     text-decoration: none;
+
+    width: fit-content;
 }
 
 .odonto-botao-secundario {
@@ -130,4 +132,8 @@ textarea.odonto-input {
 
 .gap-lg {
     gap: 3rem;
+}
+
+.align-self-center {
+    align-self: center;
 }

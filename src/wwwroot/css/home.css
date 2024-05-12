@@ -15,7 +15,7 @@ body header {
 }
 
 body header .logo {
-    height: 6rem;
+    height: 3rem;
     aspect-ratio: 16/9;
 
     background: url("/img/logo_blue.png");
@@ -56,7 +56,7 @@ body #pagina-conteudo > * {
 }
 
 body #pagina-conteudo #barra-lateral {
-    width: 12dvw;
+    width: 15dvw;
     background: linear-gradient(180deg, rgba(255,255,255,1) 54%, rgba(204,236,249,1) 95%);
 }
 
@@ -184,6 +184,8 @@ body #pagina-conteudo main {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    padding: 2rem;
 }
 
 body #pagina-conteudo #barra-direita {
@@ -308,3 +310,10 @@ usuarios-lista-tabs .conteudo-tab .conteudo-tab__lado {
     margin-top: 2rem;
     text-decoration: none;
 }
+
+#container-cadastrar-dentista {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+} 
