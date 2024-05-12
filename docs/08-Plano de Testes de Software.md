@@ -98,7 +98,7 @@ Para este projeto foram definidos os seguintes casos de testes a serem aplicados
 | Caso de Teste 	| CT-16 – Secretária fazer um agendamento	|
 |Requisito Associado | RF-10 - A aplicação deve permitir que a secretária faça agendamentos para pacientes cadastrados      |
 | Objetivo do Teste 	| Verificar se a secretária é capaz de agendar uma consulta para um paciente já cadastrado |
-| Passos 	| - Acessar o navegador<br> - Informar o endereço do site<br> - Clicar em "Entrar como Funcionário"<br> - Preencher os campos com os credenciais da Secretária<br> - Clicar em "Agendar Paciente"<br> - Preencher o formulário, assim como selecionar o dentista e o horário do atendimento<br> - Clicar em "Agendar" |
+| Passos 	| - Acessar o navegador<br> - Informar o endereço do site<br> - Clicar em "Entrar como Funcionário"<br> - Preencher os campos com os credenciais da Secretária<br> - Clicar em "Fazer Agendamento"<br> - Preencher o formulário, assim como selecionar o dentista e o horário do atendimento<br> - Clicar em "Agendar" |
 |Critério de Êxito | - Ao acessar a aba "Ver agendamentos", o agendamento criado deve estar listado lá. |
 |  	|  	|
 | Caso de Teste 	| CT-17 – Secretária fazer cadastro de um paciente	|
