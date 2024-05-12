@@ -5,9 +5,12 @@
 
 | **Usuário**   | **Resposta emocional**   | **Execução**  | **Tempo (seg)**  |  **Ações/Cliques**  | **Cometeu erro?** | **Se recuperou do erro?**  | **Observações** | 
 | :--------: | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
-| Usuário01 | Confiante | Concluiu | 40 | 2 | Não | n/a | Acessou o link, identificou "Cadastrar-se" rapidamente e preencheu os campos corretamente, clicando em "Cadastrar" sem problemas |
-| Usuário02 | Satisfeito | Concluiu | 35 | 2 | Não | n/a | Acessou o link, encontrou "Cadastrar-se" sem problemas e completou o cadastro sem erros |
-| Usuário03 | Neutro | Concluiu | 50 | 2 | Não | n/a | Acessou o link, teve um pequeno atraso para encontrar "Cadastrar-se", mas concluiu o processo sem problemas |
+| Usuário01 | Confiante | Concluiu | 40 | 12 | Não | n/a | Acessou o link, identificou "Cadastrar-se" rapidamente e preencheu os campos corretamente, clicando em "Cadastrar" sem problemas |
+| Usuário02 | Satisfeito | Concluiu | 35 | 14 | Não | n/a | Acessou o link, encontrou "Cadastrar-se" sem problemas e completou o cadastro sem erros |
+| Usuário03 | Neutro | Concluiu | 50 | 12 | Não | n/a | Acessou o link, teve um pequeno atraso para encontrar "Cadastrar-se", mas concluiu o processo sem problemas |
+| Usuário04 | Confiante | Concluiu | 70 | 15 | Não | n/a | Identificou o campo "Cadastrar-se" sem dificuldade, durante o cadastro comentou que o campo data de nascimento está pequeno e fez sugestões para que a tela de cadastro fosse centralizado e a imagem fosse colocado ao topo para melhor visualização com a escrita informando apenas "Bem vindo"  |
+| Usuário05 | Neutro | Concluiu | 60 | 12 | Não | n/a | Identificou o campo "Cadastrar-se" rapidamente, preencheu as informações sem dificuldade e comentou que as letras estão muito grandes assim fica difícil verificar se as informações preenchidas estão corretas |
+
 
 ### CTU-02
 
@@ -16,14 +19,18 @@
 | Usuário01 | Satisfeito | Concluiu | 30 | 4 | Não | n/a | Acessou o link, preencheu os campos de login corretamente e clicou em "Entrar" sem problemas |
 | Usuário02 | Confuso | Concluiu | 45 | 7 | Sim | Sim | Acessou o link, encontrou dificuldades em localizar os campos de login, mas completou o processo após um pequeno atraso. Recuperou-se após orientação |
 | Usuário03 | Neutro | Concluiu | 28 | 4 | Não | n/a- | Acessou o link, identificou os campos de login sem problemas e concluiu o processo rapidamente |
+| Usuário04 | Confiante | Concluiu | 27 | 3 | Não | n/a- | Acessou o link, realizou o login e finalizou o processo sem dificuldades. Fez sugestões de colocar a parte de login centralizado na tela e a imagem no topo como cabeçalho |
+| Usuário05 | Neutro | Concluiu | 30 | 4 | Não | n/a- | Acessou o link, fez login e concluiu a atividade tranquilamente |
 
 ### CTU-03
 
 | **Usuário**   | **Resposta emocional**   | **Execução**  | **Tempo (seg)**  |  **Ações/Cliques**  | **Cometeu erro?** | **Se recuperou do erro?**  | **Observações** | 
 | :--------: | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
-| Usuário01 | Satisfeito | Concluiu | 45 | 2 | Não | n/a | Acessou o link, identificou e clicou em "Logar como funcionário", preencheu os campos de login corretamente e clicou em "Entrar" sem problemas |
-| Usuário02 | Confuso | Concluiu | 60 | 2 | Sim | Sim | Acessou o link, encontrou dificuldades em identificar "Logar como funcionário" e teve pequenos atrasos durante o preenchimento dos campos, mas completou o processo. Recuperou-se após revisão |
-| Usuário03 | Satisfeito | Concluiu | 40 | 2 | Não | n/a | Acessou o link, identificou rapidamente "Logar como funcionário" e preencheu os campos de login sem problemas, clicando em "Entrar" sem hesitação |
+| Usuário01 | Satisfeito | Concluiu | 45 | 4 | Não | n/a | Acessou o link, identificou e clicou em "Logar como funcionário", preencheu os campos de login corretamente e clicou em "Entrar" sem problemas |
+| Usuário02 | Confuso | Concluiu | 60 | 4 | Sim | Sim | Acessou o link, encontrou dificuldades em identificar "Logar como funcionário" e teve pequenos atrasos durante o preenchimento dos campos, mas completou o processo. Recuperou-se após revisão |
+| Usuário03 | Satisfeito | Concluiu | 40 | 4 | Não | n/a | Acessou o link, identificou rapidamente "Logar como funcionário" e preencheu os campos de login sem problemas, clicando em "Entrar" sem hesitação |
+| Usuário04 | Satisfeito | Concluiu | 42 | 4 | Não | n/a | Acessou o link, identificou "Logar como funcionário" sem dificuldade e preencheu os campos de login sem problemas |
+| Usuário03 | Satisfeito | Concluiu | 45 | 4 | Não | n/a | Acessou o link, clicou rapidamente "Logar como funcionário" e realizou login |
 
 ### CTU-04
 
@@ -32,6 +39,9 @@
 | Usuário01 | Confiante | Concluiu | 60 | 7 | Não | n/a | Acessou o link, encontrou e navegou facilmente até "Fazer agendamentos" na Home Page, concluindo o agendamento sem problemas |
 | Usuário02 | Satisfeito | Concluiu | 50 | 6 | Não | n/a | Acessou o link, localizou "Fazer agendamentos" com facilidade e seguiu o fluxo de agendamento sem dificuldades |
 | Usuário03 | Neutro | Concluiu | 65 | 8 | Não | n/a | Acessou o link, teve um pequeno atraso para encontrar "Fazer agendamentos", mas completou o agendamento sem erros |
+| Usuário04 | Confiante | Concluiu | 64 | 8 | Não | n/a | Acessou o link, seguiu os passos de forma intuitiva e concluiu o agendamento. |
+| Usuário05 | Neutro | Concluiu | 65 | 8 | Não | n/a | Acessou o link, teve um pequeno atraso para encontrar "Fazer agendamentos", mas completou o agendamento sem erros |
+
 
 ### CTU-05
 
