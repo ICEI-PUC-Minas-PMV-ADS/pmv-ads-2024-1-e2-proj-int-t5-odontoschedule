@@ -17,12 +17,12 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-03 – Efetuar login como Secretária** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-02 - A aplicação deve permitir que um paciente faça login utilizando CPF e senha. E caso seja um administrador ou secretária, utilize nome de usuário e senha.|
-|Registro de evidência |  |
+|Registro de evidência | https://drive.google.com/file/d/1EtlXhYmA-Hoshl2WE8dXANR3kmr64stq/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-04 – Efetuar login como Administrador** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-02 - A aplicação deve permitir que um paciente faça login utilizando CPF e senha. E caso seja um administrador ou secretária, utilize nome de usuário e senha.|
-|Registro de evidência |  |
+|Registro de evidência | https://drive.google.com/file/d/1xQjI1Hc58vFsFDkZuHXulH2A6oPjJhux/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-05 – Reagendar agendamento como secretária** 	|
 |:---:	|:---:	|
@@ -137,12 +137,12 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-27 – Paciente alterar senha** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-19 - A aplicação deve permitir que usuários do tipo secretária, administrador e paciente alterem suas senhas. |
-|Registro de evidência |  |
+|Registro de evidência | https://drive.google.com/file/d/1Mai2Tckvdcuk1KwxAnK0_yvEu8VYr_5b/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-28 – Secretária alterar senha** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-19 - A aplicação deve permitir que usuários do tipo secretária, administrador e paciente alterem suas senhas. |
-|Registro de evidência |  |
+|Registro de evidência | https://drive.google.com/file/d/1O1r50aUhmLpDXh6OlrPEhwuftGfT7hH_/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-29 – Administrador alterar senha** 	|
 |:---:	|:---:	|
@@ -171,7 +171,10 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 
 ## Avaliação
 
-No CT-07 foi verificado que durante o agendamento não atende 100% o RF;05, pois falta um campo para informações de contato.
+No "CT-07 – Agendar consulta como Paciente" foi verificado que durante o agendamento não atende 100% o RF;05, pois falta um campo para informações de contato.
+No "CT-04 – Efetuar login como Administrador" foi possível verificar que na Home Page está escrito "Secretária" em vez de "Administrador" e está aparecendo o botão agendar.
+No "CT-27 – Paciente alterar senha" não está disponível o campo "Alterar senha" na barra lateral esquerda. Teste falhou.
+No "CT-28 – Secretária alterar senha" o campo "Alterar senha" não está funcionando. Teste falhou. 
 
 Os seguintes requisitos serão desenvolvidos na próxima etapa do projeto:
 
