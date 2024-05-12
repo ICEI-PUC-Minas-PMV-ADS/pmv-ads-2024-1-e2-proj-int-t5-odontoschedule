@@ -22,10 +22,7 @@ A principal vantagem da fonte Inter é a sua legibilidade. Pois ela contém um c
 
 ## Logo
 
-
-![blue logo 2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/25da0739-57f8-4464-897a-6e52ec0da0cd)
-![logo blue and white slogan 1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/317127bb-494f-4310-a20b-882bfa9d6f6a)
-![white logo 2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/4fcc93f9-2afb-4121-81af-a5f3b2093d7f)
+!![logo](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule/assets/57874746/fc03ba55-7fbd-43a4-8f10-b9ba1f999b62)
 
 O logotipo foi desenvolvido com a junção do nome da aplicação e um símbolo de sorriso com intuito de transmitir simplicidade e confianÇa, trazendo uma referência a odontologia. Além disso,  foi criado o slogan "Praticidade para o seu sorriso" relembrando o objetivo da aplicação de facilitar e agilizar o processo de agendamento de consultas nos consultórios odontológicos.
 Por fim, a logo foi criada com três combinações de cores diferentes afim de maximizar sua compatibilidade com cada uma das cores existentes na aplicação.
