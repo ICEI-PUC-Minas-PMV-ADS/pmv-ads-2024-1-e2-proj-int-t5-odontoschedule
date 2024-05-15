@@ -47,8 +47,6 @@ body #pagina-conteudo {
 
     width: 100dvw;
     height: 100%;
-
-    /* overflow: hidden; */
 }
 
 body #pagina-conteudo > * {
@@ -62,7 +60,7 @@ body #pagina-conteudo #barra-lateral {
 
 body #pagina-conteudo #barra-lateral > div:first-child {
     background-color: #54BCFF;
-    height: 40%;
+    height: 35%;
 }
 
 body header {
@@ -316,4 +314,16 @@ usuarios-lista-tabs .conteudo-tab .conteudo-tab__lado {
     height: 100%;
     align-items: center;
     flex-direction: column;
-} 
+}
+
+.bem-vindo {
+    font-size: larger;
+}
+
+.bem-vindo h1, .bem-vindo h2, .bem-vindo p {
+    margin: 0;
+}
+
+.bem-vindo p {
+    color: #7C7C7C;
+}

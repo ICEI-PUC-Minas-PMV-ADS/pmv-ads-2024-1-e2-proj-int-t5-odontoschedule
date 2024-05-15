@@ -4,6 +4,8 @@
 
         let formData = new FormData(event.target);
 
+
+        console.log(formData);
         fetch(event.target.dataset.url, {
             method: "post",
             body: formData

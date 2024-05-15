@@ -15,30 +15,43 @@ html, body {
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to bottom, #C5D7F2, #ffffff);
-  font-family: 'Open sans', sans-serif;
-  line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #C5D7F2, #ffffff);
 }
 
-.cadastro{
-  display: flex;
+body > main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  width: 90%;
-  min-height: 80%;
-  background-color: #F2F2F2;
-  margin: 50px 5% 50px 5%;
+    width: 100%;
+    height: 100%;
+
+    padding: 2rem 0;
 }
+
+
+.cadastro {
+    display: flex;
+    width: 90%;
+    min-height: 80%;
+    background-color: #F2F2F2;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
 
 .cadastro__conteudo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-
-  width: 100%;
-  height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
 }
 
 .container {
@@ -46,32 +59,23 @@ body {
   flex-direction: column;
   align-items: center;
 
-  width: 70%;
-  margin: 0 10% 0 10%;
+  width: 65%;
   background: #fff;
-  padding: 0 30px 10px 30px;
+  padding: 0 1rem 0.5rem 1rem;
   border-radius: 20px;
   border: 2px solid #5A98BB
   
 }
 
-.formulario input {
-  border: 2px solid #5A98BB;
-}
-
 .formulario {
   display: flex;
   flex-direction: column;
+  gap: 0.75rem;
 }
 
-form .input-largo {
-  font-size: 24px;
-  height: 30px;
-  padding: 0 20px;
-  margin-bottom: 10px;
-  border-radius: 30px;
-  border: 1px solid #8396b3;
-  width: 80%;
+.cadastro__conteudo .formulario button[type="submit"] {
+    margin: 2rem 0;
+    align-self: center;
 }
 
 form .input-radio{
@@ -80,73 +84,15 @@ form .input-radio{
   width: 20px;
 }
 
-form .sexo{
-  font-weight: 500;
-  padding-left: 20px;
-}
-
 form .contato {
-  display: flex;
-}
-
-form .form-data {
   display: flex;
   gap: 1rem;
 }
 
-form .input-pequeno{
-  font-size: 17px;
-  height: 30px;
-  padding: 0 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 30px;
-  border: 1px solid #8396b3;
-  width: 30%;
-}
-form .input-pequeno-contato{
-  font-size: 24px;
-  height: 30px;
-  padding: 0 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 30px;
-  border: 1px solid #8396b3;
-  width: 100%;
-}
-
-.contato-numero{
-  padding-right: 20px;
-}
-
-.contato-complemento{
-  padding-right: 20px;
-}
-
-.contato-telefone{
-  padding-right: 20px;
-}
-
-form .cadastrar {
-  border: none;
-  background: #61A5AE;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  cursor: pointer;
-  border-radius: 30px;
-  padding: 10px 30px;
-
-  width: fit-content;
-
-  align-self: center;
-
-  margin-top: 2rem;
-}
-
-form .cadastrar:hover{
-  background-color: #000000;
-  transition: background-color 0.3s;
+form .contato > * {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
 }
 
 a{
@@ -163,31 +109,29 @@ a:hover{
 }
 
 .cadastro__repr {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 10rem;
-
-  background-image: url("/img/cadastro_repr.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  min-height: 100%;
-  width: 40%;
-
-  color: white;
-  font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10rem;
+    background-image: url("/img/cadastro_repr.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    width: 40%;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: inset 0 0.3rem 0.3rem rgba(0, 0, 0, 0.25);
 }
 
-.cadastro__repr > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4rem;
 
-  width: 80%;
+.cadastro__repr > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 80%;
 }
 .cadastro__repr img {
   width: 100%;
@@ -200,15 +144,20 @@ a:hover{
 
 #campos-sexo {
   display: flex;
-  margin: 2rem 0;
-  gap: 3rem;
+  margin: 1rem 0;
+  gap: 2rem;
+}
+
+#campos-sexo .sexo {
+    display: flex;
+    align-items: center;
 }
 
 .login {
     display: flex;
     width: 90%;
     background-color: #F2F2F2;
-    margin: 50px 5% 50px 5%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .login__conteudo {
@@ -220,7 +169,7 @@ a:hover{
     width: 100%;
 }
 
-.login__conteudo > .trocar-perfil {
+.login__conteudo > #trocar-perfil {
     position: absolute;
     bottom: 1rem;
     right: 1rem;
@@ -268,27 +217,6 @@ a:hover{
     gap: 2rem;
 }
 
-.entrar {
-    border: none;
-    background: #61A5AE;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 700;
-    cursor: pointer;
-    border-radius: 30px;
-    width: 30%;
-    padding: 0.75rem 0;
-    text-align: center;
-}
-
-.login-input {
-    width: 20rem;
-    font-size: 24px;
-    height: 50px;
-    border-radius: 30px;
-    border: 1px solid #8396b3;
-}
-
 .login__formulario-item {
     display: flex;
     flex-direction: column;
@@ -302,12 +230,12 @@ a:hover{
 }
 
 label {
-    font-weight: bold;
-    font-size: 15px;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 .titulo {
-    font-size: 25px;
+    font-size: 2rem;
 }
 
 
@@ -335,6 +263,7 @@ a:hover {
     width: 40dvw;
     color: white;
     font-size: 1.5rem;
+    box-shadow: inset 0 0.3rem 0.3rem rgba(0, 0, 0, 0.25);
 }
 
 .auth__repr > div {

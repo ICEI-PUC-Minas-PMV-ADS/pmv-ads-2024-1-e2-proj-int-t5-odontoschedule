@@ -2,9 +2,13 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h2 class="display-4">Bem vindo(a) ao</h2>
-    <h1 class="Nomeaplicacao">Odonto Schedule</h1>
-    <p>Agende agora sua consulta na DentalIn</a>.</p>
-    <a asp-controller="Atendimento" asp-action="Create" class="odonto-botao-primario maior">Agendar</a>
+<div class="bem-vindo flex-column">
+
+    <div class="flex-column gap-sm mb-2">
+        <span><b>Bem vindo(a) ao</b></span>
+        <h1>Odonto Schedule</h1>
+        <p>Agende agora sua consulta na DentalIn</p>
+    </div>
+
+    <a asp-controller="Atendimento" asp-action="Create" class="odonto-botao-primario maior align-self-center">Agendar</a>
 </div>

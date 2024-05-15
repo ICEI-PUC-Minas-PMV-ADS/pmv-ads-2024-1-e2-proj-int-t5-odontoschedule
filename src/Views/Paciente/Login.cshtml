@@ -23,15 +23,15 @@
                 <div class="formulario__inputs">
                     <div class="login__formulario-item">
                         <label asp-for="Email"></label>
-                        <input type="text" name="Email" class="validar login-input">
+                        <input type="text" name="Email" class="odonto-input largo redondo">
                     </div>
                     <div class="login__formulario-item">
                         <label asp-for="Senha"></label>
-                        <input type="password" name="Senha" class="validar login-input">
+                        <input type="password" name="Senha" class="odonto-input largo redondo">
                     </div>
                 </div>
 
-                <button class="entrar" type="submit">Entrar</button>
+                <button class="odonto-botao-primario maior" type="submit">Entrar</button>
 
                 <div class="error-text">
                 </div>
@@ -43,7 +43,7 @@
             </form>
 
         </section>
-        <a class="entrar trocar-perfil" asp-controller="Funcionario" asp-action="LoginV">Logar como funcionário</a>
+        <a id="trocar-perfil" class="odonto-botao-primario maior" asp-controller="Funcionario" asp-action="LoginV">Logar como funcionário</a>
     </div>
 
 </section>

@@ -12,11 +12,9 @@
     <link rel="stylesheet" href="~/OdontoSchedule.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <div>
-        <main role="main">
-            @RenderBody()
-        </main>
-    </div>
+    <main role="main">
+        @RenderBody()
+    </main>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
