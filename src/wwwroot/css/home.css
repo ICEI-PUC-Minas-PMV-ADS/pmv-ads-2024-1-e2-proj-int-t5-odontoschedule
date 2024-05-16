@@ -37,8 +37,43 @@ body header ul li a {
     text-decoration-color: black;
 }
 
-body header #notificacoes-gatilho-menu {
+body header .menu {
+    position: relative;
+    cursor: pointer;
+    color: black;
+}
+
+body header .menu .menu-title {
     font-size: 2rem;
+}
+
+body header .menu .menu-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: absolute;
+    transform: translateX(-100%);
+    min-width: 17rem;
+    max-height: 17rem;
+    overflow-y: auto;
+    background: #ebebeb;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.75s linear;
+    padding: 1rem 0.75rem;
+    border-radius: 2rem;
+    margin: 0;
+}
+
+body header .menu .menu-dropdown li {
+    font-size: 0.75rem;
+    padding: 0.75rem 0.5rem;
+}
+
+body header .menu.active .menu-dropdown {
+    visibility: visible;
+    opacity: 1;
 }
 
 body #pagina-conteudo {

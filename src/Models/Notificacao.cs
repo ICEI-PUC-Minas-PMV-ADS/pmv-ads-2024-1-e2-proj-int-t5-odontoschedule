@@ -11,7 +11,7 @@ namespace OdontoSchedule.Models
         public int ID { get; set; }
 
         [Display(Name = "Usuário")]
-        public int PacienteId { get; set; }
+        public int? PacienteId { get; set; }
 
         [ForeignKey("PacienteId")]
         public Paciente Paciente { get; set; }

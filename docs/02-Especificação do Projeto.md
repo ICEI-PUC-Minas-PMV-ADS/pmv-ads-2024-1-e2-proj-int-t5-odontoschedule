@@ -62,6 +62,7 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 | RF-17 | A aplicação deve permitir que o administrador visualize relatórios contendo informações de desempenho do consultório, como número de atendimentos.                                                                      | Alta  |
 | RF-18 | A aplicação deverá gerar um login e senha que oferecerá acesso à área administrativa da aplicação para a secretária e o administrador.                                                                                  | Alta  |
 | RF-19 | A aplicação deve permitir que usuários do tipo secretária, administrador e paciente alterem suas senhas                                                                                                                 | Alta  |
+| RF-20 | A aplicação deve permitir que usuários do tipo secretária, administrador e paciente recuperem suas senhas | Media  |
 
 ### Requisitos não Funcionais
 

@@ -98,6 +98,15 @@ namespace OdontoSchedule.Controllers
                         this.context.Add(atendimento);
                         this.context.Update(agendaEncontrada);
 
+                        if(User.FindFirstValue(ClaimTypes.Role) == "PACIENTE")
+                        {
+                            Notificacao notificacao = new Notificacao();
+                            notificacao.PacienteId = null;
+                            notificacao.Conteudo = "Uma novo atendimento foi registrado!";
+
+                            this.context.Add(notificacao);
+                        }
+
                         await this.context.SaveChangesAsync();
 
                         response.Add("success", true);
@@ -148,7 +157,7 @@ namespace OdontoSchedule.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(int id, [Bind("AgendaId", "Finalizado", "Observacoes")] Atendimento atendimento)
         {
-            Atendimento atendimentoArmazenado = this.context.Atendimentos.Find(id);
+            Atendimento atendimentoArmazenado = await this.context.Atendimentos.Include(a => a.Paciente).FirstOrDefaultAsync(a => a.ID == id);
             Dictionary<string, object> response = new Dictionary<string, object>();
 
             if (User.FindFirstValue(ClaimTypes.Role) == "PACIENTE")
@@ -195,6 +204,11 @@ namespace OdontoSchedule.Controllers
                 agendaMarcada.Disponivel = true;
                 novaAgenda.Disponivel = false;
 
+                Notificacao notificacao = new Notificacao();
+                notificacao.PacienteId = User.FindFirstValue(ClaimTypes.Role) == "PACIENTE" ? null : atendimentoArmazenado.Paciente.ID;
+                notificacao.Conteudo = User.FindFirstValue(ClaimTypes.Role) == "PACIENTE" ? "Um atendimento foi remarcado" : "Um atendimento seu foi remarcado";
+
+                this.context.Add(notificacao);
                 this.context.Agendas.Update(agendaMarcada);
                 this.context.Agendas.Update(novaAgenda);
             }
@@ -217,7 +231,7 @@ namespace OdontoSchedule.Controllers
         // [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)
         {
-            Atendimento atendimento = await this.context.Atendimentos.FindAsync(id);
+            Atendimento atendimento = await this.context.Atendimentos.Include(a => a.Paciente).FirstOrDefaultAsync(a => a.ID == id);
             Dictionary<string, object> response = new Dictionary<string, object>();
 
             if (atendimento == null)
@@ -238,6 +252,13 @@ namespace OdontoSchedule.Controllers
 
             this.context.Agendas.Update(agendaDoAtendimento);
             this.context.Atendimentos.Remove(atendimento);
+
+            Notificacao notificacao = new Notificacao();
+            notificacao.PacienteId = User.FindFirstValue(ClaimTypes.Role) == "PACIENTE" ? null : atendimento.Paciente.ID;
+            notificacao.Conteudo = User.FindFirstValue(ClaimTypes.Role) == "PACIENTE" ? "Um atendimento foi cancelado" : "Um atendimento seu foi cancelado";
+
+            this.context.Add(notificacao);
+
             await this.context.SaveChangesAsync();
 
             response.Add("success", true);
