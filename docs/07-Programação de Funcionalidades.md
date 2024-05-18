@@ -29,9 +29,13 @@
 
 # Instruções de acesso
 
-Não deixe de informar o link onde a aplicação estiver disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
+Link: https://odontoschedule.azurewebsites.net/
 
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
+Administrador:
+    Usuário: admin
+    Senha: 1kE8tA0jmPVXFk3
 
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
+Secretária:
+    Usuário: secretária
+    Senha: Y730gEPDXdXauuo
 
