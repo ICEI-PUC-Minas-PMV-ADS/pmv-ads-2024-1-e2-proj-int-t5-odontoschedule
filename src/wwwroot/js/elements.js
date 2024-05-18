@@ -14,7 +14,7 @@ function lidaFluxoFormulario(event) {
         if (f.classList.contains("ativo")) {
             formularioMultiploPropriedades[formulario.dataset.form_id].ativoIndex = i;
 
-            f.classList.remove("ativo");
+            if (i !== formularioPartes.length - 1) f.classList.remove("ativo");
         }
     });
 
@@ -39,13 +39,14 @@ function criarAgendamento(form) {
         let data = await response.json();
 
         if (data.success) {
-            alert("Agendamento criado!");
-
-            window.location = "/Atendimento";
+            OdontoModal.setData("Agendamento Criado!", "Seu atendimento na DentalIn foi agendado.");
+            OdontoModal.setCallback(() => window.location = "/Atendimento");
         }
         else {
-            alert(data.content);
+            OdontoModal.setData("Erro", data.content);
         }
+
+        OdontoModal.open();
     });
 }
 

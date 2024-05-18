@@ -8,7 +8,7 @@
 <div id="container-cadastrar-paciente">
     <h1>Cadastrar Paciente</h1>
 
-    <form asp-action="Create">
+    <form>
         <input type="hidden" name="no_redirect" value="true" />
         <div class="form-data">
             <label asp-for="Nome">Nome:</label>
@@ -86,5 +86,8 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        <script src="/js/secretaria_criar_paciente.js"></script>
+    }
 }

@@ -19,28 +19,24 @@
 	#getData(agendasCadastradas, horarios) {
 		let agenda = [];
 		let diasSemana = [];
+		let domingo = new Date((new Date()).getFullYear(), (new Date()).getMonth(), (new Date()).getDate());
 
-
-		if (agendasCadastradas.length == 0) {
-			let domingo = new Date((new Date).getFullYear(), (new Date).getMonth(), (new Date).getDate());
-
-			for (let i = 0; i <= 6; i++) {
-				let diaatual = new Date(domingo.getFullYear(), domingo.getMonth(), domingo.getDate());
-
-
-				diaatual.setDate(diaatual.getDate() + i);
-
-
-				diasSemana.push(diaatual.toLocaleDateString());
-			}
-
-			return this.#render(diasSemana, agenda, horarios);
+		if ((new Date()).getDay() != 0) {
+			domingo.setDate((new Date()).getDate() - (new Date()).getDay());
 		}
 
+		for (let i = 0; i <= 6; i++) {
+			let diaatual = new Date(domingo.getFullYear(), domingo.getMonth(), domingo.getDate());
+
+
+			diaatual.setDate(diaatual.getDate() + i);
+
+
+			diasSemana.push(diaatual.toLocaleDateString());
+		}
 
 		for (let r of agendasCadastradas) {
 			let dataPartes = r.data.split("-");
-			let domingo = new Date(dataPartes[0], dataPartes[1] - 1, dataPartes[2]);
 			let semana = ["domingo", "segunda", "terca", "quarta", "quinta", "sexta", "sabado"];
 			let data = new Date(dataPartes[0], dataPartes[1] - 1, dataPartes[2]);
 
@@ -55,20 +51,7 @@
 				continue;
 			}
 
-			if (data.getDay() != 0) {
-				domingo.setDate(data.getDate() - data.getDay());
-			}
-
-			for (let i = 0; i <= 6; i++) {
-				let diaatual = new Date(domingo.getFullYear(), domingo.getMonth(), domingo.getDate());
-
-
-				diaatual.setDate(diaatual.getDate() + i);
-
-
-				diasSemana.push(diaatual.toLocaleDateString());
-			}
-
+			
 			semana.forEach((d, i) => {
 				let aux = {
 					dia: d,
@@ -146,7 +129,7 @@
 		return this.#data;
 	}
 
-	postData(dentista = this.#dentist) {
+	async postData(dentista = this.#dentist) {
 		let formDataAdd = new FormData();
 		formDataAdd.append("dentista", dentista);
 
@@ -167,24 +150,26 @@
 
 
 
-		fetch("/Agenda/Create", { method: "post", body: formDataAdd }).then(async (response) => {
-			let data = await response.json();
+		return new Promise((resolve, reject) => {
+			fetch("/Agenda/Create", { method: "post", body: formDataAdd }).then(async (response) => {
+				let data = await response.json();
 
-			if (!data.success) {
-				alert("Erro ao adicionar horário");
-			}
-			else {
-				fetch("/Agenda/Delete", { method: "post", body: formDataDelete }).then(async (responset) => {
-					data = await responset.json();
+				if (!data.success) {
+					resolve([false, "Erro ao adicionar horário"]);
+				}
+				else {
+					fetch("/Agenda/Delete", { method: "post", body: formDataDelete }).then(async (responset) => {
+						data = await responset.json();
 
-					if (!data.success) {
-						alert("Erro ao remover horários");
-					}
-					else {
-						alert("Agenda Atualizada")
-					}
-				})
-			}
+						if (!data.success) {
+							resolve([false, "Erro ao remover horários"]);
+						}
+						else {
+							resolve([true, null]);
+						}
+					})
+				}
+			});
 		});
 	}
 }
