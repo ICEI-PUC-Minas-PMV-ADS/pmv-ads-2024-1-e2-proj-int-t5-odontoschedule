@@ -142,6 +142,14 @@ namespace OdontoSchedule.Controllers
                 return RedirectToAction(nameof(Login));
             }
 
+            if (Request.Form["no_redirect"] == "true")
+            {
+                return Ok(new { success = false, content = string.Join("; ", ModelState.Values
+                                        .SelectMany(x => x.Errors)
+                                        .Select(x => x.ErrorMessage))
+                });
+            }
+
             return View(paciente);
         }
 
@@ -159,7 +167,9 @@ namespace OdontoSchedule.Controllers
             }
 
             paciente.Senha = pacienteEncontrado.Senha;
+            paciente.CriadoEm = pacienteEncontrado.CriadoEm;
             ModelState.Remove("Senha");
+            ModelState.Remove("CriadoEm");
 
             switch (Request.Form["sexo"])
             {

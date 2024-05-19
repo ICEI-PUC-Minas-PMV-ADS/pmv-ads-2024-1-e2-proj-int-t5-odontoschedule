@@ -230,7 +230,7 @@ body #pagina-conteudo main {
     width: 60dvw;
     height: 100%;
 
-    padding-top: 0.6rem;
+    padding: 1rem 0;
     overflow-y: auto;
 
     position: relative;
@@ -357,7 +357,7 @@ usuarios-lista-tabs .conteudo-tab .conteudo-tab__lado {
 
     background: #E8E8E8;
     padding: 0.5rem 2rem;
-    min-width: 50%;
+    min-width: 60%;
     height: fit-content;
 }
 

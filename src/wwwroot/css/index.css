@@ -130,6 +130,7 @@ textarea.odonto-input {
 
 .item-selecionado {
     background: #CCECF9;
+    border: 2px solid #76cdef!important;
 }
 
 .flex-row {

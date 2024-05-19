@@ -10,6 +10,7 @@ namespace OdontoSchedule.Models
         [Key]
         public int ID { get; set; }
 
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         [Required(ErrorMessage = "Obrigatório informar a data.")]
         public DateOnly Data { get; set; }
 

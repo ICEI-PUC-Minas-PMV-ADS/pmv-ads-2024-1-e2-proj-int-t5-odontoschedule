@@ -54,6 +54,7 @@ namespace OdontoSchedule.Models
         [Required(ErrorMessage = "A Senha do paciente é obrigatória")]
         public string Senha { get; set; }
 
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy HH:mm:ss}", ApplyFormatInEditMode = true)]
         [Required]
         public DateTime CriadoEm { get; set;  } = DateTime.Now;
     }

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OdontoSchedule.Models;
+using System.Globalization;
 
 namespace OdontoSchedule.Controllers
 {
@@ -29,7 +30,7 @@ namespace OdontoSchedule.Controllers
                 Agenda agenda = new Agenda();
                 agenda.DentistaId = Int32.Parse(dentista);
                 agenda.HorarioId = Int32.Parse(item);
-                agenda.Data = DateOnly.Parse(datas[index]);
+                agenda.Data = DateOnly.Parse(datas[index], CultureInfo.GetCultureInfo("pt-BR"));
 
                 this.context.Agendas.Add(agenda);
 
