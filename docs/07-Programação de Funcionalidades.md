@@ -29,13 +29,18 @@
 
 # Instruções de acesso
 
+### URL de acesso
+
 Link: https://odontoschedule.azurewebsites.net/
 
-Administrador:
-    Usuário: admin
-    Senha: 1kE8tA0jmPVXFk3
 
-Secretária:
-    Usuário: secretária
-    Senha: Y730gEPDXdXauuo
+### Usuários com acessos restritos
+
+Administrador:<br>
+&emsp;Usuário: admin<br>
+&emsp;Senha: 1kE8tA0jmPVXFk3<br><br>
+
+Secretária:<br>
+&emsp;Usuário: secretária<br>
+&emsp;Senha: Y730gEPDXdXauuo<br>
 
