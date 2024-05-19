@@ -53,5 +53,8 @@ namespace OdontoSchedule.Models
         [DataType(DataType.Password)]
         [Required(ErrorMessage = "A Senha do paciente é obrigatória")]
         public string Senha { get; set; }
+
+        [Required]
+        public DateTime CriadoEm { get; set;  } = DateTime.Now;
     }
 }

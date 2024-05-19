@@ -1,4 +1,8 @@
-﻿*:not(i) {
+﻿* {
+    box-sizing: border-box;
+}
+
+*:not(i) {
     font-family: "Inter", sans-serif !important;
 }
 
@@ -47,9 +51,8 @@ button, a {
 
 .odonto-input {
     width: 8rem;
-    height: 1.5rem;
 
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 1rem;
 
     background: #FFFEFE;
     border: 1px solid #34ADFA;
@@ -69,6 +72,11 @@ textarea.odonto-input {
 
 .odonto-input.largo {
     width: 15rem;
+}
+
+.odonto-input.alto {
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
 }
 
 .odonto-input.xlargo {

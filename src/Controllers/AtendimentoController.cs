@@ -213,6 +213,15 @@ namespace OdontoSchedule.Controllers
                 this.context.Agendas.Update(novaAgenda);
             }
 
+            if(atendimento.Finalizado && !atendimentoArmazenado.Finalizado)
+            {
+                Notificacao notificacao = new Notificacao();
+                notificacao.PacienteId = atendimentoArmazenado.Paciente.ID;
+                notificacao.Conteudo = "Um atendimento seu foi concluído";
+
+                this.context.Add(notificacao);
+            }
+
             atendimentoArmazenado.AgendaId = atendimento.AgendaId;
             atendimentoArmazenado.Finalizado = atendimento.Finalizado;
             atendimentoArmazenado.Observacoes = atendimento.Observacoes;

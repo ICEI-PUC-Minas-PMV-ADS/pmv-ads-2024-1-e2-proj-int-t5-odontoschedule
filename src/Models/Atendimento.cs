@@ -11,7 +11,7 @@ namespace OdontoSchedule.Models
         public int ID { get; set; }
 
         [Required]
-        public DateTime CriadoEm { get; } = DateTime.Now;
+        public DateTime CriadoEm { get; set; } = DateTime.Now;
 
         [Required(ErrorMessage = "Obrigatório informar o status do atendimento")]
         public bool Finalizado { get; set; } = false;

@@ -1,6 +1,6 @@
 ﻿document.addEventListener("DOMContentLoaded", (event) => {
     const menu = document.querySelector(".menu");
-    const menuDropdown = menu.querySelector(".menu-dropdown");
+    const menuDropdown = menu.querySelector(".menu-dropdown ul");
 
     menu.addEventListener("click", (event) => {
         event.preventDefault();

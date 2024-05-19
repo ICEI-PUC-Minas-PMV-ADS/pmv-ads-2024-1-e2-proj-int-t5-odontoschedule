@@ -50,23 +50,39 @@ body header .menu .menu-title {
 body header .menu .menu-dropdown {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 0.2rem;
     position: absolute;
     transform: translateX(-100%);
-    min-width: 17rem;
-    max-height: 17rem;
-    overflow-y: auto;
-    background: #ebebeb;
+    background: white;
     z-index: 100;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.75s linear;
-    padding: 1rem 0.75rem;
-    border-radius: 2rem;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    margin: 0;
+
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+
+body header .menu .menu-dropdown h3 {
+    color: gray;
     margin: 0;
 }
 
-body header .menu .menu-dropdown li {
+body header .menu .menu-dropdown ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+
+    min-width: 17rem;
+    max-height: 17rem;
+    overflow-y: auto;
+}
+
+body header .menu .menu-dropdown ul li {
     font-size: 0.75rem;
     padding: 0.75rem 0.5rem;
 }
@@ -138,7 +154,7 @@ body #pagina-conteudo {
     justify-content: space-between;
     width: 100dvw;
     height: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 body #pagina-conteudo > * {
@@ -212,14 +228,31 @@ body #pagina-conteudo main {
     align-items: center;
 
     width: 60dvw;
-    align-content: center;
+    height: 100%;
+
+    padding-top: 0.6rem;
+    overflow-y: auto;
+
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    padding: 2rem;
 }
+
+body #pagina-conteudo main::-webkit-scrollbar {
+    width: 0.75rem;
+    background-color: #ccebff;
+
+    height: 90%;
+}
+
+body #pagina-conteudo main::-webkit-scrollbar-thumb {
+    background-color: #54BCFF;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5) inset;
+}
+
+
 
 body #pagina-conteudo #barra-direita {
     position: relative;
@@ -255,10 +288,12 @@ body #pagina-conteudo #barra-direita::after {
     flex-direction: column;
     color: #7C7C7C;
     background-color: #D9D9D9;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 700;
     width: fit-content;
     border: 2px solid black;
+
+    padding: 0.8rem 1.2rem;
 }
 
 .informacoes-horarios-funcionamento span {
