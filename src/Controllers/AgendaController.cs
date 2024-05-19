@@ -53,7 +53,7 @@ namespace OdontoSchedule.Controllers
             agendas = this.context.Agendas
                 .Include(a => a.Horario)
                 .Where(a => a.DentistaId == dentista)
-                // .Where(a => a.Data >= primeiro_dia && a.Data <= ultimo_dia)
+                .Where(a => a.Data >= primeiro_dia && a.Data <= ultimo_dia)
                 .OrderBy(a => a.Data)
                 .ToList();
 
