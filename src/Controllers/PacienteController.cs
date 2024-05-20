@@ -36,6 +36,23 @@ namespace OdontoSchedule.Controllers
             return View();
         }
 
+        [Authorize(Roles = "ADMIN")]
+        [AllowAnonymous]
+        public async Task<IActionResult> GetCountByMonth()
+        {
+            Dictionary<int, int> patientsByMonth = await context.Pacientes
+                    .GroupBy(p => new { DateTime.Today.Year, p.CriadoEm.Month })
+                    .Select(g => new
+                    {
+                        month = g.Key.Month,
+                        amount = g.Count()
+                    })
+                    .ToDictionaryAsync(x => x.month, x => x.amount);
+
+            return Ok(patientsByMonth);
+
+        }
+
         [Authorize(Roles = "SECRETARIA")]
         public IActionResult Index()
         {

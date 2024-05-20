@@ -2,13 +2,41 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="bem-vindo flex-column">
 
-    <div class="flex-column gap-sm mb-2">
-        <span><b>Bem vindo(a) ao</b></span>
-        <h1>Odonto Schedule</h1>
-        <p>Agende agora sua consulta na DentalIn</p>
+@if(!User.IsInRole("ADMIN"))
+{
+    <div class="bem-vindo flex-column">
+
+        <div class="flex-column gap-sm mb-2">
+            <span><b>Bem vindo(a) ao</b></span>
+            <h1>Odonto Schedule</h1>
+            <p>Agende agora sua consulta na DentalIn</p>
+        </div>
+
+        <a asp-controller="Atendimento" asp-action="Create" class="odonto-botao-primario maior align-self-center">Agendar</a>
     </div>
 
-    <a asp-controller="Atendimento" asp-action="Create" class="odonto-botao-primario maior align-self-center">Agendar</a>
-</div>
+}
+else
+{
+    <div class="graficos-lista">
+        <div class="graficos__linha">
+            <div class="grafico-info">
+                <span>Por modalidade</span>
+                <div class="grafico"><canvas id="grafico-por-modalidade"></canvas></div>
+            </div>
+        </div>
+        <div class="graficos__linha">
+            <div class="grafico-info">
+                <span>Novos pacientes por mês</span>
+                <div class="grafico maior"><canvas id="grafico-pacientes-por-mes"></canvas></div>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts {
+        @{
+            <script src="~/js/metricas.js"></script>
+        }
+    }
+}

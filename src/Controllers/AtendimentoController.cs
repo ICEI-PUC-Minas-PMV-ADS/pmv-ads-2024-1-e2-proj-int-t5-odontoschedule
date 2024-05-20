@@ -6,7 +6,7 @@ using System.Security.Claims;
 
 namespace OdontoSchedule.Controllers
 {
-    [Authorize(Roles = "SECRETARIA,PACIENTE")]
+    [Authorize(Roles = "SECRETARIA,PACIENTE,ADMIN")]
     public class AtendimentoController : Controller
     {
         private readonly DBContext context;
@@ -16,6 +16,13 @@ namespace OdontoSchedule.Controllers
             this.context = context;   
         }
 
+        [Authorize(Roles = "ADMIN")]
+        public async Task<IActionResult> GetCountByModality()
+        {
+            return Ok(new { convenio = await this.context.Atendimentos.Where(a => a.TemConvenio == true).CountAsync(), particular = await this.context.Atendimentos.Where(a => a.TemConvenio == false).CountAsync() });
+        }
+
+        [Authorize(Roles = "SECRETARIA,PACIENTE")]
         public async Task<IActionResult> Index(bool status = false, string tipo_filtro = null, string filtro_valor = null)
         {
             List<Atendimento> atendimentos;
@@ -67,11 +74,13 @@ namespace OdontoSchedule.Controllers
             return View(atendimentos);
         }
 
+        [Authorize(Roles = "SECRETARIA,PACIENTE")]
         public IActionResult Create()
         {
             return View();
         }
 
+        [Authorize(Roles = "SECRETARIA,PACIENTE")]
         [HttpPost]
         // [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind(["TemConvenio", "DentistaId", "AgendaId", "PacienteId"])] Atendimento atendimento)
@@ -137,6 +146,7 @@ namespace OdontoSchedule.Controllers
             return Ok(response);
         }
 
+        [Authorize(Roles = "SECRETARIA,PACIENTE")]
         public async Task<IActionResult> Details(int id)
         {
             Atendimento atendimento =  await this.context.Atendimentos
@@ -153,7 +163,8 @@ namespace OdontoSchedule.Controllers
             return View(atendimento);
         }
 
-        // POST: Atendimento/Edit/5
+
+        [Authorize(Roles = "SECRETARIA,PACIENTE")]
         [HttpPost]
         public async Task<IActionResult> Edit(int id, [Bind("AgendaId", "Finalizado", "Observacoes")] Atendimento atendimento)
         {
@@ -235,7 +246,7 @@ namespace OdontoSchedule.Controllers
             return RedirectToAction("Details", new { id });
         }
 
-        // POST: Atendimento/Delete/5
+        [Authorize(Roles = "SECRETARIA,PACIENTE")]
         [HttpPost]
         // [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)

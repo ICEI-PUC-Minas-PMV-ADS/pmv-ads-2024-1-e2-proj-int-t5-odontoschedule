@@ -12,9 +12,13 @@
                 {
                     @User.Identity.Name
                 }
-                else
+                else if(User.IsInRole("SECRETARIA"))
                 {
                     @Html.Raw("SECRETARIA")
+                }
+                else
+                {
+                    @Html.Raw("ADMINISTRADOR")
                 }
             </span>
             <span>

@@ -397,3 +397,37 @@ usuarios-lista-tabs .conteudo-tab .conteudo-tab__lado {
 .bem-vindo p {
     color: #7C7C7C;
 }
+
+.graficos-lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.grafico-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.grafico-info span {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.graficos__linha {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.grafico {
+    width: 14rem;
+}
+
+.grafico.maior {
+    width: 20rem;
+}
+
