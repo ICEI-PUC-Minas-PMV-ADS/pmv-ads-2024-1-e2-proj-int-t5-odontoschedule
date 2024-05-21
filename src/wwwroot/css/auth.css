@@ -278,3 +278,35 @@ a:hover {
 .auth__repr img {
     width: 100%;
 }
+
+@media only screen and (max-width: 700px) {
+    .auth__repr, .cadastro__repr {
+        display: none;
+    }
+
+    .login {
+        flex-direction: column;
+        height: 90dvh;
+    }
+
+    .login__conteudo {
+        height: 100%;
+    }
+
+    .login-formulario {
+        gap: 1.5rem;
+    }
+
+    .login-container {
+        min-width: 80%;
+        padding: 1rem 0;
+    }
+
+    .container {
+        width: fit-content;
+    }
+
+    .cadastro {
+        width: fit-content;
+    }
+}

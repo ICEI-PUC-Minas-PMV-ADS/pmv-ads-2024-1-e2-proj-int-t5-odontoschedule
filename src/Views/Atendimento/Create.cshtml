@@ -93,8 +93,12 @@
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
-        <script src="@Url.Content("~/js/secretaria_cria_atendimento.js")"></script>
-        ;
+
+        @if(User.IsInRole("SECRETARIA"))
+        {
+            <script src="@Url.Content("~/js/secretaria_cria_atendimento.js")"></script>;
+        }
+
         <script src="@Url.Content("~/js/AgendaComponente.js")"></script>
         ;
         <script src="@Url.Content("~/js/elements.js")"></script>

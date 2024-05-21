@@ -61,7 +61,7 @@ function lidaFluxoFormularioAtendimentoSecretaria(parte) {
                 template.addEventListener("click", () => {
                     parte.parentNode.querySelector("input[name='DentistaId']").value = dentista.id;
 
-                    Array.from(parte.querySelector("table tbody")).forEach((i) => {
+                    Array.from(parte.querySelectorAll("table tbody tr")).forEach((i) => {
                         if (i.classList.contains("item-selecionado")) {
                             i.classList.remove("item-selecionado");
                         }

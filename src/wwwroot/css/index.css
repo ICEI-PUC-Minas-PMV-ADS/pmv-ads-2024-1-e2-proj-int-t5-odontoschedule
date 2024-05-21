@@ -173,3 +173,9 @@ textarea.odonto-input {
 .mb-2 {
     margin-bottom: 2rem;
 }
+
+@media only screen and (max-width: 700px) {
+    .odonto-input.xlargo {
+        width: 15rem;
+    }
+}
