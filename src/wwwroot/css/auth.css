@@ -304,9 +304,27 @@ a:hover {
 
     .container {
         width: fit-content;
+        padding: 1rem 0.5rem;
     }
 
     .cadastro {
         width: fit-content;
+    }
+
+    .cadastro__conteudo {
+        padding: 0.3rem;
+    }
+
+    .contato {
+        flex-direction: column;
+    }
+
+    .contato > div {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .contato input {
+        width: 15rem;
     }
 }
