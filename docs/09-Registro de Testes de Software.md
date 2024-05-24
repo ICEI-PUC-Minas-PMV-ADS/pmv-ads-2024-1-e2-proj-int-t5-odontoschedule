@@ -41,7 +41,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 
 | **Caso de Teste** 	| **CT-08 – Notificação de agendamento com 24 horas de antecedência da consulta** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-04 - A aplicação deve permitir que o paciente seja notificado com 24h de antecedência.|
+|	Requisito Associado 	| RF-04 - A aplicação deve permitir que o paciente receba um aviso com 24h de antecedência do seu atendimento. |
 |Registro de evidência |  |
 
 | **Caso de Teste** 	| **CT-09 – Notificar cancelamento do agendamento ao paciente** 	|

@@ -43,6 +43,27 @@
             </div>
         </div>
 
+        @if (User.IsInRole("SECRETARIA") || User.IsInRole("ADMIN"))
+        {
+             <div class="odonto-trocar-senha">
+                <div class="trocar-senha-conteudo">
+
+                    <a class="trocar-senha-fechar"><i class="fa-solid fa-xmark"></i></a>
+
+                    <div>
+                        <span>Alteração de senha</span>
+                    </div>
+
+                    <form>
+                        <input type="password" placeholder="Nova senha" name="senha" class="odonto-input"/>
+
+                        <button type="submit" class="odonto-botao-secundario">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            
+            <script src="~/js/funcionario_alterar_senha.js"></script>
+        }
     </div>
 
     @await RenderSectionAsync("Scripts", required: false)

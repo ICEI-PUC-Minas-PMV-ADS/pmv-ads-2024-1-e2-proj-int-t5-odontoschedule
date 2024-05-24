@@ -3,6 +3,20 @@
 }
 
 
+@if(User.IsInRole("PACIENTE"))
+{
+    @if (ViewBag.atendimentosContagem > 0)
+    {
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                OdontoModal.setData("Próximos atendimentos", `Você tem ${@ViewBag.atendimentosContagem } atendimentos próximos.`);
+                OdontoModal.open();
+            });
+        </script>
+    }
+}
+
+
 @if(!User.IsInRole("ADMIN"))
 {
     <div class="bem-vindo flex-column">
@@ -36,7 +50,7 @@ else
 
     @section Scripts {
         @{
-            <script src="~/js/metricas.js"></script>
+                <script src="~/js/metricas.js"></script>
         }
     }
 }

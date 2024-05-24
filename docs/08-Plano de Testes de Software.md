@@ -48,7 +48,7 @@ Para este projeto foram definidos os seguintes casos de testes a serem aplicados
 |Critério de Êxito | - Deve aparecer um popup de confirmação de finalização do agendamento |
 |  	|  	|
 | Caso de Teste 	| CT-08 – Notificação de agendamento com 24 horas de antecedência da consulta	|
-|Requisito Associado | RF-04 - A aplicação deve permitir que o paciente seja notificado com 24h de antecedência.       |
+|Requisito Associado | RF-04 - A aplicação deve permitir que o paciente receba um aviso com 24h de antecedência do seu atendimento.       |
 | Objetivo do Teste 	| Verificar se o paciente é notificado da sua consulta com 24 horas de antecedência |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Preencher os campos solicitados <br> - Clicar em "Entrar" - Clicar em "Fazer agendamentos" <br> - Preencha todas as informações do agendamento, mas coloque a data e hora para o dia seguinte no mesmo horário que está sendo criado o agendamento<br> - Ao finalizar o agendamento, recarregue a página |
 |Critério de Êxito | - Deve aparecer uma notificação informando que há um agendamento para o dia seguinte |

@@ -45,7 +45,7 @@
             
             @if (!User.IsInRole("PACIENTE"))
             {
-                <li>Alterar Senha</li>
+                <li><a href="#" id="opcao-alterar-senha">Alterar Senha</a></li>
             }
 
             <li><a asp-controller="@(User.IsInRole("PACIENTE") ? "Paciente" : "Funcionario")" asp-action="Logout">Sair</a></li>

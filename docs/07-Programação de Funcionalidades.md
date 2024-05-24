@@ -7,7 +7,7 @@
 |RF-01| A aplicação deve permitir que um paciente gerencie seu cadastro. O paciente deve ser capaz de se cadastrar, fornecendo os seguintes dados: Nome completo, CPF (campo de login), endereço, e-mail, telefone e senha. | PacienteController.cs e Paciente/Cadastro.cshtml |  Kayo |
 |RF-02| A aplicação deve permitir que um paciente faça login utilizando CPF e senha. E caso seja um administrador ou secretária, utilize nome de usuário e senha.   | PacienteController.cs, FuncionarioController.cs, Paciente/Login.cshtml, Funcionario/Login.cshtml| Kayo  |
 |RF-03| A aplicação deve permitir que o paciente e a secretária cancelem e remarquem um atendimento.     | Atendimento/Details.cshtml e AtendimentoController.cs | Amanda e Joabe |
-|RF-04| A aplicação deve permitir que o paciente seja notificado com 24h de antecedência.     |  |  Alvaro |
+|RF-04| A aplicação deve permitir que o paciente receba um aviso com 24h de antecedência do seu atendimento.     |  |  Alvaro |
 |RF-05| A aplicação deve permitir que o paciente seja capaz de agendar uma consulta passando as seguintes informações: Informações de contato, especialidade desejada, horário, dentista e modalidade (particular ou convênio)    | Atendimento/Create.cshtml, AtendimentoController.cs | Amanda  |
 |RF-06| A aplicação deve permitir que o paciente receba uma notificação quando uma consulta for cancelada, remarcada ou concluída.  |  | Alvaro |
 |RF-07| A aplicação deve permitir que o paciente visualize no seu perfil todos os atendimentos já realizados e pendentes.   |  Paciente/Index.cshtml, PacienteController.cs e AtendimentoController.cs | Alvaro |
