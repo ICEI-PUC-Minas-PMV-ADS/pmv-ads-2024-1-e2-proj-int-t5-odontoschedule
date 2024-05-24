@@ -71,6 +71,59 @@ namespace OdontoSchedule.Controllers
             return Ok(new { success = false, content = "Usuário não encontrado" });
         }
 
+        [HttpPost]
+        [AllowAnonymous]
+        // [Authorize(Roles = "SECRETARIA,ADMIN")]
+        public async Task<IActionResult> ChangePassword()
+        {
+            string novaSenha = Request.Form["senha"];
+            string conteudoArquivo;
+            string[] usuarios;
+            int index = 0;
+
+            using (StreamReader sr = System.IO.File.OpenText("config.txt"))
+            {
+                conteudoArquivo = sr.ReadLine();
+                usuarios = conteudoArquivo.Split(";");
+            }
+
+            foreach (string usuario in usuarios)
+            {
+                string usuarioNome = usuario.Split("=")[0];
+                string usuarioSenha = usuario.Split("=")[1];
+
+
+                if(User.IsInRole("SECRETARIA") && usuarioNome == "secretaria")
+                {
+                    usuarioSenha = novaSenha;
+
+                    usuarios[index] = usuarioNome + "=" + usuarioSenha;
+
+                    break;
+                }
+
+                if(User.IsInRole("ADMIN") && usuarioNome == "admin")
+                {
+                    usuarioSenha = novaSenha;
+
+                    usuarios[index] = usuarioNome + "=" + usuarioSenha;
+
+                    break;
+                }
+
+                index++;
+            }
+
+            conteudoArquivo = String.Join(";", usuarios);
+
+            using(StreamWriter sw = new StreamWriter("config.txt"))
+            {
+                await sw.WriteAsync(conteudoArquivo);
+            }
+
+            return Ok(new { success = true, content = "" });
+        }
+
         [Authorize(Roles = "SECRETARIA,ADMIN")]
         public async Task<IActionResult> Logout()
         {
