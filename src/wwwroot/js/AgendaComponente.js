@@ -98,32 +98,5 @@ class AgendaComponente {
 	
 			this.#elem.querySelector(".agenda-semanas-lista").appendChild(templateAgenda);
 		});
-
-		Array.from(this.#elem.querySelectorAll(".agenda-semanas__controlador-proximo")).forEach((ac) => {
-			ac.addEventListener("click", () => this.#changeWeek(ac.parentNode.parentNode));
-		});
-
-		this.#changeWeek();
 	}
-
-	#changeWeek() {
-		let elem = this.#elem.querySelector(".agenda-semanas-lista");
-
-		let indexSemanaAtual = Array.from(elem.children).findIndex((e) => e.style.display === "flex");
-
-		if (indexSemanaAtual === -1) {
-			elem.children.item(0).style.display = "flex";
-			return;
-		}
-
-		elem.children.item(indexSemanaAtual).style.display = "none";
-
-		if (indexSemanaAtual + 1 < elem.children.length) {
-			elem.children.item(indexSemanaAtual + 1).style.display = "flex";
-		}
-		else {
-			elem.children.item(0).style.display = "flex";
-		}
-	}
-
 }
