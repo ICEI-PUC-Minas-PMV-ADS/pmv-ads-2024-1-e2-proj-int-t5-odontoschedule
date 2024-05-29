@@ -33,16 +33,16 @@
             </span>
         </div>
         <ul>
+            @if (User.IsInRole("PACIENTE"))
+            {
+                <li class="odonto-botao-secundario">Editar Perfil</li>
+            }
+
             @if (!User.IsInRole("ADMIN"))
             {
                 <li><a asp-controller="Atendimento" asp-action="Create" class="sidebar-mobile-only">Fazer agendamento</a></li>
                 <li><a asp-controller="Atendimento" asp-action="Index" class="sidebar-mobile-only">Ver agendamentos</a></li>
                 <li><a asp-controller="Atendimento" asp-action="Index" asp-route-status="true" class="sidebar-mobile-only">Agendamentos concluídos</a></li>
-            }
-
-            @if (User.IsInRole("PACIENTE"))
-            {
-                <li class="odonto-botao-secundario">Editar Perfil</li>
             }
 
             @if (User.IsInRole("SECRETARIA"))
