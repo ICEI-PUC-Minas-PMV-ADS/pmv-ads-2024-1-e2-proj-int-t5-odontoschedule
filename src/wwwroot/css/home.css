@@ -15,9 +15,8 @@ body header {
 }
 
 body header .logo {
-    height: 3rem;
+    height: 6rem;
     aspect-ratio: 16/9;
-
     background: url("/img/logo_blue.png");
     background-size: contain;
     background-position: center;
@@ -36,6 +35,7 @@ body header ul li a {
     color: black;
     text-decoration-color: black;
 }
+
 
 body header .menu {
     position: relative;
@@ -62,7 +62,6 @@ body header .menu .menu-dropdown {
     padding: 1rem 1rem;
     border-radius: 0.5rem;
     margin: 0;
-
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
@@ -76,7 +75,6 @@ body header .menu .menu-dropdown ul {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
-
     min-width: 17rem;
     max-height: 17rem;
     overflow-y: auto;
@@ -90,59 +88,6 @@ body header .menu .menu-dropdown ul li {
 body header .menu.active .menu-dropdown {
     visibility: visible;
     opacity: 1;
-}
-
-body #pagina-conteudo {
-    display: flex;
-    justify-content: space-between;
-
-    width: 100dvw;
-    height: 100%;
-}
-
-body #pagina-conteudo > * {
-    height: 100%;
-}
-
-body #pagina-conteudo #barra-lateral {
-    width: 15dvw;
-    background: linear-gradient(180deg, rgba(255,255,255,1) 54%, rgba(204,236,249,1) 95%);
-}
-
-body #pagina-conteudo #barra-lateral > div:first-child {
-    background-color: #54BCFF;
-    height: 35%;
-}
-
-body header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #F5F5F5;
-    padding-left: 1rem;
-    padding-right: 3rem;
-}
-
-body header .logo {
-    height: 6rem;
-    aspect-ratio: 16/9;
-    background: url("/img/logo_blue.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-body header ul {
-    display: flex;
-    list-style: none;
-    gap: 10rem;
-    padding: 0;
-}
-
-body header ul li a {
-    text-decoration: none;
-    color: black;
-    text-decoration-color: black;
 }
 
 body header #notificacoes-gatilho-menu {
@@ -168,7 +113,7 @@ body #pagina-conteudo #barra-lateral {
 
 body #pagina-conteudo #barra-lateral > div:first-child {
     background-color: #54BCFF;
-    height: 40%;
+    height: 35%;
 }
 
 #barra-lateral__informacoes {
@@ -226,33 +171,15 @@ body #pagina-conteudo main {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     width: 60dvw;
     height: 100%;
-
     padding: 1rem 0;
     overflow-y: auto;
-
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-body #pagina-conteudo main::-webkit-scrollbar {
-    width: 0.75rem;
-    background-color: #ccebff;
-
-    height: 90%;
-}
-
-body #pagina-conteudo main::-webkit-scrollbar-thumb {
-    background-color: #54BCFF;
-    border-radius: 2rem;
-    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.5) inset;
-}
-
-
 
 body #pagina-conteudo #barra-direita {
     position: relative;
@@ -274,6 +201,7 @@ body #pagina-conteudo #barra-direita::after {
 .formulario-multiplo > form > .formulario-multiplo__parte {
     display: none;
     width: 100%;
+    height: 100%;
 }
 
 .formulario-multiplo > form > .formulario-multiplo__parte.ativo {
@@ -461,4 +389,64 @@ usuarios-lista-tabs .conteudo-tab .conteudo-tab__lado {
     position: absolute;
     right: 1rem;
     top: 1rem;
+}
+
+.sidebar-mobile-only {
+    display: none;
+}
+
+.mobile-sidebar-trigger {
+    display: none;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+    body header > ul {
+        display: none;
+    }
+
+    body #pagina-conteudo #barra-lateral {
+        position: absolute;
+        z-index: 1;
+        width: 40dvw;
+        transform: translateX(-100%);
+        transition: transform 0.5s linear;
+    }
+
+    body #pagina-conteudo #barra-lateral.ativo {
+        transform: translateX(0);
+    }
+
+    #barra-lateral__informacoes {
+        transform: translateY(-15%);
+    }
+
+
+    #barra-lateral__informacoes > ul li a {
+        font-size: 0.75rem;
+    }
+
+    #barra-lateral__identidade {
+        margin-bottom: 1rem;
+    }
+
+    #lateral-icone-usuario {
+        width: 60%;
+    }
+
+    body #pagina-conteudo #barra-direita {
+        display: none;
+    }
+
+    body #pagina-conteudo main {
+        width: 100%;
+    }
+
+    .mobile-sidebar-trigger {
+        display: block;
+    }
+
+    .sidebar-mobile-only {
+        display: block;
+    }
 }
