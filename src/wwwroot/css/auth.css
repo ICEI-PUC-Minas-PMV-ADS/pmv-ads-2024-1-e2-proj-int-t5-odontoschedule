@@ -167,12 +167,13 @@ a:hover{
     align-items: center;
     position: relative;
     width: 100%;
+
+    gap: 4rem;
 }
 
 .login__conteudo > #trocar-perfil {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
+    align-self: flex-end;
+    margin-right: 2rem;
 }
 
 .login-container {
@@ -180,15 +181,18 @@ a:hover{
     flex-direction: column;
     align-items: center;
     background: #fff;
-    padding: 2rem 0;
+    padding: 1rem 0;
     border-radius: 20px;
     border: 2px solid #346a8a;
-    min-width: 50%;
+    min-width: 45%;
     position: relative;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .login-container--funcionario::after {
-    content: "Funcionário";
+    content: "Entrada como Funcionário";
     position: absolute;
     left: 0;
     top: 0;
@@ -196,7 +200,7 @@ a:hover{
 }
 
 .login-container--paciente::after {
-    content: "Paciente";
+    content: "Entrada como Paciente";
     position: absolute;
     left: 0;
     top: 0;
