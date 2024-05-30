@@ -18,6 +18,8 @@ namespace OdontoSchedule.Models
         }
 
         public DbSet<Paciente> Pacientes { get; set; }
+        
+        public DbSet<Recoverycode> RecoveryCodes { get; set; }
 
         public DbSet<Dentista> Dentistas { get; set; }
 

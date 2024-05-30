@@ -2,8 +2,10 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 using OdontoSchedule.Models;
+using OdontoSchedule.Services;
 using System.Security.Claims;
 
 
@@ -64,7 +66,7 @@ namespace OdontoSchedule.Controllers
         {
             Paciente paciente = await this.context.Pacientes.FindAsync(id);
 
-            if(paciente == null)
+            if (paciente == null)
             {
                 return NotFound();
             }
@@ -85,12 +87,12 @@ namespace OdontoSchedule.Controllers
         {
             Paciente pacienteEncontrado = await this.context.Pacientes.Where((p) => p.Email == paciente.Email).FirstOrDefaultAsync();
 
-            if(pacienteEncontrado == null)
+            if (pacienteEncontrado == null)
             {
                 return Ok(new { success = false, content = "Usuário não encontrado" });
             }
-            
-            if(BCrypt.Net.BCrypt.Verify(paciente.Senha, pacienteEncontrado.Senha))
+
+            if (BCrypt.Net.BCrypt.Verify(paciente.Senha, pacienteEncontrado.Senha))
             {
                 List<Claim> claims = new List<Claim>()
                 {
@@ -124,7 +126,7 @@ namespace OdontoSchedule.Controllers
         {
             List<Paciente> pacientes = await this.context.Pacientes.Where(p => p.CPF == cpf).ToListAsync();
 
-            return pacientes.ToArray().Length > 0 ?  Ok(pacientes.First()) : NotFound();
+            return pacientes.ToArray().Length > 0 ? Ok(pacientes.First()) : NotFound();
         }
 
         [AllowAnonymous]
@@ -132,7 +134,7 @@ namespace OdontoSchedule.Controllers
         // [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nome,DataNascimento,CPF,Email,Telefone,Bairro,Cidade,Rua,Numero,Complemento,Senha")] Paciente paciente)
         {
-            switch(Request.Form["sexo"])
+            switch (Request.Form["sexo"])
             {
                 case "true":
                     paciente.Sexo = true;
@@ -144,7 +146,7 @@ namespace OdontoSchedule.Controllers
                     paciente.Sexo = null;
                     break;
             }
-                
+
             if (ModelState.IsValid)
             {
                 paciente.Senha = BCrypt.Net.BCrypt.HashPassword(paciente.Senha); //Criptografando a senha
@@ -224,6 +226,42 @@ namespace OdontoSchedule.Controllers
             await HttpContext.SignOutAsync();
 
             return RedirectToAction("Login", "Paciente");
+        }
+
+        public ActionResult EsqueciMinhaSenha()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [AllowAnonymous]
+        public ActionResult EsqueciMinhaSenhaC()
+        {
+            string email = Request.Form["email"];
+            Paciente paciente = this.context.Pacientes.Where(p => p.Email == email).FirstOrDefault();
+            if (paciente == null) 
+            { 
+                return NotFound();
+            }
+            
+            Random rand = new Random();
+            char[] chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".ToCharArray();
+            int codelenght = 15;
+            string code = "";
+
+            for (int i = 0; i < codelenght; i++)
+            {
+                code += chars[rand.Next(chars.Length)];
+            }
+
+            Recoverycode recoverycode = new Recoverycode();
+            recoverycode.Code = code;
+            recoverycode.PacienteId = paciente.ID;
+            this.context.RecoveryCodes.Add(recoverycode);
+
+            EmailSender.Send("Recuperacao de senha", code, email);
+
+            return View("Login");
         }
     }
 }

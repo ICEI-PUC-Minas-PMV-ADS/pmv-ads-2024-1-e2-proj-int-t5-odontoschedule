@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "EsqueciMinhaSenha";
+}
+
+<h1>Esqueceu sua senha?</h1>
+         
+<div class="row">
+    <div class="col-md-4">
+        <form asp-controller="Paciente" asp-action="EsqueciMinhaSenhaC">
+            <input type="type" name="email" value=""/>
+            <div class="alert alert-success">
+            <strong>Sucesso!</strong> Um e-mail com o link de redefinição da sua senha foi enviado para a sua caixa de e-mail.
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>
+
+               
