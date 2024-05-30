@@ -196,6 +196,11 @@
         gap: 0.3rem;
     }
 
+    .agenda-semanas .no-dentist-schedule {
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+
     .agenda-semanas .agenda .coluna {
         width: 3.5rem;
         min-height: 40dvh;
