@@ -199,6 +199,7 @@
     .agenda-semanas .no-dentist-schedule {
         font-size: 0.8rem;
         padding: 1rem;
+        width: 80dvw;
     }
 
     .agenda-semanas .agenda .coluna {
