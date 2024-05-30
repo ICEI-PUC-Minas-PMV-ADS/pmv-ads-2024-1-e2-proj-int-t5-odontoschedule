@@ -40,9 +40,9 @@
 
             @if (!User.IsInRole("ADMIN"))
             {
-                <li><a asp-controller="Atendimento" asp-action="Create" class="sidebar-mobile-only">Fazer agendamento</a></li>
-                <li><a asp-controller="Atendimento" asp-action="Index" class="sidebar-mobile-only">Ver agendamentos</a></li>
-                <li><a asp-controller="Atendimento" asp-action="Index" asp-route-status="true" class="sidebar-mobile-only">Agendamentos concluídos</a></li>
+                <li class="sidebar-mobile-only"><a asp-controller="Atendimento" asp-action="Create">Fazer agendamento</a></li>
+                <li class="sidebar-mobile-only"><a asp-controller="Atendimento" asp-action="Index">Ver agendamentos</a></li>
+                <li class="sidebar-mobile-only"><a asp-controller="Atendimento" asp-action="Index" asp-route-status="true">Agendamentos concluídos</a></li>
             }
 
             @if (User.IsInRole("SECRETARIA"))

@@ -198,6 +198,10 @@ body #pagina-conteudo #barra-direita::after {
     backdrop-filter: blur(4px);
 }
 
+.formulario-multiplo {
+    max-height: 100%;
+}
+
 .formulario-multiplo > form > .formulario-multiplo__parte {
     display: none;
     width: 100%;

@@ -2,7 +2,6 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 using OdontoSchedule.Models;
 using OdontoSchedule.Services;
@@ -169,7 +168,7 @@ namespace OdontoSchedule.Controllers
                 });
             }
 
-            return View(paciente);
+            return View(nameof(Cadastro), paciente);
         }
 
         [Authorize(Roles = "SECRETARIA, PACIENTE")]

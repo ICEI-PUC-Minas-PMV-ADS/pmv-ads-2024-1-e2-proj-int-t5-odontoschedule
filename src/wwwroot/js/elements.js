@@ -18,8 +18,16 @@ function lidaFluxoFormulario(event) {
         }
     });
 
+    if (formularioMultiploPropriedades[formulario.dataset.form_id].ativoIndex === formularioPartes.length - 2) {
+        document.querySelector(".formulario-multiplo__botao").innerText = "Finalizar";
+    }
+    else {
+        document.querySelector(".formulario-multiplo__botao").innerText = "Próximo";
+    }
+    
+
     if (formularioMultiploPropriedades[formulario.dataset.form_id].ativoIndex === formularioPartes.length - 1)
-        return formularioMultiploPropriedades[formulario.dataset.form_id].finalizar(formulario)
+        return formularioMultiploPropriedades[formulario.dataset.form_id].finalizar(formulario);
 
     Array.from(formularioPartes)[formularioMultiploPropriedades[formulario.dataset.form_id].ativoIndex + 1].classList.add("ativo");
 

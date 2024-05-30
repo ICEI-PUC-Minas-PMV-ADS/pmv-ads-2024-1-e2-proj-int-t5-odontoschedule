@@ -14,6 +14,13 @@ namespace OdontoSchedule.Models
             modelBuilder.Entity<Agenda>().HasOne(a => a.Dentista).WithMany().OnDelete(DeleteBehavior.Cascade);
             modelBuilder.Entity<Agenda>().HasOne(a => a.Horario).WithMany().OnDelete(DeleteBehavior.Cascade);
 
+
+            modelBuilder.Entity<Paciente>().HasIndex(p => p.CPF).IsUnique(true);
+            modelBuilder.Entity<Paciente>().HasIndex(p => p.Email).IsUnique(true);
+
+            modelBuilder.Entity<Dentista>().HasIndex(d => d.CPF).IsUnique(true);
+            modelBuilder.Entity<Dentista>().HasIndex(d => d.CRO).IsUnique(true);
+
             new DBInitializer(modelBuilder).Seed();
         }
 

@@ -9,8 +9,19 @@ class AgendaComponente {
 		this.#dentist = dentist;
 	}
 
-	load() {
-		fetch("/Agenda/ByDentist?dentista=" + this.#dentist).then(async (response) => this.#getData(await response.json()));
+	async load() {
+		let response = await (await fetch("/Agenda/ByDentist?dentista=" + this.#dentist)).json();
+
+		if (response.length === 0) {
+			this.#elem.querySelector(".no-dentist-schedule").style.display = "block";
+			this.#elem.querySelector(".agenda-semanas-lista").style.display = "none";
+		}
+		else {
+			this.#elem.querySelector(".no-dentist-schedule").style.display = "none";
+			this.#elem.querySelector(".agenda-semanas-lista").style.display = "block";
+
+			this.#getData(response);
+		}
 	}
 
 	#getData(response) {
