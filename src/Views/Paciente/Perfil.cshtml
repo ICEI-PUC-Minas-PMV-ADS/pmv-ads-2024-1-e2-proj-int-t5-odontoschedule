@@ -1,0 +1,121 @@
+﻿@model OdontoSchedule.Models.Paciente
+
+@{
+    ViewData["Title"] = "Perfil";
+    Layout = "~/Views/Shared/_ProfileLayout.cshtml";
+}
+
+<div id="perfil__cabecalho">
+
+</div>
+<div id="perfil__conteudo">
+    <div id="perfil__informacoes">
+        <span id="icone-usuario">
+
+        </span>
+        <div>
+            <span>@User.Identity.Name</span>
+            <span>PACIENTE</span>
+        </div>
+    </div>
+    <div id="perfil__menu">
+        <ul>
+            <li class="odonto-botao-secundario"><a id="menu__edicao-opcao">Editar perfil</a></li>
+            <li><a id="menu__notificacao-opcao">Notificações</a></li>
+            <li><a asp-action="Logout">Sair</a></li>
+        </ul>
+
+        <div id="menu__conteudo">
+            <div id="menu__conteudo-edicao" class="ativo">
+                <form asp-action="Edit" id="editar-perfil-formulario">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="ID" />
+
+                    <div id="informacoes-edicao">
+                        <div>
+                            <div class="form-group">
+                                <label asp-for="Nome" class="control-label"></label>
+                                <input asp-for="Nome" class="odonto-input largo" />
+                                <span asp-validation-for="Nome" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="DataNascimento" class="control-label"></label>
+                                <input asp-for="DataNascimento" class="odonto-input largo" />
+                                <span asp-validation-for="DataNascimento" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="CPF" class="control-label"></label>
+                                <input asp-for="CPF" class="odonto-input largo" />
+                                <span asp-validation-for="CPF" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label>Sexo:</label>
+                                <div id="campos-sexo">
+                                    <label class="sexo" for="feminino"><input type="radio" id="feminino" name="sexo" value="false" class="sexo validar input-radio" @(Model.Sexo == false ? "checked" : "")>Feminino</label>
+                                    <label class="sexo" for="masculino"><input type="radio" id="masculino" name="sexo" value="true" class="sexo validar input-radio" @(Model.Sexo == true ? "checked" : "")>Masculino</label>
+                                    <label class="sexo" for="outro"><input type="radio" id="outro" name="sexo" value="null" class="sexo validar input-radio" @(Model.Sexo == null ? "checked" : "")>Outro</label>
+                                </div>
+                                <span asp-validation-for="Sexo" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Email" class="control-label"></label>
+                                <input asp-for="Email" class="odonto-input largo" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Bairro" class="control-label"></label>
+                                <input asp-for="Bairro" class="odonto-input largo" />
+                                <span asp-validation-for="Bairro" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Cidade" class="control-label"></label>
+                                <input asp-for="Cidade" class="odonto-input maior" />
+                                <span asp-validation-for="Cidade" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Rua" class="control-label"></label>
+                                <input asp-for="Rua" class="odonto-input largo" />
+                                <span asp-validation-for="Rua" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Senha" class="control-label"></label>
+                                <input asp-for="Senha" class="odonto-input largo" />
+                                <span asp-validation-for="Senha" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="form-group">
+                                <label asp-for="Numero" class="control-label"></label>
+                                <input asp-for="Numero" class="odonto-input" />
+                                <span asp-validation-for="Numero" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Complemento" class="control-label"></label>
+                                <input asp-for="Complemento" class="odonto-input" />
+                                <span asp-validation-for="Complemento" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Telefone" class="control-label"></label>
+                                <input asp-for="Telefone" class="odonto-input" />
+                                <span asp-validation-for="Telefone" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="odonto-botao-primario maior">Salvar</button>
+                </form>
+            </div>
+            <div id="menu__conteudo-notificacoes">
+                <ul>
+                    @foreach(Notificacao n in (List<Notificacao>)ViewBag.Notificacoes)
+                    {
+                        <li>@n.Conteudo</li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
