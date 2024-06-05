@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.github",
+    "\\.github\\workflows",
+    "\\docs",
+    "\\presentation",
+    "\\src"
+  ],
+  "SelectedNode": "\\src\\OdontoSchedule.sln",
+  "PreviewInSolutionExplorer": false
+}
