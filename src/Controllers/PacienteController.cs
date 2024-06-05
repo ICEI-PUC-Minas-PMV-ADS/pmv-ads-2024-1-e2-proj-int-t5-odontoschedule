@@ -37,6 +37,14 @@ namespace OdontoSchedule.Controllers
             return View();
         }
 
+        [Authorize(Roles = "PACIENTE")]
+        public IActionResult Perfil()
+        {
+            ViewBag.Notificacoes = this.context.Notificacoes.Where(n => n.PacienteId == Int32.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier))).ToList();
+
+            return View(this.context.Pacientes.Find(Int32.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier))));
+        }
+
         [Authorize(Roles = "ADMIN")]
         [AllowAnonymous]
         public async Task<IActionResult> GetCountByMonth()
@@ -171,10 +179,10 @@ namespace OdontoSchedule.Controllers
             return View(nameof(Cadastro), paciente);
         }
 
-        [Authorize(Roles = "SECRETARIA, PACIENTE")]
+        [Authorize(Roles = "SECRETARIA,PACIENTE")]
         [HttpPost]
         // [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit([Bind("ID,Nome,DataNascimento,CPF,Email,Telefone,Bairro,Cidade,Rua,Numero,Complemento")] Paciente paciente)
+        public async Task<IActionResult> Edit([Bind("ID,Nome,Senha,DataNascimento,CPF,Email,Telefone,Bairro,Cidade,Rua,Numero,Complemento")] Paciente paciente)
         {
             Paciente pacienteEncontrado = this.context.Pacientes.Find(paciente.ID);
             this.context.Entry(pacienteEncontrado).State = EntityState.Detached;
@@ -184,8 +192,25 @@ namespace OdontoSchedule.Controllers
                 return NotFound();
             }
 
-            paciente.Senha = pacienteEncontrado.Senha;
+            if(User.IsInRole("SECRETARIA"))
+            {
+                paciente.Senha = pacienteEncontrado.Senha;
+            }
+            else
+            {
+
+                if (String.IsNullOrEmpty(paciente.Senha))
+                {
+                    paciente.Senha = pacienteEncontrado.Senha;
+                }
+                else
+                {
+                    paciente.Senha = BCrypt.Net.BCrypt.HashPassword(paciente.Senha);
+                }
+            }
+
             paciente.CriadoEm = pacienteEncontrado.CriadoEm;
+
             ModelState.Remove("Senha");
             ModelState.Remove("CriadoEm");
 
@@ -207,16 +232,38 @@ namespace OdontoSchedule.Controllers
                 this.context.Update(paciente);
                 await this.context.SaveChangesAsync();
 
-                return RedirectToAction("Details", new { id = paciente.ID });
+                if (User.IsInRole("SECRETARIA"))
+                {
+                    return RedirectToAction("Details", new { id = paciente.ID });
+                }
+                else
+                {
+                    return RedirectToAction("Perfil");
+                }
+                
+            }
+            else
+            {
+                Console.WriteLine(string.Join("; ", ModelState.Values
+                                        .SelectMany(x => x.Errors)
+                                        .Select(x => x.ErrorMessage)));
             }
 
-            ViewData["Atendimentos"] = await this.context.Atendimentos.Where((a) => a.PacienteId == paciente.ID)
+
+            if (User.IsInRole("SECRETARIA"))
+            {
+                ViewData["Atendimentos"] = await this.context.Atendimentos.Where((a) => a.PacienteId == paciente.ID)
                 .Include((a) => a.Dentista)
                 .Include((a) => a.Agenda)
                     .ThenInclude((ag) => ag.Horario)
                 .ToListAsync();
 
-            return View("Details", paciente);
+                return View("Details", paciente);
+            }
+            else
+            {
+                return RedirectToAction("Perfil");
+            }
         }
 
         [Authorize(Roles = "PACIENTE")]

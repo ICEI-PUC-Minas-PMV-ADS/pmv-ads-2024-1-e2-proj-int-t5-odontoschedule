@@ -36,6 +36,13 @@ body header ul li a {
     text-decoration-color: black;
 }
 
+body header ul li {
+    transition: transform 0.2s linear;
+}
+
+body header ul li:hover {
+    transform: scale(1.2);
+}
 
 body header .menu {
     position: relative;

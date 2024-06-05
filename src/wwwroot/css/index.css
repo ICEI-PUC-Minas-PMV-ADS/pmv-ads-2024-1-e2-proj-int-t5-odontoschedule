@@ -40,11 +40,14 @@ button, a {
     width: fit-content;
 
     text-decoration-color: white;
+
+    transition: transform 0.2s linear; 
 }
 
 .odonto-botao-primario:hover {
     background: #89bcc2;
     color: white;
+    transform: scale(1.2);
 }
 
 
@@ -52,9 +55,18 @@ button, a {
     border: none;
     background: #00597E;
     border-radius: 2rem;
-    color: white;
+    color: white !important;
     padding: 0.3rem 1rem;
     text-decoration: none;
+    transition: transform 0.2s linear;
+}
+
+.odonto-botao-secundario a {
+    color: white!important;
+}
+
+.odonto-botao-secundario:hover {
+    transform: scale(1.2);
 }
 
 .odonto-botao-primario.maior, .odonto-botao-secundario.maior {
