@@ -1,7 +1,7 @@
 ﻿@model OdontoSchedule.Models.Paciente
 
 @{
-    ViewData["Title"] = "EsqueciMinhaSenha";
+    ViewData["Title"] = "AlteracaoSenha";
     Layout = "~/Views/Shared/_AuthLayout.cshtml";
 }
 
@@ -12,19 +12,23 @@
             <img src="/img/logo_auth.png" />
         </div>
     </div>
-    
+
     <div class="login__conteudo">
         <section class="login-container login-container--paciente">
 
-        <div class="titulo">
-                <h1>Esqueceu sua senha?</h1>
-        </div>
+            <div class="titulo">
+                <h1>Alterar Senha</h1>
+            </div>
 
-        <form asp-controller="Paciente" asp-action="EsqueciMinhaSenhaC">
+            <form asp-controller="Paciente" asp-action="CriarNovaSenhaC">
                 <div class="formulario__inputs">
                     <div class="login__formulario-item">
-                        <label asp-for="Email"></label>
-                        <input type="text" name="Email" class="odonto-input largo alto redondo">
+                        <label>Codigo</label>
+                        <input type="text" name="Codigo" class="odonto-input largo alto redondo">
+                    </div>
+                    <div class="login__formulario-item">
+                        <label>Nova Senha</label>
+                        <input type="password" name="Senha" class="odonto-input largo alto redondo">
                     </div>
                 </div>
 
@@ -32,13 +36,12 @@
 
                 <div class="error-text">
                 </div>
-            
+
                 <div class="login__opcoes">
-                <a asp-action="Index">Voltar</a>
+                    <a asp-action="Index">Voltar</a>
                 </div>
-        </form>
+            </form>
         </section>
     </div>
 
 </section>
-               
