@@ -35,7 +35,7 @@
         <ul>
             @if (User.IsInRole("PACIENTE"))
             {
-                <li class="odonto-botao-secundario">Editar Perfil</li>
+                <li class="odonto-botao-secundario"><a asp-controller="Paciente" asp-action="Perfil">Editar perfil</a></li>
             }
 
             @if (!User.IsInRole("ADMIN"))
