@@ -46,7 +46,6 @@ namespace OdontoSchedule.Controllers
         }
 
         [Authorize(Roles = "ADMIN")]
-        [AllowAnonymous]
         public async Task<IActionResult> GetCountByMonth()
         {
             Dictionary<int, int> patientsByMonth = await context.Pacientes
@@ -181,7 +180,6 @@ namespace OdontoSchedule.Controllers
 
         [Authorize(Roles = "SECRETARIA,PACIENTE")]
         [HttpPost]
-        // [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit([Bind("ID,Nome,Senha,DataNascimento,CPF,Email,Telefone,Bairro,Cidade,Rua,Numero,Complemento")] Paciente paciente)
         {
             Paciente pacienteEncontrado = this.context.Pacientes.Find(paciente.ID);
@@ -285,6 +283,7 @@ namespace OdontoSchedule.Controllers
         {
             string email = Request.Form["email"];
             Paciente paciente = this.context.Pacientes.Where(p => p.Email == email).FirstOrDefault();
+
             if (paciente == null) 
             { 
                 return NotFound();
@@ -307,7 +306,7 @@ namespace OdontoSchedule.Controllers
 
             await this.context.SaveChangesAsync();
 
-            EmailSender.Send("Recuperacao de senha", "Segue o código e link de recuperação:\n\nCódigo: " + code, email);
+            EmailSender.Send("Recuperacao de senha", "Segue o código e link de recuperação:\n\nLink: " + this.Url.Action("CriarNovaSenha", "Usuario", new { id = recoverycode.ID }, this.Request.Scheme) + "\nCódigo: " + code, email);
 
             return View("Login");
         }

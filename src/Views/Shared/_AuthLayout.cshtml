@@ -10,11 +10,28 @@
     <link rel="stylesheet" href="~/css/index.css" />
     <link rel="stylesheet" href="~/css/auth.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/OdontoSchedule.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/components.css" asp-append-version="true" />
+
+    <script src="~/js/OdontoModal.js"></script>
 </head>
 <body>
     <main role="main">
         @RenderBody()
     </main>
+
+    <div class="odonto-modal">
+        <div class="modal">
+
+            <div class="modal__details">
+                <h1 class="modal__title"></h1>
+            </div>
+
+            <p class="modal__text"></p>
+
+            <button class="modal__btn">Ok</button>
+        </div>
+    </div>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

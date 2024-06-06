@@ -68,7 +68,30 @@
                 </div>
             </div>
             
+         
             <script src="~/js/funcionario_alterar_senha.js"></script>
+        }
+
+        @if (User.IsInRole("ADMIN"))
+        {
+            <div class="odonto-trocar-email">
+                <div class="trocar-email-conteudo">
+
+                    <a class="trocar-email-fechar"><i class="fa-solid fa-xmark"></i></a>
+
+                    <div>
+                        <span>Email de recuperação</span>
+                    </div>
+
+                    <form>
+                        <input type="email" placeholder="Email" name="email" class="odonto-input" />
+
+                        <button type="submit" class="odonto-botao-secundario">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+            <script src="~/js/administrador_alterar_email.js"></script>
         }
     </div>
 

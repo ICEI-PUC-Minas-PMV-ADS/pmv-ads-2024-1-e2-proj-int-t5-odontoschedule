@@ -5,16 +5,21 @@
     fetch(url, { method: "post", body: formulario }).then((response) => {
         switch (response.status) {
             case 200:
-                alert("Senha alterada");
-                window.location = "/Paciente/Login";
+                OdontoModal.setData("Sucesso", "Senha alterada");
+                OdontoModal.setCallback(() => window.location = "/Paciente/Login");
+
                 break;
             case 404:
-                alert("ID de Recuperação não encontrado");
+                OdontoModal.setData("Erro", "ID de Recuperação não encontrado");
+
                 break;
             case 400:
-                alert("Código de Recuperação incorreto");
+                OdontoModal.setData("Erro", "Código de Recuperação incorreto");
+
                 break;
         }
+
+        OdontoModal.open();
     });
 }
 

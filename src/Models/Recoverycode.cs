@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace OdontoSchedule.Models
 {
+    [Table("RecoveryCodes")]
     public class Recoverycode
     {
         [Key]
@@ -14,7 +15,7 @@ namespace OdontoSchedule.Models
         [ForeignKey ("PacienteId")]
         public Paciente Paciente { get; set; }
 
-        public int PacienteId { get; set; }
+        public int? PacienteId { get; set; }
 
     }
 }

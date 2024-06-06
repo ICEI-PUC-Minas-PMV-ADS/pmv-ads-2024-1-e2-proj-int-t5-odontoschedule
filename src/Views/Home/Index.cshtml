@@ -50,7 +50,14 @@ else
 
     @section Scripts {
         @{
-                <script src="~/js/metricas.js"></script>
+            <script src="~/js/metricas.js"></script>
+            ;
+            if(!ViewBag.recuperacaoDefinida)
+            {
+                <script>
+                    abrirAlteracaoEmail();
+                </script>
+            }
         }
     }
 }

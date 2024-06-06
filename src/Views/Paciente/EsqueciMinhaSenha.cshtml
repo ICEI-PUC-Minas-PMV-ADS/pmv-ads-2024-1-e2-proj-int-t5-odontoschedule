@@ -13,13 +13,13 @@
     </div>
     
     <div class="login__conteudo">
-        <section class="login-container login-container--paciente">
+        <section class="recuperacao-senha-container">
 
-        <div class="titulo">
+            <div class="titulo">
                 <h1>Esqueceu sua senha?</h1>
-        </div>
+            </div>
 
-        <form asp-controller="Paciente" asp-action="EsqueciMinhaSenhaC">
+            <form asp-controller="Paciente" asp-action="EsqueciMinhaSenhaC">
                 <div class="formulario__inputs">
                     <div class="login__formulario-item">
                         <label asp-for="Email"></label>
@@ -28,14 +28,11 @@
                 </div>
 
                 <button class="odonto-botao-primario maior" type="submit">Enviar</button>
-
-                <div class="error-text">
-                </div>
             
                 <div class="login__opcoes">
-                <a asp-action="Index">Voltar</a>
+                    <a asp-action="Login">Voltar</a>
                 </div>
-        </form>
+            </form>
         </section>
     </div>
 

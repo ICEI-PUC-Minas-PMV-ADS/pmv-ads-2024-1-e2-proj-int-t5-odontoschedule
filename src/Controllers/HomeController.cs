@@ -32,6 +32,23 @@ namespace OdontoSchedule.Controllers
 
                 ViewBag.atendimentosContagem = atendimentosContagem;
             }
+
+            if(User.IsInRole("ADMIN"))
+            {
+                string conteudoArquivo;
+                List<string> configItens;
+                string recuperacaoEmail;
+
+                using (StreamReader sr = System.IO.File.OpenText("config.txt"))
+                {
+                    conteudoArquivo = sr.ReadLine();
+                    configItens = conteudoArquivo.Split(";").ToList();
+                }
+
+                recuperacaoEmail = configItens.FirstOrDefault(item => item.StartsWith("recuperacao_email="));
+
+                ViewBag.recuperacaoDefinida = !String.IsNullOrEmpty(recuperacaoEmail.Split('=')[1]);
+            }
             
 
             return View();

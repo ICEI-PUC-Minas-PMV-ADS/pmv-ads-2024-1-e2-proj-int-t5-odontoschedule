@@ -105,7 +105,6 @@ a{
 
 a:hover{
   color: #8396b3;
-  transition: background-color 0.3s;
 }
 
 .cadastro__repr {
@@ -251,7 +250,6 @@ a {
 
 a:hover {
     color: #8396b3;
-    transition: background-color 0.3s;
 }
 
 .auth__repr {
@@ -281,6 +279,39 @@ a:hover {
 
 .auth__repr img {
     width: 100%;
+}
+
+.recuperacao-senha-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 1rem 0;
+    border-radius: 20px;
+    border: 2px solid #346a8a;
+    min-width: 45%;
+    position: relative;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.recuperacao-senha-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.recuperacao-senha-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.recuperacao-senha-container form > .formulario__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 @media only screen and (max-width: 700px) {

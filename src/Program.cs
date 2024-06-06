@@ -70,7 +70,7 @@ if(!File.Exists("config.txt"))
             senhaAdmin += chars[rand.Next(chars.Length)];
         }
 
-        conteudo = new UTF8Encoding().GetBytes("admin=" + senhaAdmin + ";secretaria=" + senhaSecretaria);
+        conteudo = new UTF8Encoding().GetBytes("admin=" + senhaAdmin + ";secretaria=" + senhaSecretaria + ";recuperacao_email=");
 
         fs.Write(conteudo);
 

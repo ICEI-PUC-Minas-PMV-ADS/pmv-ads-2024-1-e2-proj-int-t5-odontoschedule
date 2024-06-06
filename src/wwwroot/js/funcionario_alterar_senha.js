@@ -8,11 +8,14 @@
             let data = await response.json();
 
             if (data.success) {
-                alert("Senha alterada");
+                OdontoModal.setData("Sucesso", "Senha alterada");
+                OdontoModal.setCallback(() => { document.querySelector(".odonto-trocar-senha").style.display = "none"; OdontoModal.close() });
             }
             else {
-                alert("Erro");
+                OdontoModal.setData("Erro", "Ocorreu um erro ao tentar fazer a alteração da sua senha");
             }
+
+            OdontoModal.open();
         })
     });
 

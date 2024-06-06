@@ -55,6 +55,11 @@
                 <li><a href="#" id="opcao-alterar-senha">Alterar Senha</a></li>
             }
 
+            @if (User.IsInRole("ADMIN"))
+            {
+                <li><a href="#" id="opcao-alterar-email">Alterar Email</a></li>
+            }
+
             <li><a asp-controller="@(User.IsInRole("PACIENTE") ? "Paciente" : "Funcionario")" asp-action="Logout">Sair</a></li>
         </ul>
     </div>

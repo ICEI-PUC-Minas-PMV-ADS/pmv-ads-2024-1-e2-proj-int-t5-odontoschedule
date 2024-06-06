@@ -21,7 +21,15 @@ namespace OdontoSchedule.Controllers
 
         public IActionResult CriarNovaSenha(int id)
         {
+            Recoverycode recoverycode = this.context.RecoveryCodes.Find(id);
+
+            if(recoverycode == null)
+            {
+                return NotFound();
+            }
+
             ViewBag.idRecuperacao = id;
+            ViewBag.ePaciente = recoverycode.PacienteId != null;
 
             return View();
         }
@@ -36,22 +44,70 @@ namespace OdontoSchedule.Controllers
                 return NotFound();
             }
 
-            this.context.Entry(recoverycode).State = EntityState.Detached;
-
             if(recoverycode.Code == Request.Form["Codigo"]) {
-                Paciente paciente = this.context.Pacientes.Find(recoverycode.PacienteId);
+                if(recoverycode.PacienteId != null)
+                {
+                    this.context.Entry(recoverycode).State = EntityState.Detached;
 
-                paciente.Senha = BCrypt.Net.BCrypt.HashPassword(Request.Form["Senha"]);
+                    Paciente paciente = this.context.Pacientes.Find(recoverycode.PacienteId);
 
-                this.context.Pacientes.Update(paciente);
+                    paciente.Senha = BCrypt.Net.BCrypt.HashPassword(Request.Form["Senha"]);
 
-                await this.context.SaveChangesAsync();
+                    this.context.Pacientes.Update(paciente);
 
-                this.context.Entry(paciente).State = EntityState.Detached;
+                    await this.context.SaveChangesAsync();
 
-                this.context.Remove(this.context.RecoveryCodes.Find(Int32.Parse(Request.Form["id"])));
+                    this.context.Entry(paciente).State = EntityState.Detached;
 
-                await this.context.SaveChangesAsync();
+                    this.context.Remove(this.context.RecoveryCodes.Find(Int32.Parse(Request.Form["id"])));
+
+                    await this.context.SaveChangesAsync();
+                }
+                else
+                {
+                    string conteudoArquivo;
+                    string[] usuarios;
+                    int index = 0;
+
+                    using (StreamReader sr = System.IO.File.OpenText("config.txt"))
+                    {
+                        conteudoArquivo = sr.ReadLine();
+                        usuarios = conteudoArquivo.Split(";");
+                    }
+
+                    foreach (string usuario in usuarios)
+                    {
+                        if (usuario.StartsWith("recuperacao_email"))
+                        {
+                            continue;
+                        }
+
+                        string usuarioNome = usuario.Split("=")[0];
+                        string usuarioSenha = usuario.Split("=")[1];
+
+
+                        if (Request.Form["funcionario"] == usuarioNome)
+                        {
+                            usuarioSenha = Request.Form["Senha"];
+
+                            usuarios[index] = usuarioNome + "=" + usuarioSenha;
+
+                            break;
+                        }
+
+                        index++;
+                    }
+
+                    conteudoArquivo = String.Join(";", usuarios);
+
+                    using (StreamWriter sw = new StreamWriter("config.txt"))
+                    {
+                        await sw.WriteAsync(conteudoArquivo);
+                    }
+
+                    this.context.RecoveryCodes.Remove(recoverycode);
+                    await this.context.SaveChangesAsync();
+                }
 
                 return Ok();
             }

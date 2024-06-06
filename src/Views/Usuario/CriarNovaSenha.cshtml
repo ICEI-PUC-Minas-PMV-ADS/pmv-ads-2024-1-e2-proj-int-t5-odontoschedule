@@ -1,6 +1,4 @@
-﻿@model OdontoSchedule.Models.Paciente
-
-@{
+﻿@{
     ViewData["Title"] = "AlteracaoSenha";
     Layout = "~/Views/Shared/_AuthLayout.cshtml";
 }
@@ -13,7 +11,7 @@
     </div>
 
     <div class="login__conteudo">
-        <section class="login-container">
+        <section class="recuperacao-senha-container">
 
             <div class="titulo">
                 <h1>Alterar Senha</h1>
@@ -25,11 +23,20 @@
                 <div class="formulario__inputs">
                     <div class="login__formulario-item">
                         <label>Codigo</label>
-                        <input type="text" name="Codigo" class="odonto-input largo alto redondo">
+                        <input type="text" name="Codigo" class="odonto-input largo alto">
                     </div>
+
+                    @if(!ViewBag.ePaciente)
+                    {
+                        <select name="funcionario" class="odonto-input largo alto">
+                            <option value="secretaria">Secretária</option>
+                            <option value="admin">Administrador</option>
+                        </select>
+                    }
+
                     <div class="login__formulario-item">
                         <label>Nova Senha</label>
-                        <input type="password" name="Senha" class="odonto-input largo alto redondo">
+                        <input type="password" name="Senha" class="odonto-input largo alto">
                     </div>
                 </div>
 
@@ -39,7 +46,7 @@
                 </div>
 
                 <div class="login__opcoes">
-                    <a asp-action="Index">Voltar</a>
+                    <a asp-controller="Paciente" asp-action="Login">Voltar</a>
                 </div>
             </form>
         </section>
