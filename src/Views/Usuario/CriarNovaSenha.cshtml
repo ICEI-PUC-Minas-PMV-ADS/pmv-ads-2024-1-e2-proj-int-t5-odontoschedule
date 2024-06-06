@@ -8,19 +8,20 @@
 <section class="login">
     <div class="auth__repr">
         <div>
-            <span>Seja bem vindo(a) ao ...</span>
             <img src="/img/logo_auth.png" />
         </div>
     </div>
 
     <div class="login__conteudo">
-        <section class="login-container login-container--paciente">
+        <section class="login-container">
 
             <div class="titulo">
                 <h1>Alterar Senha</h1>
             </div>
 
-            <form asp-controller="Paciente" asp-action="CriarNovaSenhaC">
+            <form id="formulario-alterar-senha">
+                <input type="hidden" name="ID" value="@ViewBag.idRecuperacao"/>
+
                 <div class="formulario__inputs">
                     <div class="login__formulario-item">
                         <label>Codigo</label>
@@ -32,7 +33,7 @@
                     </div>
                 </div>
 
-                <button class="odonto-botao-primario maior" type="submit">Enviar</button>
+                <button id="botao-alterar-senha" class="odonto-botao-primario maior" type="button">Enviar</button>
 
                 <div class="error-text">
                 </div>
@@ -45,3 +46,9 @@
     </div>
 
 </section>
+
+@section Scripts {
+    @{
+        <script src="/js/recuperacao_senha.js"></script>
+    }
+}

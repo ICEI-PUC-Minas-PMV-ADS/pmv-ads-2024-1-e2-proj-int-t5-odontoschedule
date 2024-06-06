@@ -281,7 +281,7 @@ namespace OdontoSchedule.Controllers
 
         [HttpPost]
         [AllowAnonymous]
-        public ActionResult EsqueciMinhaSenhaC()
+        public async Task<IActionResult> EsqueciMinhaSenhaC()
         {
             string email = Request.Form["email"];
             Paciente paciente = this.context.Pacientes.Where(p => p.Email == email).FirstOrDefault();
@@ -305,7 +305,9 @@ namespace OdontoSchedule.Controllers
             recoverycode.PacienteId = paciente.ID;
             this.context.RecoveryCodes.Add(recoverycode);
 
-            EmailSender.Send("Recuperacao de senha", code, email);
+            await this.context.SaveChangesAsync();
+
+            EmailSender.Send("Recuperacao de senha", "Segue o código e link de recuperação:\n\nCódigo: " + code, email);
 
             return View("Login");
         }
