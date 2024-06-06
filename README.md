@@ -15,7 +15,6 @@ A DentalIn, o consultório odontológico alvo, atende diariamente um grande púb
 * Kayo Felipe Lino Biluca
 * Joabe Wick Santos Soares Coimbra
 * Alvaro Alexandre Amaral
-* Vanessa da Silva Cassidy
 * Amanda Blitzkow Lissa
 * Cassiano Torneiro Baptista
 
