@@ -41,6 +41,6 @@ Administrador:<br>
 &emsp;Senha: 1kE8tA0jmPVXFk3<br><br>
 
 Secretária:<br>
-&emsp;Usuário: secretária<br>
+&emsp;Usuário: secretaria<br>
 &emsp;Senha: Y730gEPDXdXauuo<br>
 
