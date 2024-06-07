@@ -186,7 +186,7 @@ Os cenários a seguir devem ser realizados pelos participantes:
 |:---:	|:---:	|
 |	Perfil 	| Usuário Paciente |
 | Objetivo do Teste 	| Analisar a tela login, homepage e seção de agendamentos  e agendaments concluídos|
-| Cenário 	| Como paciente, você gostaria de ser atendido novamente pelo mesmo dentista da ultima consulta, porém você não se recorda o nome e deseja seguir o tratamento com este dentista em questão. Para isso, è necessario realizar o login, identificar a seção de agendamentos concluídos, verificar o nome do dentista e realizar um agendamento com esse dentista|
+| Cenário 	| Como paciente, você gostaria de ser atendido novamente pelo mesmo dentista da ultima consulta, porém você não se recorda o nome e deseja seguir o tratamento com este dentista em questão. Para isso, é necessario realizar o login, identificar a seção de agendamentos concluídos, verificar o nome do dentista e realizar um agendamento com esse dentista|
 
 | **Cenário de Teste** 	| **CTU-20 – Realizar o cadastro de dentista e atualizar status de agendamento** 	|
 |:---:	|:---:	|
