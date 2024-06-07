@@ -3,9 +3,8 @@
 O Plano de Testes de Software estabelece, os objetivos, as estratégias e passos necessários para testar um software visando garantir seu funcionamento correto e concordância com requisitos estabelecidos. Através deste plano de testes é possível identificar problemas com a aplicação, buscando a melhoria do produto, proporcionando qualidade e reduòàao nos custos de desenvolvimento.
 
 Para este projeto foram definidos os seguintes casos de testes a serem aplicados:
-| Casos de Teste 	| 	|
+|  Caso de Teste 	| CT-01 – Cadastro do Paciente	|
 |:---:	|:---:	|
-| Caso de Teste 	| CT-01 – Cadastro do Paciente	|
 |	Requisito Associado 	| RF-01 - A aplicação deve permitir que um paciente gerencie seu cadastro. O paciente deve ser capaz de se cadastrar, fornecendo os seguintes dados: Nome completo, CPF (campo de login), endereço, e-mail, telefone e senha. |
 | Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site - Clicar em "Cadastrar-se" <br> - Preencher os campos presentes <br> - Clicar em "Cadastrar" |
