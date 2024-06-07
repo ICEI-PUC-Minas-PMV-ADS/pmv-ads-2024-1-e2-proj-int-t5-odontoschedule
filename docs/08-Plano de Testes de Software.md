@@ -4,8 +4,8 @@ O Plano de Testes de Software estabelece, os objetivos, as estratégias e passos
 
 Para este projeto foram definidos os seguintes casos de testes a serem aplicados:
  
-| Caso de Teste 	| CT-01 – Cadastro do Paciente 	|
 |:---:	|:---:	|
+|  	|  	|
 | Caso de Teste 	| CT-01 – Cadastro do Paciente	|
 |	Requisito Associado 	| RF-01 - A aplicação deve permitir que um paciente gerencie seu cadastro. O paciente deve ser capaz de se cadastrar, fornecendo os seguintes dados: Nome completo, CPF (campo de login), endereço, e-mail, telefone e senha. |
 | Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
