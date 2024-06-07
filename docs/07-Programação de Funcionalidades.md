@@ -23,7 +23,7 @@
 |RF-17| A aplicação deve permitir que o administrador visualize relatórios contendo informações de desempenho do consultório, como número de atendimentos.   |  | Cassiano e Joabe |
 |RF-18| A aplicação deverá gerar um login e senha que oferecerá acesso à área administrativa da aplicação para a secretária e o administrador.    | Program.cs | Kayo |
 |RF-19| A aplicação deve permitir que usuários do tipo secretária, administrador e paciente alterem suas senhas   |  | Kayo |
-|RF-20| A aplicação deve permitir que usuários do tipo secretária, administrador e paciente recuperem suas senhas   |  | Amanda |
+|RF-20| A aplicação deve permitir que usuários do tipo secretária, administrador e paciente recuperem suas senhas   | UsuarioController.cs, PacienteController.cs, EmailSender.cs, EsqueciMinhaSenha.cshtml, CriarNovaSenha.cshtml e recuperacao_senha.js | Amanda |
 
 
 
