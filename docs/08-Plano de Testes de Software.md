@@ -194,7 +194,7 @@ Para este projeto foram definidos os seguintes casos de testes a serem aplicados
 | Caso de Teste 	| CT-32 – Secretária mudar agenda de dentista	|
 |Requisito Associado | RF-08 - A aplicação deve permitir que um usuário do tipo secretária gerencie os dentistas. Além disso, no cadastro devem ser fornecidos dados como: nome, CRO, especialidade e seus respectivos dias e horários de atendimento.       |
 | Objetivo do Teste 	| Verificar se a secretária é capaz de alterar a agenda de um dentista |
-| Passos 	| - Acessar o navegador<br> - Informar o endereço do site<br> - Clicar em "Entrar como Funcionário"<br> - Preencher os campos com os credenciais da Secretária<br> - Clicar em "Usuários"<br> - Clicar em "Dentistas"<br> - Selecionar um dentista<br> - Na agenda, adicionar um novo horário<br> - Clicar em "Atualizar Dentista" <br> - Recarregar a página  |
+| Passos 	| - Acessar o navegador<br> - Informar o endereço do site<br> - Clicar em "Entrar como Funcionário"<br> - Preencher os campos com as credenciais da Secretária<br> - Clicar em "Usuários"<br> - Clicar em "Dentistas"<br> - Selecionar um dentista<br> - Na agenda, adicionar um novo horário<br> - Clicar em "Atualizar Dentista" <br> - Recarregar a página  |
 |Critério de Êxito | - O horário adicionado deve aparecer como disponível |
 |  	|  	|
 | Caso de Teste 	| CT-33 – Atualizar perfil como paciente	|
@@ -202,3 +202,13 @@ Para este projeto foram definidos os seguintes casos de testes a serem aplicados
 | Objetivo do Teste 	| Verificar se o paciente consegue alterar suas informações. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Preencher os campos CPF e senha <br> - Clicar em "Entrar" <br> - Clicar em "Editar Perfil" - Alterar o campo "Telefone" <br> - Clicar em "Salvar" - Recarregar a página |
 |Critério de Êxito | - O Telefone atualizado deve ser mantido |
+| Caso de Teste 	| CT-34 – Recuperar senha perfil como paciente	|
+|	Requisito Associado 	| RF-20 - A aplicação deve permitir que usuários do tipo secretária, administrador e paciente recuperem suas senhas. |
+| Objetivo do Teste 	| Verificar se o paciente consegue recuperar sua senha. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Esqueceu a senha?" <br> - Preencher o campo com o e-mail cadastrado do usuário <br> - Clicar em "Enviar" <br> - Acessar o e-mail enviado e clicar no link fornecido <br> - Colocar o código fornecido no email e criar uma nova senha <br> - Clicar em "Confirmar" <br> - Clicar em "Ok" |
+|Critério de Êxito | - A senha deve ser alterada |
+| Caso de Teste 	| CT-35 – Recuperar senha perfil como administrador	e secretária|
+|	Requisito Associado 	| RF-20 - A aplicação deve permitir que usuários do tipo secretária, administrador e paciente recuperem suas senhas. |
+| Objetivo do Teste 	| Verificar se o administrador	e secretária conseguem recuperar sua senha. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Entrar como Funcionário" <br> - Clicar em "Esqueceu a senha?" <br> - Acessar o e-mail enviado para o e-mail cadastrado no perfil "administrador" e clicar no link fornecido <br> - Colocar o código fornecido no email, selecionar opção de usuário e criar uma nova senha <br> - Clicar em "Confirmar" <br> - Clicar em "Ok" |
+|Critério de Êxito | - A senha deve ser alterada |
