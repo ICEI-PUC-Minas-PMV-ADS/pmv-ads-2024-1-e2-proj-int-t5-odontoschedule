@@ -202,11 +202,13 @@ Para este projeto foram definidos os seguintes casos de testes a serem aplicados
 | Objetivo do Teste 	| Verificar se o paciente consegue alterar suas informações. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Preencher os campos CPF e senha <br> - Clicar em "Entrar" <br> - Clicar em "Editar Perfil" - Alterar o campo "Telefone" <br> - Clicar em "Salvar" - Recarregar a página |
 |Critério de Êxito | - O Telefone atualizado deve ser mantido |
+|  	|  	|
 | Caso de Teste 	| CT-34 – Recuperar senha perfil como paciente	|
 |	Requisito Associado 	| RF-20 - A aplicação deve permitir que usuários do tipo secretária, administrador e paciente recuperem suas senhas. |
 | Objetivo do Teste 	| Verificar se o paciente consegue recuperar sua senha. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Esqueceu a senha?" <br> - Preencher o campo com o e-mail cadastrado do usuário <br> - Clicar em "Enviar" <br> - Acessar o e-mail enviado e clicar no link fornecido <br> - Colocar o código fornecido no email e criar uma nova senha <br> - Clicar em "Confirmar" <br> - Clicar em "Ok" |
 |Critério de Êxito | - A senha deve ser alterada |
+|  	|  	|
 | Caso de Teste 	| CT-35 – Recuperar senha perfil como administrador	e secretária|
 |	Requisito Associado 	| RF-20 - A aplicação deve permitir que usuários do tipo secretária, administrador e paciente recuperem suas senhas. |
 | Objetivo do Teste 	| Verificar se o administrador	e secretária conseguem recuperar sua senha. |
