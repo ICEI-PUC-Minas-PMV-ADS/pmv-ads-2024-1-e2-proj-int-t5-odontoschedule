@@ -174,19 +174,19 @@ Os cenários a seguir devem ser realizados pelos participantes:
 |:---:	|:---:	|
 |	Perfil 	| Usuário Paciente |
 | Objetivo do Teste 	| Verificar as telas de cadastro e agendamento |
-| Cenário	| Como Paciente, você deseja realizar um agendamento, assim que possível, com um dentista ortodontista para avaliação da necessidade de aparelho ortodôntico. Para isso, você precisa fazer seu cadastro na aplicação e identificar o campo para agendamentos |
+| Cenário	| Como Paciente, você deseja realizar um agendamento, assim que possível, com um dentista ortodontista para avaliação da necessidade de aparelho ortodôntico. Para isso, você precisa fazer seu cadastro na aplicação, fazer login e ir até a área de agendamentos |
 
 | **Cenário de Teste** 	| **CTU-18 – Recuperação de senha e atualização de dados** 	|
 |:---:	|:---:	|
 |	Perfil 	| Usuário Paciente |
 | Objetivo do Teste 	| Averiguar tela de recuperação de senha para pacientes, homepage e seção de editar de perfil |
-| Cenário 	| Como Paciente, você não se recorda de sua senha cadastrada e precisa atualizar seu número de telefone para receber notificações. Para isso, você precisa acessar a seção de recuperação de senha, realizar os passos fornecidos, acessar sua conta e identificar a seção de editar perfil |
+| Cenário 	| Como Paciente, você não se recorda de sua senha cadastrada e precisa atualizar seu número de telefone para receber notificações. Para isso, você precisa acessar a seção de recuperação de senha e realizar os passos fornecidos. Após a alteração da senha, acessar sua conta, identificar a seção de editar perfil e alterar seu número de telefone|
 
-| **Cenário de Teste** 	| **CTU-19 – Verificação de agendamentos concluídos e reagendar** 	|
+| **Cenário de Teste** 	| **CTU-19 – Verificação de agendamentos concluídos e agendamento** 	|
 |:---:	|:---:	|
 |	Perfil 	| Usuário Paciente |
 | Objetivo do Teste 	| Analisar a tela login, homepage e seção de agendamentos  e agendaments concluídos|
-| Cenário 	| Como paciente, você realizou um agendamento com um dentista o qual não foi o mesmo da sua última consulta, porém você não se recorda o nome e deseja seguir o tratamento com este dentista em questão. Para isso, è necessario realizar o login, identificar a seção de agendamentos concluídos, verificar o nome do dentista e realizar o reagendamento |
+| Cenário 	| Como paciente, você gostaria de ser atendido novamente pelo mesmo dentista da ultima consulta, porém você não se recorda o nome e deseja seguir o tratamento com este dentista em questão. Para isso, è necessario realizar o login, identificar a seção de agendamentos concluídos, verificar o nome do dentista e realizar um agendamento com esse dentista|
 
 | **Cenário de Teste** 	| **CTU-20 – Realizar o cadastro de dentista e atualizar status de agendamento** 	|
 |:---:	|:---:	|
@@ -198,7 +198,7 @@ Os cenários a seguir devem ser realizados pelos participantes:
 |:---:	|:---:	|
 |	Perfil 	| Usuário Secretária |
 | Objetivo do Teste 	| Verificar tela de login para funcionários, homepage, seção de cadastro de usuários, agendamentos e recuperação de senha |
-| Cenário 	| Como secretária, você não se recorda da senha cadastrada e necessita realizar o agendamento de consulta para um paciente. Para isso, você deve acessar a parte de funcionários, fazer a recuperação de senha, acessar a aplicação, identificar a seção de agendamentos de pacientes e completar a tarefa |
+| Cenário 	| Como secretária, você não se recorda da senha cadastrada e necessita realizar o agendamento de consulta para um paciente. Para isso, você deve acessar a área de funcionários, dizer que esqueceu a senha e seguir o procedimento enviado no email de recuperação. Em seguida, fazer login com os novos credenciais, identificar a seção de agendamentos e criar um. |
 
 | **Cenário de Teste** 	| **CTU-22 – Emitir relatórios para análise do desempenho da clínica** 	|
 |:---:	|:---:	|
