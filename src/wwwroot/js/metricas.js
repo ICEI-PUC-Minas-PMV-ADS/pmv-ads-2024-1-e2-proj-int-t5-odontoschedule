@@ -6,6 +6,8 @@ var chartPatientsByMonth;
 function renderizaGraficos() {
     graficoPorModalidade();
     graficoPacientePorMes();
+    graficoAtendimentosPorDia();
+    graficoStatus();
 }
 
 
@@ -73,3 +75,60 @@ async function graficoPorModalidade() {
 document.addEventListener("DOMContentLoaded", () => {
     renderizaGraficos();
 });
+
+async function graficoAtendimentosPorDia() {
+    let dados = await (await fetch("/Atendimento/GetCountByDay")).json();
+
+    const config = {
+        type: 'bar',
+        data: {
+            labels: ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"],
+            datasets: [{
+                data: dados,
+                backgroundColor: '#54BCFF'
+            }]
+        },
+        options: {
+            plugins: {
+                legend: {
+                    display: false,
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        precision: 0,
+                        min: 10
+                    }
+                }
+            }
+        },
+    };
+
+    chartPatientsByDay = new Chart(document.getElementById("grafico-atendimentos-por-dia"), config);
+}
+
+async function graficoStatus() {
+    let dados = await (await fetch("/Atendimento/GetCountByStatus")).json();
+    const config = {
+        type: 'pie',
+        data: {
+            labels: [
+                'Concluido',
+                'Pendente'
+            ],
+            datasets: [{
+                label: 'Modalidade',
+                data: [dados.concluido, dados.pendente],
+                backgroundColor: [
+                    '#54BCFF',
+                    '#A7E3FC'
+                ],
+                hoverOffset: 4
+            }]
+        }
+    };
+
+    chartByModality = new Chart(document.getElementById("grafico-por-status"), config);
+}

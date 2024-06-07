@@ -47,7 +47,7 @@ function criarAgendamento(form) {
         let data = await response.json();
 
         if (data.success) {
-            OdontoModal.setData("Agendamento Criado!", "Seu atendimento na DentalIn foi agendado.");
+            OdontoModal.setData("Agendamento Realizado!", "");
             OdontoModal.setCallback(() => window.location = "/Atendimento");
         }
         else {

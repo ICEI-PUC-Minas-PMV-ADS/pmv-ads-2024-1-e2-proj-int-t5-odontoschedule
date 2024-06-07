@@ -286,5 +286,28 @@ namespace OdontoSchedule.Controllers
 
             return Ok(response);
         }
+
+        public async Task<IActionResult> GetCountByStatus()
+        {
+            return Ok(new { concluido = await this.context.Atendimentos.Where(a => a.Finalizado == true).CountAsync(),
+                pendente = await this.context.Atendimentos.Where(a => a.Finalizado == false).CountAsync() });
+        }
+
+        public async Task<IActionResult> GetCountByDay()
+        {
+
+            List<int> listaDias = new List<int> { 0, 0, 0, 0, 0, 0, 0 };
+
+            List<Atendimento> listaAtendimentos = this.context.Atendimentos.Include(a => a.Agenda).ToList();
+
+            foreach (var atendimento in listaAtendimentos)
+            {
+                listaDias[(int)atendimento.Agenda.Data.DayOfWeek]++;
+            }
+
+            return Ok(listaDias);
+
+        }
+
     }
 }
