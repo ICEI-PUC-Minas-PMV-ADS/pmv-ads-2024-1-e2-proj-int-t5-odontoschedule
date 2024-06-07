@@ -8,7 +8,7 @@ Mediante dados coletados e métricas é feito uma análise dos resultados com o 
 Para este projeto será realizado o modelo de testes remoto e moderado com observação da execução das tarefas realizadas pelos participantes por meio da ferramenta Lookback.
 O planejamento dos testes a serem executados com os participantes são descritos a seguir: objetivos, método e modelo utilizado, seleção dos paticipantes, roteiro das tarefas a serem desempenhadas pelos usuários e análise.
 
-Os testes serão realizados em duas etapas com números de participantes diversos, sendo a primeira etapa realizada com a aplicação ainda em desenvolvimento e executando as funcionalidades essenciais, a fim de identificar erros e sugestões de melhoria, e a segunda etapa com a aplicação finalizada e apresentando todas as suas funcionalidades.
+Os testes serão realizados em duas etapas, sendo a primeira etapa realizada com tarefas testes específicas tendo a aplicação ainda em desenvolvimento e executando as funcionalidades essenciais, a fim de identificar erros e sugestões de melhoria, e a segunda etapa os participantes simularão cenários testes tendo a aplicação finalizada e apresentando todas as suas funcionalidades.
 
 # 1. Objetivos
 
@@ -26,7 +26,7 @@ Por meio dos testes será possível identificar problemas e o modo como os usuá
 > - Existem obstáculos que impossibilitam a conclusão das tarefas? Se sim, quais obstáculos são esses?
 > - Qual o tempo de resposta e como os usuários reagem a aplicação?
 
-# 4. Método e modelo utilizado
+# 2. Método e modelo utilizado
 
 Para este projeto em considereção, foi definido para aplicação dos testes o modelo remoto e moderado com método de experimentação e observação. 
 
@@ -46,9 +46,6 @@ Como esta aplicação está sendo desenvolvida com foco no consultório DentalIn
 > - Possui algum eletrônico como computador, tablet ou celular;
 > - Possui e-mail válido;
 > - Possui número de telefone ou celular.
-
-Para a primeira etapa, com a aplicação ainda em desenvolvimento, o teste será realizado com 5 usuários que possuem as características descritas acima.
-Para a segunda etapa, com a aplicação em desenvolvimento, o teste serár realizado com 10 usuários que possuem as características descritas acima. 
 
 # 4. Procedimento
 
@@ -85,7 +82,7 @@ As seguintes tarefas devem ser realizadas pelos participantes:
 
 | **Caso de Teste** 	| **CTU-03 – Fazer login (Tela Funcionário)** 	|
 |:---:	|:---:	|
-|	Perfil 	| Usuário Secretária e Empreendedor |
+|	Perfil 	| Usuário Secretária e Administrador |
 | Objetivo do Teste 	| Averiguar tela de login para funcionários |
 | Ações necessárias 	| - Acessar o link do site pelo browser de preferência do usuário <br> - Identificar e clicar na opção "Logar como funcionário" <br> - Preencher os campos presentes <br> - Clicar em "Entrar" |
 
@@ -151,7 +148,7 @@ As seguintes tarefas devem ser realizadas pelos participantes:
 
 | **Caso de Teste** 	| **CTU-14 – Acessar relatórios (Home Page - Administrador)** 	|
 |:---:	|:---:	|
-|	Perfil 	| Usuário Empreendedor |
+|	Perfil 	| Usuário Administrador |
 | Objetivo do Teste 	| Analisar telas de relatórios |
 | Ações necessárias 	| - Acessar o link do site pelo browser de preferência do usuário <br> - Identificar e clicar na opção "Logar como funcionário" <br> - Fazer Login <br> - Navegar pelas telas |
 
@@ -167,14 +164,56 @@ As seguintes tarefas devem ser realizadas pelos participantes:
 | Objetivo do Teste 	| Analisar telas para alteração de informações cadastrais |
 | Ações necessárias 	| - Acessar o link do site pelo browser de preferência do usuário <br> - Fazer Login <br> - Identificar e clicar em "Editar perfil" na Home Page <br> - Realizar alguma alteração nas informações presentes <br> - Clicar em "Salvar"|
 
-# 6. Análise dos dados
+# 6. Cenários Testes
+
+Os participantes terão como responsabilidades simular e analizar eficientemente os cenários descritos, expondo sua opinião sobre a aplicação.
+
+Os cenários a seguir devem ser realizados pelos participantes:
+
+| **Cenário de Teste** 	| **CTU-17 – Agendar uma consulta pela primeira vez** 	|
+|:---:	|:---:	|
+|	Perfil 	| Usuário Paciente |
+| Objetivo do Teste 	| Verificar as telas de cadastro e agendamento |
+| Cenário	| Como Paciente, você deseja realizar um agendamento, assim que possível, com um dentista ortodontista para avaliação da necessidade de aparelho ortodôntico. Para isso, você precisa fazer seu cadastro na aplicação, fazer login e ir até a área de agendamentos |
+
+| **Cenário de Teste** 	| **CTU-18 – Recuperação de senha e atualização de dados** 	|
+|:---:	|:---:	|
+|	Perfil 	| Usuário Paciente |
+| Objetivo do Teste 	| Averiguar tela de recuperação de senha para pacientes, homepage e seção de editar de perfil |
+| Cenário 	| Como Paciente, você não se recorda de sua senha cadastrada e precisa atualizar seu número de telefone para receber notificações. Para isso, você precisa acessar a seção de recuperação de senha e realizar os passos fornecidos. Após a alteração da senha, acessar sua conta, identificar a seção de editar perfil e alterar seu número de telefone|
+
+| **Cenário de Teste** 	| **CTU-19 – Verificação de agendamentos concluídos e agendamento** 	|
+|:---:	|:---:	|
+|	Perfil 	| Usuário Paciente |
+| Objetivo do Teste 	| Analisar a tela login, homepage e seção de agendamentos  e agendaments concluídos|
+| Cenário 	| Como paciente, você gostaria de ser atendido novamente pelo mesmo dentista da ultima consulta, porém você não se recorda o nome e deseja seguir o tratamento com este dentista em questão. Para isso, é necessario realizar o login, identificar a seção de agendamentos concluídos, verificar o nome do dentista e realizar um agendamento com esse dentista|
+
+| **Cenário de Teste** 	| **CTU-20 – Realizar o cadastro de dentista e atualizar status de agendamento** 	|
+|:---:	|:---:	|
+|	Perfil 	| Usuário Secretária |
+| Objetivo do Teste 	| Verificar tela de login para funcionários, homepage, seção de cadastro de usuários e agendamentos  |
+| Cenário 	| Como secretária, você foi solicitada para incluir o cadastro de um dentista e atualizar o status do agendamento de um paciente. Para isso, você deve realizar o login na parte de funcionário, identificar a seção de cadastro de dentistas e realizar a inclusão do cadastro, logo após ter concluído esta tarefa, você deve retornar a homepage e identificar a seção de agendamentos para atualizar o status solicitado |
+
+| **Cenário de Teste** 	| **CTU-20 – Recuperação de senha e agendamento de consulta** 	|
+|:---:	|:---:	|
+|	Perfil 	| Usuário Secretária |
+| Objetivo do Teste 	| Verificar tela de login para funcionários, homepage, seção de cadastro de usuários, agendamentos e recuperação de senha |
+| Cenário 	| Como secretária, você não se recorda da senha cadastrada e necessita realizar o agendamento de consulta para um paciente. Para isso, você deve acessar a área de funcionários, dizer que esqueceu a senha e seguir o procedimento enviado no email de recuperação. Em seguida, fazer login com os novos credenciais, identificar a seção de agendamentos e criar um. |
+
+| **Cenário de Teste** 	| **CTU-22 – Emitir relatórios para análise do desempenho da clínica** 	|
+|:---:	|:---:	|
+|	Perfil 	| Usuário Administrador |
+| Objetivo do Teste 	| Verificar o desempenho das telas atribuídas ao usuário Administrador |
+| Ações necessárias 	| Como administrador do consultório, você deseja analisar a performance do mesmo. Para isso, você deve realizar o login e emitir diversos relatórios para análise |
+
+# 7. Análise dos dados
 
 Várias métricas podem ser estabelecidas para análise dos dados a serem coletados dos testes aplicados.
 A eficácia da aplicação pode ser mensurada pela quantidade de conclusão de tarefas sem erro, conclusão de tarefa com erro (não crítico), erros críticos, quantidade de ações utilizadas e quantidade de solicitações de assistência. 
 A eficiência pode ser medida através do tempo de execução da tarefa e o tempo utilizado nas tentativas de execução da tarefa.
 A satisfação pode ser analisada através das reações percebidas diante da execução das tarefas pelos usuários e de forma geral durante o teste. 
 
-A tabela a seguir será utilizada para analisar cada tarefa executada pelos participantes:
+A tabela a seguir será utilizada para analisar cada tarefa e cenário executados pelos participantes:
 
 | **Usuário**   | **Resposta emocional**   | **Execução**  | **Tempo (seg)**  |  **Ações/Cliques**  | **Cometeu erro?** | **Se recuperou do erro?**  | **Observações** | 
 | :--------: | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
