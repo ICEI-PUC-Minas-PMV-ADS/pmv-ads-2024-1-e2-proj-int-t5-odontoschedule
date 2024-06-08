@@ -213,3 +213,34 @@ Para este projeto foram definidos os seguintes casos de testes a serem aplicados
 | Objetivo do Teste 	| Verificar se o administrador	e secretária conseguem recuperar sua senha. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Entrar como Funcionário" <br> - Clicar em "Esqueceu a senha?" <br> - Acessar o e-mail enviado para o e-mail cadastrado no perfil "administrador" e clicar no link fornecido <br> - Colocar o código fornecido no email, selecionar opção de usuário e criar uma nova senha <br> - Clicar em "Confirmar" <br> - Clicar em "Ok" |
 |Critério de Êxito | - A senha deve ser alterada |
+|  	|  	|
+| Caso de Teste 	| CT-36 – Compatibilidade da aplicação|
+|	Requisito Associado 	| RNF-02 - A aplicação deve ser compatível com os principais navegadores (Chrome, Firefox e Edge). |
+| Objetivo do Teste 	| Verificar a compatibilidade da aplicação com os navegadores. |
+| Passos 	| - Acessar cada um dos navegadores (Chrome, Firefox e Edge) <br> - Informar o endereço do site <br> - Clicar em "Cadastrar-se" <br> - Retornar a tela e fazer login <br> - Clicar em "Entrar" |
+|Critério de Êxito | - A aplicação deve funcionar sem erros |
+|  	|  	|
+| Caso de Teste 	| CT-37 – Banco de dados utilizando SQL Server|
+|	Requisito Associado 	| RNF-03 - A aplicação deve utilizar o Microsoft SQL Server para armazenamento de dados |
+| Objetivo do Teste 	| Verificar o server utilizado para o banco de dados. |
+| Passos 	| - Acessar o Visual Studio <br> - Abrir seção do banco de dados <br> - Mostrar utilização do SQL Server |
+|Critério de Êxito | - Banco de dados funcionando pelo SQL Server |
+|  	|  	|
+| Caso de Teste 	| CT-38 – Analisar responsividade da aplicação|
+|	Requisito Associado 	| RNF-04 - A aplicação deve ser responsiva |
+| Objetivo do Teste 	| Verificar a responsividade da aplicação. |
+| Passos 	| - Acessar o endereço do site por diversos eletrônicos, como celular e tablet <br> - Clicar em "Cadastrar-se" <br> - Retornar a tela e fazer login <br> - Clicar em "Entrar" |
+|Critério de Êxito | - Aplicação funcionando em diversos meios eletrônicos |
+|  	|  	|
+| Caso de Teste 	| CT-39 – Acessar a aplicação com login efetuado|
+|	Requisito Associado 	| RNF-05 - Para que qualquer usuário utilize a aplicação é necessário que esteja logado em sua conta. |
+| Objetivo do Teste 	| Verificar se a aplicação funciona mesmo se o usuário não esteja logado. |
+| Passos 	|  - Acessar o navegador <br> - Informar o endereço do site <br> - Preencher os campos CPF e senha <br> - Clicar em "Entrar"  |
+|Critério de Êxito | - Aplicação deve funcionar apenas se o usuário realizar login |
+|  	|  	|
+| Caso de Teste 	| CT-40 – Verificar linguagem de programacao utilizada|
+|	Requisito Associado 	| RNF-06 - A linguagem a ser utilizada para  o desenvolvimento da aplicação deve ser o C# juntamente com a Entity Framework. |
+| Objetivo do Teste 	| Analisar se a linguagem utilizada para desenvolvimento foi C# juntamente com a Entity Framework. |
+| Passos 	|  - Acessar o Visual Studio <br>  |
+|Critério de Êxito | - Aplicação deve ter sido desenvolvida com as liguagens de programação C# e Entity Framework |
+
