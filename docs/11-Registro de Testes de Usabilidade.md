@@ -135,7 +135,7 @@
 | Usuário04 | Satisfeito | Concluiu | 75 | 10 | Não | n/a | Acessou o link, demorou um pouco para identificar "Dentistas" e seguiu os passos de forma intuitiva |
 | Usuário05 | Satisfeito | Concluiu | 70 | 8 | Não | n/a |Acessou o link, seguiu as orientações da atividade e cadastrou um dentista |
 
-### CTU-15
+### CTU-14
 
 | **Usuário**   | **Resposta emocional**   | **Execução**  | **Tempo (seg)**  |  **Ações/Cliques**  | **Cometeu erro?** | **Se recuperou do erro?**  | **Observações** | 
 | :--------: | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
@@ -149,37 +149,37 @@
 ## Registros baseados em cenários
 
 
-### CTU-17 – Agendar uma consulta pela primeira vez
+### CTU-15 – Agendar uma consulta pela primeira vez
 
 | **Usuário** | **Resposta emocional** | **Execução** | **Tempo (seg)** | **Ações/Cliques** | **Cometeu erro?** | **Se recuperou do erro?** | **Observações** |
 |-------------|------------------------|--------------|------------------|-------------------|-------------------|---------------------------|------------------|
 | Usuario01   | Satisfeito | Completa | 300 | Cadastro: 12, Login: 3, Agendamento: 9 | Não | Não se aplica | Não se aplica |
 
-### CTU-18 – Recuperação de senha e atualização de dados
+### CTU-16 – Recuperação de senha e atualização de dados
 
 | **Usuário** | **Resposta emocional** | **Execução** | **Tempo (seg)** | **Ações/Cliques** | **Cometeu erro?** | **Se recuperou do erro?** | **Observações** |
 |-------------|------------------------|--------------|------------------|-------------------|-------------------|---------------------------|------------------|
 | Usuario01   | Confuso no início e satisfeito no final | Completa | 180 | Recuperação de senha: 3, Atualização de dados: 5 | Não | Não se aplica | Não se aplica |
 
-### CTU-19 – Verificação de agendamentos concluídos e agendamento
+### CTU-17 – Verificação de agendamentos concluídos e agendamento
 
 | **Usuário** | **Resposta emocional** | **Execução** | **Tempo (seg)** | **Ações/Cliques** | **Cometeu erro?** | **Se recuperou do erro?** | **Observações** |
 |-------------|------------------------|--------------|------------------|-------------------|-------------------|---------------------------|------------------|
 | Usuario01   | Satisfeito | Completa | 240 | Login: 3, Verificação de agendamentos: 4, Agendamento: 8 | Não | Não se aplica | Não se aplica |
 
-### CTU-20 – Realizar o cadastro de dentista e atualizar status de agendamento
+### CTU-18 – Realizar o cadastro de dentista e atualizar status de agendamento
 
 | **Usuário** | **Resposta emocional** | **Execução** | **Tempo (seg)** | **Ações/Cliques** | **Cometeu erro?** | **Se recuperou do erro?** | **Observações** |
 |-------------|------------------------|--------------|------------------|-------------------|-------------------|---------------------------|------------------|
 | Usuario01   | Focado | Completa | 300 | Login: 5, Cadastro de dentista: 16, Atualização de status: 6 | Não | Não se aplica | Não se aplica |
 
-### CTU-21 – Recuperação de senha e agendamento de consulta
+### CTU-19 – Recuperação de senha e agendamento de consulta
 
 | **Usuário** | **Resposta emocional** | **Execução** | **Tempo (seg)** | **Ações/Cliques** | **Cometeu erro?** | **Se recuperou do erro?** | **Observações** |
 |-------------|------------------------|--------------|------------------|-------------------|-------------------|---------------------------|------------------|
 | Usuario01   | Neutro | Completa | 240 | Recuperação de senha: 4, Agendamento: 7 | Não | Não se aplica | Não se aplica |
 
-### CTU-22 – Emitir relatórios para análise do desempenho da clínica
+### CTU-20 – Emitir relatórios para análise do desempenho da clínica
 
 | **Usuário** | **Resposta emocional** | **Execução** | **Tempo (seg)** | **Ações/Cliques** | **Cometeu erro?** | **Se recuperou do erro?** | **Observações** |
 |-------------|------------------------|--------------|------------------|-------------------|-------------------|---------------------------|------------------|
