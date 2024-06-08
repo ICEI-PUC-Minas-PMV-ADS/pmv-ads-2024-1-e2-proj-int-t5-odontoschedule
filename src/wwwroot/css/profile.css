@@ -154,5 +154,30 @@ main {
 }
 
 #voltar_link:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 700px) {
+    #perfil__conteudo #perfil__menu {
+        flex-direction: column;
+    }
+
+    #perfil__conteudo #perfil__menu > ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #menu__conteudo {
+        width: 100%;
+        padding: 2rem 2rem;
+    }
+
+    #informacoes-edicao {
+        flex-direction: column;
+    }
+
+    .form-data {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

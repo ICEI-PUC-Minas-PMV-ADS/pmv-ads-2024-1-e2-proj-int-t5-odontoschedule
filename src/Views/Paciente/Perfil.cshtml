@@ -35,22 +35,22 @@
 
                     <div id="informacoes-edicao">
                         <div>
-                            <div class="form-group">
+                            <div class="form-data">
                                 <label asp-for="Nome" class="control-label"></label>
                                 <input asp-for="Nome" class="odonto-input largo" />
                                 <span asp-validation-for="Nome" class="text-danger"></span>
                             </div>
-                            <div class="form-group">
+                            <div class="form-data">
                                 <label asp-for="DataNascimento" class="control-label"></label>
                                 <input asp-for="DataNascimento" class="odonto-input largo" />
                                 <span asp-validation-for="DataNascimento" class="text-danger"></span>
                             </div>
-                            <div class="form-group">
+                            <div class="form-data">
                                 <label asp-for="CPF" class="control-label"></label>
-                                <input asp-for="CPF" class="odonto-input largo" />
+                                <input asp-for="CPF" class="odonto-input largo cpf-mask" />
                                 <span asp-validation-for="CPF" class="text-danger"></span>
                             </div>
-                            <div class="form-group">
+                            <div class="form-data">
                                 <label>Sexo:</label>
                                 <div id="campos-sexo">
                                     <label class="sexo" for="feminino"><input type="radio" id="feminino" name="sexo" value="false" class="sexo validar input-radio" @(Model.Sexo == false ? "checked" : "")>Feminino</label>
@@ -59,47 +59,46 @@
                                 </div>
                                 <span asp-validation-for="Sexo" class="text-danger"></span>
                             </div>
-                            <div class="form-group">
+                            <div class="form-data">
                                 <label asp-for="Email" class="control-label"></label>
                                 <input asp-for="Email" class="odonto-input largo" />
                                 <span asp-validation-for="Email" class="text-danger"></span>
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-data">
                                 <label asp-for="Bairro" class="control-label"></label>
                                 <input asp-for="Bairro" class="odonto-input largo" />
                                 <span asp-validation-for="Bairro" class="text-danger"></span>
                             </div>
-                            <div class="form-group">
+                            <div class="form-data">
                                 <label asp-for="Cidade" class="control-label"></label>
                                 <input asp-for="Cidade" class="odonto-input maior" />
                                 <span asp-validation-for="Cidade" class="text-danger"></span>
                             </div>
-                            <div class="form-group">
+                            <div class="form-data">
                                 <label asp-for="Rua" class="control-label"></label>
                                 <input asp-for="Rua" class="odonto-input largo" />
                                 <span asp-validation-for="Rua" class="text-danger"></span>
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-data">
                                 <label asp-for="Senha" class="control-label"></label>
                                 <input asp-for="Senha" class="odonto-input largo" />
                                 <span asp-validation-for="Senha" class="text-danger"></span>
                             </div>
                         </div>
                         <div>
-                            <div class="form-group">
+                            <div class="form-data">
                                 <label asp-for="Numero" class="control-label"></label>
                                 <input asp-for="Numero" class="odonto-input" />
                                 <span asp-validation-for="Numero" class="text-danger"></span>
                             </div>
-                            <div class="form-group">
+                            <div class="form-data">
                                 <label asp-for="Complemento" class="control-label"></label>
                                 <input asp-for="Complemento" class="odonto-input" />
                                 <span asp-validation-for="Complemento" class="text-danger"></span>
                             </div>
-
-                            <div class="form-group">
+                            <div class="form-data">
                                 <label asp-for="Telefone" class="control-label"></label>
                                 <input asp-for="Telefone" class="odonto-input" />
                                 <span asp-validation-for="Telefone" class="text-danger"></span>

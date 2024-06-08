@@ -15,7 +15,7 @@ namespace OdontoSchedule.Models
         public string Nome { get; set; }
 
         [Required(ErrorMessage = "A data de nascimento do paciente é obrigatória")]
-        public DateTime DataNascimento { get; set; }
+        public DateOnly DataNascimento { get; set; }
 
         [MaxLength(14)]
         [Required(ErrorMessage = "O CPF do paciente é obrigatório")]

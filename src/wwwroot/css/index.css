@@ -1,5 +1,6 @@
 ﻿* {
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 *::-webkit-scrollbar {
@@ -47,7 +48,7 @@ button, a {
 .odonto-botao-primario:hover {
     background: #89bcc2;
     color: white;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 
@@ -66,7 +67,7 @@ button, a {
 }
 
 .odonto-botao-secundario:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .odonto-botao-primario.maior, .odonto-botao-secundario.maior {

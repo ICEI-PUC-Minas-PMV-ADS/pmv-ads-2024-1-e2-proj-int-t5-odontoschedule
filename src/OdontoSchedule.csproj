@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Views\Dentista\Edit.cshtml" />
     <Content Remove="wwwroot\js\secretaria_atendimento.js" />
     <Content Remove="wwwroot\js\secretaria_cria_atendimento.js" />
     <Content Remove="wwwroot\js\secretaria_lista_atendimento.js" />

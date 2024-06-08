@@ -36,8 +36,7 @@ async function graficoPacientePorMes() {
                 y: {
                     beginAtZero: true,
                     ticks: {
-                        precision: 0,
-                        min: 10
+                        precision: 0
                     }
                 }
             }
@@ -72,10 +71,6 @@ async function graficoPorModalidade() {
 }
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    renderizaGraficos();
-});
-
 async function graficoAtendimentosPorDia() {
     let dados = await (await fetch("/Atendimento/GetCountByDay")).json();
 
@@ -99,7 +94,6 @@ async function graficoAtendimentosPorDia() {
                     beginAtZero: true,
                     ticks: {
                         precision: 0,
-                        min: 10
                     }
                 }
             }
@@ -132,3 +126,8 @@ async function graficoStatus() {
 
     chartByModality = new Chart(document.getElementById("grafico-por-status"), config);
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    renderizaGraficos();
+});
