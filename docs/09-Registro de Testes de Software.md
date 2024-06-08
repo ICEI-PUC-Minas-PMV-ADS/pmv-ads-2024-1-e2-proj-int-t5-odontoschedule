@@ -107,17 +107,17 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-21 – Notificar novo agendamento à secretária** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-15 - A aplicação deve permitir que a secretária receba uma notificação quando uma consulta foi agendada, cancelada e remarcada. |
-|Registro de evidência | |
+|Registro de evidência | https://drive.google.com/file/d/1s0HVG1dlyDfrUB0qLW5taYVvwj3wPtDm/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-22 – Notificar cancelamento do agendamento à secretária** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-15 - A aplicação deve permitir que a secretária receba uma notificação quando uma consulta foi agendada, cancelada e remarcada. |
-|Registro de evidência | |
+|Registro de evidência | https://drive.google.com/file/d/1Xl1YYOh2d8SnsCwrYqiYsMrZ7z43zFS0/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-23 – Notificar remarcação do agendamento à secretária** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-15 - A aplicação deve permitir que a secretária receba uma notificação quando uma consulta foi agendada, cancelada e remarcada. |
-|Registro de evidência | |
+|Registro de evidência | https://drive.google.com/file/d/1TdHzl4uyanwJ2OvQXzxjZMgpq0-2k0k_/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-24 – Secretária atualizar contato e endereço do paciente** 	|
 |:---:	|:---:	|
@@ -127,7 +127,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-25 – Administrador visualizar métricas do consultório** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-17 - A aplicação deve permitir que o administrador visualize relatórios contendo informações de desempenho do consultório, como número de atendimentos. |
-|Registro de evidência | |
+|Registro de evidência | https://drive.google.com/file/d/1Dz5Cd_HXlMvO4lEuKpUBFMdGuUxUyXbR/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-26 – Obter credenciais de funcionário** 	|
 |:---:	|:---:	|
