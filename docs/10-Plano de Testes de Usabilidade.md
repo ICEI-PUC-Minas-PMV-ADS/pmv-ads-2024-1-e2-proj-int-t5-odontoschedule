@@ -146,23 +146,11 @@ As seguintes tarefas devem ser realizadas pelos participantes:
 | Objetivo do Teste 	| Verificar telas para cadastro de dentistas |
 | Ações necessárias 	| - Acessar o link do site pelo browser de preferência do usuário <br> - Identificar e clicar na opção "Logar como funcionário" <br> - Fazer Login <br> - Identificar e clicar em "Usuários" na Home Page <br> - Identificar e clicar em "Dentistas" e logo após "Cadastrar Dentista" <br> - Preencher os campos apresentados <br> - Clicar em "Cadastrar" <br> - Selecionar algum dentista <br> - Clicar em "Atualizar Dentista" <br> |
 
-| **Caso de Teste** 	| **CTU-14 – Acessar relatórios (Home Page - Administrador)** 	|
-|:---:	|:---:	|
-|	Perfil 	| Usuário Administrador |
-| Objetivo do Teste 	| Analisar telas de relatórios |
-| Ações necessárias 	| - Acessar o link do site pelo browser de preferência do usuário <br> - Identificar e clicar na opção "Logar como funcionário" <br> - Fazer Login <br> - Navegar pelas telas |
-
-| **Caso de Teste** 	| **CTU-15 – Navegação e Logoff** 	|
+| **Caso de Teste** 	| **CTU-14 – Navegação e Logoff** 	|
 |:---:	|:---:	|
 |	Perfil 	| Usuário (Todos) |
 | Objetivo do Teste 	| Analisar telas da plataforma |
 | Ações necessárias 	| - Acessar o link do site pelo browser de preferência do usuário <br> - Fazer Login na área correta para cada tipo usuário <br> - Navegar pelas telas <br> - Identificar e Clicar no campo "Sair" |
-
-| **Caso de Teste** 	| **CTU-16 – Editar perfil** 	|
-|:---:	|:---:	|
-|	Perfil 	| Usuário (Todos) |
-| Objetivo do Teste 	| Analisar telas para alteração de informações cadastrais |
-| Ações necessárias 	| - Acessar o link do site pelo browser de preferência do usuário <br> - Fazer Login <br> - Identificar e clicar em "Editar perfil" na Home Page <br> - Realizar alguma alteração nas informações presentes <br> - Clicar em "Salvar"|
 
 # 6. Cenários Testes
 
