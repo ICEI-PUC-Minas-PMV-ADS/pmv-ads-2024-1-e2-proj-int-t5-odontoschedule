@@ -21,7 +21,7 @@ namespace OdontoSchedule.Controllers
 
         public IActionResult Index()
         {
-            return Ok(this.context.Notificacoes.Where(n => n.PacienteId == (User.FindFirstValue(ClaimTypes.Role) == "SECRETARIA" ? null : Int32.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)))).ToList()); 
+            return Ok(this.context.Notificacoes.Where(n => n.PacienteId == (User.FindFirstValue(ClaimTypes.Role) == "SECRETARIA" ? null : Int32.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)))).OrderByDescending(n => n.ID).ToList()); 
         }
     }
 }

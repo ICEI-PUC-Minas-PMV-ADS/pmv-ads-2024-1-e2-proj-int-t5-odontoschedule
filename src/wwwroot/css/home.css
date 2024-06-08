@@ -90,6 +90,15 @@ body header .menu .menu-dropdown ul {
 body header .menu .menu-dropdown ul li {
     font-size: 0.75rem;
     padding: 0.75rem 0.5rem;
+    transition: none;
+}
+
+body header .menu .menu-dropdown ul::-webkit-scrollbar {
+    width: 0.1rem;
+}
+
+body header .menu .menu-dropdown ul li:hover {
+    transform: scale(1);
 }
 
 body header .menu.active .menu-dropdown {
