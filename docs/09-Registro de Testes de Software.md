@@ -1,9 +1,5 @@
 # Registro de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
-
-Para cada caso de teste definido no Plano de Testes de Software, realize o registro das evidências dos testes feitos na aplicação pela equipe, que comprovem que o critério de êxito foi alcançado (ou não!!!). Para isso, utilize uma ferramenta de captura de tela que mostre cada um dos casos de teste definidos (obs.: cada caso de teste deverá possuir um vídeo do tipo _screencast_ para caracterizar uma evidência do referido caso).
-
 | **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-01 - A aplicação deve permitir que um paciente gerencie seu cadastro. O paciente deve ser capaz de se cadastrar, fornecendo os seguintes dados: Nome completo, CPF (campo de login), endereço, e-mail, telefone e senha. |
@@ -169,16 +165,17 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 |	Requisito Associado 	| RF-01 - A aplicação deve permitir que um paciente gerencie seu cadastro. O paciente deve ser capaz de se cadastrar, fornecendo os seguintes dados: Nome completo, CPF (campo de login), endereço, e-mail, telefone e senha. |
 |Registro de evidência |  |
 
+| **Caso de Teste** 	| **CT-34 – Recuperar senha perfil como paciente** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-20 - A aplicação deve permitir que usuários do tipo secretária, administrador e paciente recuperem suas senhas. |
+|Registro de evidência |  |
+
+| **Caso de Teste** 	| **CT-35 – Recuperar senha perfil como administrador	e secretária** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-20 - A aplicação deve permitir que usuários do tipo secretária, administrador e paciente recuperem suas senhas. |
+|Registro de evidência |  |
+
 ## Avaliação
 
-No "CT-07 – Agendar consulta como Paciente" foi verificado que durante o agendamento não atende 100% o RF-05, pois falta um campo para informações de contato.<br>
-No "CT-04 – Efetuar login como Administrador" foi possível verificar que na Home Page está escrito "Secretária" em vez de "Administrador" e está aparecendo o botão agendar.
-
-Os seguintes requisitos serão desenvolvidos na próxima etapa do projeto:
-
-- RF-04 - A aplicação deve permitir que o paciente seja notificado com 24h de antecedência.
-- RF-06 - A aplicação deve permitir que o paciente receba uma notificação quando uma consulta for cancelada, remarcada ou concluída.
-- RF-15 - A aplicação deve permitir que a secretária receba uma notificação quando uma consulta foi agendada, cancelada e remarcada.
-- RF-17 - A aplicação deve permitir que o administrador visualize relatórios contendo informações de desempenho do consultório, como número de atendimentos.
-- RF-19	- A aplicação deve permitir que usuários do tipo secretária, administrador e paciente alterem suas senhas
+Os casos de testes apresentaram 100% de sucesso, demonstrando que as funcionalidades implementadas satisfazem os requisitos funcionais e não funcionais estabelecidos para a aplicacão.
 
