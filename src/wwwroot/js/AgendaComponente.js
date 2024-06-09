@@ -15,12 +15,16 @@ class AgendaComponente {
 		if (response.length === 0) {
 			this.#elem.querySelector(".no-dentist-schedule").style.display = "block";
 			this.#elem.querySelector(".agenda-semanas-lista").style.display = "none";
+
+			return false;
 		}
 		else {
 			this.#elem.querySelector(".no-dentist-schedule").style.display = "none";
 			this.#elem.querySelector(".agenda-semanas-lista").style.display = "block";
 
 			this.#getData(response);
+
+			return true;
 		}
 	}
 

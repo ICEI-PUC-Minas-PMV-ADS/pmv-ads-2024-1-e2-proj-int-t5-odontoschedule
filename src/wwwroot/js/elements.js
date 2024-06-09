@@ -61,25 +61,35 @@ function criarAgendamento(form) {
 function lidaFluxoFormularioAtendimentoSecretaria(parte) {
     const buscarDentistas = () => {
         fetch("/Dentista/GetAll").then(async (response) => {
-            (await response.json()).forEach((dentista) => {
-                let template = parte.querySelector("#dentista-lista-template").content.querySelector("tr").cloneNode(true)
+            let data = await response.json();
 
-                template.children.item(0).innerText = dentista.nome;
-                template.children.item(1).innerText = dentista.especialidade;
-                template.addEventListener("click", () => {
-                    parte.parentNode.querySelector("input[name='DentistaId']").value = dentista.id;
+            if (data.length > 0) {
+                parte.querySelector(".no-dentist").style.display = "none";
 
-                    Array.from(parte.querySelectorAll("table tbody tr")).forEach((i) => {
-                        if (i.classList.contains("item-selecionado")) {
-                            i.classList.remove("item-selecionado");
-                        }
+                data.forEach((dentista) => {
+                    let template = parte.querySelector("#dentista-lista-template").content.querySelector("tr").cloneNode(true)
+
+                    template.children.item(0).innerText = dentista.nome;
+                    template.children.item(1).innerText = dentista.especialidade;
+                    template.addEventListener("click", () => {
+                        parte.parentNode.querySelector("input[name='DentistaId']").value = dentista.id;
+
+                        Array.from(parte.querySelectorAll("table tbody tr")).forEach((i) => {
+                            if (i.classList.contains("item-selecionado")) {
+                                i.classList.remove("item-selecionado");
+                            }
+                        });
+
+                        template.classList.add("item-selecionado");
                     });
 
-                    template.classList.add("item-selecionado");
+                    parte.querySelector("table tbody").appendChild(template);
                 });
-
-                parte.querySelector("table tbody").appendChild(template);
-            });
+            }
+            else {
+                document.querySelector(".formulario-multiplo__botao").style.display = "none";
+                parte.querySelector("table").style.display = "none";
+            }
         })
     }
 
@@ -96,7 +106,11 @@ function lidaFluxoFormularioAtendimentoSecretaria(parte) {
 
                 document.querySelector("#secretaria-agendamento-agenda #agenda-" + info.horario.agendaId).classList.add("item-selecionado");
             }
-        }).load();
+        }).load().then((r) => {
+            if (!r) {
+                document.querySelector(".formulario-multiplo__botao").style.display = "none";
+            }
+        });
     }
 
     switch (parte.dataset.form_parte) {
