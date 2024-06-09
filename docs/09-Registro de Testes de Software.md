@@ -163,7 +163,7 @@
 | **Caso de Teste** 	| **CT-33 – Atualizar perfil como paciente** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-01 - A aplicação deve permitir que um paciente gerencie seu cadastro. O paciente deve ser capaz de se cadastrar, fornecendo os seguintes dados: Nome completo, CPF (campo de login), endereço, e-mail, telefone e senha. |
-|Registro de evidência |  |
+|Registro de evidência | https://drive.google.com/file/d/1Oy-j-ZTHPGwEGjUNnqM48x-qVjxVmMJw/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-34 – Recuperar senha perfil como paciente** 	|
 |:---:	|:---:	|
