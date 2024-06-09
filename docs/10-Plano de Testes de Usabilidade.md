@@ -188,11 +188,11 @@ Os cenários a seguir devem ser realizados pelos participantes:
 | Objetivo do Teste 	| Verificar tela de login para funcionários, homepage, seção de cadastro de usuários, agendamentos e recuperação de senha |
 | Cenário 	| Como secretária, você não se recorda da senha cadastrada e necessita realizar o agendamento de consulta para um paciente. Para isso, você deve acessar a área de funcionários, dizer que esqueceu a senha e seguir o procedimento enviado no email de recuperação. Em seguida, fazer login com os novos credenciais, identificar a seção de agendamentos e criar um. |
 
-| **Cenário de Teste** 	| **CTU-20 – Emitir relatórios para análise do desempenho da clínica** 	|
+| **Cenário de Teste** 	| **CTU-20 – Relatórios para análise do desempenho da clínica** 	|
 |:---:	|:---:	|
 |	Perfil 	| Usuário Administrador |
-| Objetivo do Teste 	| Verificar o desempenho das telas atribuídas ao usuário Administrador |
-| Ações necessárias 	| Como administrador do consultório, você deseja analisar a performance do mesmo. Para isso, você deve realizar o login e emitir diversos relatórios para análise |
+| Objetivo do Teste 	| Verificar as telas atribuídas ao usuário Administrador |
+| Ações necessárias 	| Como dono do consultório, você deseja analisar a quantidade de consultas realizadas diariamente e entrada de novos pacientes. Para isso, você deve realizar o login e acessar os relatórios para análise |
 
 # 7. Análise dos dados
 
