@@ -175,6 +175,31 @@
 |	Requisito Associado 	| RF-20 - A aplicação deve permitir que usuários do tipo secretária, administrador e paciente recuperem suas senhas. |
 |Registro de evidência |  |
 
+|  **Caso de Teste** 	| **CT-36 – Compatibilidade da aplicação**	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RNF-02 - A aplicação deve ser compatível com os principais navegadores (Chrome, Firefox e Edge). |
+|Registro de evidência | https://drive.google.com/file/d/1bN4XEUvmAth4NSGWgPFpMOG2YSO0OvbV/view?usp=sharing |
+
+| **Caso de Teste** 	| **CT-37 – Banco de dados utilizando SQL Server** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RNF-03 - A aplicação deve utilizar o Microsoft SQL Server para armazenamento de dados |
+|Registro de evidência | https://drive.google.com/file/d/1eKzGJzwm1AFeegD0apBZNIbiwLDYdaf3/view?usp=sharing |
+
+| **Caso de Teste** 	| **CT-38 – Analisar responsividade da aplicação** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RNF-04 - A aplicação deve ser responsiva |
+|Registro de evidência | https://drive.google.com/file/d/1EjbECn-LrLjMQEurK8bAHFIsJ6HqDMQQ/view?usp=sharing |
+
+| **Caso de Teste** 	| **CT-39 – O Login é obrigatório para uso das funções da aplicação** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RNF-05 - Para que qualquer usuário utilize a aplicação é necessário que esteja logado em sua conta. |
+|Registro de evidência | https://drive.google.com/file/d/1g2FKIRDzd_YFArPSFZ8ET_2IsgTKhlxN/view?usp=sharing |
+
+| **Caso de Teste** 	| **CT-40 – Verificar linguagem de programacao utilizada** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RNF-06 - A linguagem a ser utilizada para  o desenvolvimento da aplicação deve ser o C# juntamente com a Entity Framework. |
+|Registro de evidência | https://drive.google.com/file/d/1Y5QIqWQtQmzjt7QRZrY4br0tES9iwY7z/view?usp=sharing |
+
 ## Avaliação
 
 Os casos de testes apresentaram 100% de sucesso, demonstrando que as funcionalidades implementadas satisfazem os requisitos funcionais e não funcionais estabelecidos para a aplicacão.
