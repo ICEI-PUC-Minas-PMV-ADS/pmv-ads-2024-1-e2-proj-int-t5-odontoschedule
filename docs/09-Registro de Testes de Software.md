@@ -133,7 +133,7 @@
 | **Caso de Teste** 	| **CT-27 – Paciente alterar senha** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-19 - A aplicação deve permitir que usuários do tipo secretária, administrador e paciente alterem suas senhas. |
-|Registro de evidência |  |
+|Registro de evidência | https://drive.google.com/file/d/1Mc21l3mlt_37a5RQneuGynWCNFjxxdn6/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-28 – Secretária alterar senha** 	|
 |:---:	|:---:	|
