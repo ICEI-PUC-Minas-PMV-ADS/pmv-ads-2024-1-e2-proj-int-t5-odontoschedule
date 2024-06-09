@@ -213,3 +213,34 @@ Para este projeto foram definidos os seguintes casos de testes a serem aplicados
 | Objetivo do Teste 	| Verificar se o administrador	e secretária conseguem recuperar sua senha. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Entrar como Funcionário" <br> - Clicar em "Esqueceu a senha?" <br> - Acessar o e-mail enviado para o e-mail cadastrado no perfil "administrador" e clicar no link fornecido <br> - Colocar o código fornecido no email, selecionar opção de usuário e criar uma nova senha <br> - Clicar em "Confirmar" <br> - Clicar em "Ok" |
 |Critério de Êxito | - A senha deve ser alterada |
+|  	|  	|
+| Caso de Teste 	| CT-36 – Compatibilidade da aplicação|
+|	Requisito Associado 	| RNF-02 - A aplicação deve ser compatível com os principais navegadores (Chrome, Firefox e Edge). |
+| Objetivo do Teste 	| Verificar a compatibilidade da aplicação com os navegadores. |
+| Passos 	| - Acessar cada um dos navegadores (Chrome, Firefox e Edge) <br> - Informar o endereço do site <br> - Fazer login como paciente <br> - Realizar um agendamento <br> - Sair <br> - Entrar como administrador <br> - Visualizar as métricas |
+|Critério de Êxito | - A aplicação deve funcionar sem erros em todos os navegadores testados |
+|  	|  	|
+| Caso de Teste 	| CT-37 – Banco de dados utilizando SQL Server|
+|	Requisito Associado 	| RNF-03 - A aplicação deve utilizar o Microsoft SQL Server para armazenamento de dados |
+| Objetivo do Teste 	| Verificar o SGBD utilizado é o SQL Server |
+| Passos 	| - Acessar o Visual Studio <br> - Abrir seção de banco de dados <br> - Mostrar o nome da conexão <br> - Acessar a URL da aplicação <br> - Realizar um agendamento <br> - Mostrar que o agendamento foi armazenado no banco de dados SQL Server |
+|Critério de Êxito | - O nome da conexão deve contêr "SQL Server" e o agendamento deve ser exibido na tabela "Atendimentos" desse mesmo. |
+|  	|  	|
+| Caso de Teste 	| CT-38 – Analisar responsividade da aplicação|
+|	Requisito Associado 	| RNF-04 - A aplicação deve ser responsiva |
+| Objetivo do Teste 	| Verificar a responsividade da aplicação. |
+| Passos 	| - Acessar a URL da aplicação <br> - Redimensionar a janela do navegador para dimensões de um dispositivo mobile <br> - Navegar pelas páginas da aplicação |
+|Critério de Êxito | - Os componentes da interface não devem apresentar falhas de posicionamento ou elementos com tamanhos inadequados |
+|  	|  	|
+| Caso de Teste 	| CT-39 – O Login é obrigatório para uso das funções da aplicação |
+|	Requisito Associado 	| RNF-05 - Para que qualquer usuário utilize a aplicação é necessário que esteja logado em sua conta. |
+| Objetivo do Teste 	| Verificar se a aplicação funciona mesmo se o usuário não esteja logado. |
+| Passos 	|  - Acessar o navegador <br> - Informar o endereço do site <br> - Tentar acessar URLs de agendamento e página Home  |
+|Critério de Êxito | - Para todas as tentativas, o navegador deve redirecionar para a página de login |
+|  	|  	|
+| Caso de Teste 	| CT-40 – Verificar linguagem de programacao utilizada |
+|	Requisito Associado 	| RNF-06 - A linguagem a ser utilizada para  o desenvolvimento da aplicação deve ser o C# juntamente com a Entity Framework. |
+| Objetivo do Teste 	| Analisar se a linguagem utilizada para desenvolvimento foi C# juntamente com a Entity Framework. |
+| Passos 	|  - Acessar o Visual Studio e verificar o nome dos arquivos  |
+|Critério de Êxito | - Os arquivos da aplicação devem ter extensão .cs e .cshtml |
+

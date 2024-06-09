@@ -191,7 +191,6 @@ a:hover{
 }
 
 .login-container--funcionario::after {
-    content: "Entrada como Funcionário";
     position: absolute;
     left: 0;
     top: 0;
@@ -199,7 +198,6 @@ a:hover{
 }
 
 .login-container--paciente::after {
-    content: "Entrada como Paciente";
     position: absolute;
     left: 0;
     top: 0;

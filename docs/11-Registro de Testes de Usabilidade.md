@@ -1,6 +1,6 @@
 # Registro de Testes de Usabilidade
 
-## Registros baseados em tarefas teste
+## Registros baseados em tarefas testes
 
 ### CTU-01
 
@@ -135,7 +135,7 @@
 | Usuário04 | Satisfeito | Concluiu | 75 | 10 | Não | n/a | Acessou o link, demorou um pouco para identificar "Dentistas" e seguiu os passos de forma intuitiva |
 | Usuário05 | Satisfeito | Concluiu | 70 | 8 | Não | n/a |Acessou o link, seguiu as orientações da atividade e cadastrou um dentista |
 
-### CTU-15
+### CTU-14
 
 | **Usuário**   | **Resposta emocional**   | **Execução**  | **Tempo (seg)**  |  **Ações/Cliques**  | **Cometeu erro?** | **Se recuperou do erro?**  | **Observações** | 
 | :--------: | :--------: |  :--------: |  :--------: | :--------: | :--------: | :--------: | :--------: |
@@ -149,56 +149,72 @@
 ## Registros baseados em cenários
 
 
-CTU-17 – Agendar uma consulta pela primeira vez
+### CTU-15 – Agendar uma consulta pela primeira vez
 
 | **Usuário** | **Resposta emocional** | **Execução** | **Tempo (seg)** | **Ações/Cliques** | **Cometeu erro?** | **Se recuperou do erro?** | **Observações** |
 |-------------|------------------------|--------------|------------------|-------------------|-------------------|---------------------------|------------------|
-| Usuario01   | Satisfeito | Completa | 300 | Cadastro: 12, Login: 3, Agendamento: 9 | Não | Não se aplica | Não se aplica |
+| Usuario01   | Satisfeito | Concluiu | 300 | Cadastro: 12, Login: 3, Agendamento: 9 | Não |  n/a | Acessou a aplicação, percorreu pela homepage e identificou a seção de agendamentos por alguns instantes  |
+| Usuario02   | Confiante | Concluiu | 130 | Cadastro: 13, Login: 3, Agendamento: 9 | Não |  n/a | Acessou a aplicação e seguiu de forma intuitiva completando a tarefa |
+| Usuario03   | Satisfeito | Concluiu | 160 | Cadastro: 14, Login: 3, Agendamento: 9 | Não |  n/a | Acessou a aplicação, percorreu pela homepage e identificou a seção de agendamentos  e seguiu de forma intuitiva completando a tarefa e também dando sugestões de melhoria |
 
-CTU-18 – Recuperação de senha e atualização de dados
-
-| **Usuário** | **Resposta emocional** | **Execução** | **Tempo (seg)** | **Ações/Cliques** | **Cometeu erro?** | **Se recuperou do erro?** | **Observações** |
-|-------------|------------------------|--------------|------------------|-------------------|-------------------|---------------------------|------------------|
-| Usuario01   | Confuso no início e satisfeito no final | Completa | 180 | Recuperação de senha: 3, Atualização de dados: 5 | Não | Não se aplica | Não se aplica |
-
-CTU-19 – Verificação de agendamentos concluídos e agendamento
+### CTU-16 – Recuperação de senha e atualização de dados
 
 | **Usuário** | **Resposta emocional** | **Execução** | **Tempo (seg)** | **Ações/Cliques** | **Cometeu erro?** | **Se recuperou do erro?** | **Observações** |
 |-------------|------------------------|--------------|------------------|-------------------|-------------------|---------------------------|------------------|
-| Usuario01   | Satisfeito | Completa | 240 | Login: 3, Verificação de agendamentos: 4, Agendamento: 8 | Não | Não se aplica | Não se aplica |
+| Usuario01   | Confuso no início e satisfeito no final | Concluiu | 180 | Recuperação de senha: 3, Atualização de dados: 5 | Não |  n/a | Após acessar a aplicação encontrou dificuldade em entender como fazer a recuperação de senha |
+| Usuario02   | Estressado no início e neutro no final | Concluiu | 170 | Recuperação de senha: 3, Atualização de dados: 4 | Não |  n/a | Durante o processo de recuperação de senha, demonstrou certa irritação ao seguir o procedimento |
+| Usuario03   |Confiante no inicio e satisfeito no final | Concluiu | 140 | Recuperação de senha: 4, Atualização de dados: 4 | Não |  n/a | Durante o processo de recuperação de senha, estava confiante e seguiu os passos de forma intuitiva completando a tarefa |
 
-CTU-20 – Realizar o cadastro de dentista e atualizar status de agendamento
-
-| **Usuário** | **Resposta emocional** | **Execução** | **Tempo (seg)** | **Ações/Cliques** | **Cometeu erro?** | **Se recuperou do erro?** | **Observações** |
-|-------------|------------------------|--------------|------------------|-------------------|-------------------|---------------------------|------------------|
-| Usuario01   | Focado | Completa | 300 | Login: 5, Cadastro de dentista: 16, Atualização de status: 6 | Não | Não se aplica | Não se aplica |
-
-CTU-21 – Recuperação de senha e agendamento de consulta
+### CTU-17 – Verificação de agendamentos concluídos e agendamento
 
 | **Usuário** | **Resposta emocional** | **Execução** | **Tempo (seg)** | **Ações/Cliques** | **Cometeu erro?** | **Se recuperou do erro?** | **Observações** |
 |-------------|------------------------|--------------|------------------|-------------------|-------------------|---------------------------|------------------|
-| Usuario01   | Neutro | Completa | 240 | Recuperação de senha: 4, Agendamento: 7 | Não | Não se aplica | Não se aplica |
+| Usuario01   | Satisfeito | Concluiu | 240 | Login: 3, Verificação de agendamentos: 4, Agendamento: 8 | Não |  n/a | Acessou a aplicação e identificou as seções de modo intuitivo |
+| Usuario02   | Neutro | Concluiu | 60 | Login: 3, Verificação de agendamentos: 3, Agendamento: 8 | Não |  n/a | Acessou a aplicação e identificou os campos corretos rapidamente |
+| Usuario03   | Neutro | Concluiu | 80 | Login: 3, Verificação de agendamentos: 3, Agendamento: 8 | Não |  n/a | Acessou a aplicação percorrendo pela homepage e identificou os campos corretos rapidamente |
 
-CTU-22 – Emitir relatórios para análise do desempenho da clínica
+### CTU-18 – Realizar o cadastro de dentista e atualizar status de agendamento
 
 | **Usuário** | **Resposta emocional** | **Execução** | **Tempo (seg)** | **Ações/Cliques** | **Cometeu erro?** | **Se recuperou do erro?** | **Observações** |
 |-------------|------------------------|--------------|------------------|-------------------|-------------------|---------------------------|------------------|
-| Usuario01   | Satisfeito | Completa | 90 | Login: 5, Emissão de relatórios: 20 | Não | Não se aplica | Relatórios demoraram um pouco para aparecer |
+| Usuario01   | Confiante | Concluiu | 300 | Login: 5, Cadastro de dentista: 16, Atualização de status: 6 | Não |  n/a | Realizou o cenário sem dificuldades |
+| Usuario02   | Satisfeito | Concluiu | 180 | Login: 4, Cadastro de dentista: 25, Atualização de status: 6 | Não |  n/a | Executou ações corretamente para completar o cenário e deu sugestões de melhoria |
+| Usuario03   | Neutro | Concluiu | 210 | Login: 4, Cadastro de dentista: 29, Atualização de status: 6 | Não |  n/a | Seguiu todas as etapas sem nenhuma dificuldade |
+
+### CTU-19 – Recuperação de senha e agendamento de consulta
+
+| **Usuário** | **Resposta emocional** | **Execução** | **Tempo (seg)** | **Ações/Cliques** | **Cometeu erro?** | **Se recuperou do erro?** | **Observações** |
+|-------------|------------------------|--------------|------------------|-------------------|-------------------|---------------------------|------------------|
+| Usuario01   | Neutro | Concluiu | 240 | Recuperação de senha: 4, Agendamento: 7 | Não |  n/a | Acessou a aplicação e identificou as seções com um pouco de dificuldade  |
+| Usuario02   | Neutro | Concluiu | 115 | Recuperação de senha: 4, Agendamento: 9 | Não |  n/a | Realizou as tarefas do cenário rapidamente |
+| Usuario03   | Confuso no inicio e satisfeito no final | Concluiu | 160 | Recuperação de senha: 4, Agendamento: 8 | Não |  n/a | Acessou a aplicação e identificou as seções com um pouco de dificuldade |
+
+### CTU-20 – Emitir relatórios para análise do desempenho da clínica
+
+| **Usuário** | **Resposta emocional** | **Execução** | **Tempo (seg)** | **Ações/Cliques** | **Cometeu erro?** | **Se recuperou do erro?** | **Observações** |
+|-------------|------------------------|--------------|------------------|-------------------|-------------------|---------------------------|------------------|
+| Usuario01   | Satisfeito | Concluiu | 90 | Login: 5, Relatórios: 1 | Não |  n/a | Relatórios demoraram um pouco para aparecer |
+| Usuario02   | Confiante | Concluiu | 60 | Login: 5, Relatórios: 1 | Não |  n/a | Navegou pelos relatórios de forma intuitiva |
+| Usuario03   | Confiante | Concluiu | 80 | Login: 5, Relatórios: 1 | Não |  n/a | Relatórios com um pouco de atraso para serem carregados |
 
 
 ## Avaliação
 
-De maneira geral os participantes demonstraram reações positivas com respeito a aplicação e a margem de erros foi baixa, ocorrendo 4 erros os quais foram recuperados rapidamente, assim todas as atividades foram concluídas.
+De maneira geral, os participantes demonstraram reações positivas com respeito a aplicação e a margem de erros foi baixa, ocorrendo 4 erros na primeira etapa, os quais foram recuperados rapidamente, assim todas as tarefas testes foram concluídas.
 
 Foi possível identificar que, em grande maioria, os participantes navegaram as telas rapidamente e de forma intuitiva.
 Além disso, não foram identificados obstáculos para a execução das tarefas.
 
-Durante a execução dos testes alguns comentários em relação ao layout das telas "Login" e "Cadastro" foram feitos e foram levados em consideração, após análise, a alteração do texto da imagem será atualizado para "Bem-Vindo" e layout das telas de "Login" e "Cadastro" serão mantidas.
+Durante a execução dos testes alguns comentários e observações de melhoria foram levantados, os quais estão descritos abaixo:
+- Com relação ao layout das telas de "Login" e "Cadastro", foi sugerido que as janelas fossem centralizadas, além de alterar a mensagem de "Seja Bem vindo(a) ao...";
+- Durante o processo de agendamento de consultas foi proposto a inclusão de um botão "voltar" e uma forma de acesso a homepage, como um hiperlink na logo;
+- Foi indicado renomear de "Ver agendamentos" para "Meus agendamentos" na homepage do paciente e a inclusão de foto no perfil;
+- Foi observado que quando se finaliza um agendamento ou cadastro de dentistas não há resposta de sucesso ou erro;
+- Na seção "Ver agendamentos", foi aconselhado a inclusão de um cabeçalho e o campo do dentista que realizou o agendamento, otimizando o tempo para consulta do nome do dentista;
+- Na homepage da secretária, foi proposto a alteração de "Usuarios" para "Cadastro".
 
-Como melhoria, a adequação do tamanho da fonte nos campos de cadastro de paciente e dentistas serão alterados para a próxima etapa.
+As sugestões acima descritas serão analisadas e avaliadas de seu impacto na aplicação e caso apresentem melhorias serão implementadas na próxima etapa.
 
-Alguns casos de testes não foram aplicados nesta primeira etapa, pois as respectivas funcionalidades do sistema ainda serão desenvolvidas, são eles: CTU-14 e CTU-16.
-
-Concluindo, a execução dos testes demonstrou resultados satisfatórios para a usabilidade da aplicação, apresentando que os usuários navegam de forma fácil, rápida e intuitiva.
+Conclui-se que a execução dos testes demonstrou resultados satisfatórios para a usabilidade da aplicação, apresentando que os usuários navegam de forma fácil, rápida e intuitiva.
 
 

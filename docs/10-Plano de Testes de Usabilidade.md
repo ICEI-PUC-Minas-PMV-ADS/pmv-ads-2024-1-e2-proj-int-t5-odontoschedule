@@ -146,23 +146,11 @@ As seguintes tarefas devem ser realizadas pelos participantes:
 | Objetivo do Teste 	| Verificar telas para cadastro de dentistas |
 | Ações necessárias 	| - Acessar o link do site pelo browser de preferência do usuário <br> - Identificar e clicar na opção "Logar como funcionário" <br> - Fazer Login <br> - Identificar e clicar em "Usuários" na Home Page <br> - Identificar e clicar em "Dentistas" e logo após "Cadastrar Dentista" <br> - Preencher os campos apresentados <br> - Clicar em "Cadastrar" <br> - Selecionar algum dentista <br> - Clicar em "Atualizar Dentista" <br> |
 
-| **Caso de Teste** 	| **CTU-14 – Acessar relatórios (Home Page - Administrador)** 	|
-|:---:	|:---:	|
-|	Perfil 	| Usuário Administrador |
-| Objetivo do Teste 	| Analisar telas de relatórios |
-| Ações necessárias 	| - Acessar o link do site pelo browser de preferência do usuário <br> - Identificar e clicar na opção "Logar como funcionário" <br> - Fazer Login <br> - Navegar pelas telas |
-
-| **Caso de Teste** 	| **CTU-15 – Navegação e Logoff** 	|
+| **Caso de Teste** 	| **CTU-14 – Navegação e Logoff** 	|
 |:---:	|:---:	|
 |	Perfil 	| Usuário (Todos) |
 | Objetivo do Teste 	| Analisar telas da plataforma |
 | Ações necessárias 	| - Acessar o link do site pelo browser de preferência do usuário <br> - Fazer Login na área correta para cada tipo usuário <br> - Navegar pelas telas <br> - Identificar e Clicar no campo "Sair" |
-
-| **Caso de Teste** 	| **CTU-16 – Editar perfil** 	|
-|:---:	|:---:	|
-|	Perfil 	| Usuário (Todos) |
-| Objetivo do Teste 	| Analisar telas para alteração de informações cadastrais |
-| Ações necessárias 	| - Acessar o link do site pelo browser de preferência do usuário <br> - Fazer Login <br> - Identificar e clicar em "Editar perfil" na Home Page <br> - Realizar alguma alteração nas informações presentes <br> - Clicar em "Salvar"|
 
 # 6. Cenários Testes
 
@@ -170,41 +158,41 @@ Os participantes terão como responsabilidades simular e analizar eficientemente
 
 Os cenários a seguir devem ser realizados pelos participantes:
 
-| **Cenário de Teste** 	| **CTU-17 – Agendar uma consulta pela primeira vez** 	|
+| **Cenário de Teste** 	| **CTU-15 – Agendar uma consulta pela primeira vez** 	|
 |:---:	|:---:	|
 |	Perfil 	| Usuário Paciente |
 | Objetivo do Teste 	| Verificar as telas de cadastro e agendamento |
 | Cenário	| Como Paciente, você deseja realizar um agendamento, assim que possível, com um dentista ortodontista para avaliação da necessidade de aparelho ortodôntico. Para isso, você precisa fazer seu cadastro na aplicação, fazer login e ir até a área de agendamentos |
 
-| **Cenário de Teste** 	| **CTU-18 – Recuperação de senha e atualização de dados** 	|
+| **Cenário de Teste** 	| **CTU-16 – Recuperação de senha e atualização de dados** 	|
 |:---:	|:---:	|
 |	Perfil 	| Usuário Paciente |
 | Objetivo do Teste 	| Averiguar tela de recuperação de senha para pacientes, homepage e seção de editar de perfil |
 | Cenário 	| Como Paciente, você não se recorda de sua senha cadastrada e precisa atualizar seu número de telefone para receber notificações. Para isso, você precisa acessar a seção de recuperação de senha e realizar os passos fornecidos. Após a alteração da senha, acessar sua conta, identificar a seção de editar perfil e alterar seu número de telefone|
 
-| **Cenário de Teste** 	| **CTU-19 – Verificação de agendamentos concluídos e agendamento** 	|
+| **Cenário de Teste** 	| **CTU-17 – Verificação de agendamentos concluídos e agendamento** 	|
 |:---:	|:---:	|
 |	Perfil 	| Usuário Paciente |
 | Objetivo do Teste 	| Analisar a tela login, homepage e seção de agendamentos  e agendaments concluídos|
 | Cenário 	| Como paciente, você gostaria de ser atendido novamente pelo mesmo dentista da ultima consulta, porém você não se recorda o nome e deseja seguir o tratamento com este dentista em questão. Para isso, é necessario realizar o login, identificar a seção de agendamentos concluídos, verificar o nome do dentista e realizar um agendamento com esse dentista|
 
-| **Cenário de Teste** 	| **CTU-20 – Realizar o cadastro de dentista e atualizar status de agendamento** 	|
+| **Cenário de Teste** 	| **CTU-18 – Realizar o cadastro de dentista e atualizar status de agendamento** 	|
 |:---:	|:---:	|
 |	Perfil 	| Usuário Secretária |
 | Objetivo do Teste 	| Verificar tela de login para funcionários, homepage, seção de cadastro de usuários e agendamentos  |
 | Cenário 	| Como secretária, você foi solicitada para incluir o cadastro de um dentista e atualizar o status do agendamento de um paciente. Para isso, você deve realizar o login na parte de funcionário, identificar a seção de cadastro de dentistas e realizar a inclusão do cadastro, logo após ter concluído esta tarefa, você deve retornar a homepage e identificar a seção de agendamentos para atualizar o status solicitado |
 
-| **Cenário de Teste** 	| **CTU-20 – Recuperação de senha e agendamento de consulta** 	|
+| **Cenário de Teste** 	| **CTU-19 – Recuperação de senha e agendamento de consulta** 	|
 |:---:	|:---:	|
 |	Perfil 	| Usuário Secretária |
 | Objetivo do Teste 	| Verificar tela de login para funcionários, homepage, seção de cadastro de usuários, agendamentos e recuperação de senha |
 | Cenário 	| Como secretária, você não se recorda da senha cadastrada e necessita realizar o agendamento de consulta para um paciente. Para isso, você deve acessar a área de funcionários, dizer que esqueceu a senha e seguir o procedimento enviado no email de recuperação. Em seguida, fazer login com os novos credenciais, identificar a seção de agendamentos e criar um. |
 
-| **Cenário de Teste** 	| **CTU-22 – Emitir relatórios para análise do desempenho da clínica** 	|
+| **Cenário de Teste** 	| **CTU-20 – Relatórios para análise do desempenho da clínica** 	|
 |:---:	|:---:	|
 |	Perfil 	| Usuário Administrador |
-| Objetivo do Teste 	| Verificar o desempenho das telas atribuídas ao usuário Administrador |
-| Ações necessárias 	| Como administrador do consultório, você deseja analisar a performance do mesmo. Para isso, você deve realizar o login e emitir diversos relatórios para análise |
+| Objetivo do Teste 	| Verificar as telas atribuídas ao usuário Administrador |
+| Ações necessárias 	| Como dono do consultório, você deseja analisar a quantidade de consultas realizadas diariamente e entrada de novos pacientes. Para isso, você deve realizar o login e acessar os relatórios para análise |
 
 # 7. Análise dos dados
 
