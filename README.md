@@ -33,11 +33,11 @@ Link: https://odontoschedule.azurewebsites.net/
 
 Administrador:<br>
 &emsp;Usuário: admin<br>
-&emsp;Senha: 1kE8tA0jmPVXFk3<br><br>
+&emsp;Senha: C8UGlXeorlTgOlY<br><br>
 
 Secretária:<br>
 &emsp;Usuário: secretaria<br>
-&emsp;Senha: Y730gEPDXdXauuo<br>
+&emsp;Senha: cEWe28vvPzebHbJ<br>
 
 # Documentação
 
