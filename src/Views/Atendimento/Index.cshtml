@@ -29,7 +29,7 @@
                         @Html.DisplayFor(modelItem => item.Paciente.Nome)
                     </td>
                     <td>
-                        @(item.Finalizado ? Html.Raw(item.Observacoes) : Html.Raw(item.Agenda.Data) + " " + Html.Raw(item.Agenda.Horario.Hora))
+                        @(item.Finalizado ? Html.Raw(item.Observacoes) : item.Agenda.Data + " " + item.Agenda.Horario.Hora)
                     </td>
                 </tr>
             }
