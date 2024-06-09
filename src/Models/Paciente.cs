@@ -14,6 +14,7 @@ namespace OdontoSchedule.Models
         [Required(ErrorMessage = "O nome do paciente é obrigatório")]
         public string Nome { get; set; }
 
+        [Display(Name = "Data de Nascimento")]
         [Required(ErrorMessage = "A data de nascimento do paciente é obrigatória")]
         public DateOnly DataNascimento { get; set; }
 
