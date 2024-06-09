@@ -168,12 +168,12 @@
 | **Caso de Teste** 	| **CT-34 – Recuperar senha perfil como paciente** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-20 - A aplicação deve permitir que usuários do tipo secretária, administrador e paciente recuperem suas senhas. |
-|Registro de evidência |  |
+|Registro de evidência | https://drive.google.com/file/d/1mPPfEnUog1hr8ZAK9yys1qo7B86Ed8uI/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-35 – Recuperar senha perfil como administrador	e secretária** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-20 - A aplicação deve permitir que usuários do tipo secretária, administrador e paciente recuperem suas senhas. |
-|Registro de evidência |  |
+|Registro de evidência | https://drive.google.com/file/d/1zriPvw7NszsggSWo3T9AWXptVTOMLX8Z/view?usp=sharing |
 
 |  **Caso de Teste** 	| **CT-36 – Compatibilidade da aplicação**	|
 |:---:	|:---:	|
