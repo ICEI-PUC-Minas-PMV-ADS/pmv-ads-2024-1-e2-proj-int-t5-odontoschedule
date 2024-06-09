@@ -31,6 +31,10 @@
 
 Link: https://odontoschedule.azurewebsites.net/
 
+### Paciente de Teste
+
+Email: teste@teste.com
+Senha: 12345
 
 ### Usuários com acessos restritos
 
