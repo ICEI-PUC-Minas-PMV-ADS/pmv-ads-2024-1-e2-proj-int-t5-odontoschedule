@@ -178,6 +178,7 @@
 | Usuario02   | Neutro | Concluiu | 60 | Login: 3, Verificação de agendamentos: 3, Agendamento: 8 | Não |  n/a | Acessou a aplicação e identificou os campos corretos rapidamente |
 | Usuario03   | Neutro | Concluiu | 80 | Login: 3, Verificação de agendamentos: 3, Agendamento: 8 | Não |  n/a | Acessou a aplicação percorrendo pela homepage e identificou os campos corretos rapidamente |
 | Usuario04   | Satisfeito | Completa | 110 | Login: 4, Verificação de agendamentos: 5, Agendamento: 10 | Não | n/a | O Processo de verificação de agendamentos foi direto e sem complicações |
+| Usuario05   | Satisfeito | Concluiu | 90 | Login: 3, Verificação de agendamentos: 4, Agendamento: 9 | Não | n/a | O Processo de verificação de agendamentos foi intuitivo e como esperado |
 
 
 ### CTU-18 – Realizar o cadastro de dentista e atualizar status de agendamento
