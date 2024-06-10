@@ -38,22 +38,22 @@
 | **Caso de Teste** 	| **CT-08 – Notificação de agendamento com 24 horas de antecedência da consulta** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-04 - A aplicação deve permitir que o paciente receba um aviso com 24h de antecedência do seu atendimento. |
-|Registro de evidência |  |https://drive.google.com/file/d/1I1oDw3sf5qT_zHOXO0-GaqkJZmOJscnt/view?usp=sharing
+|Registro de evidência | https://drive.google.com/file/d/1I1oDw3sf5qT_zHOXO0-GaqkJZmOJscnt/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-09 – Notificar cancelamento do agendamento ao paciente** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-06 - A aplicação deve permitir que o paciente receba uma notificação quando uma consulta for cancelada, remarcada ou concluída.|
-|Registro de evidência |  |https://drive.google.com/file/d/1MJog-4gYP4L58NA6glAyhCt7Y-v_bZ3D/view?usp=sharing
+|Registro de evidência | https://drive.google.com/file/d/1MJog-4gYP4L58NA6glAyhCt7Y-v_bZ3D/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-10 – Notificar remarcação do agendamento ao paciente** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-06 - A aplicação deve permitir que o paciente receba uma notificação quando uma consulta for cancelada, remarcada ou concluída.|
-|Registro de evidência |  |https://drive.google.com/file/d/15umBfhwO7zUQ0GHVtB5FMqDDbjXzlHe9/view?usp=sharing
+|Registro de evidência | https://drive.google.com/file/d/15umBfhwO7zUQ0GHVtB5FMqDDbjXzlHe9/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-11 – Notificar alteração de status do agendamento ao paciente** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-06 - A aplicação deve permitir que o paciente receba uma notificação quando uma consulta for cancelada, remarcada ou concluída.|
-|Registro de evidência |  |https://drive.google.com/file/d/151tfimtXF566OhlJXXQ1NAxTMRKLD6P2/view?usp=sharing
+|Registro de evidência | https://drive.google.com/file/d/151tfimtXF566OhlJXXQ1NAxTMRKLD6P2/view?usp=sharing |
 
 | **Caso de Teste** 	| **CT-12 – Paciente visualizar atendimentos em aberto e já concluídos** 	|
 |:---:	|:---:	|
