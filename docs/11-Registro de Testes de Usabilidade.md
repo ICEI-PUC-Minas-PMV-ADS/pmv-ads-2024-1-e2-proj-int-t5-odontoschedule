@@ -189,6 +189,7 @@
 | Usuario02   | Satisfeito | Concluiu | 180 | Login: 4, Cadastro de dentista: 25, Atualização de status: 6 | Não |  n/a | Executou ações corretamente para completar o cenário e deu sugestões de melhoria |
 | Usuario03   | Neutro | Concluiu | 210 | Login: 4, Cadastro de dentista: 29, Atualização de status: 6 | Não |  n/a | Seguiu todas as etapas sem nenhuma dificuldade |
 | Usuario04   | Satisfeito | Completa | 220 | Login: 4, Cadastro de dentista: 20, Atualização de status: 7 | Não | n/a | Não houve dificuldades do usuário ao realizar as tarefas |
+| Usuario05   | Neutro | Concluiu | 270 | Login: 4, Cadastro de dentista: 26, Atualização de status: 6 | Não | n/a | Conseguiu seguir com todas as etapas e deu sugestões de melhoria |
 
 ### CTU-19 – Recuperação de senha e agendamento de consulta
 
@@ -198,6 +199,8 @@
 | Usuario02   | Neutro | Concluiu | 115 | Recuperação de senha: 4, Agendamento: 9 | Não |  n/a | Realizou as tarefas do cenário rapidamente |
 | Usuario03   | Confuso no inicio e satisfeito no final | Concluiu | 160 | Recuperação de senha: 4, Agendamento: 8 | Não |  n/a | Acessou a aplicação e identificou as seções com um pouco de dificuldade |
 | Usuario04   | Neutro | Completa | 130 | Recuperação de senha: 4, Agendamento: 9 | Não | n/a | n/a |
+| Usuario05   | Neutro | Completa | 150 | Recuperação de senha: 4, Agendamento: 9 | Não | n/a | Teve dificuldades para achar os locais mas conseguiu realizar as tarefas com sucesso |
+
 
 ### CTU-20 – Emitir relatórios para análise do desempenho da clínica
 
