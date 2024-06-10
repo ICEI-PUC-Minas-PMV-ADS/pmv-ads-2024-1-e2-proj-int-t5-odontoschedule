@@ -1,6 +1,7 @@
 
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OdontoSchedule.Models;
@@ -239,12 +240,6 @@ namespace OdontoSchedule.Controllers
                     return RedirectToAction("Perfil");
                 }
                 
-            }
-            else
-            {
-                Console.WriteLine(string.Join("; ", ModelState.Values
-                                        .SelectMany(x => x.Errors)
-                                        .Select(x => x.ErrorMessage)));
             }
 
 
