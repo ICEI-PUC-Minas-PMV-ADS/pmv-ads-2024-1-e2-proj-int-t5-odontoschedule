@@ -210,6 +210,7 @@
 | Usuario02   | Confiante | Concluiu | 60 | Login: 5, Relatórios: 0 | Não |  n/a | Navegou pelos relatórios de forma intuitiva |
 | Usuario03   | Confiante | Concluiu | 80 | Login: 5, Relatórios: 0 | Não |  n/a | Relatórios com um pouco de atraso para serem carregados |
 | Usuario04   | Interessado | Completa | 60 | Login: 5, Relatórios: 0 | Não | n/a | Navegação intuitiva e emissão de relatórios sem complicações |
+| Usuario05   | Satisfeito | Concluiu | 60 | Login: 5, Relatórios: 0 | Não | n/a | Conseguiu visualizar sem impedimentos ou dificuldades |
 
 
 ## Avaliação
