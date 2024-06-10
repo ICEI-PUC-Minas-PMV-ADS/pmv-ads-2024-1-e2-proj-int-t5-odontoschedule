@@ -156,6 +156,8 @@
 | Usuario01   | Satisfeito | Concluiu | 300 | Cadastro: 12, Login: 3, Agendamento: 9 | Não |  n/a | Acessou a aplicação, percorreu pela homepage e identificou a seção de agendamentos por alguns instantes  |
 | Usuario02   | Confiante | Concluiu | 130 | Cadastro: 13, Login: 3, Agendamento: 9 | Não |  n/a | Acessou a aplicação e seguiu de forma intuitiva completando a tarefa |
 | Usuario03   | Satisfeito | Concluiu | 160 | Cadastro: 14, Login: 3, Agendamento: 9 | Não |  n/a | Acessou a aplicação, percorreu pela homepage e identificou a seção de agendamentos  e seguiu de forma intuitiva completando a tarefa e também dando sugestões de melhoria |
+| Usuario04   | Confiante | Completa | 150 | Cadastro: 12, Login: 4, Agendamento: 8 | Não | n/a | n/a |
+| Usuario05   | Satisfeito | Completa | 190 | Cadastro: 14, Login: 3, Agendamento: 9 | Não | n/a | Acessou a aplicação e identificou rapidamente a seção de agendamentos e seguiu de forma intuitiva |
 
 ### CTU-16 – Recuperação de senha e atualização de dados
 
@@ -164,6 +166,9 @@
 | Usuario01   | Confuso no início e satisfeito no final | Concluiu | 180 | Recuperação de senha: 3, Atualização de dados: 5 | Não |  n/a | Após acessar a aplicação encontrou dificuldade em entender como fazer a recuperação de senha |
 | Usuario02   | Estressado no início e neutro no final | Concluiu | 170 | Recuperação de senha: 3, Atualização de dados: 4 | Não |  n/a | Durante o processo de recuperação de senha, demonstrou certa irritação ao seguir o procedimento |
 | Usuario03   |Confiante no inicio e satisfeito no final | Concluiu | 140 | Recuperação de senha: 4, Atualização de dados: 4 | Não |  n/a | Durante o processo de recuperação de senha, estava confiante e seguiu os passos de forma intuitiva completando a tarefa |
+| Usuario04   | Neutro | Completa | 180 | Recuperação de senha: 3, Atualização de dados: 5 | Não | n/a | n/a |
+| Usuario05   | Confuso com resultado final | Concluiu | 190 | Recuperação de senha: 3, Atualização de dados: 4 | Não | n/a | Ao editar o nome e voltar para a tela inicial, o mesmo não é atualizado. Apenas quando sai do aplicativo e realiza o login novamente |
+
 
 ### CTU-17 – Verificação de agendamentos concluídos e agendamento
 
@@ -172,6 +177,9 @@
 | Usuario01   | Satisfeito | Concluiu | 240 | Login: 3, Verificação de agendamentos: 4, Agendamento: 8 | Não |  n/a | Acessou a aplicação e identificou as seções de modo intuitivo |
 | Usuario02   | Neutro | Concluiu | 60 | Login: 3, Verificação de agendamentos: 3, Agendamento: 8 | Não |  n/a | Acessou a aplicação e identificou os campos corretos rapidamente |
 | Usuario03   | Neutro | Concluiu | 80 | Login: 3, Verificação de agendamentos: 3, Agendamento: 8 | Não |  n/a | Acessou a aplicação percorrendo pela homepage e identificou os campos corretos rapidamente |
+| Usuario04   | Satisfeito | Completa | 110 | Login: 4, Verificação de agendamentos: 5, Agendamento: 10 | Não | n/a | O Processo de verificação de agendamentos foi direto e sem complicações |
+| Usuario05   | Satisfeito | Concluiu | 90 | Login: 3, Verificação de agendamentos: 4, Agendamento: 9 | Não | n/a | O Processo de verificação de agendamentos foi intuitivo e como esperado |
+
 
 ### CTU-18 – Realizar o cadastro de dentista e atualizar status de agendamento
 
@@ -180,6 +188,7 @@
 | Usuario01   | Confiante | Concluiu | 300 | Login: 5, Cadastro de dentista: 16, Atualização de status: 6 | Não |  n/a | Realizou o cenário sem dificuldades |
 | Usuario02   | Satisfeito | Concluiu | 180 | Login: 4, Cadastro de dentista: 25, Atualização de status: 6 | Não |  n/a | Executou ações corretamente para completar o cenário e deu sugestões de melhoria |
 | Usuario03   | Neutro | Concluiu | 210 | Login: 4, Cadastro de dentista: 29, Atualização de status: 6 | Não |  n/a | Seguiu todas as etapas sem nenhuma dificuldade |
+| Usuario04   | Satisfeito | Completa | 220 | Login: 4, Cadastro de dentista: 20, Atualização de status: 7 | Não | n/a | Não houve dificuldades do usuário ao realizar as tarefas |
 
 ### CTU-19 – Recuperação de senha e agendamento de consulta
 
@@ -188,14 +197,16 @@
 | Usuario01   | Neutro | Concluiu | 240 | Recuperação de senha: 4, Agendamento: 7 | Não |  n/a | Acessou a aplicação e identificou as seções com um pouco de dificuldade  |
 | Usuario02   | Neutro | Concluiu | 115 | Recuperação de senha: 4, Agendamento: 9 | Não |  n/a | Realizou as tarefas do cenário rapidamente |
 | Usuario03   | Confuso no inicio e satisfeito no final | Concluiu | 160 | Recuperação de senha: 4, Agendamento: 8 | Não |  n/a | Acessou a aplicação e identificou as seções com um pouco de dificuldade |
+| Usuario04   | Neutro | Completa | 130 | Recuperação de senha: 4, Agendamento: 9 | Não | n/a | n/a |
 
 ### CTU-20 – Emitir relatórios para análise do desempenho da clínica
 
 | **Usuário** | **Resposta emocional** | **Execução** | **Tempo (seg)** | **Ações/Cliques** | **Cometeu erro?** | **Se recuperou do erro?** | **Observações** |
 |-------------|------------------------|--------------|------------------|-------------------|-------------------|---------------------------|------------------|
-| Usuario01   | Satisfeito | Concluiu | 90 | Login: 5, Relatórios: 1 | Não |  n/a | Relatórios demoraram um pouco para aparecer |
-| Usuario02   | Confiante | Concluiu | 60 | Login: 5, Relatórios: 1 | Não |  n/a | Navegou pelos relatórios de forma intuitiva |
-| Usuario03   | Confiante | Concluiu | 80 | Login: 5, Relatórios: 1 | Não |  n/a | Relatórios com um pouco de atraso para serem carregados |
+| Usuario01   | Satisfeito | Concluiu | 90 | Login: 5, Relatórios: 0 | Não |  n/a | Relatórios demoraram um pouco para aparecer |
+| Usuario02   | Confiante | Concluiu | 60 | Login: 5, Relatórios: 0 | Não |  n/a | Navegou pelos relatórios de forma intuitiva |
+| Usuario03   | Confiante | Concluiu | 80 | Login: 5, Relatórios: 0 | Não |  n/a | Relatórios com um pouco de atraso para serem carregados |
+| Usuario04   | Interessado | Completa | 60 | Login: 5, Relatórios: 0 | Não | n/a | Navegação intuitiva e emissão de relatórios sem complicações |
 
 
 ## Avaliação
