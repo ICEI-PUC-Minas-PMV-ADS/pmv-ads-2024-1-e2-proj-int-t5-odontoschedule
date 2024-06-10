@@ -157,6 +157,7 @@
 | Usuario02   | Confiante | Concluiu | 130 | Cadastro: 13, Login: 3, Agendamento: 9 | Não |  n/a | Acessou a aplicação e seguiu de forma intuitiva completando a tarefa |
 | Usuario03   | Satisfeito | Concluiu | 160 | Cadastro: 14, Login: 3, Agendamento: 9 | Não |  n/a | Acessou a aplicação, percorreu pela homepage e identificou a seção de agendamentos  e seguiu de forma intuitiva completando a tarefa e também dando sugestões de melhoria |
 | Usuario04   | Confiante | Completa | 150 | Cadastro: 12, Login: 4, Agendamento: 8 | Não | n/a | n/a |
+| Usuario05   | Satisfeito | Completa | 190 | Cadastro: 14, Login: 3, Agendamento: 9 | Não | n/a | Acessou a aplicação e identificou rapidamente a seção de agendamentos e seguiu de forma intuitiva |
 
 ### CTU-16 – Recuperação de senha e atualização de dados
 
@@ -166,6 +167,8 @@
 | Usuario02   | Estressado no início e neutro no final | Concluiu | 170 | Recuperação de senha: 3, Atualização de dados: 4 | Não |  n/a | Durante o processo de recuperação de senha, demonstrou certa irritação ao seguir o procedimento |
 | Usuario03   |Confiante no inicio e satisfeito no final | Concluiu | 140 | Recuperação de senha: 4, Atualização de dados: 4 | Não |  n/a | Durante o processo de recuperação de senha, estava confiante e seguiu os passos de forma intuitiva completando a tarefa |
 | Usuario04   | Neutro | Completa | 180 | Recuperação de senha: 3, Atualização de dados: 5 | Não | n/a | n/a |
+| Usuario05   | Confuso com resultado final | Concluiu | 190 | Recuperação de senha: 3, Atualização de dados: 4 | Não | n/a | Ao editar o nome e voltar para a tela inicial, o mesmo não é atualizado. Apenas quando sai do aplicativo e realiza o login novamente |
+
 
 ### CTU-17 – Verificação de agendamentos concluídos e agendamento
 
@@ -175,6 +178,7 @@
 | Usuario02   | Neutro | Concluiu | 60 | Login: 3, Verificação de agendamentos: 3, Agendamento: 8 | Não |  n/a | Acessou a aplicação e identificou os campos corretos rapidamente |
 | Usuario03   | Neutro | Concluiu | 80 | Login: 3, Verificação de agendamentos: 3, Agendamento: 8 | Não |  n/a | Acessou a aplicação percorrendo pela homepage e identificou os campos corretos rapidamente |
 | Usuario04   | Satisfeito | Completa | 110 | Login: 4, Verificação de agendamentos: 5, Agendamento: 10 | Não | n/a | O Processo de verificação de agendamentos foi direto e sem complicações |
+
 
 ### CTU-18 – Realizar o cadastro de dentista e atualizar status de agendamento
 
