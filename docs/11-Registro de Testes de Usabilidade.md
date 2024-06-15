@@ -215,21 +215,28 @@
 
 ## Avaliação
 
-De maneira geral, os participantes demonstraram reações positivas com respeito a aplicação e a margem de erros foi baixa, ocorrendo 4 erros na primeira etapa, os quais foram recuperados rapidamente, assim todas as tarefas testes foram concluídas.
-
+De maneira geral, os participantes demonstraram reações positivas com respeito a aplicação e a margem de erros foi baixa, ocorrendo poucos erros ao longo dos testes, os quais os usuários conseguiram se recuperar rapidamente.
 Foi possível identificar que, em grande maioria, os participantes navegaram as telas rapidamente e de forma intuitiva.
-Além disso, não foram identificados obstáculos para a execução das tarefas.
+Além disso, não foram identificados obstáculos que impedissem a execução das tarefas.
 
-Durante a execução dos testes alguns comentários e observações de melhoria foram levantados, os quais estão descritos abaixo:
-- Com relação ao layout das telas de "Login" e "Cadastro", foi sugerido que as janelas fossem centralizadas, além de alterar a mensagem de "Seja Bem vindo(a) ao...";
-- Durante o processo de agendamento de consultas foi proposto a inclusão de um botão "voltar" e uma forma de acesso a homepage, como um hiperlink na logo;
-- Foi indicado renomear de "Ver agendamentos" para "Meus agendamentos" na homepage do paciente e a inclusão de foto no perfil;
-- Foi observado que quando se finaliza um agendamento ou cadastro de dentistas não há resposta de sucesso ou erro;
+### Problemas de usabilidade
+
+Os principais problemas de usabilidade levantados a partir dos testes foram:
+
+- Com relação ao layout das telas de "Login" e "Cadastro", foi sugerido que os formulários fossem centralizadas;
+- Durante o processo de agendamento de consultas foi proposto a inclusão de um botão "voltar";
 - Na seção "Ver agendamentos", foi aconselhado a inclusão de um cabeçalho e o campo do dentista que realizou o agendamento, otimizando o tempo para consulta do nome do dentista;
-- Na homepage da secretária, foi proposto a alteração de "Usuarios" para "Cadastro".
+- Foi sugerido que a criação da agenda do dentista fosse mensal, e não semanal, para evitar interações semanais pela secretária para criação de uma nova agenda;
 
-As sugestões acima descritas serão analisadas e avaliadas de seu impacto na aplicação e caso apresentem melhorias serão implementadas na próxima etapa.
+### Plano de correção:
 
-Conclui-se que a execução dos testes demonstrou resultados satisfatórios para a usabilidade da aplicação, apresentando que os usuários navegam de forma fácil, rápida e intuitiva.
+As seguintes ações foram previstas para correção dos problemas de usabilidade listados acima:
 
+- Centralização dos formulários de cadastro e login;
+- Criação de um botão de "Voltar" ao lado de "Próximo" para permitir que o usuário corrija alguma informação do agendamento;
+- Criar uma coluna contendo o nome do dentista responsável pelo agendamento na tabela de agendamentos em aberto e concluídos;
+- Alteração do banco de dados e lógica do negócio afim de que ao definir uma agenda de dentista, sejam criados horários para o mesmo durante todo o mês atual;
 
+### Conclusão
+
+Conclui-se que a execução dos testes demonstrou resultados satisfatórios para a usabilidade da aplicação, apresentando que os usuários navegam de forma fácil, rápida e intuitiva. No entanto apresentando pontos de melhoria para uma melhor experiência do usuário.
