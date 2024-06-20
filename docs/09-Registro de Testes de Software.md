@@ -202,5 +202,18 @@
 
 ## Avaliação
 
-Os casos de testes apresentaram 100% de sucesso, demonstrando que as funcionalidades implementadas satisfazem os requisitos funcionais e não funcionais estabelecidos para a aplicacão.
+Os casos de testes apresentaram 100% de sucesso, demonstrando que as funcionalidades implementadas satisfazem os requisitos funcionais e não funcionais estabelecidos para a aplicacão. Isso se deve ao fato de que o grupo se preocupou em eliminar possíveis erros e bugs durante a fase de implementação da solução, evitando que erros ocorressem posteriormente.
 
+### Possíveis melhorias
+
+Ao longo do desenvolvimento da solução, o grupo discutiu possíveis melhorias que poderiam ser implementadas futuramente com a intenção de deixar a aplicação melhor adequada para o mercado. As melhorias sugeridas foram:
+
+- A agenda do dentista deixar de ser semanal, e passar a ser mensal, evitando que a secretária precise fazer a reabertura da agenda toda semana. Dessa forma ela só precisaria fazer possíveis correções durante o mês corrente;
+- Criação de modulo de pagamento dentro da própria aplicação;
+- Possibilidade de alterar foto de perfil;
+- Bloquear cancelamento e reagendamento dentro das 48 horas que antecedem a consulta;
+- Criação de multa para não comparecimento;
+
+### Conclusão
+
+Como foi dito, a aplicação apresentou estabilidade durante a execução dos testes de software, sem presença de erros em funcionalidades. No entanto, a equipe levantou possíveis melhorias a serem implementadas na aplicação futuramente para uma melhor qualidade da solução.

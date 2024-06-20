@@ -226,7 +226,6 @@ Os principais problemas de usabilidade levantados a partir dos testes foram:
 - Com relação ao layout das telas de "Login" e "Cadastro", foi sugerido que os formulários fossem centralizadas;
 - Durante o processo de agendamento de consultas foi proposto a inclusão de um botão "voltar";
 - Na seção "Ver agendamentos", foi aconselhado a inclusão de um cabeçalho e o campo do dentista que realizou o agendamento, otimizando o tempo para consulta do nome do dentista;
-- Foi sugerido que a criação da agenda do dentista fosse mensal, e não semanal, para evitar interações semanais pela secretária para criação de uma nova agenda;
 
 ### Plano de correção:
 
@@ -235,7 +234,6 @@ As seguintes ações foram previstas para correção dos problemas de usabilidad
 - Centralização dos formulários de cadastro e login;
 - Criação de um botão de "Voltar" ao lado de "Próximo" para permitir que o usuário corrija alguma informação do agendamento;
 - Criar uma coluna contendo o nome do dentista responsável pelo agendamento na tabela de agendamentos em aberto e concluídos;
-- Alteração do banco de dados e lógica do negócio afim de que ao definir uma agenda de dentista, sejam criados horários para o mesmo durante todo o mês atual;
 
 ### Conclusão
 
