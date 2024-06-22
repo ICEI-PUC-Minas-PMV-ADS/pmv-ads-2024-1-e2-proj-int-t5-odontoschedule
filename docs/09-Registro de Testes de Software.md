@@ -206,14 +206,16 @@ Os casos de testes apresentaram 100% de sucesso, demonstrando que as funcionalid
 
 ### Possíveis melhorias
 
-Ao longo do desenvolvimento da solução, o grupo discutiu possíveis melhorias que poderiam ser implementadas futuramente com a intenção de deixar a aplicação melhor adequada para o mercado. As melhorias sugeridas foram:
+Ao longo do desenvolvimento da solução, o grupo discutiu possíveis melhorias que poderiam ser implementadas futuramente com a intenção de deixar a aplicação melhor adequada para o mercado. As melhorias levantadas foram:
 
-- A agenda do dentista deixar de ser semanal, e passar a ser mensal, evitando que a secretária precise fazer a reabertura da agenda toda semana. Dessa forma ela só precisaria fazer possíveis correções durante o mês corrente;
-- Criação de modulo de pagamento dentro da própria aplicação;
-- Possibilidade de alterar foto de perfil;
-- Bloquear cancelamento e reagendamento dentro das 48 horas que antecedem a consulta;
-- Criação de multa para não comparecimento;
+- Alterar a agenda do dentista de semanal para mensal, evitando assim que a secretária precise cadastrar a agenda toda semana. Dessa forma, ela só precisaria fazer possíveis correções durante o mês corrente;
+- Criar um módulo de pagamento dentro da própria aplicação;
+- Possibilitar a alteração de foto do perfil;
+- Bloquear cancelamentos e reagendamentos com 48 horas antecedentes a consulta;
+- Criar cobrança de multa automaticamente para não comparecimentos;
+- Elaborar uma área para troca de mensagens entre consultório e pacientes.
 
 ### Conclusão
 
-Como foi dito, a aplicação apresentou estabilidade durante a execução dos testes de software, sem presença de erros em funcionalidades. No entanto, a equipe levantou possíveis melhorias a serem implementadas na aplicação futuramente para uma melhor qualidade da solução.
+Conforme apresentado acima, a aplicação demonstrou estabilidade durante a execução dos testes de software, sem presença de erros em funcionalidades. 
+No entanto, a equipe levantou possíveis melhorias a serem implementadas na aplicação futuramente para melhor desempenho da solução no mercado.
