@@ -35,3 +35,8 @@ A principal vantagem da fonte Inter é a sua legibilidade. Pois ela contém um c
 ## Conjunto de Slides (Estrutura)
 
 [Acesse a apresentação clicando aqui.](../presentation/Apresentação.pdf)
+
+## Apresentação da Solução
+
+Link para acesso a apresentação do produto finalizado:
+https://drive.google.com/file/d/1vY1HU6B6NSIOe5kI3tVbXgzUA9BizWGe/view?usp=sharing
