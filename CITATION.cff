@@ -1,0 +1,26 @@
+cff-version: 1.0.1
+message: 
+title: OdontoSchedule
+authors: 
+  - family-names: Santos Soares Coimbra
+    given-names: Joabe Wick
+  - family-names: Blitzkow Lissa
+    given-names: Amanda
+  - family-names: Lino Biluca
+    given-names: Kayo Felipe
+  - family-names: Amaral
+    given-names: Alvaro Alexandre
+  - family-names: Torneiro Baptista
+    given-names: Cassiano
+  - name-suffix: Professor 
+    affiliation: PUC Minas
+    family-names: De Nardin
+    given-names: Luciana
+keywords:
+  - Consultorioodontologico
+  - Odontologia
+  - Agendamentos
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-odontoschedule
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2024-06-25
